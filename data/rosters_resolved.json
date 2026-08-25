@@ -1087,18 +1087,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Philip Rivers",
-          "player_id": "331",
-          "position": "QB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -1221,18 +1209,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Quinn Ewers",
-          "player_id": "12500",
-          "position": "QB",
-          "status": "Active",
-          "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -1245,18 +1221,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Philip Rivers",
-          "player_id": "331",
-          "position": "QB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -1265,6 +1229,30 @@
           "position": "RB",
           "status": "Active",
           "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Calvin Ridley",
+          "player_id": "4981",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Zonovan Knight",
+          "player_id": "8122",
+          "position": "RB",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -1292,24 +1280,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Calvin Ridley",
-          "player_id": "4981",
+          "injury_status": "IR",
+          "name": "Ricky Pearsall",
+          "player_id": "11638",
           "position": "WR",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Zonovan Knight",
-          "player_id": "8122",
-          "position": "RB",
-          "status": "Active",
-          "team": "ARI"
+          "status": "Inactive",
+          "team": "SF"
         }
       ],
       "roster_id": 3,
@@ -1461,18 +1437,6 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
-          "name": "Ricky Pearsall",
-          "player_id": "11638",
-          "position": "WR",
-          "status": "Inactive",
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
           "injury_status": null,
           "name": "Jalen Coker",
           "player_id": "11646",
@@ -1491,6 +1455,18 @@
           "position": "RB",
           "status": "Active",
           "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Quinn Ewers",
+          "player_id": "12500",
+          "position": "QB",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
