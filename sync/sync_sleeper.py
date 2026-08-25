@@ -7,7 +7,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Iterable
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -22,7 +22,7 @@ class SyncError(RuntimeError):
 
 
 def fetch_json(url: str) -> JsonValue:
-    request = Request(url, headers={"User-Agent": "cloud-dynasty-sleeper-sync/1.0"})
+    request = Request(url, headers={"User-Agent": "cloud-dynasty-sleeper-sync/2.0"})
     try:
         with urlopen(request, timeout=30) as response:
             return json.load(response)
@@ -44,25 +44,187 @@ def load_config(path: Path) -> dict[str, Any]:
     return config
 
 
-def collect_snapshot(league_id: str, fetcher: Fetcher = fetch_json) -> dict[str, JsonValue]:
+def load_player_map(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        with path.open("r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SyncError(f"Could not read cached player map from {path}") from exc
+    if not isinstance(payload, dict):
+        raise SyncError(f"Cached player map in {path} must be a JSON object")
+    return payload
+
+
+def _player_name(player_id: str, player: dict[str, Any] | None) -> str:
+    if player_id == "0":
+        return "EMPTY"
+    if player:
+        full_name = str(player.get("full_name") or "").strip()
+        if full_name:
+            return full_name
+        first = str(player.get("first_name") or "").strip()
+        last = str(player.get("last_name") or "").strip()
+        combined = " ".join(part for part in (first, last) if part)
+        if combined:
+            return combined
+    if player_id.isalpha() and 2 <= len(player_id) <= 4:
+        return f"{player_id} D/ST"
+    return player_id
+
+
+def _resolve_player(player_id: str, player_map: dict[str, Any], starter_slot: str | None = None) -> dict[str, Any]:
+    player = player_map.get(player_id)
+    if not isinstance(player, dict):
+        player = None
+
+    resolved = {
+        "player_id": player_id,
+        "name": _player_name(player_id, player),
+        "position": (player or {}).get("position"),
+        "team": (player or {}).get("team"),
+        "fantasy_positions": (player or {}).get("fantasy_positions"),
+        "status": (player or {}).get("status"),
+        "injury_status": (player or {}).get("injury_status"),
+        "active": (player or {}).get("active"),
+    }
+    if player_id.isalpha() and 2 <= len(player_id) <= 4 and resolved["position"] is None:
+        resolved["position"] = "DEF"
+        resolved["team"] = player_id
+    if starter_slot is not None:
+        resolved["starter_slot"] = starter_slot
+    return resolved
+
+
+def _owner_summary(user_id: str | None, users_by_id: dict[str, dict[str, Any]]) -> dict[str, Any] | None:
+    if not user_id:
+        return None
+    user = users_by_id.get(str(user_id), {})
+    metadata = user.get("metadata") if isinstance(user.get("metadata"), dict) else {}
+    return {
+        "user_id": str(user_id),
+        "username": user.get("username"),
+        "display_name": user.get("display_name"),
+        "team_name": metadata.get("team_name"),
+    }
+
+
+def resolve_rosters(
+    league: dict[str, Any],
+    rosters: list[dict[str, Any]],
+    users: list[dict[str, Any]],
+    player_map: dict[str, Any],
+) -> dict[str, Any]:
+    """Build a human-readable roster view while preserving Sleeper IDs."""
+
+    users_by_id = {
+        str(user.get("user_id")): user
+        for user in users
+        if isinstance(user, dict) and user.get("user_id") is not None
+    }
+    roster_positions = [str(position) for position in (league.get("roster_positions") or [])]
+    starter_slots = [position for position in roster_positions if position != "BN"]
+
+    resolved_rosters: list[dict[str, Any]] = []
+    for roster in rosters:
+        players = [str(pid) for pid in (roster.get("players") or [])]
+        starters = [str(pid) for pid in (roster.get("starters") or [])]
+        reserve = [str(pid) for pid in (roster.get("reserve") or [])]
+        taxi = [str(pid) for pid in (roster.get("taxi") or [])]
+        occupied = set(starters) | set(reserve) | set(taxi)
+        bench = [pid for pid in players if pid not in occupied]
+
+        starter_entries = []
+        for index, player_id in enumerate(starters):
+            slot = starter_slots[index] if index < len(starter_slots) else None
+            starter_entries.append(_resolve_player(player_id, player_map, slot))
+
+        co_owner_ids = [str(uid) for uid in (roster.get("co_owners") or [])]
+        resolved_rosters.append(
+            {
+                "roster_id": roster.get("roster_id"),
+                "owner": _owner_summary(roster.get("owner_id"), users_by_id),
+                "co_owners": [
+                    owner
+                    for owner in (_owner_summary(uid, users_by_id) for uid in co_owner_ids)
+                    if owner is not None
+                ],
+                "settings": roster.get("settings") or {},
+                "starters": starter_entries,
+                "bench": [_resolve_player(pid, player_map) for pid in bench],
+                "reserve": [_resolve_player(pid, player_map) for pid in reserve],
+                "taxi": [_resolve_player(pid, player_map) for pid in taxi],
+                "all_players": [_resolve_player(pid, player_map) for pid in players],
+            }
+        )
+
+    return {
+        "league_id": str(league.get("league_id") or ""),
+        "league_name": league.get("name"),
+        "season": league.get("season"),
+        "roster_positions": roster_positions,
+        "starter_slots": starter_slots,
+        "rosters": resolved_rosters,
+    }
+
+
+def _collect_player_ids_from_transactions(transactions: Iterable[dict[str, Any]]) -> set[str]:
+    player_ids: set[str] = set()
+    for transaction in transactions:
+        for field in ("adds", "drops"):
+            mapping = transaction.get(field)
+            if isinstance(mapping, dict):
+                player_ids.update(str(player_id) for player_id in mapping)
+    return player_ids
+
+
+def referenced_player_ids(
+    rosters: list[dict[str, Any]],
+    draft_picks: list[dict[str, Any]],
+    transactions: list[dict[str, Any]],
+) -> set[str]:
+    ids: set[str] = set()
+    for roster in rosters:
+        for field in ("players", "starters", "reserve", "taxi"):
+            ids.update(str(player_id) for player_id in (roster.get(field) or []))
+    for pick in draft_picks:
+        if pick.get("player_id") is not None:
+            ids.add(str(pick["player_id"]))
+    ids.update(_collect_player_ids_from_transactions(transactions))
+    ids.discard("0")
+    return ids
+
+
+def collect_snapshot(
+    league_id: str,
+    fetcher: Fetcher = fetch_json,
+    *,
+    player_map: dict[str, Any] | None = None,
+    refresh_players: bool = False,
+) -> dict[str, JsonValue]:
     league_url = f"{API_BASE}/league/{league_id}"
     snapshot: dict[str, JsonValue] = {}
 
     # Collect everything before writing anything. A failed call therefore cannot
     # publish a knowingly partial snapshot into the repository.
-    snapshot["data/league.json"] = fetcher(league_url)
-    snapshot["data/users.json"] = fetcher(f"{league_url}/users")
-    snapshot["data/rosters.json"] = fetcher(f"{league_url}/rosters")
+    league = fetcher(league_url)
+    users = fetcher(f"{league_url}/users")
+    rosters = fetcher(f"{league_url}/rosters")
+    snapshot["data/league.json"] = league
+    snapshot["data/users.json"] = users
+    snapshot["data/rosters.json"] = rosters
     snapshot["data/traded_picks.json"] = fetcher(f"{league_url}/traded_picks")
     snapshot["data/nfl_state.json"] = fetcher(f"{API_BASE}/state/nfl")
 
     drafts = fetcher(f"{league_url}/drafts")
     snapshot["data/drafts/index.json"] = drafts
+    all_draft_picks: list[dict[str, Any]] = []
     for draft in drafts:
         draft_id = str(draft["draft_id"])
-        snapshot[f"data/drafts/{draft_id}_picks.json"] = fetcher(
-            f"{API_BASE}/draft/{draft_id}/picks"
-        )
+        picks = fetcher(f"{API_BASE}/draft/{draft_id}/picks")
+        snapshot[f"data/drafts/{draft_id}_picks.json"] = picks
+        all_draft_picks.extend(picks)
 
     transactions_by_id: dict[str, JsonValue] = {}
     for week in TRANSACTION_WEEKS:
@@ -73,11 +235,31 @@ def collect_snapshot(league_id: str, fetcher: Fetcher = fetch_json) -> dict[str,
             if transaction_id:
                 transactions_by_id[transaction_id] = transaction
 
-    snapshot["data/transactions/all.json"] = sorted(
+    all_transactions = sorted(
         transactions_by_id.values(),
         key=lambda item: (int(item.get("created") or 0), str(item.get("transaction_id") or "")),
         reverse=True,
     )
+    snapshot["data/transactions/all.json"] = all_transactions
+
+    active_player_map = player_map
+    if refresh_players:
+        full_player_map = fetcher(f"{API_BASE}/players/nfl")
+        if not isinstance(full_player_map, dict):
+            raise SyncError("Sleeper player database must be a JSON object")
+        referenced = referenced_player_ids(rosters, all_draft_picks, all_transactions)
+        active_player_map = {
+            player_id: full_player_map[player_id]
+            for player_id in sorted(referenced)
+            if player_id in full_player_map
+        }
+        snapshot["data/players.json"] = active_player_map
+
+    if active_player_map is not None:
+        snapshot["data/rosters_resolved.json"] = resolve_rosters(
+            league, rosters, users, active_player_map
+        )
+
     return snapshot
 
 
@@ -127,21 +309,36 @@ def main(argv: list[str] | None = None) -> int:
         help="Repository root (defaults to the project containing this script).",
     )
     parser.add_argument("--league-id", help="Override the league_id in config.json.")
+    parser.add_argument(
+        "--refresh-players",
+        action="store_true",
+        help="Refresh Sleeper's NFL player database and commit only league-referenced players.",
+    )
     args = parser.parse_args(argv)
 
     root = args.root.resolve()
     config = load_config(root / "config.json")
     league_id = str(args.league_id or config["league_id"])
+    players_path = root / "data" / "players.json"
 
     try:
-        snapshot = collect_snapshot(league_id)
+        cached_players = load_player_map(players_path)
+        refresh_players = args.refresh_players or cached_players is None
+        snapshot = collect_snapshot(
+            league_id,
+            player_map=cached_players,
+            refresh_players=refresh_players,
+        )
         changed = write_snapshot(root, snapshot)
     except (SyncError, KeyError, TypeError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     status = "updated" if changed else "unchanged"
-    print(f"Sleeper league {league_id}: {status} ({len(snapshot)} files tracked)")
+    player_status = "refreshed" if refresh_players else "cached"
+    print(
+        f"Sleeper league {league_id}: {status} ({len(snapshot)} files tracked; players {player_status})"
+    )
     return 0
 
 

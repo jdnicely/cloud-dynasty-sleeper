@@ -3,8 +3,10 @@ name: Sync Sleeper League
 on:
   workflow_dispatch:
   schedule:
-    # Every 6 hours. GitHub schedules use UTC.
-    - cron: "17 */6 * * *"
+    # Full daily refresh at 00:17 UTC, including Sleeper's player-ID map.
+    - cron: "17 0 * * *"
+    # League-only refreshes every 6 hours after that, using the cached player map.
+    - cron: "17 6,12,18 * * *"
 
 permissions:
   contents: write
@@ -33,7 +35,15 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Sync Cloud Dynasty from Sleeper
-        run: python sync/sync_sleeper.py
+        shell: bash
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" || "$SCHEDULE" == "17 0 * * *" ]]; then
+            python sync/sync_sleeper.py --refresh-players
+          else
+            python sync/sync_sleeper.py
+          fi
 
       - name: Commit changed league data
         shell: bash

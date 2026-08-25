@@ -84,3 +84,14 @@ The workflow itself already requests `contents: write`; this setting is only a f
 If the repository is **Public**, send ChatGPT the repository URL once it is set up. The current JSON and Git history can then be inspected from GitHub without you uploading a local copy each time.
 
 If the repository is **Private**, the sync still works exactly the same, but ChatGPT will need an authorized GitHub connection in the product or you will need to provide the relevant files when you want analysis.
+
+## v2 roster-name update
+
+After installing this update, run **Actions → Sync Sleeper League → Run workflow** once. A manual run performs the full player refresh and should create:
+
+- `data/players.json`
+- `data/rosters_resolved.json`
+
+Open `data/rosters_resolved.json` to verify that Sleeper player IDs now appear with player names and that each roster is separated into starters, bench, reserve, and taxi.
+
+The workflow performs one full player-map refresh daily at 00:17 UTC. The 06:17, 12:17, and 18:17 UTC runs reuse the compact cached player map and refresh the rest of the league data.

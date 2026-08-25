@@ -119,6 +119,131 @@ class SyncSleeperTests(unittest.TestCase):
         self.assertTrue(config_path.exists(), "config.json must exist")
         self.assertEqual(module.load_config(config_path)["league_id"], "1389332241724764160")
 
+    def test_resolve_rosters_adds_owner_names_slots_and_sections(self):
+        module = load_sync_module(self)
+        self.assertTrue(hasattr(module, "resolve_rosters"), "resolve_rosters must exist")
+
+        league = {
+            "league_id": "1389332241724764160",
+            "roster_positions": ["QB", "RB", "WR", "SUPER_FLEX", "DEF", "BN", "BN"],
+        }
+        users = [
+            {
+                "user_id": "u1",
+                "username": "ownerone",
+                "display_name": "Owner One",
+                "metadata": {"team_name": "The Testers"},
+            }
+        ]
+        rosters = [
+            {
+                "roster_id": 1,
+                "owner_id": "u1",
+                "players": ["p1", "p2", "p3", "p4", "TB"],
+                "starters": ["p1", "p2", "p3", "TB", "0"],
+                "reserve": ["p4"],
+                "taxi": ["p3"],
+                "settings": {"wins": 0},
+            }
+        ]
+        players = {
+            "p1": {"player_id": "p1", "first_name": "Quarter", "last_name": "Back", "position": "QB", "team": "BUF"},
+            "p2": {"player_id": "p2", "full_name": "Runner One", "position": "RB", "team": "DET"},
+            "p3": {"player_id": "p3", "first_name": "Wide", "last_name": "Receiver", "position": "WR", "team": "PHI"},
+            "p4": {"player_id": "p4", "full_name": "Injured Guy", "position": "TE", "team": "KC"},
+        }
+
+        resolved = module.resolve_rosters(league, rosters, users, players)
+
+        self.assertEqual(resolved["starter_slots"], ["QB", "RB", "WR", "SUPER_FLEX", "DEF"])
+        roster = resolved["rosters"][0]
+        self.assertEqual(roster["owner"]["display_name"], "Owner One")
+        self.assertEqual(roster["owner"]["team_name"], "The Testers")
+        self.assertEqual(roster["starters"][0]["name"], "Quarter Back")
+        self.assertEqual(roster["starters"][0]["starter_slot"], "QB")
+        self.assertEqual(roster["starters"][3]["name"], "TB D/ST")
+        self.assertEqual(roster["starters"][3]["starter_slot"], "SUPER_FLEX")
+        self.assertEqual(roster["starters"][4]["name"], "EMPTY")
+        self.assertEqual([p["player_id"] for p in roster["taxi"]], ["p3"])
+        self.assertEqual([p["player_id"] for p in roster["reserve"]], ["p4"])
+        self.assertEqual([p["player_id"] for p in roster["bench"]], [])
+
+    def test_collect_snapshot_refreshes_only_referenced_players_and_writes_resolved_rosters(self):
+        module = load_sync_module(self)
+        league_id = "1389332241724764160"
+
+        def fake_fetch(url):
+            if url.endswith(f"/league/{league_id}"):
+                return {
+                    "league_id": league_id,
+                    "name": "Cloud Dynasty",
+                    "roster_positions": ["QB", "SUPER_FLEX", "BN"],
+                }
+            if url.endswith(f"/league/{league_id}/users"):
+                return [{"user_id": "u1", "display_name": "Owner One", "metadata": {}}]
+            if url.endswith(f"/league/{league_id}/rosters"):
+                return [{"roster_id": 1, "owner_id": "u1", "players": ["p1", "p2"], "starters": ["p1", "p2"], "reserve": None, "taxi": None}]
+            if url.endswith(f"/league/{league_id}/traded_picks"):
+                return []
+            if url.endswith(f"/league/{league_id}/drafts"):
+                return [{"draft_id": "d1"}]
+            if url.endswith("/draft/d1/picks"):
+                return [{"draft_id": "d1", "player_id": "p3"}]
+            if url.endswith("/state/nfl"):
+                return {"season": "2026"}
+            if url.endswith("/players/nfl"):
+                return {
+                    "p1": {"player_id": "p1", "full_name": "Player One", "position": "QB"},
+                    "p2": {"player_id": "p2", "full_name": "Player Two", "position": "RB"},
+                    "p3": {"player_id": "p3", "full_name": "Player Three", "position": "WR"},
+                    "unused": {"player_id": "unused", "full_name": "Unused Player", "position": "TE"},
+                }
+            if "/transactions/" in url:
+                week = int(url.rsplit("/", 1)[1])
+                if week == 1:
+                    return [{"transaction_id": "t1", "created": 1, "adds": {"p4": 1}, "drops": None}]
+                return []
+            raise AssertionError(f"unexpected URL: {url}")
+
+        snapshot = module.collect_snapshot(league_id, fake_fetch, refresh_players=True)
+
+        self.assertEqual(set(snapshot["data/players.json"]), {"p1", "p2", "p3"})
+        self.assertNotIn("unused", snapshot["data/players.json"])
+        self.assertIn("data/rosters_resolved.json", snapshot)
+        self.assertEqual(snapshot["data/rosters_resolved.json"]["rosters"][0]["starters"][0]["name"], "Player One")
+
+    def test_collect_snapshot_uses_cached_player_map_without_fetching_full_player_database(self):
+        module = load_sync_module(self)
+        league_id = "1389332241724764160"
+        calls = []
+
+        def fake_fetch(url):
+            calls.append(url)
+            if url.endswith(f"/league/{league_id}"):
+                return {"league_id": league_id, "roster_positions": ["QB", "BN"]}
+            if url.endswith(f"/league/{league_id}/users"):
+                return []
+            if url.endswith(f"/league/{league_id}/rosters"):
+                return [{"roster_id": 1, "owner_id": None, "players": ["p1"], "starters": ["p1"], "reserve": None, "taxi": None}]
+            if url.endswith(f"/league/{league_id}/traded_picks"):
+                return []
+            if url.endswith(f"/league/{league_id}/drafts"):
+                return []
+            if url.endswith("/state/nfl"):
+                return {"season": "2026"}
+            if "/transactions/" in url:
+                return []
+            if url.endswith("/players/nfl"):
+                raise AssertionError("full player database should not be fetched on normal 6-hour sync")
+            raise AssertionError(f"unexpected URL: {url}")
+
+        cached = {"p1": {"player_id": "p1", "full_name": "Cached Player", "position": "QB"}}
+        snapshot = module.collect_snapshot(league_id, fake_fetch, player_map=cached, refresh_players=False)
+
+        self.assertNotIn("data/players.json", snapshot)
+        self.assertEqual(snapshot["data/rosters_resolved.json"]["rosters"][0]["starters"][0]["name"], "Cached Player")
+        self.assertFalse(any(url.endswith("/players/nfl") for url in calls))
+
 
 if __name__ == "__main__":
     unittest.main()

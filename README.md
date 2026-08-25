@@ -77,3 +77,14 @@ No GitHub Secret is necessary.
 ## Scope note
 
 Version 1 synchronizes this current league ID from the point you turn the workflow on. It does not recursively backfill older Sleeper league IDs from prior seasons, and it does not download Sleeper's full NFL player database on every six-hour run.
+
+## Human-readable roster data
+
+The sync keeps Sleeper's raw API responses and also produces analysis-friendly files:
+
+- `data/players.json` — a compact Sleeper player dictionary containing only player IDs referenced by this league. It is refreshed once per day.
+- `data/rosters_resolved.json` — owner/team names plus resolved player names, NFL positions/teams, starter slot labels, bench, reserve, taxi, and the raw Sleeper player IDs.
+
+The full `/players/nfl` response is fetched only during the daily/manual refresh and is **not** committed wholesale. This follows Sleeper's guidance to call the large player endpoint no more than once per day while keeping Git history lean.
+
+Manual workflow runs perform a full player refresh. Scheduled league data still refreshes four times per day.
