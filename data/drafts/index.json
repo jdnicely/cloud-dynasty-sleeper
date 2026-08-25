@@ -1,0 +1,62 @@
+[
+  {
+    "created": 1785605128273,
+    "creators": [
+      "327235334960058368"
+    ],
+    "draft_id": "1389332241724764161",
+    "draft_order": {
+      "1133969503769137152": 9,
+      "327235334960058368": 3,
+      "457546229639802880": 4,
+      "459065050393473024": 7,
+      "459168566978015232": 10,
+      "460287634950844416": 1,
+      "460587479183912960": 5,
+      "464245649550864384": 2,
+      "605268623866560512": 6,
+      "76821402560643072": 8,
+      "870443226304335872": 11
+    },
+    "last_message_id": "1389332241724764161",
+    "last_message_time": 1785605128273,
+    "last_picked": null,
+    "league_id": "1389332241724764160",
+    "metadata": {
+      "description": "",
+      "name": "Cloud Dynasty League",
+      "scoring_type": "dynasty_2qb",
+      "show_team_names": "0"
+    },
+    "season": "2026",
+    "season_type": "regular",
+    "settings": {
+      "alpha_sort": 0,
+      "autopause_enabled": 0,
+      "autopause_end_time": 840,
+      "autopause_start_time": 120,
+      "autostart": 0,
+      "cpu_autopick": 1,
+      "enforce_position_limits": 1,
+      "nomination_timer": 60,
+      "pick_timer": 60,
+      "player_type": 0,
+      "reversal_round": 0,
+      "rounds": 5,
+      "slots_bn": 5,
+      "slots_def": 1,
+      "slots_flex": 1,
+      "slots_k": 1,
+      "slots_qb": 1,
+      "slots_rb": 2,
+      "slots_super_flex": 1,
+      "slots_te": 1,
+      "slots_wr": 2,
+      "teams": 12
+    },
+    "sport": "nfl",
+    "start_time": 1788827400000,
+    "status": "pre_draft",
+    "type": "linear"
+  }
+]
