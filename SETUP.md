@@ -95,3 +95,46 @@ After installing this update, run **Actions → Sync Sleeper League → Run work
 Open `data/rosters_resolved.json` to verify that Sleeper player IDs now appear with player names and that each roster is separated into starters, bench, reserve, and taxi.
 
 The workflow performs one full player-map refresh daily at 00:17 UTC. The 06:17, 12:17, and 18:17 UTC runs reuse the compact cached player map and refresh the rest of the league data.
+
+## v3 Draft Mode update
+
+This update adds only static Draft Mode files, tests, and documentation. It does not delete or replace your existing `data/` history and does not change the six-hour Sleeper sync.
+
+### Install the overlay ZIP into the existing Codespace
+
+1. Open the existing `cloud-dynasty-sleeper` Codespace.
+2. In the terminal, first catch up with any commits made by the automatic Sleeper workflow:
+
+```bash
+git pull --rebase origin main
+```
+
+3. Drag `cloud-dynasty-sleeper-draft-mode-update.zip` into the repository root.
+4. Run:
+
+```bash
+unzip -o cloud-dynasty-sleeper-draft-mode-update.zip
+rm cloud-dynasty-sleeper-draft-mode-update.zip
+git add .
+git commit -m "Add Cloud Dynasty live Draft Mode"
+git pull --rebase origin main
+git push
+```
+
+The second `git pull --rebase` is intentional. The automatic Sleeper workflow may have committed fresh `data/` files while your Codespace was open; rebasing before the push prevents a non-fast-forward rejection without overwriting those data commits.
+
+If Git reports a **CONFLICT** during either rebase, stop and resolve the conflict before pushing. Do not force-push.
+
+### Enable GitHub Pages
+
+1. Open the repository's **Settings** tab.
+2. Under **Code and automation**, click **Pages**.
+3. Under **Build and deployment → Source**, select **Deploy from a branch**.
+4. Select branch **main** and folder **/(root)**.
+5. Click **Save**.
+
+Once the deployment is green, Draft Mode is available at:
+
+**https://jdnicely.github.io/cloud-dynasty-sleeper/draft/**
+
+Then follow `DRAFT-DAY.md`, starting with the built-in Mock rehearsal.

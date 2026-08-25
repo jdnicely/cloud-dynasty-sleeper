@@ -88,3 +88,24 @@ The sync keeps Sleeper's raw API responses and also produces analysis-friendly f
 The full `/players/nfl` response is fetched only during the daily/manual refresh and is **not** committed wholesale. This follows Sleeper's guidance to call the large player endpoint no more than once per day while keeping Git history lean.
 
 Manual workflow runs perform a full player refresh. Scheduled league data still refreshes four times per day.
+
+## Draft Mode
+
+The repository also includes a browser-based live Draft Mode under `draft/`.
+
+After GitHub Pages is enabled from **main / (root)**, open:
+
+**https://jdnicely.github.io/cloud-dynasty-sleeper/draft/**
+
+Draft Mode talks directly to Sleeper from the browser every five seconds and does **not** wait for the six-hour archival workflow. It includes:
+
+- automatic active-draft detection plus manual draft selection;
+- live picks and current-pick highlighting;
+- traded-pick ownership;
+- a persistent **My roster** selection and upcoming owned picks;
+- recent picks and full draft board;
+- **Copy ChatGPT Snapshot** for instant draft-state handoff;
+- a built-in Mock rehearsal mode;
+- `?league=<league_id>` support for testing against a temporary Sleeper test league.
+
+See `DRAFT-DAY.md` for the full rehearsal and actual-event workflow.

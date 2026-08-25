@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Cloud Dynasty Draft Mode</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Cloud Dynasty</p>
+      <h1>Draft Mode</h1>
+      <p class="subhead">Live Sleeper board with a 5-second refresh. GitHub Actions stays out of the critical path.</p>
+    </div>
+    <div class="mode-switch" aria-label="Draft mode">
+      <button id="mode-live" class="mode-button active" type="button" aria-pressed="true">Live Sleeper</button>
+      <button id="mode-mock" class="mode-button" type="button" aria-pressed="false">Mock rehearsal</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel controls" aria-label="Draft controls">
+      <label>
+        Draft
+        <select id="draft-select">
+          <option value="auto">Auto-detect active draft</option>
+        </select>
+      </label>
+      <label>
+        My roster
+        <select id="roster-select">
+          <option value="">Choose my roster</option>
+        </select>
+      </label>
+      <div class="button-row">
+        <button id="manual-refresh" type="button">Refresh now</button>
+        <button id="copy-snapshot" type="button">Copy ChatGPT Snapshot</button>
+      </div>
+      <div id="mock-controls" class="button-row mock-only" hidden>
+        <button id="advance-one" type="button">Advance pick</button>
+        <button id="advance-five" type="button">Advance 5</button>
+        <button id="reset-mock" type="button">Reset mock</button>
+      </div>
+    </section>
+
+    <div id="status-banner" class="status-banner" role="status">Loading Cloud Dynasty…</div>
+
+    <section class="metrics" aria-label="Draft status">
+      <article class="metric-card">
+        <span>Draft</span>
+        <strong id="draft-name">—</strong>
+        <small id="draft-status">—</small>
+      </article>
+      <article class="metric-card emphasis">
+        <span>On the clock</span>
+        <strong id="current-pick">—</strong>
+        <small id="current-owner">—</small>
+      </article>
+      <article class="metric-card">
+        <span>Last refresh</span>
+        <strong id="last-refresh">—</strong>
+        <small id="refresh-note">Live mode polls every 5 seconds</small>
+      </article>
+    </section>
+
+    <section class="side-grid">
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your capital</p>
+            <h2>Upcoming picks</h2>
+          </div>
+        </div>
+        <div id="upcoming-picks" class="pick-list empty-state">Choose your roster above.</div>
+      </article>
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Board movement</p>
+            <h2>Recent picks</h2>
+          </div>
+        </div>
+        <div id="recent-picks" class="pick-list empty-state">No picks yet.</div>
+      </article>
+    </section>
+
+    <section class="panel board-panel">
+      <div class="section-heading board-heading">
+        <div>
+          <p class="eyebrow">Live board</p>
+          <h2>Draft board</h2>
+        </div>
+        <p class="board-note">Columns are original draft slots. Traded picks show the current owner.</p>
+      </div>
+      <div id="draft-board" class="board-wrap" aria-live="polite"></div>
+    </section>
+
+    <section class="panel help-panel">
+      <h2>Draft-night fallback</h2>
+      <p>If ChatGPT cannot reach this page live, click <strong>Copy ChatGPT Snapshot</strong> and paste it into the chat with “I’m on the clock.” It includes the current board, your selected roster, and your remaining picks.</p>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
