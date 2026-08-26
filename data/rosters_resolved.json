@@ -4497,18 +4497,6 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Joe Mixon",
-          "player_id": "4018",
-          "position": "RB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
           "injury_status": null,
           "name": "Saquon Barkley",
           "player_id": "4866",
@@ -4627,18 +4615,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kendre Miller",
-          "player_id": "9757",
-          "position": "RB",
-          "status": "Active",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -4730,32 +4706,7 @@
         "user_id": "870443226304335872",
         "username": null
       },
-      "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Joe Mixon",
-          "player_id": "4018",
-          "position": "RB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kendre Miller",
-          "player_id": "9757",
-          "position": "RB",
-          "status": "Active",
-          "team": "NO"
-        }
-      ],
+      "reserve": [],
       "roster_id": 10,
       "settings": {
         "division": 1,
@@ -5526,18 +5477,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Tyler Bass",
-          "player_id": "7042",
-          "position": "K",
-          "status": "Active",
-          "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5570,18 +5509,6 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Isiah Pacheco",
-          "player_id": "8205",
-          "position": "RB",
-          "status": "Active",
-          "team": "DET"
         },
         {
           "active": true,
@@ -5624,30 +5551,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Jayden Daniels",
-          "player_id": "11566",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Devin Neal",
-          "player_id": "12476",
-          "position": "RB",
-          "status": "Active",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5660,14 +5563,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Isiah Pacheco",
-          "player_id": "8205",
-          "position": "RB",
+          "injury_status": null,
+          "name": "DJ Moore",
+          "player_id": "4983",
+          "position": "WR",
           "status": "Active",
-          "team": "DET"
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Brenton Strange",
+          "player_id": "9480",
+          "position": "TE",
+          "status": "Active",
+          "team": "JAX"
         }
       ],
       "co_owners": [],
@@ -5678,18 +5593,6 @@
         "username": null
       },
       "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Tyler Bass",
-          "player_id": "7042",
-          "position": "K",
-          "status": "Active",
-          "team": "BUF"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -5721,12 +5624,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Trevor Lawrence",
-          "player_id": "7523",
+          "name": "Jayden Daniels",
+          "player_id": "11566",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "JAX"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -5759,13 +5662,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "injury_status": "Questionable",
+          "name": "Luther Burden",
+          "player_id": "12519",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -5785,13 +5688,13 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
-          "name": "Brenton Strange",
-          "player_id": "9480",
+          "injury_status": "Questionable",
+          "name": "Sam LaPorta",
+          "player_id": "10859",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "JAX"
+          "team": "DET"
         },
         {
           "active": true,
@@ -5807,15 +5710,17 @@
           "team": "WAS"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Trevor Lawrence",
+          "player_id": "7523",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "JAX"
         },
         {
           "active": true,
@@ -5851,18 +5756,6 @@
             "TE"
           ],
           "injury_status": "Questionable",
-          "name": "Sam LaPorta",
-          "player_id": "10859",
-          "position": "TE",
-          "status": "Active",
-          "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": "Questionable",
           "name": "Theo Johnson",
           "player_id": "11597",
           "position": "TE",
@@ -5872,14 +5765,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": "Questionable",
-          "name": "Luther Burden",
-          "player_id": "12519",
-          "position": "WR",
+          "name": "Devin Neal",
+          "player_id": "12476",
+          "position": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "NO"
         }
       ]
     }
