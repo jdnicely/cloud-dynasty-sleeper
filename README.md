@@ -109,3 +109,14 @@ Draft Mode talks directly to Sleeper from the browser every five seconds and doe
 - `?league=<league_id>` support for testing against a temporary Sleeper test league.
 
 See `DRAFT-DAY.md` for the full rehearsal and actual-event workflow.
+
+## Direct draft override
+
+For Sleeper mock drafts that do not appear in the league draft list, open Draft Mode with the draft ID in the URL:
+
+```text
+https://jdnicely.github.io/cloud-dynasty-sleeper/draft/?draft=1398157268502986752
+```
+
+When `?draft=` is present, Draft Mode ignores league auto-detection and polls that exact Sleeper draft every 5 seconds. The page labels the source `DIRECT DRAFT` and displays the draft ID so it is obvious which board is being watched. Remove the `?draft=` query to return to normal Cloud Dynasty auto-detection.
+

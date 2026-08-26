@@ -1,5 +1,6 @@
 import {
   buildChatSnapshot,
+  chooseDraftId,
   buildUpcomingPicks,
   formatPickLabel,
   nextOverallPick,
@@ -13,6 +14,7 @@ import { advanceMock, createMockState, resetMock } from './mock.mjs';
 
 const searchParams = new URLSearchParams(window.location.search);
 const LEAGUE_ID = searchParams.get('league') || '1389332241724764160';
+const DIRECT_DRAFT_ID = (searchParams.get('draft') || '').trim() || null;
 const API_BASE = 'https://api.sleeper.app/v1';
 const POLL_INTERVAL_MS = 5000;
 const LIVE_ROSTER_STORAGE_KEY = 'cloud-dynasty-my-roster-id';
@@ -57,7 +59,7 @@ let liveState = {
 let mockState = createMockState();
 let pollHandle = null;
 let refreshInFlight = false;
-let manualDraftId = 'auto';
+let manualDraftId = DIRECT_DRAFT_ID || 'auto';
 
 async function fetchJson(path) {
   const response = await fetch(`${API_BASE}${path}`, { cache: 'no-store' });
@@ -87,6 +89,16 @@ function draftDisplayName(draft) {
 }
 
 function populateDraftSelector(drafts, selectedDraft) {
+  if (DIRECT_DRAFT_ID) {
+    elements.draftSelect.innerHTML = '';
+    const option = document.createElement('option');
+    option.value = DIRECT_DRAFT_ID;
+    option.textContent = `DIRECT DRAFT • ${draftDisplayName(selectedDraft)} • ${DIRECT_DRAFT_ID}`;
+    elements.draftSelect.append(option);
+    elements.draftSelect.value = DIRECT_DRAFT_ID;
+    elements.draftSelect.title = `Direct draft override: ${DIRECT_DRAFT_ID}`;
+    return;
+  }
   const previous = manualDraftId;
   elements.draftSelect.innerHTML = '<option value="auto">Auto-detect active draft</option>';
   for (const draft of drafts ?? []) {
@@ -160,7 +172,7 @@ function renderMetrics(state) {
     elements.currentOwner.textContent = future?.ownerRosterId ? ownerName(future.ownerRosterId, state) : 'Owner unavailable';
   }
   elements.lastRefresh.textContent = state.refreshedAt ? new Date(state.refreshedAt).toLocaleTimeString() : '—';
-  elements.refreshNote.textContent = mode === 'mock' ? 'Simulation mode — no Sleeper calls' : 'Live mode polls every 5 seconds';
+  elements.refreshNote.textContent = mode === 'mock' ? 'Simulation mode — no Sleeper calls' : DIRECT_DRAFT_ID ? `DIRECT DRAFT ${DIRECT_DRAFT_ID} • polls every 5 seconds` : 'Live mode polls every 5 seconds';
 }
 
 function renderUpcoming(state) {
@@ -269,10 +281,10 @@ function render() {
   renderBoard(state);
 }
 
-async function loadLiveContext() {
+async function loadLiveContext(leagueId = LEAGUE_ID) {
   const [users, rosters] = await Promise.all([
-    fetchJson(`/league/${LEAGUE_ID}/users`),
-    fetchJson(`/league/${LEAGUE_ID}/rosters`),
+    fetchJson(`/league/${leagueId}/users`),
+    fetchJson(`/league/${leagueId}/rosters`),
   ]);
   liveState.users = users;
   liveState.rosters = rosters;
@@ -283,12 +295,30 @@ async function refreshLive({ forceContext = false } = {}) {
   if (refreshInFlight || mode !== 'live') return;
   refreshInFlight = true;
   try {
+    if (DIRECT_DRAFT_ID) {
+      const draft = await fetchJson(`/draft/${DIRECT_DRAFT_ID}`);
+      const contextLeagueId = draft?.league_id || LEAGUE_ID;
+      if (forceContext || !liveState.users.length || !liveState.rosters.length) await loadLiveContext(contextLeagueId);
+      const [picks, tradedPicks] = await Promise.all([
+        fetchJson(`/draft/${DIRECT_DRAFT_ID}/picks`),
+        fetchJson(`/draft/${DIRECT_DRAFT_ID}/traded_picks`),
+      ]);
+      liveState.drafts = [draft];
+      liveState.draft = draft;
+      liveState.picks = picks;
+      liveState.tradedPicks = tradedPicks;
+      liveState.refreshedAt = new Date().toISOString();
+      populateDraftSelector([draft], draft);
+      render();
+      setStatus(`DIRECT DRAFT • ${draftDisplayName(draft)} • ${DIRECT_DRAFT_ID} • ${picks.length} picks received from Sleeper`, 'ok');
+      return;
+    }
+
     if (forceContext || !liveState.users.length || !liveState.rosters.length) await loadLiveContext();
     const drafts = await fetchJson(`/league/${LEAGUE_ID}/drafts`);
     liveState.drafts = drafts;
-    let selected = manualDraftId === 'auto'
-      ? selectPreferredDraft(drafts)
-      : drafts.find((draft) => String(draft.draft_id) === String(manualDraftId));
+    const selectedDraftId = chooseDraftId({ directDraftId: null, manualDraftId, drafts });
+    const selected = drafts.find((draft) => String(draft.draft_id) === String(selectedDraftId));
     populateDraftSelector(drafts, selected);
     if (!selected) {
       liveState.draft = null;
@@ -337,7 +367,7 @@ function setMode(nextMode) {
   elements.modeLive.setAttribute('aria-pressed', String(!isMock));
   elements.modeMock.setAttribute('aria-pressed', String(isMock));
   elements.mockControls.hidden = !isMock;
-  elements.draftSelect.disabled = isMock;
+  elements.draftSelect.disabled = isMock || Boolean(DIRECT_DRAFT_ID);
   elements.manualRefresh.textContent = isMock ? 'Refresh view' : 'Refresh now';
   if (isMock) {
     const remembered = localStorage.getItem(rosterStorageKey());
@@ -377,6 +407,7 @@ async function copySnapshot() {
 elements.modeLive.addEventListener('click', () => setMode('live'));
 elements.modeMock.addEventListener('click', () => setMode('mock'));
 elements.draftSelect.addEventListener('change', () => {
+  if (DIRECT_DRAFT_ID) return;
   manualDraftId = elements.draftSelect.value || 'auto';
   refreshLive();
 });

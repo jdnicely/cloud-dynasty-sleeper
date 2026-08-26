@@ -88,6 +88,16 @@ export function nextOverallPick(picks = []) {
   return numbers.length ? Math.max(...numbers) + 1 : 1;
 }
 
+
+export function chooseDraftId({ directDraftId = null, manualDraftId = 'auto', drafts = [] } = {}) {
+  const direct = String(directDraftId ?? '').trim();
+  if (direct) return direct;
+  const manual = String(manualDraftId ?? 'auto');
+  if (manual !== 'auto' && (drafts ?? []).some((draft) => String(draft?.draft_id) === manual)) return manual;
+  const preferred = selectPreferredDraft(drafts ?? []);
+  return preferred?.draft_id != null ? String(preferred.draft_id) : null;
+}
+
 export function buildChatSnapshot(state) {
   const draft = state?.draft ?? {};
   const picks = [...(state?.picks ?? [])].sort((a, b) => Number(a?.pick_no ?? 0) - Number(b?.pick_no ?? 0));

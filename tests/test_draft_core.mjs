@@ -11,6 +11,7 @@ import {
   buildUpcomingPicks,
   buildChatSnapshot,
   rosterLabel,
+  nextOverallPick,
 } from '../draft/core.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -211,4 +212,31 @@ test('Live and mock modes use separate persisted roster selections', () => {
   const app = fs.readFileSync(path.join(repoRoot, 'draft', 'app.js'), 'utf8');
   assert.match(app, /LIVE_ROSTER_STORAGE_KEY/);
   assert.match(app, /MOCK_ROSTER_STORAGE_KEY/);
+});
+
+test('direct draft ID takes priority even when it is absent from league draft discovery', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.chooseDraftId, 'function');
+  const drafts = [baseDraft({ draft_id: 'real-league-draft', status: 'pre_draft' })];
+  assert.equal(core.chooseDraftId({
+    directDraftId: '1398157268502986752',
+    manualDraftId: 'auto',
+    drafts,
+  }), '1398157268502986752');
+});
+
+test('Love and Tate at 1.01 and 1.02 advance the live board to 1.03', () => {
+  const picks = [
+    { pick_no: 1, round: 1, draft_slot: 1, metadata: { first_name: 'J.', last_name: 'Love', position: 'RB', team: 'ARI' } },
+    { pick_no: 2, round: 1, draft_slot: 2, metadata: { first_name: 'C.', last_name: 'Tate', position: 'WR', team: 'TEN' } },
+  ];
+  assert.equal(nextOverallPick(picks), 3);
+});
+
+test('Draft Mode parses the draft query override and hides mock controls in live mode', () => {
+  const app = fs.readFileSync(path.join(repoRoot, 'draft', 'app.js'), 'utf8');
+  const css = fs.readFileSync(path.join(repoRoot, 'draft', 'styles.css'), 'utf8');
+  assert.match(app, /searchParams\.get\(['"]draft['"]\)/);
+  assert.match(app, /DIRECT_DRAFT_ID/);
+  assert.match(css, /#mock-controls\[hidden\][^{]*\{[^}]*display\s*:\s*none/i);
 });

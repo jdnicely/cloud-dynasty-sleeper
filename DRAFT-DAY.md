@@ -125,3 +125,14 @@ Run this at least a few days before the actual event:
 - [ ] Auto-detect returns to the active draft after selecting Auto.
 - [ ] Refresh now works.
 - [ ] Phone/tablet layout is readable if you plan to use one on draft day.
+
+## Direct draft override
+
+For Sleeper mock drafts that do not appear in the league draft list, open Draft Mode with the draft ID in the URL:
+
+```text
+https://jdnicely.github.io/cloud-dynasty-sleeper/draft/?draft=1398157268502986752
+```
+
+When `?draft=` is present, Draft Mode ignores league auto-detection and polls that exact Sleeper draft every 5 seconds. The page labels the source `DIRECT DRAFT` and displays the draft ID so it is obvious which board is being watched. Remove the `?draft=` query to return to normal Cloud Dynasty auto-detection.
+
