@@ -1,11 +1,13 @@
 import {
   buildChatSnapshot,
+  buildEffectiveSlotToRosterId,
   chooseDraftId,
   buildUpcomingPicks,
   formatPickLabel,
   nextOverallPick,
   overallPickNumber,
   playerLabel,
+  resolveDraftPickRosterId,
   resolvePickOwner,
   rosterLabel,
   selectPreferredDraft,
@@ -135,14 +137,14 @@ function populateRosterSelector(state) {
   }
 }
 
-function futurePickByNumber(draft, tradedPicks, pickNo) {
+function futurePickByNumber(draft, tradedPicks, pickNo, rosters = []) {
   const teams = Number(draft?.settings?.teams ?? 0);
   const rounds = Number(draft?.settings?.rounds ?? 0);
   for (let round = 1; round <= rounds; round += 1) {
     for (let slot = 1; slot <= teams; slot += 1) {
       const number = overallPickNumber(round, slot, teams, draft?.type);
       if (number === Number(pickNo)) {
-        return { round, slot, ownerRosterId: resolvePickOwner(round, slot, draft, tradedPicks) };
+        return { round, slot, ownerRosterId: resolvePickOwner(round, slot, draft, tradedPicks, rosters) };
       }
     }
   }
@@ -167,7 +169,7 @@ function renderMetrics(state) {
     elements.currentPick.textContent = 'Complete';
     elements.currentOwner.textContent = `${state.picks.length} picks made`;
   } else {
-    const future = futurePickByNumber(draft, state.tradedPicks, nextPick);
+    const future = futurePickByNumber(draft, state.tradedPicks, nextPick, state.rosters);
     elements.currentPick.textContent = future ? `${formatPickLabel(future.round, future.slot)} • #${nextPick}` : `#${nextPick}`;
     elements.currentOwner.textContent = future?.ownerRosterId ? ownerName(future.ownerRosterId, state) : 'Owner unavailable';
   }
@@ -181,7 +183,7 @@ function renderUpcoming(state) {
     elements.upcomingPicks.textContent = state.selectedRosterId ? 'No draft loaded.' : 'Choose your roster above.';
     return;
   }
-  const upcoming = buildUpcomingPicks(state.draft, state.picks, state.tradedPicks, state.selectedRosterId);
+  const upcoming = buildUpcomingPicks(state.draft, state.picks, state.tradedPicks, state.selectedRosterId, state.rosters);
   if (!upcoming.length) {
     elements.upcomingPicks.className = 'pick-list empty-state';
     elements.upcomingPicks.textContent = 'No remaining picks owned by this roster.';
@@ -208,7 +210,7 @@ function renderRecent(state) {
     <div class="pick-row">
       <span class="pick-label">${formatPickLabel(pick.round, pick.draft_slot)}</span>
       <span>${escapeHtml(playerLabel(pick))}</span>
-      <span class="meta">${escapeHtml(ownerName(pick.roster_id, state))}</span>
+      <span class="meta">${escapeHtml(ownerName(resolveDraftPickRosterId(pick, state.draft, state.rosters, state.tradedPicks), state))}</span>
     </div>`).join('');
 }
 
@@ -235,8 +237,9 @@ function renderBoard(state) {
   }
   const pickedByCell = new Map((state.picks ?? []).map((pick) => [`${Number(pick.round)}:${Number(pick.draft_slot)}`, pick]));
   const currentPickNo = nextOverallPick(state.picks);
+  const effectiveSlotMap = buildEffectiveSlotToRosterId(draft, state.rosters);
   const headers = Array.from({ length: teams }, (_, i) => i + 1).map((slot) => {
-    const original = Number(draft.slot_to_roster_id?.[String(slot)] ?? draft.slot_to_roster_id?.[slot]);
+    const original = Number(effectiveSlotMap[String(slot)] ?? effectiveSlotMap[slot]);
     return `<th scope="col">Slot ${slot}<br><span>${escapeHtml(ownerName(original, state))}</span></th>`;
   }).join('');
 
@@ -246,8 +249,10 @@ function renderBoard(state) {
     for (let slot = 1; slot <= teams; slot += 1) {
       const pick = pickedByCell.get(`${round}:${slot}`);
       const pickNo = pick?.pick_no != null ? Number(pick.pick_no) : overallPickNumber(round, slot, teams, draft.type);
-      const originalRosterId = Number(draft.slot_to_roster_id?.[String(slot)] ?? draft.slot_to_roster_id?.[slot]);
-      const ownerRosterId = pick?.roster_id != null ? Number(pick.roster_id) : resolvePickOwner(round, slot, draft, state.tradedPicks);
+      const originalRosterId = Number(effectiveSlotMap[String(slot)] ?? effectiveSlotMap[slot]);
+      const ownerRosterId = pick
+        ? resolveDraftPickRosterId(pick, draft, state.rosters, state.tradedPicks)
+        : resolvePickOwner(round, slot, draft, state.tradedPicks, state.rosters);
       const traded = Number.isFinite(originalRosterId) && Number.isFinite(ownerRosterId) && originalRosterId !== ownerRosterId;
       const classes = [pick ? '' : 'empty'];
       if (pickNo === currentPickNo && draft.status !== 'complete') classes.push('on-clock');

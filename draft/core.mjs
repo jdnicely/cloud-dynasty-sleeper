@@ -22,8 +22,44 @@ export function overallPickNumber(round, slot, teams, type = 'linear') {
   return offset + s;
 }
 
-export function resolvePickOwner(round, slot, draft, tradedPicks = []) {
-  const originalOwner = Number(draft?.slot_to_roster_id?.[String(slot)] ?? draft?.slot_to_roster_id?.[slot]);
+export function buildEffectiveSlotToRosterId(draft, rosters = []) {
+  const result = {};
+  const assignedRosterIds = new Set();
+  const assignedSlots = new Set();
+  const rosterByUserId = new Map();
+
+  for (const roster of rosters ?? []) {
+    const rosterId = Number(roster?.roster_id);
+    if (!Number.isFinite(rosterId)) continue;
+    const userIds = [roster?.owner_id, ...(roster?.co_owners ?? [])].filter((value) => value != null && value !== '');
+    for (const userId of userIds) rosterByUserId.set(String(userId), rosterId);
+  }
+
+  for (const [userId, rawSlot] of Object.entries(draft?.draft_order ?? {})) {
+    const slot = Number(rawSlot);
+    const rosterId = rosterByUserId.get(String(userId));
+    if (!Number.isFinite(slot) || !Number.isFinite(rosterId)) continue;
+    result[String(slot)] = rosterId;
+    assignedSlots.add(slot);
+    assignedRosterIds.add(rosterId);
+  }
+
+  for (const [rawSlot, rawRosterId] of Object.entries(draft?.slot_to_roster_id ?? {})) {
+    const slot = Number(rawSlot);
+    const rosterId = Number(rawRosterId);
+    if (!Number.isFinite(slot) || !Number.isFinite(rosterId)) continue;
+    if (assignedSlots.has(slot) || assignedRosterIds.has(rosterId)) continue;
+    result[String(slot)] = rosterId;
+    assignedSlots.add(slot);
+    assignedRosterIds.add(rosterId);
+  }
+
+  return result;
+}
+
+export function resolvePickOwner(round, slot, draft, tradedPicks = [], rosters = []) {
+  const slotMap = buildEffectiveSlotToRosterId(draft, rosters);
+  const originalOwner = Number(slotMap[String(slot)] ?? slotMap[slot]);
   if (!Number.isFinite(originalOwner)) return null;
   const trade = (tradedPicks ?? []).find(
     (item) => Number(item?.round) === Number(round) && Number(item?.roster_id) === originalOwner,
@@ -31,7 +67,27 @@ export function resolvePickOwner(round, slot, draft, tradedPicks = []) {
   return Number(trade?.owner_id ?? originalOwner);
 }
 
-export function buildUpcomingPicks(draft, picks = [], tradedPicks = [], rosterId) {
+export function resolveDraftPickRosterId(pick, draft, rosters = [], tradedPicks = []) {
+  const directRosterId = Number(pick?.roster_id);
+  if (Number.isFinite(directRosterId) && directRosterId > 0) return directRosterId;
+
+  const pickedBy = String(pick?.picked_by ?? '').trim();
+  if (pickedBy) {
+    const roster = (rosters ?? []).find((item) => {
+      if (String(item?.owner_id ?? '') === pickedBy) return true;
+      return (item?.co_owners ?? []).some((userId) => String(userId) === pickedBy);
+    });
+    const rosterId = Number(roster?.roster_id);
+    if (Number.isFinite(rosterId) && rosterId > 0) return rosterId;
+  }
+
+  if (pick?.round != null && pick?.draft_slot != null) {
+    return resolvePickOwner(pick.round, pick.draft_slot, draft, tradedPicks, rosters);
+  }
+  return null;
+}
+
+export function buildUpcomingPicks(draft, picks = [], tradedPicks = [], rosterId, rosters = []) {
   const teams = Number(draft?.settings?.teams ?? Object.keys(draft?.slot_to_roster_id ?? {}).length);
   const rounds = Number(draft?.settings?.rounds ?? 0);
   const wantedRosterId = Number(rosterId);
@@ -49,7 +105,7 @@ export function buildUpcomingPicks(draft, picks = [], tradedPicks = [], rosterId
   for (let round = 1; round <= rounds; round += 1) {
     for (let slot = 1; slot <= teams; slot += 1) {
       if (filled.has(`${round}:${slot}`)) continue;
-      const ownerRosterId = resolvePickOwner(round, slot, draft, tradedPicks);
+      const ownerRosterId = resolvePickOwner(round, slot, draft, tradedPicks, rosters);
       if (ownerRosterId !== wantedRosterId) continue;
       result.push({
         pickNo: overallPickNumber(round, slot, teams, draft?.type),
@@ -107,7 +163,7 @@ export function buildChatSnapshot(state) {
   const selectedRosterId = Number(state?.selectedRosterId);
   const draftName = draft?.metadata?.name || `Draft ${draft?.draft_id ?? ''}`.trim();
   const upcoming = Number.isFinite(selectedRosterId)
-    ? buildUpcomingPicks(draft, picks, tradedPicks, selectedRosterId)
+    ? buildUpcomingPicks(draft, picks, tradedPicks, selectedRosterId, rosters)
     : [];
 
   const lines = [
@@ -137,7 +193,8 @@ export function buildChatSnapshot(state) {
   } else {
     for (const pick of picks) {
       const label = formatPickLabel(pick?.round, pick?.draft_slot);
-      const owner = pick?.roster_id != null ? rosterLabel(pick.roster_id, rosters, users) : 'Unknown roster';
+      const pickRosterId = resolveDraftPickRosterId(pick, draft, rosters, tradedPicks);
+      const owner = pickRosterId != null ? rosterLabel(pickRosterId, rosters, users) : 'Unknown roster';
       lines.push(`${label} — ${playerLabel(pick)} — ${owner}`);
     }
   }

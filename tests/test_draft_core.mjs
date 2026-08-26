@@ -240,3 +240,92 @@ test('Draft Mode parses the draft query override and hides mock controls in live
   assert.match(app, /DIRECT_DRAFT_ID/);
   assert.match(css, /#mock-controls\[hidden\][^{]*\{[^}]*display\s*:\s*none/i);
 });
+
+test('draft_order remaps a league roster to its actual mock draft slot without duplicating the roster', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildEffectiveSlotToRosterId, 'function');
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    draft_order: { u1: 3 },
+    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  const mapping = core.buildEffectiveSlotToRosterId(draft, rosters);
+  assert.equal(mapping['3'], 1);
+  assert.equal(mapping['9'], 9);
+  assert.notEqual(mapping['1'], 1);
+});
+
+test('upcoming picks use draft_order for native slot and include an acquired traded pick', () => {
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    draft_order: { u1: 3 },
+    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  const traded = [{ round: 3, roster_id: 9, previous_owner_id: 9, owner_id: 1 }];
+  const picks = [];
+  for (let pickNo = 1; pickNo <= 14; pickNo += 1) {
+    const round = Math.floor((pickNo - 1) / 12) + 1;
+    const slot = ((pickNo - 1) % 12) + 1;
+    picks.push({ pick_no: pickNo, round, draft_slot: slot, player_id: `p${pickNo}` });
+  }
+  const upcoming = buildUpcomingPicks(draft, picks, traded, 1, rosters);
+  assert.deepEqual(
+    upcoming.map((pick) => [pick.pickNo, pick.round, pick.slot]),
+    [
+      [15, 2, 3],
+      [27, 3, 3],
+      [33, 3, 9],
+      [39, 4, 3],
+      [51, 5, 3],
+    ],
+  );
+});
+
+test('pick owner falls back from missing roster_id to picked_by user via league roster ownership', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.resolveDraftPickRosterId, 'function');
+  const draft = {
+    ...baseDraft(),
+    draft_order: { u1: 3 },
+    slot_to_roster_id: { '1': 1, '2': 2, '3': 3, '4': 4 },
+  };
+  const rosters = [
+    { roster_id: 1, owner_id: 'u1' },
+    { roster_id: 2, owner_id: 'u2' },
+    { roster_id: 3, owner_id: 'u3' },
+    { roster_id: 4, owner_id: 'u4' },
+  ];
+  const pick = { pick_no: 3, round: 1, draft_slot: 3, picked_by: 'u1', roster_id: null };
+  assert.equal(core.resolveDraftPickRosterId(pick, draft, rosters, []), 1);
+});
+
+test('snapshot reflects the selected roster actual draft slot and acquired third-round pick', () => {
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    draft_order: { u1: 3 },
+    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  const users = [{ user_id: 'u1', display_name: 'HTTFFT' }];
+  const tradedPicks = [{ round: 3, roster_id: 9, previous_owner_id: 9, owner_id: 1 }];
+  const picks = [];
+  for (let pickNo = 1; pickNo <= 14; pickNo += 1) {
+    const round = Math.floor((pickNo - 1) / 12) + 1;
+    const slot = ((pickNo - 1) % 12) + 1;
+    picks.push({
+      pick_no: pickNo,
+      round,
+      draft_slot: slot,
+      player_id: `p${pickNo}`,
+      picked_by: pickNo === 3 ? 'u1' : '',
+      metadata: { first_name: `Prospect`, last_name: String(pickNo).padStart(2, '0'), position: 'WR', team: 'TEN' },
+    });
+  }
+  const text = buildChatSnapshot({ draft, picks, tradedPicks, rosters, users, selectedRosterId: 1 });
+  assert.match(text, /2\.03 \(overall 15\)/);
+  assert.match(text, /3\.03 \(overall 27\)/);
+  assert.match(text, /3\.09 \(overall 33\)/);
+  assert.match(text, /1\.03 — Prospect 03 \(WR, TEN\) — HTTFFT \(Roster 1\)/);
+});
