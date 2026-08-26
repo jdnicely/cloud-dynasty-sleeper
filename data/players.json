@@ -398,7 +398,7 @@
       "genius_id": "1398964",
       "rookie_year": "2023"
     },
-    "news_updated": 1787245230679,
+    "news_updated": 1787687139761,
     "number": 87,
     "oddsjam_id": "7E1BB2772255",
     "opta_id": null,
@@ -764,7 +764,7 @@
       "genius_id": "1463663",
       "rookie_year": "2024"
     },
-    "news_updated": 1787621142186,
+    "news_updated": 1787681439021,
     "number": 9,
     "oddsjam_id": "4CC573CF0E13",
     "opta_id": null,
@@ -1069,7 +1069,7 @@
       "genius_id": "1463681",
       "rookie_year": "2024"
     },
-    "news_updated": 1787607041378,
+    "news_updated": 1787700941168,
     "number": 9,
     "oddsjam_id": "D30AA87736CF",
     "opta_id": null,
@@ -1193,7 +1193,7 @@
       "genius_id": "1464096",
       "rookie_year": "2024"
     },
-    "news_updated": 1787419824604,
+    "news_updated": 1787680839819,
     "number": 32,
     "oddsjam_id": "D6F26D313E49",
     "opta_id": null,
@@ -1306,10 +1306,10 @@
     "hashtag": "#audricestime-NFL-NO-30",
     "height": "71",
     "high_school": "Saint Joseph Regional (NJ)",
-    "injury_body_part": "Leg",
+    "injury_body_part": null,
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": "Questionable",
+    "injury_status": null,
     "kalshi_id": "89d64e33-7da6-4818-a3a2-9bc2eb8472ef",
     "last_name": "Estime",
     "metadata": {
@@ -1478,8 +1478,8 @@
     "birth_state": null,
     "college": "Florida State",
     "competitions": [],
-    "depth_chart_order": null,
-    "depth_chart_position": null,
+    "depth_chart_order": 6,
+    "depth_chart_position": "RB",
     "espn_id": null,
     "fantasy_data_id": 24292,
     "fantasy_positions": [
@@ -1494,7 +1494,7 @@
     "injury_body_part": "Knee",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": "Questionable",
+    "injury_status": "IR",
     "kalshi_id": "6023c7cf-c72f-44b2-a70c-46c74dba787b",
     "last_name": "Benson",
     "metadata": {
@@ -1503,7 +1503,7 @@
       "injury_override_regular_2025_5": "IR",
       "rookie_year": "2024"
     },
-    "news_updated": 1787605542604,
+    "news_updated": 1787706941742,
     "number": 33,
     "oddsjam_id": "CE0DD0AD4D9A",
     "opta_id": null,
@@ -3038,7 +3038,7 @@
       "rookie_year": "2025",
       "source_id": "9c5acd8c-414c-4cfa-8edd-a0e6553bea8c"
     },
-    "news_updated": 1787676904337,
+    "news_updated": 1787680238992,
     "number": 44,
     "oddsjam_id": "5BE524D2DCC75E68",
     "opta_id": null,
@@ -3152,10 +3152,10 @@
     "hashtag": "#terranceferguson-NFL-LAR-18",
     "height": "77",
     "high_school": "Heritage (CO)",
-    "injury_body_part": null,
+    "injury_body_part": "Undisclosed",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "kalshi_id": "1a0afee2-86ef-4d7b-9f13-75efbb5b7100",
     "last_name": "Ferguson",
     "metadata": {
@@ -3164,7 +3164,7 @@
       "rookie_year": "2025",
       "source_id": "c0821d6e-e31d-4ccc-b006-9837720c7d6f"
     },
-    "news_updated": 1787335838928,
+    "news_updated": 1787686839683,
     "number": 18,
     "oddsjam_id": "ED3F438D7ED21C58",
     "opta_id": null,
@@ -3962,10 +3962,10 @@
     "hashtag": "#quinshonjudkins-NFL-CLE-10",
     "height": "72",
     "high_school": "Pike Road (AL)",
-    "injury_body_part": "Undisclosed",
+    "injury_body_part": null,
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": "Questionable",
+    "injury_status": null,
     "kalshi_id": "a429294e-3cc6-4d3c-a017-616af6ef5ed3",
     "last_name": "Judkins",
     "metadata": {
@@ -3975,7 +3975,7 @@
       "rookie_year": "2025",
       "source_id": "b0c3a640-863a-11ec-ac3f-2f01cb0af5e4"
     },
-    "news_updated": 1787596239799,
+    "news_updated": 1787694342000,
     "number": 10,
     "oddsjam_id": "EFD3A435BF24E96E",
     "opta_id": null,
@@ -4037,7 +4037,7 @@
       "rookie_year": "2025",
       "source_id": "d7f54546-46ed-45c6-9ecc-b23c65ee6679"
     },
-    "news_updated": 1787673049381,
+    "news_updated": 1787682939322,
     "number": 2,
     "oddsjam_id": "93527AC8024DA07C",
     "opta_id": null,
@@ -4152,7 +4152,7 @@
     "injury_body_part": "Groin",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": "Out",
+    "injury_status": "Questionable",
     "kalshi_id": "36a35fe8-2829-4d2b-9b05-0d46ef1bb6e7",
     "last_name": "Warren",
     "metadata": {
@@ -4471,7 +4471,7 @@
       "rookie_year": "2025",
       "source_id": "792d3cd0-8f56-11ec-9f33-1965c9c46e44"
     },
-    "news_updated": 1787664647189,
+    "news_updated": 1787688939877,
     "number": 2,
     "oddsjam_id": "68B73F2163030874",
     "opta_id": null,
@@ -4533,7 +4533,7 @@
       "rookie_year": "2025",
       "source_id": "2fcac8b2-522e-4da1-8f8a-e2d14333f7ab"
     },
-    "news_updated": 1787674247472,
+    "news_updated": 1787688641417,
     "number": 32,
     "oddsjam_id": "E55F1CC467FCBE9A",
     "opta_id": null,
@@ -5704,7 +5704,7 @@
       "injury_override_regular_2025_4": "Out",
       "rookie_year": "2014"
     },
-    "news_updated": 1787534734448,
+    "news_updated": 1787683540961,
     "number": 5,
     "oddsjam_id": "4CE26B1D3BB5",
     "opta_id": null,
@@ -6932,7 +6932,7 @@
       "genius_id": "998860",
       "rookie_year": "2017"
     },
-    "news_updated": 1778602852051,
+    "news_updated": 1787680840781,
     "number": 29,
     "oddsjam_id": "400F785F5A8F",
     "opta_id": null,
@@ -7363,7 +7363,7 @@
       "genius_id": "1013868",
       "rookie_year": "2018"
     },
-    "news_updated": 1787454628208,
+    "news_updated": 1787677503770,
     "number": 6,
     "oddsjam_id": "2F8FF2DF2E69",
     "opta_id": null,
@@ -8713,7 +8713,7 @@
       "injury_override_regular_2024_3": "IR",
       "rookie_year": "2020"
     },
-    "news_updated": 1787493031418,
+    "news_updated": 1787682639179,
     "number": 1,
     "oddsjam_id": "66B708A8FB24",
     "opta_id": null,
@@ -9021,7 +9021,7 @@
       "genius_id": "1012460",
       "rookie_year": "2020"
     },
-    "news_updated": 1787676348065,
+    "news_updated": 1787689241421,
     "number": 10,
     "oddsjam_id": "8959F596AE5D",
     "opta_id": null,
@@ -9145,7 +9145,7 @@
       "injury_override_regular_2025_16": "IR",
       "rookie_year": "2020"
     },
-    "news_updated": 1786728942280,
+    "news_updated": 1787693740373,
     "number": 11,
     "oddsjam_id": "38B5479924F9",
     "opta_id": null,
@@ -10176,10 +10176,10 @@
     "hashtag": "#jamarrchase-NFL-CIN-1",
     "height": "72",
     "high_school": "Archbishop Rummel (LA)",
-    "injury_body_part": null,
+    "injury_body_part": "Knee",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "kalshi_id": "d2e67424-ef70-4c12-9b44-479f3a94a0a0",
     "last_name": "Chase",
     "metadata": {
@@ -10187,7 +10187,7 @@
       "genius_id": "1080256",
       "rookie_year": "2021"
     },
-    "news_updated": 1786767654011,
+    "news_updated": 1787689240677,
     "number": 1,
     "oddsjam_id": "6062BDCD0B61",
     "opta_id": null,
@@ -10432,7 +10432,7 @@
       "genius_id": "1073610",
       "rookie_year": "2021"
     },
-    "news_updated": 1786725941354,
+    "news_updated": 1787677503771,
     "number": 33,
     "oddsjam_id": "98ABA7982917",
     "opta_id": null,
@@ -10680,7 +10680,7 @@
       "injury_override_regular_2024_6": "Out",
       "rookie_year": "2021"
     },
-    "news_updated": 1787408723006,
+    "news_updated": 1787685339473,
     "number": 38,
     "oddsjam_id": "A0E1810E494A",
     "opta_id": null,
@@ -11524,10 +11524,10 @@
     "hashtag": "#chrisolave-NFL-NO-12",
     "height": "72",
     "high_school": "Mission Hills (CA)",
-    "injury_body_part": null,
+    "injury_body_part": "Upper Body",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "kalshi_id": "1b3022d0-cfdd-4d1b-a153-6d03dad60513",
     "last_name": "Olave",
     "metadata": {
@@ -11535,7 +11535,7 @@
       "genius_id": "1075390",
       "rookie_year": "2022"
     },
-    "news_updated": 1787248529668,
+    "news_updated": 1787687739715,
     "number": 12,
     "oddsjam_id": "016969998F62",
     "opta_id": null,
@@ -11687,7 +11687,7 @@
   },
   "8150": {
     "active": true,
-    "age": 25,
+    "age": 26,
     "birth_city": null,
     "birth_country": null,
     "birth_date": "2000-08-26",
@@ -11768,10 +11768,10 @@
     "hashtag": "#kennethwalker-NFL-KC-9",
     "height": "69",
     "high_school": "Arlington (TN)",
-    "injury_body_part": null,
+    "injury_body_part": "Foot",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "kalshi_id": "cbee22f4-e1ac-43f6-8c3d-148b5de7ad1c",
     "last_name": "Walker",
     "metadata": {
@@ -11779,7 +11779,7 @@
       "genius_id": "1343381",
       "rookie_year": "2022"
     },
-    "news_updated": 1787453428237,
+    "news_updated": 1787693440367,
     "number": 9,
     "oddsjam_id": "59696B50F9E5",
     "opta_id": null,
@@ -12761,7 +12761,7 @@
       "genius_id": "1398559",
       "rookie_year": "2023"
     },
-    "news_updated": 1787677204985,
+    "news_updated": 1787708141973,
     "number": 5,
     "oddsjam_id": "FD2C905B710A",
     "opta_id": null,
@@ -13005,7 +13005,7 @@
       "genius_id": "1399238",
       "rookie_year": "2023"
     },
-    "news_updated": 1787596839917,
+    "news_updated": 1787686239599,
     "number": 12,
     "oddsjam_id": "3EFD62DFAF78",
     "opta_id": null,
@@ -13116,10 +13116,10 @@
     "hashtag": "#joshdowns-NFL-IND-2",
     "height": "69",
     "high_school": "North Gwinnett (GA)",
-    "injury_body_part": null,
+    "injury_body_part": "Undisclosed",
     "injury_notes": null,
     "injury_start_date": null,
-    "injury_status": null,
+    "injury_status": "Questionable",
     "kalshi_id": "61429e9a-e398-4b02-9f3f-90aa8b27c0e2",
     "last_name": "Downs",
     "metadata": {
@@ -13127,7 +13127,7 @@
       "genius_id": "1399008",
       "rookie_year": "2023"
     },
-    "news_updated": 1787252430660,
+    "news_updated": 1787690139960,
     "number": 2,
     "oddsjam_id": "ABFB4947D508",
     "opta_id": null,
@@ -13189,7 +13189,7 @@
       "injury_override_pre_2025_0": "IR",
       "rookie_year": "2023"
     },
-    "news_updated": 1787123454409,
+    "news_updated": 1787682039234,
     "number": 1,
     "oddsjam_id": "D2BEC2F1C55E",
     "opta_id": null,
@@ -13236,7 +13236,7 @@
     "first_name": "Kayshon",
     "full_name": "Kayshon Boutte",
     "gsis_id": null,
-    "hashtag": "#kayshonboutte-NFL-HOU-9",
+    "hashtag": "#kayshonboutte-NFL-HOU-88",
     "height": "71",
     "high_school": "Westgate (LA)",
     "injury_body_part": null,
@@ -13251,7 +13251,7 @@
       "rookie_year": "2023"
     },
     "news_updated": 1787598641947,
-    "number": 9,
+    "number": 88,
     "oddsjam_id": "86B6983F9C7F",
     "opta_id": null,
     "pandascore_id": null,
