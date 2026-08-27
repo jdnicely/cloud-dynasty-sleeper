@@ -431,3 +431,68 @@ test('completed mock picks resolve by picked_by or draft slot before ambiguous r
   const signedInSlotThree = { pick_no: 3, round: 1, draft_slot: 3, roster_id: 3, picked_by: 'u1' };
   assert.equal(core.resolveDraftPickRosterId(signedInSlotThree, draft, rosters, []), 1);
 });
+
+test('detached league mock uses the real league draft as its reference slot map', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.applyLeagueMockReferenceDraft, 'function');
+  const mockDraft = {
+    ...baseDraft({ draft_id: '1398157268502986752', league_id: null, status: 'paused', settings: { teams: 12, rounds: 5 } }),
+    metadata: { name: 'Cloud Dynasty League', league_id: '1389332241724764160', type: 'league_mock', mock_traded_picks: 'on' },
+    draft_order: { '327235334960058368': 3 },
+    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+  };
+  const referenceDraft = {
+    ...baseDraft({ draft_id: 'real-2026', league_id: '1389332241724764160', status: 'pre_draft', settings: { teams: 12, rounds: 5 } }),
+    slot_to_roster_id: {
+      '1': 6, '2': 12, '3': 1, '4': 2, '5': 9, '6': 11,
+      '7': 4, '8': 5, '9': 8, '10': 10, '11': 3, '12': 7,
+    },
+  };
+  const resolved = core.applyLeagueMockReferenceDraft(mockDraft, referenceDraft);
+  assert.equal(resolved.draft_id, mockDraft.draft_id);
+  assert.equal(resolved.status, 'paused');
+  assert.deepEqual(resolved.slot_to_roster_id, referenceDraft.slot_to_roster_id);
+  assert.equal(resolved.reference_draft_id, 'real-2026');
+});
+
+test('reference draft fixes HTTFFT native 2.03 and acquired 3.09 for the detached mock', async () => {
+  const core = await import('../draft/core.mjs');
+  const mockDraft = {
+    ...baseDraft({ draft_id: 'mock', league_id: null, status: 'paused', settings: { teams: 12, rounds: 5 } }),
+    season: '2026',
+    metadata: { name: 'Cloud Dynasty League', league_id: '1389332241724764160', type: 'league_mock' },
+    draft_order: { u1: 3 },
+    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+  };
+  const referenceDraft = {
+    ...baseDraft({ draft_id: 'real', status: 'pre_draft', settings: { teams: 12, rounds: 5 } }),
+    season: '2026',
+    slot_to_roster_id: {
+      '1': 6, '2': 12, '3': 1, '4': 2, '5': 9, '6': 11,
+      '7': 4, '8': 5, '9': 8, '10': 10, '11': 3, '12': 7,
+    },
+  };
+  const draft = core.applyLeagueMockReferenceDraft(mockDraft, referenceDraft);
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  const leagueTrades = [{ round: 3, season: '2026', roster_id: 8, owner_id: 1, previous_owner_id: 8 }];
+  const traded = core.selectEffectiveTradedPicks([], leagueTrades, '2026');
+  const picks = Array.from({ length: 14 }, (_, i) => ({
+    pick_no: i + 1,
+    round: Math.floor(i / 12) + 1,
+    draft_slot: (i % 12) + 1,
+    player_id: `p${i + 1}`,
+  }));
+  const upcoming = core.buildUpcomingPicks(draft, picks, traded, 1, rosters);
+  assert.deepEqual(
+    upcoming.map((pick) => [pick.pickNo, pick.round, pick.slot]),
+    [[15, 2, 3], [27, 3, 3], [33, 3, 9], [39, 4, 3], [51, 5, 3]],
+  );
+});
+
+test('direct league mock fetches its real league draft as the team-order reference', () => {
+  const app = fs.readFileSync(path.join(repoRoot, 'draft', 'app.js'), 'utf8');
+  assert.match(app, /metadata\?\.league_id/);
+  assert.match(app, /selectReferenceLeagueDraft/);
+  assert.match(app, /applyLeagueMockReferenceDraft/);
+  assert.match(app, /\/league\/\$\{contextLeagueId\}\/drafts/);
+});

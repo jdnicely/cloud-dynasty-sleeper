@@ -12,6 +12,39 @@ export function selectPreferredDraft(drafts) {
   );
 }
 
+
+export function isDetachedLeagueMock(draft) {
+  return Boolean(
+    draft &&
+    !draft.league_id &&
+    draft?.metadata?.league_id &&
+    String(draft?.metadata?.type ?? '') === 'league_mock'
+  );
+}
+
+export function selectReferenceLeagueDraft(mockDraft, leagueDrafts = []) {
+  const candidates = (Array.isArray(leagueDrafts) ? leagueDrafts : []).filter(
+    (draft) => String(draft?.draft_id ?? '') !== String(mockDraft?.draft_id ?? ''),
+  );
+  if (!candidates.length) return null;
+  const season = String(mockDraft?.season ?? '').trim();
+  const sameSeason = season
+    ? candidates.filter((draft) => String(draft?.season ?? '').trim() === season)
+    : [];
+  return selectPreferredDraft(sameSeason.length ? sameSeason : candidates);
+}
+
+export function applyLeagueMockReferenceDraft(mockDraft, referenceDraft) {
+  if (!isDetachedLeagueMock(mockDraft) || !referenceDraft) return mockDraft;
+  const referenceSlotMap = referenceDraft?.slot_to_roster_id ?? {};
+  if (!Object.keys(referenceSlotMap).length) return mockDraft;
+  return {
+    ...mockDraft,
+    slot_to_roster_id: { ...referenceSlotMap },
+    reference_draft_id: String(referenceDraft?.draft_id ?? ''),
+  };
+}
+
 export function overallPickNumber(round, slot, teams, type = 'linear') {
   const r = Number(round);
   const s = Number(slot);

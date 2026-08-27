@@ -1,4 +1,5 @@
 import {
+  applyLeagueMockReferenceDraft,
   buildChatSnapshot,
   buildEffectiveSlotToRosterId,
   chooseDraftId,
@@ -11,6 +12,7 @@ import {
   resolvePickOwner,
   rosterLabel,
   selectEffectiveTradedPicks,
+  selectReferenceLeagueDraft,
   selectPreferredDraft,
 } from './core.mjs';
 import { advanceMock, createMockState, resetMock } from './mock.mjs';
@@ -58,6 +60,7 @@ let liveState = {
   rosters: [],
   selectedRosterId: null,
   refreshedAt: null,
+  referenceDraft: null,
 };
 let mockState = createMockState();
 let pollHandle = null;
@@ -302,9 +305,19 @@ async function refreshLive({ forceContext = false } = {}) {
   refreshInFlight = true;
   try {
     if (DIRECT_DRAFT_ID) {
-      const draft = await fetchJson(`/draft/${DIRECT_DRAFT_ID}`);
-      const contextLeagueId = draft?.league_id || LEAGUE_ID;
+      const rawDraft = await fetchJson(`/draft/${DIRECT_DRAFT_ID}`);
+      const contextLeagueId = rawDraft?.league_id || rawDraft?.metadata?.league_id || LEAGUE_ID;
       if (forceContext || !liveState.users.length || !liveState.rosters.length) await loadLiveContext(contextLeagueId);
+
+      if (rawDraft?.metadata?.type === 'league_mock' && (!liveState.referenceDraft || forceContext)) {
+        const leagueDrafts = await fetchJson(`/league/${contextLeagueId}/drafts`);
+        const referenceCandidate = selectReferenceLeagueDraft(rawDraft, leagueDrafts);
+        liveState.referenceDraft = referenceCandidate?.draft_id
+          ? await fetchJson(`/draft/${referenceCandidate.draft_id}`)
+          : null;
+      }
+      const draft = applyLeagueMockReferenceDraft(rawDraft, liveState.referenceDraft);
+
       const [picks, draftTradedPicks, leagueTradedPicks] = await Promise.all([
         fetchJson(`/draft/${DIRECT_DRAFT_ID}/picks`),
         fetchJson(`/draft/${DIRECT_DRAFT_ID}/traded_picks`),
@@ -317,7 +330,8 @@ async function refreshLive({ forceContext = false } = {}) {
       liveState.refreshedAt = new Date().toISOString();
       populateDraftSelector([draft], draft);
       render();
-      setStatus(`DIRECT DRAFT • ${draftDisplayName(draft)} • ${DIRECT_DRAFT_ID} • ${picks.length} picks received from Sleeper`, 'ok');
+      const referenceNote = draft?.reference_draft_id ? ` • order from league draft ${draft.reference_draft_id}` : '';
+      setStatus(`DIRECT DRAFT • ${draftDisplayName(draft)} • ${DIRECT_DRAFT_ID}${referenceNote} • ${picks.length} picks received from Sleeper`, 'ok');
       return;
     }
 
