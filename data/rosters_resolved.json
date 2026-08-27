@@ -3154,7 +3154,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Olave",
           "player_id": "8144",
           "position": "WR",
@@ -3337,7 +3337,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Olave",
           "player_id": "8144",
           "position": "WR",
@@ -5527,7 +5527,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
@@ -5675,7 +5675,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
