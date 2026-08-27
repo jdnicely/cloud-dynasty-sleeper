@@ -496,3 +496,24 @@ test('direct league mock fetches its real league draft as the team-order referen
   assert.match(app, /applyLeagueMockReferenceDraft/);
   assert.match(app, /\/league\/\$\{contextLeagueId\}\/drafts/);
 });
+
+test('reference-draft league mock attributes franchise by slot even when picked_by points to another league roster', async () => {
+  const core = await import('../draft/core.mjs');
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    reference_draft_id: 'real-2026',
+    slot_to_roster_id: {
+      '1': 6, '2': 12, '3': 1, '4': 2, '5': 9, '6': 11,
+      '7': 4, '8': 5, '9': 8, '10': 10, '11': 3, '12': 7,
+    },
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+
+  // Detached mocks may report the mock-seat participant in picked_by. The
+  // franchise owner must still come from the real reference draft column.
+  const slotTwoPick = { pick_no: 2, round: 1, draft_slot: 2, roster_id: 2, picked_by: 'u2' };
+  assert.equal(core.resolveDraftPickRosterId(slotTwoPick, draft, rosters, []), 12);
+
+  const slotElevenPick = { pick_no: 11, round: 1, draft_slot: 11, roster_id: 11, picked_by: 'u11' };
+  assert.equal(core.resolveDraftPickRosterId(slotElevenPick, draft, rosters, []), 3);
+});

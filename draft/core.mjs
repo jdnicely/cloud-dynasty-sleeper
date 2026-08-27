@@ -113,7 +113,17 @@ export function resolvePickOwner(round, slot, draft, tradedPicks = [], rosters =
 }
 
 export function resolveDraftPickRosterId(pick, draft, rosters = [], tradedPicks = []) {
-  // picked_by is the strongest signal when a real league user made the pick.
+  // A detached league mock that has been enriched with a reference draft must
+  // attribute the franchise by the real league draft column, not by the user
+  // who clicked the mock pick. Sleeper's picked_by value can represent a mock
+  // participant and does not reliably identify the franchise owning that slot.
+  if (draft?.reference_draft_id && pick?.round != null && pick?.draft_slot != null) {
+    const referencedOwner = resolvePickOwner(pick.round, pick.draft_slot, draft, tradedPicks, rosters);
+    if (Number.isFinite(referencedOwner) && referencedOwner > 0) return referencedOwner;
+  }
+
+  // Outside detached league mocks, picked_by remains useful when a real league
+  // user made the pick and Sleeper omitted a roster_id.
   const pickedBy = String(pick?.picked_by ?? '').trim();
   if (pickedBy) {
     const roster = (rosters ?? []).find((item) => {
@@ -124,9 +134,8 @@ export function resolveDraftPickRosterId(pick, draft, rosters = [], tradedPicks 
     if (Number.isFinite(rosterId) && rosterId > 0) return rosterId;
   }
 
-  // In league mocks, pick.roster_id can reflect a mock seat rather than the
-  // league roster. Resolve the pick's draft column through the authoritative
-  // slot map (and traded-pick owner) before trusting the raw roster_id.
+  // Resolve the pick's draft column through the authoritative slot map (and
+  // traded-pick owner) before trusting the raw roster_id.
   if (pick?.round != null && pick?.draft_slot != null) {
     const resolved = resolvePickOwner(pick.round, pick.draft_slot, draft, tradedPicks, rosters);
     if (Number.isFinite(resolved) && resolved > 0) return resolved;
