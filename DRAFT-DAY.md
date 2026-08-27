@@ -136,3 +136,13 @@ https://jdnicely.github.io/cloud-dynasty-sleeper/draft/?draft=139815726850298675
 
 When `?draft=` is present, Draft Mode ignores league auto-detection and polls that exact Sleeper draft every 5 seconds. The page labels the source `DIRECT DRAFT` and displays the draft ID so it is obvious which board is being watched. Remove the `?draft=` query to return to normal Cloud Dynasty auto-detection.
 
+
+## Draft Mode polish features
+
+The Draft Mode page now includes three extra safeguards for the real event:
+
+- **Enriched ChatGPT Snapshot** — includes the selected roster grouped by position, draft additions, projected roster headcount, remaining picks, and up to five undrafted rookies at each of QB/RB/WR/TE using Sleeper's `search_rank` as a quick reference. Sleeper search rank is only an availability aid; final dynasty recommendations should still use current news, draft capital, roster fit, and market value.
+- **Draft diagnostics** — shows the live draft ID, reference draft ID (for detached league mocks), traded-pick source, slot-mapping completeness, and last successful poll. If ownership ever looks wrong, copy these values before changing anything.
+- **Draft-complete roster summary** — after the final pick, shows the selected roster's full draft haul, marks acquired picks, and estimates the roster-move range required by headcount. The lower number assumes available reserve slots can legally be used; the upper number assumes they cannot. Taxi and reserve eligibility still determine the exact legal moves.
+
+The large Sleeper `/players/nfl` directory is fetched only to create the compact rookie availability board. The browser stores that compact board for 24 hours, so the 5-second draft poll does **not** repeatedly download the player database.

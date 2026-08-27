@@ -86,6 +86,43 @@
       </article>
     </section>
 
+    <section class="side-grid">
+      <article class="panel" id="diagnostics-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Health check</p>
+            <h2>Draft diagnostics</h2>
+          </div>
+        </div>
+        <dl class="diagnostic-grid">
+          <div><dt>Live draft</dt><dd id="diagnostic-live-draft">—</dd></div>
+          <div><dt>Reference draft</dt><dd id="diagnostic-reference-draft">—</dd></div>
+          <div><dt>Trade source</dt><dd id="diagnostic-trade-source">—</dd></div>
+          <div><dt>Slot mapping</dt><dd id="diagnostic-mapping">—</dd></div>
+          <div><dt>Last successful poll</dt><dd id="diagnostic-last-poll">—</dd></div>
+        </dl>
+      </article>
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sleeper search rank</p>
+            <h2>Top undrafted rookies</h2>
+          </div>
+        </div>
+        <div id="available-rookies" class="available-grid empty-state">Loading player board…</div>
+      </article>
+    </section>
+
+    <section id="draft-complete-summary" class="panel complete-summary" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Post-draft</p>
+          <h2>Draft complete roster summary</h2>
+        </div>
+      </div>
+      <div id="draft-complete-content" class="empty-state">Choose your roster to see the post-draft summary.</div>
+    </section>
+
     <section class="panel board-panel">
       <div class="section-heading board-heading">
         <div>

@@ -1,6 +1,11 @@
 import {
   applyLeagueMockReferenceDraft,
   buildChatSnapshot,
+  buildAvailableRookies,
+  buildDiagnostics,
+  buildDraftHaul,
+  buildRosterCapacity,
+  compactSleeperRookieBoard,
   buildEffectiveSlotToRosterId,
   chooseDraftId,
   buildUpcomingPicks,
@@ -24,6 +29,8 @@ const API_BASE = 'https://api.sleeper.app/v1';
 const POLL_INTERVAL_MS = 5000;
 const LIVE_ROSTER_STORAGE_KEY = 'cloud-dynasty-my-roster-id';
 const MOCK_ROSTER_STORAGE_KEY = 'cloud-dynasty-mock-roster-id';
+const ROOKIE_CACHE_KEY = 'cloud-dynasty-rookie-board-v1';
+const ROOKIE_CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 
 const $ = (id) => document.getElementById(id);
 const elements = {
@@ -47,6 +54,14 @@ const elements = {
   upcomingPicks: $('upcoming-picks'),
   recentPicks: $('recent-picks'),
   draftBoard: $('draft-board'),
+  diagnosticLiveDraft: $('diagnostic-live-draft'),
+  diagnosticReferenceDraft: $('diagnostic-reference-draft'),
+  diagnosticTradeSource: $('diagnostic-trade-source'),
+  diagnosticMapping: $('diagnostic-mapping'),
+  diagnosticLastPoll: $('diagnostic-last-poll'),
+  availableRookies: $('available-rookies'),
+  completeSummary: $('draft-complete-summary'),
+  completeContent: $('draft-complete-content'),
 };
 
 let mode = searchParams.get('mock') === '1' ? 'mock' : 'live';
@@ -61,6 +76,12 @@ let liveState = {
   selectedRosterId: null,
   refreshedAt: null,
   referenceDraft: null,
+  league: null,
+  contextLeagueId: LEAGUE_ID,
+  tradedPickSource: 'unknown',
+  playerDirectory: {},
+  rookieBoard: [],
+  playerContextLoading: false,
 };
 let mockState = createMockState();
 let pollHandle = null;
@@ -71,6 +92,85 @@ async function fetchJson(path) {
   const response = await fetch(`${API_BASE}${path}`, { cache: 'no-store' });
   if (!response.ok) throw new Error(`Sleeper returned HTTP ${response.status} for ${path}`);
   return response.json();
+}
+
+
+async function fetchSiteJson(path) {
+  const response = await fetch(path, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Site returned HTTP ${response.status} for ${path}`);
+  return response.json();
+}
+
+function loadCachedRookieBoard() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(ROOKIE_CACHE_KEY) || 'null');
+    if (!cached || !Array.isArray(cached.players) || !Number.isFinite(Number(cached.fetchedAt))) return null;
+    if (Date.now() - Number(cached.fetchedAt) > ROOKIE_CACHE_TTL_MS) return null;
+    return cached.players;
+  } catch {
+    return null;
+  }
+}
+
+function cacheRookieBoard(players) {
+  try {
+    localStorage.setItem(ROOKIE_CACHE_KEY, JSON.stringify({ fetchedAt: Date.now(), players }));
+  } catch (error) {
+    console.warn('Unable to cache compact Sleeper rookie board', error);
+  }
+}
+
+function mergeRookiesIntoDirectory(directory, rookies) {
+  const result = { ...(directory ?? {}) };
+  for (const rookie of rookies ?? []) {
+    result[String(rookie.player_id)] = {
+      ...(result[String(rookie.player_id)] ?? {}),
+      full_name: rookie.name,
+      position: rookie.position,
+      team: rookie.team,
+      search_rank: rookie.search_rank,
+      years_exp: 0,
+    };
+  }
+  return result;
+}
+
+async function loadPlayerContext() {
+  if (liveState.playerContextLoading) return;
+  liveState.playerContextLoading = true;
+  try {
+    if (!Object.keys(liveState.playerDirectory ?? {}).length) {
+      try {
+        const leaguePlayers = await fetchSiteJson('../data/players.json');
+        if (leaguePlayers && typeof leaguePlayers === 'object') liveState.playerDirectory = leaguePlayers;
+      } catch (error) {
+        console.warn('League player cache unavailable; continuing with Sleeper rookie board', error);
+      }
+    }
+
+    let rookieBoard = loadCachedRookieBoard();
+    if (!rookieBoard) {
+      const allPlayers = await fetchJson('/players/nfl');
+      rookieBoard = compactSleeperRookieBoard(allPlayers).slice(0, 250);
+      cacheRookieBoard(rookieBoard);
+    }
+    liveState.rookieBoard = rookieBoard;
+    liveState.playerDirectory = mergeRookiesIntoDirectory(liveState.playerDirectory, rookieBoard);
+    render();
+  } catch (error) {
+    console.warn('Sleeper rookie player board unavailable', error);
+  } finally {
+    liveState.playerContextLoading = false;
+  }
+}
+
+function tradedPickSource(draftTradedPicks, leagueTradedPicks, season) {
+  if (Array.isArray(draftTradedPicks) && draftTradedPicks.length) return 'draft';
+  const wantedSeason = String(season ?? '').trim();
+  const matchingLeague = (Array.isArray(leagueTradedPicks) ? leagueTradedPicks : []).filter(
+    (item) => !wantedSeason || String(item?.season ?? '') === wantedSeason,
+  );
+  return matchingLeague.length ? 'league fallback' : 'none';
 }
 
 function setStatus(message, kind = '') {
@@ -282,22 +382,92 @@ function renderBoard(state) {
     </table>`;
 }
 
+function renderDiagnostics(state) {
+  const diagnostics = buildDiagnostics(state);
+  elements.diagnosticLiveDraft.textContent = diagnostics.liveDraftId;
+  elements.diagnosticReferenceDraft.textContent = diagnostics.referenceDraftId;
+  elements.diagnosticTradeSource.textContent = diagnostics.tradeSource;
+  elements.diagnosticMapping.textContent = diagnostics.mappingStatus;
+  elements.diagnosticLastPoll.textContent = diagnostics.lastPoll === '—' ? '—' : new Date(diagnostics.lastPoll).toLocaleTimeString();
+}
+
+function renderAvailableRookies(state) {
+  if (!state?.draft) {
+    elements.availableRookies.className = 'available-grid empty-state';
+    elements.availableRookies.textContent = 'No draft loaded.';
+    return;
+  }
+  if (!(state?.rookieBoard ?? []).length) {
+    elements.availableRookies.className = 'available-grid empty-state';
+    elements.availableRookies.textContent = mode === 'live' ? 'Loading compact Sleeper rookie board…' : 'Available-player board is live-mode only.';
+    return;
+  }
+  const available = buildAvailableRookies(state.rookieBoard, state.picks, state.rosters, 5);
+  const rows = ['QB', 'RB', 'WR', 'TE'].flatMap((position) => {
+    const players = available[position] ?? [];
+    if (!players.length) return [];
+    return [`<div class="available-position"><strong>${position}</strong><span>${players.map((player) => escapeHtml(`${player.name}${player.team ? ` (${player.team})` : ''}`)).join(' • ')}</span></div>`];
+  });
+  elements.availableRookies.className = 'available-grid';
+  elements.availableRookies.innerHTML = rows.length ? rows.join('') : '<div class="empty-state">No undrafted rookies found in the cached Sleeper board.</div>';
+}
+
+function renderCompleteSummary(state) {
+  const draft = state?.draft;
+  const teams = Number(draft?.settings?.teams ?? 0);
+  const rounds = Number(draft?.settings?.rounds ?? 0);
+  const isComplete = Boolean(draft && (draft.status === 'complete' || (teams && rounds && (state?.picks ?? []).length >= teams * rounds)));
+  elements.completeSummary.hidden = !isComplete;
+  if (!isComplete) return;
+  if (!state?.selectedRosterId) {
+    elements.completeContent.className = 'empty-state';
+    elements.completeContent.textContent = 'Choose your roster above to see your final draft haul and projected roster moves.';
+    return;
+  }
+  const selectedRoster = (state.rosters ?? []).find((roster) => Number(roster?.roster_id) === Number(state.selectedRosterId)) ?? {};
+  const haul = buildDraftHaul(draft, state.picks, state.tradedPicks, state.selectedRosterId, state.rosters);
+  const capacity = buildRosterCapacity(state.league ?? {}, selectedRoster, haul);
+  const haulHtml = haul.length
+    ? `<ul>${haul.map((item) => `<li><strong>${escapeHtml(item.label)}</strong> — ${escapeHtml(item.player)} — ${item.isAcquired ? 'acquired pick' : 'native'}</li>`).join('')}</ul>`
+    : '<p>No selections attributed to this roster.</p>';
+  elements.completeContent.className = 'summary-grid';
+  elements.completeContent.innerHTML = `
+    <div class="summary-box"><h3>Your haul</h3>${haulHtml}</div>
+    <div class="summary-box">
+      <h3>Roster headcount</h3>
+      <p>Current players: <strong>${capacity.currentPlayers}</strong></p>
+      <p>Draft additions not yet counted: <strong>${capacity.draftAdditions}</strong></p>
+      <p>Projected: <strong>${capacity.projectedPlayers}/${capacity.totalCapacity}</strong></p>
+      <p>Projected roster moves: <strong>${capacity.moveRange}</strong></p>
+      <p>Absolute minimum if reserve slots are usable: <strong>${capacity.minimumMoves}</strong></p>
+      <p>Capacity: ${capacity.baseSlots} active+bench + ${capacity.taxiSlots} taxi + ${capacity.reserveSlots} reserve.</p>
+      <p><small>Taxi/reserve eligibility still determines the exact legal moves.</small></p>
+    </div>`;
+}
+
 function render() {
   const state = currentState();
   renderMetrics(state);
   renderUpcoming(state);
   renderRecent(state);
+  renderDiagnostics(state);
+  renderAvailableRookies(state);
+  renderCompleteSummary(state);
   renderBoard(state);
 }
 
 async function loadLiveContext(leagueId = LEAGUE_ID) {
-  const [users, rosters] = await Promise.all([
+  const [league, users, rosters] = await Promise.all([
+    fetchJson(`/league/${leagueId}`),
     fetchJson(`/league/${leagueId}/users`),
     fetchJson(`/league/${leagueId}/rosters`),
   ]);
+  liveState.league = league;
   liveState.users = users;
   liveState.rosters = rosters;
+  liveState.contextLeagueId = String(leagueId);
   populateRosterSelector(liveState);
+  void loadPlayerContext();
 }
 
 async function refreshLive({ forceContext = false } = {}) {
@@ -307,6 +477,7 @@ async function refreshLive({ forceContext = false } = {}) {
     if (DIRECT_DRAFT_ID) {
       const rawDraft = await fetchJson(`/draft/${DIRECT_DRAFT_ID}`);
       const contextLeagueId = rawDraft?.league_id || rawDraft?.metadata?.league_id || LEAGUE_ID;
+      liveState.contextLeagueId = String(contextLeagueId);
       if (forceContext || !liveState.users.length || !liveState.rosters.length) await loadLiveContext(contextLeagueId);
 
       if (rawDraft?.metadata?.type === 'league_mock' && (!liveState.referenceDraft || forceContext)) {
@@ -327,6 +498,7 @@ async function refreshLive({ forceContext = false } = {}) {
       liveState.draft = draft;
       liveState.picks = picks;
       liveState.tradedPicks = selectEffectiveTradedPicks(draftTradedPicks, leagueTradedPicks, draft?.season);
+      liveState.tradedPickSource = tradedPickSource(draftTradedPicks, leagueTradedPicks, draft?.season);
       liveState.refreshedAt = new Date().toISOString();
       populateDraftSelector([draft], draft);
       render();
@@ -345,6 +517,7 @@ async function refreshLive({ forceContext = false } = {}) {
       liveState.draft = null;
       liveState.picks = [];
       liveState.tradedPicks = [];
+      liveState.tradedPickSource = 'none';
       liveState.refreshedAt = new Date().toISOString();
       render();
       setStatus('No Sleeper draft found for this league yet. Mock rehearsal is available.', 'warn');
@@ -359,6 +532,8 @@ async function refreshLive({ forceContext = false } = {}) {
     liveState.draft = draft;
     liveState.picks = picks;
     liveState.tradedPicks = selectEffectiveTradedPicks(draftTradedPicks, leagueTradedPicks, draft?.season);
+    liveState.tradedPickSource = tradedPickSource(draftTradedPicks, leagueTradedPicks, draft?.season);
+    liveState.contextLeagueId = String(LEAGUE_ID);
     liveState.refreshedAt = new Date().toISOString();
     render();
     setStatus(`Live • ${draftDisplayName(draft)} • ${picks.length} picks received from Sleeper`, 'ok');

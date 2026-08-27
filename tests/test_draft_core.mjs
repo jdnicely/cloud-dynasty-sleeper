@@ -517,3 +517,188 @@ test('reference-draft league mock attributes franchise by slot even when picked_
   const slotElevenPick = { pick_no: 11, round: 1, draft_slot: 11, roster_id: 11, picked_by: 'u11' };
   assert.equal(core.resolveDraftPickRosterId(slotElevenPick, draft, rosters, []), 3);
 });
+
+test('compactSleeperRookieBoard keeps draftable rookies and sorts by Sleeper search rank', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.compactSleeperRookieBoard, 'function');
+  const players = {
+    qb1: { first_name: 'Alpha', last_name: 'QB', position: 'QB', team: 'LV', years_exp: 0, search_rank: 22, active: true },
+    wr1: { first_name: 'Beta', last_name: 'WR', position: 'WR', team: 'TEN', years_exp: 0, search_rank: 9, active: true },
+    vet: { first_name: 'Veteran', last_name: 'WR', position: 'WR', team: 'DAL', years_exp: 4, search_rank: 1, active: true },
+    k1: { first_name: 'Kicker', last_name: 'Kid', position: 'K', team: 'GB', years_exp: 0, search_rank: 2, active: true },
+    inactive: { first_name: 'Inactive', last_name: 'RB', position: 'RB', years_exp: 0, search_rank: 3, active: false },
+  };
+  assert.deepEqual(core.compactSleeperRookieBoard(players), [
+    { player_id: 'wr1', name: 'Beta WR', position: 'WR', team: 'TEN', search_rank: 9 },
+    { player_id: 'qb1', name: 'Alpha QB', position: 'QB', team: 'LV', search_rank: 22 },
+  ]);
+});
+
+test('buildAvailableRookies excludes drafted and already-rostered players and groups by position', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildAvailableRookies, 'function');
+  const rookieBoard = [
+    { player_id: 'q1', name: 'QB One', position: 'QB', team: 'LV', search_rank: 1 },
+    { player_id: 'q2', name: 'QB Two', position: 'QB', team: 'PIT', search_rank: 2 },
+    { player_id: 'r1', name: 'RB One', position: 'RB', team: 'KC', search_rank: 3 },
+    { player_id: 'r2', name: 'RB Two', position: 'RB', team: 'SEA', search_rank: 4 },
+    { player_id: 'w1', name: 'WR One', position: 'WR', team: 'TEN', search_rank: 5 },
+    { player_id: 't1', name: 'TE One', position: 'TE', team: 'NYJ', search_rank: 6 },
+  ];
+  const picks = [{ player_id: 'q1' }];
+  const rosters = [{ players: ['r1'] }];
+  assert.deepEqual(core.buildAvailableRookies(rookieBoard, picks, rosters, 2), {
+    QB: [{ player_id: 'q2', name: 'QB Two', position: 'QB', team: 'PIT', search_rank: 2 }],
+    RB: [{ player_id: 'r2', name: 'RB Two', position: 'RB', team: 'SEA', search_rank: 4 }],
+    WR: [{ player_id: 'w1', name: 'WR One', position: 'WR', team: 'TEN', search_rank: 5 }],
+    TE: [{ player_id: 't1', name: 'TE One', position: 'TE', team: 'NYJ', search_rank: 6 }],
+  });
+});
+
+test('buildRosterGroups resolves selected roster by position and preserves taxi/reserve status', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildRosterGroups, 'function');
+  const roster = {
+    players: ['qb', 'rb', 'wr', 'te'],
+    starters: ['qb', 'rb'],
+    taxi: ['wr'],
+    reserve: ['te'],
+  };
+  const directory = {
+    qb: { first_name: 'Quarter', last_name: 'Back', position: 'QB', team: 'BAL' },
+    rb: { first_name: 'Running', last_name: 'Back', position: 'RB', team: 'SEA' },
+    wr: { first_name: 'Wide', last_name: 'Out', position: 'WR', team: 'KC' },
+    te: { first_name: 'Tight', last_name: 'End', position: 'TE', team: 'NE' },
+  };
+  const groups = core.buildRosterGroups(roster, directory);
+  assert.equal(groups.QB[0].name, 'Quarter Back');
+  assert.equal(groups.QB[0].status, 'starter');
+  assert.equal(groups.WR[0].status, 'taxi');
+  assert.equal(groups.TE[0].status, 'reserve');
+});
+
+test('buildDraftHaul identifies native and acquired selections for the selected roster', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildDraftHaul, 'function');
+  const draft = {
+    ...baseDraft({ settings: { teams: 4, rounds: 3, pick_timer: 60 } }),
+    slot_to_roster_id: { '1': 10, '2': 20, '3': 30, '4': 40 },
+  };
+  const traded = [{ round: 3, roster_id: 20, owner_id: 10, previous_owner_id: 20 }];
+  const picks = [
+    { pick_no: 1, round: 1, draft_slot: 1, player_id: 'a', metadata: { first_name: 'Native', last_name: 'One', position: 'QB', team: 'LV' } },
+    { pick_no: 10, round: 3, draft_slot: 2, player_id: 'b', metadata: { first_name: 'Acquired', last_name: 'Two', position: 'WR', team: 'TEN' } },
+  ];
+  const haul = core.buildDraftHaul(draft, picks, traded, 10, []);
+  assert.deepEqual(haul.map((item) => [item.label, item.player_id, item.isAcquired]), [
+    ['1.01', 'a', false],
+    ['3.02', 'b', true],
+  ]);
+});
+
+test('buildRosterCapacity reports projected headcount and minimum moves after draft additions', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildRosterCapacity, 'function');
+  const league = {
+    roster_positions: ['QB', 'RB', 'RB', 'WR', 'WR', 'TE', 'FLEX', 'SUPER_FLEX', 'DEF', 'BN', 'BN', 'BN', 'BN', 'BN', 'BN'],
+    settings: { taxi_slots: 5, reserve_slots: 2 },
+  };
+  const roster = { players: Array.from({ length: 19 }, (_, i) => `p${i}`), taxi: ['p15', 'p16', 'p17', 'p18'], reserve: [] };
+  const haul = Array.from({ length: 6 }, (_, i) => ({ player_id: `rookie${i}` }));
+  const capacity = core.buildRosterCapacity(league, roster, haul);
+  assert.equal(capacity.baseSlots, 15);
+  assert.equal(capacity.taxiSlots, 5);
+  assert.equal(capacity.reserveSlots, 2);
+  assert.equal(capacity.currentPlayers, 19);
+  assert.equal(capacity.projectedPlayers, 25);
+  assert.equal(capacity.totalCapacity, 22);
+  assert.equal(capacity.minimumMoves, 3);
+  assert.equal(capacity.movesWithoutReserve, 5);
+  assert.equal(capacity.moveRange, '3–5');
+});
+
+test('buildDiagnostics exposes draft ids, trade source, poll time, and slot-map completeness', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.buildDiagnostics, 'function');
+  const draft = {
+    ...baseDraft({ settings: { teams: 4, rounds: 3 } }),
+    reference_draft_id: 'reference-123',
+    slot_to_roster_id: { '1': 10, '2': 20, '3': 30, '4': 40 },
+  };
+  const diagnostics = core.buildDiagnostics({
+    draft,
+    rosters: [{ roster_id: 10 }, { roster_id: 20 }, { roster_id: 30 }, { roster_id: 40 }],
+    contextLeagueId: '1389332241724764160',
+    tradedPickSource: 'league fallback',
+    refreshedAt: '2026-08-27T00:42:16.201Z',
+  });
+  assert.deepEqual(diagnostics, {
+    liveDraftId: 'd1',
+    referenceDraftId: 'reference-123',
+    leagueId: '1389332241724764160',
+    tradeSource: 'league fallback',
+    lastPoll: '2026-08-27T00:42:16.201Z',
+    mappedSlots: 4,
+    expectedSlots: 4,
+    mappingStatus: '4/4 mapped',
+  });
+});
+
+test('enriched ChatGPT snapshot includes roster, haul, capacity, available rookies, and diagnostics', async () => {
+  const core = await import('../draft/core.mjs');
+  const draft = {
+    ...baseDraft({ settings: { teams: 4, rounds: 2 } }),
+    slot_to_roster_id: { '1': 10, '2': 20, '3': 30, '4': 40 },
+  };
+  const state = {
+    draft,
+    league: { roster_positions: ['QB', 'RB', 'WR', 'TE', 'BN'], settings: { taxi_slots: 1, reserve_slots: 1 } },
+    picks: [{ pick_no: 1, round: 1, draft_slot: 1, player_id: 'rookie-qb', metadata: { first_name: 'Rookie', last_name: 'QB', position: 'QB', team: 'LV' } }],
+    tradedPicks: [],
+    tradedPickSource: 'draft',
+    contextLeagueId: '1389332241724764160',
+    users: [{ user_id: 'u10', display_name: 'HTTFFT' }],
+    rosters: [{ roster_id: 10, owner_id: 'u10', players: ['vet-qb'], starters: ['vet-qb'], taxi: [], reserve: [] }],
+    selectedRosterId: 10,
+    refreshedAt: '2026-08-27T00:42:16.201Z',
+    playerDirectory: { 'vet-qb': { first_name: 'Veteran', last_name: 'QB', position: 'QB', team: 'BAL' } },
+    rookieBoard: [
+      { player_id: 'rookie-qb', name: 'Rookie QB', position: 'QB', team: 'LV', search_rank: 1 },
+      { player_id: 'rookie-wr', name: 'Rookie WR', position: 'WR', team: 'TEN', search_rank: 2 },
+    ],
+  };
+  const text = core.buildChatSnapshot(state);
+  assert.match(text, /My current roster by position:/);
+  assert.match(text, /QB: Veteran QB/);
+  assert.match(text, /My draft additions:/);
+  assert.match(text, /1\.01 — Rookie QB \(QB, LV\) — native/);
+  assert.match(text, /Roster capacity:/);
+  assert.match(text, /Top undrafted rookies \(Sleeper search rank\):/);
+  assert.match(text, /WR: Rookie WR \(TEN\)/);
+  assert.match(text, /Diagnostics:/);
+  assert.match(text, /trade source: draft/);
+});
+
+test('Draft Mode page exposes diagnostics, available-rookie, and post-draft summary panels', () => {
+  const html = fs.readFileSync(path.join(repoRoot, 'draft', 'index.html'), 'utf8');
+  for (const id of [
+    'diagnostics-panel',
+    'diagnostic-live-draft',
+    'diagnostic-reference-draft',
+    'diagnostic-trade-source',
+    'diagnostic-mapping',
+    'diagnostic-last-poll',
+    'available-rookies',
+    'draft-complete-summary',
+  ]) {
+    assert.match(html, new RegExp(`id=["']${id}["']`));
+  }
+});
+
+test('Draft Mode caches a compact Sleeper rookie board for 24 hours instead of polling the full player database', () => {
+  const app = fs.readFileSync(path.join(repoRoot, 'draft', 'app.js'), 'utf8');
+  assert.match(app, /ROOKIE_CACHE_TTL_MS\s*=\s*24\s*\*\s*60\s*\*\s*60\s*\*\s*1000/);
+  assert.match(app, /\/players\/nfl/);
+  assert.match(app, /compactSleeperRookieBoard/);
+  assert.match(app, /localStorage/);
+});

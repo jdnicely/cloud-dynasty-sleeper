@@ -204,6 +204,154 @@ export function nextOverallPick(picks = []) {
 }
 
 
+function directoryPlayerName(playerId, player = null) {
+  const record = player && typeof player === 'object' ? player : {};
+  return (
+    record.full_name ||
+    [record.first_name, record.last_name].filter(Boolean).join(' ').trim() ||
+    String(playerId ?? '')
+  );
+}
+
+export function compactSleeperRookieBoard(playersById = {}) {
+  const allowed = new Set(['QB', 'RB', 'WR', 'TE']);
+  const rows = [];
+  for (const [playerId, raw] of Object.entries(playersById ?? {})) {
+    if (!raw || typeof raw !== 'object') continue;
+    const position = String(raw.position ?? '').toUpperCase();
+    if (!allowed.has(position)) continue;
+    if (Number(raw.years_exp) !== 0) continue;
+    if (raw.active === false) continue;
+    const rank = Number(raw.search_rank);
+    rows.push({
+      player_id: String(playerId),
+      name: directoryPlayerName(playerId, raw),
+      position,
+      team: raw.team ?? null,
+      search_rank: Number.isFinite(rank) ? rank : 999999,
+    });
+  }
+  return rows.sort((a, b) => {
+    if (a.search_rank !== b.search_rank) return a.search_rank - b.search_rank;
+    return a.name.localeCompare(b.name);
+  });
+}
+
+export function buildAvailableRookies(rookieBoard = [], picks = [], rosters = [], limitPerPosition = 5) {
+  const unavailable = new Set();
+  for (const pick of picks ?? []) {
+    if (pick?.player_id != null) unavailable.add(String(pick.player_id));
+  }
+  for (const roster of rosters ?? []) {
+    for (const playerId of roster?.players ?? []) unavailable.add(String(playerId));
+  }
+  const result = { QB: [], RB: [], WR: [], TE: [] };
+  for (const player of rookieBoard ?? []) {
+    const position = String(player?.position ?? '').toUpperCase();
+    if (!(position in result)) continue;
+    if (unavailable.has(String(player?.player_id ?? ''))) continue;
+    if (result[position].length >= Number(limitPerPosition || 0)) continue;
+    result[position].push(player);
+  }
+  return result;
+}
+
+export function buildRosterGroups(roster = {}, playerDirectory = {}) {
+  const groups = { QB: [], RB: [], WR: [], TE: [], OTHER: [] };
+  const starters = new Set((roster?.starters ?? []).map(String));
+  const taxi = new Set((roster?.taxi ?? []).map(String));
+  const reserve = new Set((roster?.reserve ?? []).map(String));
+  for (const rawId of roster?.players ?? []) {
+    const playerId = String(rawId);
+    const player = playerDirectory?.[playerId] ?? {};
+    const position = String(player?.position ?? 'OTHER').toUpperCase();
+    const group = position in groups ? position : 'OTHER';
+    let status = 'bench';
+    if (taxi.has(playerId)) status = 'taxi';
+    else if (reserve.has(playerId)) status = 'reserve';
+    else if (starters.has(playerId)) status = 'starter';
+    groups[group].push({
+      player_id: playerId,
+      name: directoryPlayerName(playerId, player),
+      position: position === 'OTHER' ? (player?.position ?? null) : position,
+      team: player?.team ?? null,
+      status,
+    });
+  }
+  return groups;
+}
+
+export function buildDraftHaul(draft, picks = [], tradedPicks = [], rosterId, rosters = []) {
+  const wanted = Number(rosterId);
+  if (!Number.isFinite(wanted)) return [];
+  const slotMap = buildEffectiveSlotToRosterId(draft, rosters);
+  return [...(picks ?? [])]
+    .sort((a, b) => Number(a?.pick_no ?? 0) - Number(b?.pick_no ?? 0))
+    .flatMap((pick) => {
+      const ownerRosterId = resolveDraftPickRosterId(pick, draft, rosters, tradedPicks);
+      if (Number(ownerRosterId) !== wanted) return [];
+      const originalRosterId = Number(slotMap[String(pick?.draft_slot)] ?? slotMap[pick?.draft_slot]);
+      return [{
+        pickNo: Number(pick?.pick_no),
+        round: Number(pick?.round),
+        slot: Number(pick?.draft_slot),
+        label: formatPickLabel(pick?.round, pick?.draft_slot),
+        player_id: String(pick?.player_id ?? ''),
+        player: playerLabel(pick),
+        originalRosterId: Number.isFinite(originalRosterId) ? originalRosterId : null,
+        ownerRosterId: wanted,
+        isAcquired: Number.isFinite(originalRosterId) ? originalRosterId !== wanted : false,
+      }];
+    });
+}
+
+export function buildRosterCapacity(league = {}, roster = {}, draftHaul = []) {
+  const baseSlots = Array.isArray(league?.roster_positions) ? league.roster_positions.length : 0;
+  const taxiSlots = Number(league?.settings?.taxi_slots ?? 0) || 0;
+  const reserveSlots = Number(league?.settings?.reserve_slots ?? 0) || 0;
+  const currentIds = new Set((roster?.players ?? []).map(String));
+  const addedIds = new Set(
+    (draftHaul ?? [])
+      .map((item) => String(item?.player_id ?? ''))
+      .filter((playerId) => playerId && !currentIds.has(playerId)),
+  );
+  const currentPlayers = currentIds.size;
+  const projectedPlayers = currentPlayers + addedIds.size;
+  const totalCapacity = baseSlots + taxiSlots + reserveSlots;
+  const minimumMoves = Math.max(0, projectedPlayers - totalCapacity);
+  const movesWithoutReserve = Math.max(0, projectedPlayers - (baseSlots + taxiSlots));
+  return {
+    baseSlots,
+    taxiSlots,
+    reserveSlots,
+    totalCapacity,
+    currentPlayers,
+    draftAdditions: addedIds.size,
+    projectedPlayers,
+    minimumMoves,
+    movesWithoutReserve,
+    moveRange: minimumMoves === movesWithoutReserve ? String(minimumMoves) : `${minimumMoves}–${movesWithoutReserve}`,
+  };
+}
+
+export function buildDiagnostics(state = {}) {
+  const draft = state?.draft ?? {};
+  const slotMap = buildEffectiveSlotToRosterId(draft, state?.rosters ?? []);
+  const expectedSlots = Number(draft?.settings?.teams ?? Object.keys(slotMap).length ?? 0) || 0;
+  const mappedSlots = Object.values(slotMap).filter((value) => Number.isFinite(Number(value)) && Number(value) > 0).length;
+  return {
+    liveDraftId: draft?.draft_id != null ? String(draft.draft_id) : '—',
+    referenceDraftId: draft?.reference_draft_id ? String(draft.reference_draft_id) : 'none',
+    leagueId: state?.contextLeagueId ? String(state.contextLeagueId) : String(draft?.league_id ?? draft?.metadata?.league_id ?? '—'),
+    tradeSource: state?.tradedPickSource ?? 'unknown',
+    lastPoll: state?.refreshedAt ?? '—',
+    mappedSlots,
+    expectedSlots,
+    mappingStatus: `${mappedSlots}/${expectedSlots} mapped`,
+  };
+}
+
+
 export function chooseDraftId({ directDraftId = null, manualDraftId = 'auto', drafts = [] } = {}) {
   const direct = String(directDraftId ?? '').trim();
   if (direct) return direct;
@@ -235,16 +383,58 @@ export function buildChatSnapshot(state) {
   if (state?.refreshedAt) lines.push(`Refreshed: ${state.refreshedAt}`);
 
   if (Number.isFinite(selectedRosterId)) {
+    const selectedRoster = rosters.find((roster) => Number(roster?.roster_id) === selectedRosterId) ?? {};
+    const haul = buildDraftHaul(draft, picks, tradedPicks, selectedRosterId, rosters);
+    const groups = buildRosterGroups(selectedRoster, state?.playerDirectory ?? {});
+    const capacity = buildRosterCapacity(state?.league ?? {}, selectedRoster, haul);
+    const available = buildAvailableRookies(state?.rookieBoard ?? [], picks, rosters, 5);
+
     lines.push(`My roster: ${rosterLabel(selectedRosterId, rosters, users)}`);
     lines.push('Upcoming owned picks:');
     if (upcoming.length) {
-      for (const pick of upcoming.slice(0, 12)) {
-        lines.push(`- ${formatPickLabel(pick.round, pick.slot)} (overall ${pick.pickNo})`);
-      }
+      for (const pick of upcoming.slice(0, 12)) lines.push(`- ${formatPickLabel(pick.round, pick.slot)} (overall ${pick.pickNo})`);
     } else {
       lines.push('- none remaining');
     }
+
+    lines.push('My current roster by position:');
+    for (const position of ['QB', 'RB', 'WR', 'TE', 'OTHER']) {
+      const entries = groups[position] ?? [];
+      if (!entries.length) continue;
+      const rendered = entries.map((item) => `${item.name}${item.status === 'starter' || item.status === 'bench' ? '' : ` [${item.status}]`}`);
+      lines.push(`${position}: ${rendered.join(', ')}`);
+    }
+
+    lines.push('My draft additions:');
+    if (haul.length) {
+      for (const item of haul) lines.push(`${item.label} — ${item.player} — ${item.isAcquired ? 'acquired pick' : 'native'}`);
+    } else {
+      lines.push('- none yet');
+    }
+
+    lines.push('Roster capacity:');
+    lines.push(`- active+bench slots: ${capacity.baseSlots}; taxi: ${capacity.taxiSlots}; reserve: ${capacity.reserveSlots}`);
+    lines.push(`- current players: ${capacity.currentPlayers}; draft additions not yet counted: ${capacity.draftAdditions}; projected: ${capacity.projectedPlayers}/${capacity.totalCapacity}`);
+    lines.push(`- projected roster moves: ${capacity.moveRange} depending on reserve eligibility (absolute minimum ${capacity.minimumMoves})`);
+
+    lines.push('Top undrafted rookies (Sleeper search rank):');
+    let anyAvailable = false;
+    for (const position of ['QB', 'RB', 'WR', 'TE']) {
+      const entries = available[position] ?? [];
+      if (!entries.length) continue;
+      anyAvailable = true;
+      lines.push(`${position}: ${entries.map((item) => `${item.name}${item.team ? ` (${item.team})` : ''}`).join(', ')}`);
+    }
+    if (!anyAvailable) lines.push('- player board unavailable');
   }
+
+  const diagnostics = buildDiagnostics(state);
+  lines.push('Diagnostics:');
+  lines.push(`- live draft: ${diagnostics.liveDraftId}`);
+  lines.push(`- reference draft: ${diagnostics.referenceDraftId}`);
+  lines.push(`- league: ${diagnostics.leagueId}`);
+  lines.push(`- trade source: ${diagnostics.tradeSource}`);
+  lines.push(`- slot mapping: ${diagnostics.mappingStatus}`);
 
   lines.push('Drafted players:');
   if (!picks.length) {
