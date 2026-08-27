@@ -10,6 +10,7 @@ import {
   resolveDraftPickRosterId,
   resolvePickOwner,
   rosterLabel,
+  selectEffectiveTradedPicks,
   selectPreferredDraft,
 } from './core.mjs';
 import { advanceMock, createMockState, resetMock } from './mock.mjs';
@@ -304,14 +305,15 @@ async function refreshLive({ forceContext = false } = {}) {
       const draft = await fetchJson(`/draft/${DIRECT_DRAFT_ID}`);
       const contextLeagueId = draft?.league_id || LEAGUE_ID;
       if (forceContext || !liveState.users.length || !liveState.rosters.length) await loadLiveContext(contextLeagueId);
-      const [picks, tradedPicks] = await Promise.all([
+      const [picks, draftTradedPicks, leagueTradedPicks] = await Promise.all([
         fetchJson(`/draft/${DIRECT_DRAFT_ID}/picks`),
         fetchJson(`/draft/${DIRECT_DRAFT_ID}/traded_picks`),
+        fetchJson(`/league/${contextLeagueId}/traded_picks`),
       ]);
       liveState.drafts = [draft];
       liveState.draft = draft;
       liveState.picks = picks;
-      liveState.tradedPicks = tradedPicks;
+      liveState.tradedPicks = selectEffectiveTradedPicks(draftTradedPicks, leagueTradedPicks, draft?.season);
       liveState.refreshedAt = new Date().toISOString();
       populateDraftSelector([draft], draft);
       render();
@@ -334,14 +336,15 @@ async function refreshLive({ forceContext = false } = {}) {
       setStatus('No Sleeper draft found for this league yet. Mock rehearsal is available.', 'warn');
       return;
     }
-    const [draft, picks, tradedPicks] = await Promise.all([
+    const [draft, picks, draftTradedPicks, leagueTradedPicks] = await Promise.all([
       fetchJson(`/draft/${selected.draft_id}`),
       fetchJson(`/draft/${selected.draft_id}/picks`),
       fetchJson(`/draft/${selected.draft_id}/traded_picks`),
+      fetchJson(`/league/${LEAGUE_ID}/traded_picks`),
     ]);
     liveState.draft = draft;
     liveState.picks = picks;
-    liveState.tradedPicks = tradedPicks;
+    liveState.tradedPicks = selectEffectiveTradedPicks(draftTradedPicks, leagueTradedPicks, draft?.season);
     liveState.refreshedAt = new Date().toISOString();
     render();
     setStatus(`Live • ${draftDisplayName(draft)} • ${picks.length} picks received from Sleeper`, 'ok');

@@ -241,29 +241,28 @@ test('Draft Mode parses the draft query override and hides mock controls in live
   assert.match(css, /#mock-controls\[hidden\][^{]*\{[^}]*display\s*:\s*none/i);
 });
 
-test('draft_order remaps a league roster to its actual mock draft slot without duplicating the roster', async () => {
+test('draft_order only fills slots missing from slot_to_roster_id', async () => {
   const core = await import('../draft/core.mjs');
-  assert.equal(typeof core.buildEffectiveSlotToRosterId, 'function');
   const draft = {
     ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
-    draft_order: { u1: 3 },
-    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+    draft_order: { u6: 1, u1: 3 },
+    slot_to_roster_id: { '2': 12, '3': 1 },
   };
   const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
   const mapping = core.buildEffectiveSlotToRosterId(draft, rosters);
+  assert.equal(mapping['1'], 6);
+  assert.equal(mapping['2'], 12);
   assert.equal(mapping['3'], 1);
-  assert.equal(mapping['9'], 9);
-  assert.notEqual(mapping['1'], 1);
 });
 
-test('upcoming picks use draft_order for native slot and include an acquired traded pick', () => {
+test('upcoming picks use authoritative slot map for native and acquired traded picks', () => {
   const draft = {
     ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
-    draft_order: { u1: 3 },
-    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+    draft_order: { u1: 1, u8: 8 },
+    slot_to_roster_id: { '3': 1, '9': 8 },
   };
   const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
-  const traded = [{ round: 3, roster_id: 9, previous_owner_id: 9, owner_id: 1 }];
+  const traded = [{ round: 3, roster_id: 8, previous_owner_id: 8, owner_id: 1 }];
   const picks = [];
   for (let pickNo = 1; pickNo <= 14; pickNo += 1) {
     const round = Math.floor((pickNo - 1) / 12) + 1;
@@ -304,12 +303,12 @@ test('pick owner falls back from missing roster_id to picked_by user via league 
 test('snapshot reflects the selected roster actual draft slot and acquired third-round pick', () => {
   const draft = {
     ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
-    draft_order: { u1: 3 },
-    slot_to_roster_id: Object.fromEntries(Array.from({ length: 12 }, (_, i) => [String(i + 1), i + 1])),
+    draft_order: { u1: 1, u8: 8 },
+    slot_to_roster_id: { '3': 1, '9': 8 },
   };
   const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
   const users = [{ user_id: 'u1', display_name: 'HTTFFT' }];
-  const tradedPicks = [{ round: 3, roster_id: 9, previous_owner_id: 9, owner_id: 1 }];
+  const tradedPicks = [{ round: 3, roster_id: 8, previous_owner_id: 8, owner_id: 1 }];
   const picks = [];
   for (let pickNo = 1; pickNo <= 14; pickNo += 1) {
     const round = Math.floor((pickNo - 1) / 12) + 1;
@@ -328,4 +327,107 @@ test('snapshot reflects the selected roster actual draft slot and acquired third
   assert.match(text, /3\.03 \(overall 27\)/);
   assert.match(text, /3\.09 \(overall 33\)/);
   assert.match(text, /1\.03 — Prospect 03 \(WR, TEN\) — HTTFFT \(Roster 1\)/);
+});
+
+test('mock draft falls back to current-season league traded picks when draft traded picks are empty', async () => {
+  const core = await import('../draft/core.mjs');
+  assert.equal(typeof core.selectEffectiveTradedPicks, 'function');
+  const leagueTrades = [
+    { round: 2, season: '2026', roster_id: 2, owner_id: 10, previous_owner_id: 2 },
+    { round: 3, season: '2026', roster_id: 8, owner_id: 1, previous_owner_id: 8 },
+    { round: 5, season: '2027', roster_id: 8, owner_id: 4, previous_owner_id: 8 },
+  ];
+  assert.deepEqual(
+    core.selectEffectiveTradedPicks([], leagueTrades, '2026'),
+    leagueTrades.slice(0, 2),
+  );
+});
+
+test('league fallback trade maps original roster 8 to slot 9 and gives roster 1 both 3.03 and 3.09', async () => {
+  const core = await import('../draft/core.mjs');
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    season: '2026',
+    draft_order: { u1: 1, u8: 8 },
+    slot_to_roster_id: { '3': 1, '9': 8 },
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  const leagueTrades = [
+    { round: 3, season: '2026', roster_id: 8, owner_id: 1, previous_owner_id: 8 },
+    { round: 5, season: '2027', roster_id: 8, owner_id: 4, previous_owner_id: 8 },
+  ];
+  const traded = core.selectEffectiveTradedPicks([], leagueTrades, draft.season);
+  const picks = [];
+  for (let pickNo = 1; pickNo <= 14; pickNo += 1) {
+    const round = Math.floor((pickNo - 1) / 12) + 1;
+    const slot = ((pickNo - 1) % 12) + 1;
+    picks.push({ pick_no: pickNo, round, draft_slot: slot, player_id: `p${pickNo}` });
+  }
+  const upcoming = core.buildUpcomingPicks(draft, picks, traded, 1, rosters);
+  assert.deepEqual(
+    upcoming.filter((pick) => pick.round === 3).map((pick) => [pick.pickNo, pick.round, pick.slot]),
+    [[27, 3, 3], [33, 3, 9]],
+  );
+});
+
+test('live Draft Mode fetches league traded picks as fallback for empty mock draft trade data', () => {
+  const app = fs.readFileSync(path.join(repoRoot, 'draft', 'app.js'), 'utf8');
+  assert.match(app, /leagueTradedPicks/);
+  assert.match(app, /\/league\/\$\{contextLeagueId\}\/traded_picks/);
+  assert.match(app, /selectEffectiveTradedPicks/);
+});
+
+test('slot_to_roster_id remains authoritative when mock draft_order conflicts with league team order', async () => {
+  const core = await import('../draft/core.mjs');
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    draft_order: { u1: 3, u2: 2, u4: 4, u5: 5, u6: 6, u8: 8, u9: 9, u11: 11, u12: 12 },
+    slot_to_roster_id: {
+      '1': 6,
+      '2': 12,
+      '3': 1,
+      '4': 2,
+      '5': 9,
+      '6': 11,
+      '7': 4,
+      '8': 5,
+      '9': 8,
+      '10': 10,
+      '11': 3,
+      '12': 7,
+    },
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+  assert.deepEqual(core.buildEffectiveSlotToRosterId(draft, rosters), draft.slot_to_roster_id);
+});
+
+test('completed mock picks resolve by picked_by or draft slot before ambiguous raw roster_id', async () => {
+  const core = await import('../draft/core.mjs');
+  const draft = {
+    ...baseDraft({ settings: { teams: 12, rounds: 5, pick_timer: 60 } }),
+    slot_to_roster_id: {
+      '1': 6,
+      '2': 12,
+      '3': 1,
+      '4': 2,
+      '5': 9,
+      '6': 11,
+      '7': 4,
+      '8': 5,
+      '9': 8,
+      '10': 10,
+      '11': 3,
+      '12': 7,
+    },
+  };
+  const rosters = Array.from({ length: 12 }, (_, i) => ({ roster_id: i + 1, owner_id: `u${i + 1}` }));
+
+  const anonymousSlotOne = { pick_no: 1, round: 1, draft_slot: 1, roster_id: null, picked_by: null };
+  assert.equal(core.resolveDraftPickRosterId(anonymousSlotOne, draft, rosters, []), 6);
+
+  const ambiguousSlotTwo = { pick_no: 2, round: 1, draft_slot: 2, roster_id: 2, picked_by: null };
+  assert.equal(core.resolveDraftPickRosterId(ambiguousSlotTwo, draft, rosters, []), 12);
+
+  const signedInSlotThree = { pick_no: 3, round: 1, draft_slot: 3, roster_id: 3, picked_by: 'u1' };
+  assert.equal(core.resolveDraftPickRosterId(signedInSlotThree, draft, rosters, []), 1);
 });

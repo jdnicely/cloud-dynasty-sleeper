@@ -25,8 +25,19 @@ export function overallPickNumber(round, slot, teams, type = 'linear') {
 export function buildEffectiveSlotToRosterId(draft, rosters = []) {
   const result = {};
   const assignedRosterIds = new Set();
-  const assignedSlots = new Set();
   const rosterByUserId = new Map();
+
+  // Sleeper's slot_to_roster_id is the authoritative mapping from a draft
+  // column to the original league roster. League mocks may expose a
+  // draft_order that reflects mock participants/placeholders instead of the
+  // league's actual roster order, so it must never override this map.
+  for (const [rawSlot, rawRosterId] of Object.entries(draft?.slot_to_roster_id ?? {})) {
+    const slot = Number(rawSlot);
+    const rosterId = Number(rawRosterId);
+    if (!Number.isFinite(slot) || !Number.isFinite(rosterId)) continue;
+    result[String(slot)] = rosterId;
+    assignedRosterIds.add(rosterId);
+  }
 
   for (const roster of rosters ?? []) {
     const rosterId = Number(roster?.roster_id);
@@ -35,26 +46,27 @@ export function buildEffectiveSlotToRosterId(draft, rosters = []) {
     for (const userId of userIds) rosterByUserId.set(String(userId), rosterId);
   }
 
+  // Only fill genuinely missing slot-map entries from draft_order.
   for (const [userId, rawSlot] of Object.entries(draft?.draft_order ?? {})) {
     const slot = Number(rawSlot);
     const rosterId = rosterByUserId.get(String(userId));
     if (!Number.isFinite(slot) || !Number.isFinite(rosterId)) continue;
+    if (result[String(slot)] != null || assignedRosterIds.has(rosterId)) continue;
     result[String(slot)] = rosterId;
-    assignedSlots.add(slot);
-    assignedRosterIds.add(rosterId);
-  }
-
-  for (const [rawSlot, rawRosterId] of Object.entries(draft?.slot_to_roster_id ?? {})) {
-    const slot = Number(rawSlot);
-    const rosterId = Number(rawRosterId);
-    if (!Number.isFinite(slot) || !Number.isFinite(rosterId)) continue;
-    if (assignedSlots.has(slot) || assignedRosterIds.has(rosterId)) continue;
-    result[String(slot)] = rosterId;
-    assignedSlots.add(slot);
     assignedRosterIds.add(rosterId);
   }
 
   return result;
+}
+
+export function selectEffectiveTradedPicks(draftTradedPicks = [], leagueTradedPicks = [], season = null) {
+  const draftTrades = Array.isArray(draftTradedPicks) ? draftTradedPicks : [];
+  if (draftTrades.length) return draftTrades;
+
+  const leagueTrades = Array.isArray(leagueTradedPicks) ? leagueTradedPicks : [];
+  const wantedSeason = String(season ?? '').trim();
+  if (!wantedSeason) return leagueTrades;
+  return leagueTrades.filter((item) => String(item?.season ?? '') === wantedSeason);
 }
 
 export function resolvePickOwner(round, slot, draft, tradedPicks = [], rosters = []) {
@@ -68,9 +80,7 @@ export function resolvePickOwner(round, slot, draft, tradedPicks = [], rosters =
 }
 
 export function resolveDraftPickRosterId(pick, draft, rosters = [], tradedPicks = []) {
-  const directRosterId = Number(pick?.roster_id);
-  if (Number.isFinite(directRosterId) && directRosterId > 0) return directRosterId;
-
+  // picked_by is the strongest signal when a real league user made the pick.
   const pickedBy = String(pick?.picked_by ?? '').trim();
   if (pickedBy) {
     const roster = (rosters ?? []).find((item) => {
@@ -81,9 +91,16 @@ export function resolveDraftPickRosterId(pick, draft, rosters = [], tradedPicks 
     if (Number.isFinite(rosterId) && rosterId > 0) return rosterId;
   }
 
+  // In league mocks, pick.roster_id can reflect a mock seat rather than the
+  // league roster. Resolve the pick's draft column through the authoritative
+  // slot map (and traded-pick owner) before trusting the raw roster_id.
   if (pick?.round != null && pick?.draft_slot != null) {
-    return resolvePickOwner(pick.round, pick.draft_slot, draft, tradedPicks, rosters);
+    const resolved = resolvePickOwner(pick.round, pick.draft_slot, draft, tradedPicks, rosters);
+    if (Number.isFinite(resolved) && resolved > 0) return resolved;
   }
+
+  const directRosterId = Number(pick?.roster_id);
+  if (Number.isFinite(directRosterId) && directRosterId > 0) return directRosterId;
   return null;
 }
 
