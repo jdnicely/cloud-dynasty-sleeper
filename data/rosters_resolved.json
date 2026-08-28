@@ -1173,7 +1173,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
@@ -1185,7 +1185,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Quentin Johnston",
           "player_id": "9754",
           "position": "WR",
@@ -1259,7 +1259,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
@@ -1383,7 +1383,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Quentin Johnston",
           "player_id": "9754",
           "position": "WR",
@@ -5503,7 +5503,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "PUP",
+          "injury_status": "Questionable",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5598,7 +5598,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "PUP",
+          "injury_status": "Questionable",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
