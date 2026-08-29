@@ -38,7 +38,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Xavier Worthy",
           "player_id": "11624",
           "position": "WR",
@@ -481,7 +481,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Xavier Worthy",
           "player_id": "11624",
           "position": "WR",
@@ -593,7 +593,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tyreek Hill",
           "player_id": "3321",
           "position": "WR",
@@ -796,7 +796,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tyreek Hill",
           "player_id": "3321",
           "position": "WR",
@@ -2623,7 +2623,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Cameron Dicker",
           "player_id": "8259",
           "position": "K",
@@ -2882,7 +2882,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Cameron Dicker",
           "player_id": "8259",
           "position": "K",
@@ -3977,7 +3977,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyrone Tracy",
           "player_id": "11655",
           "position": "RB",
@@ -4159,7 +4159,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyrone Tracy",
           "player_id": "11655",
           "position": "RB",
