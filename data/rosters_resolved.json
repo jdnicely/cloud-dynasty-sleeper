@@ -55,7 +55,7 @@
           "player_id": "12504",
           "position": "RB",
           "status": "Active",
-          "team": "PIT"
+          "team": "GB"
         },
         {
           "active": true,
@@ -498,7 +498,7 @@
           "player_id": "12504",
           "position": "RB",
           "status": "Active",
-          "team": "PIT"
+          "team": "GB"
         },
         {
           "active": true,
@@ -593,7 +593,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "Questionable",
           "name": "Tyreek Hill",
           "player_id": "3321",
           "position": "WR",
@@ -796,7 +796,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "Questionable",
           "name": "Tyreek Hill",
           "player_id": "3321",
           "position": "WR",
@@ -2659,11 +2659,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "HOU"
         },
         {
@@ -2745,11 +2745,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "HOU"
         }
       ],
@@ -4049,11 +4049,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "James Conner",
           "player_id": "4137",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -4228,11 +4228,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "James Conner",
           "player_id": "4137",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         }
       ],
@@ -5004,7 +5004,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "DNR",
           "name": "Josh Jacobs",
           "player_id": "5850",
           "position": "RB",
@@ -5252,7 +5252,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "DNR",
           "name": "Josh Jacobs",
           "player_id": "5850",
           "position": "RB",
@@ -5407,7 +5407,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
@@ -5767,7 +5767,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
