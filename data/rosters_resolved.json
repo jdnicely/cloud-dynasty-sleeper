@@ -1009,7 +1009,7 @@
           "player_id": "12457",
           "position": "RB",
           "status": "Active",
-          "team": "DAL"
+          "team": null
         },
         {
           "active": true,
@@ -1454,7 +1454,7 @@
           "player_id": "12457",
           "position": "RB",
           "status": "Active",
-          "team": "DAL"
+          "team": null
         },
         {
           "active": true,
@@ -5004,7 +5004,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "DNR",
+          "injury_status": "NA",
           "name": "Josh Jacobs",
           "player_id": "5850",
           "position": "RB",
@@ -5252,7 +5252,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "DNR",
+          "injury_status": "NA",
           "name": "Josh Jacobs",
           "player_id": "5850",
           "position": "RB",
@@ -5411,7 +5411,7 @@
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NO"
         },
         {
@@ -5771,7 +5771,7 @@
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NO"
         }
       ]
