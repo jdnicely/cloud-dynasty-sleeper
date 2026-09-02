@@ -1009,7 +1009,7 @@
           "player_id": "12457",
           "position": "RB",
           "status": "Active",
-          "team": null
+          "team": "PHI"
         },
         {
           "active": true,
@@ -1454,7 +1454,7 @@
           "player_id": "12457",
           "position": "RB",
           "status": "Active",
-          "team": null
+          "team": "PHI"
         },
         {
           "active": true,
@@ -4557,7 +4557,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tee Higgins",
           "player_id": "6801",
           "position": "WR",
@@ -4667,7 +4667,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tee Higgins",
           "player_id": "6801",
           "position": "WR",
