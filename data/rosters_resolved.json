@@ -4641,6 +4641,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Chris Rodriguez",
+          "player_id": "10219",
+          "position": "RB",
+          "status": "Active",
+          "team": "JAX"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -4851,18 +4863,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Chris Rodriguez",
-          "player_id": "10219",
-          "position": "RB",
-          "status": "Active",
-          "team": "JAX"
-        },
         {
           "active": true,
           "fantasy_positions": [
