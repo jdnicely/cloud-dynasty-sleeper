@@ -206,7 +206,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kenneth Walker",
           "player_id": "8151",
           "position": "RB",
@@ -415,7 +415,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kenneth Walker",
           "player_id": "8151",
           "position": "RB",
@@ -3965,7 +3965,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "J.J. McCarthy",
           "player_id": "11565",
           "position": "QB",
@@ -4344,7 +4344,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "J.J. McCarthy",
           "player_id": "11565",
           "position": "QB",
@@ -4437,7 +4437,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Brian Thomas",
           "player_id": "11631",
           "position": "WR",
@@ -4655,7 +4655,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Brian Thomas",
           "player_id": "11631",
           "position": "WR",
@@ -4956,7 +4956,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5138,7 +5138,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
