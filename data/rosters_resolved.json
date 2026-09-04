@@ -1973,7 +1973,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Rome Odunze",
           "player_id": "11620",
           "position": "WR",
@@ -2427,7 +2427,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Rome Odunze",
           "player_id": "11620",
           "position": "WR",
@@ -3094,7 +3094,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "D'Andre Swift",
           "player_id": "6790",
           "position": "RB",
@@ -3324,7 +3324,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "D'Andre Swift",
           "player_id": "6790",
           "position": "RB",
@@ -5407,7 +5407,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
@@ -5503,7 +5503,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5598,7 +5598,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5767,7 +5767,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Devin Neal",
           "player_id": "12476",
           "position": "RB",
