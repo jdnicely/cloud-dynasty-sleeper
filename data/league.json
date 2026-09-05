@@ -19,7 +19,8 @@
   "loser_bracket_id": null,
   "loser_bracket_overrides_id": null,
   "metadata": {
-    "keeper_deadline": "0"
+    "keeper_deadline": "0",
+    "latest_league_winner_roster_id": "11"
   },
   "name": "Cloud Dynasty League",
   "previous_league_id": "1251524522117451776",

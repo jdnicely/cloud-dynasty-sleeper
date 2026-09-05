@@ -1032,7 +1032,7 @@
           "injury_status": null,
           "name": "Travis Hunter",
           "player_id": "12530",
-          "position": "WR",
+          "position": "DB",
           "status": "Active",
           "team": "JAX"
         },
@@ -1477,7 +1477,7 @@
           "injury_status": null,
           "name": "Travis Hunter",
           "player_id": "12530",
-          "position": "WR",
+          "position": "DB",
           "status": "Active",
           "team": "JAX"
         }
@@ -5412,7 +5412,7 @@
           "player_id": "12476",
           "position": "RB",
           "status": "Inactive",
-          "team": "NO"
+          "team": null
         },
         {
           "active": true,
@@ -5772,7 +5772,7 @@
           "player_id": "12476",
           "position": "RB",
           "status": "Inactive",
-          "team": "NO"
+          "team": null
         }
       ]
     }
