@@ -5136,30 +5136,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Bhayshul Tuten",
-          "player_id": "12490",
-          "position": "RB",
-          "status": "Active",
-          "team": "JAX"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Mark Andrews",
-          "player_id": "5012",
-          "position": "TE",
-          "status": "Active",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5287,15 +5263,17 @@
           "team": "CAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Mark Andrews",
+          "player_id": "5012",
+          "position": "TE",
           "starter_slot": "TE",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "BAL"
         },
         {
           "active": true,
@@ -5350,7 +5328,20 @@
           "team": "DET"
         }
       ],
-      "taxi": []
+      "taxi": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Bhayshul Tuten",
+          "player_id": "12490",
+          "position": "RB",
+          "status": "Active",
+          "team": "JAX"
+        }
+      ]
     },
     {
       "all_players": [
