@@ -5337,7 +5337,7 @@
       "co_owners": [],
       "owner": {
         "display_name": "THB1284",
-        "team_name": "When i pee, it HURTS",
+        "team_name": "Mike can't quit me",
         "user_id": "870443226304335872",
         "username": null
       },
@@ -6187,18 +6187,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Devin Neal",
-          "player_id": "12476",
-          "position": "RB",
-          "status": "Inactive",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -6360,11 +6348,11 @@
             "WR"
           ],
           "injury_status": "Questionable",
-          "name": "Jalen McMillan",
-          "player_id": "11618",
+          "name": "Luther Burden",
+          "player_id": "12519",
           "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -6389,18 +6377,6 @@
           "position": "WR",
           "status": "Active",
           "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Terry McLaurin",
-          "player_id": "5927",
-          "position": "WR",
-          "status": "Active",
-          "team": "WAS"
         },
         {
           "active": true,
@@ -6480,13 +6456,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Luther Burden",
-          "player_id": "12519",
+          "injury_status": null,
+          "name": "Terry McLaurin",
+          "player_id": "5927",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6583,14 +6559,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": "Questionable",
-          "name": "Devin Neal",
-          "player_id": "12476",
-          "position": "RB",
-          "status": "Inactive",
-          "team": null
+          "name": "Jalen McMillan",
+          "player_id": "11618",
+          "position": "WR",
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": true,
