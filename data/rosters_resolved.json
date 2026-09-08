@@ -24,18 +24,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Isaiah Davis",
-          "player_id": "11571",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -609,18 +597,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Isaiah Davis",
-          "player_id": "11571",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYJ"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -6319,18 +6295,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Mac Jones",
-          "player_id": "7527",
-          "position": "QB",
-          "status": "Active",
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -6351,18 +6315,6 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Brenton Strange",
-          "player_id": "9480",
-          "position": "TE",
-          "status": "Active",
-          "team": "JAX"
         },
         {
           "active": true,
@@ -6429,18 +6381,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jonah Coleman",
-          "player_id": "13345",
-          "position": "RB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -6465,39 +6405,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Mac Jones",
-          "player_id": "7527",
-          "position": "QB",
-          "status": "Active",
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Brenton Strange",
-          "player_id": "9480",
-          "position": "TE",
-          "status": "Active",
-          "team": "JAX"
-        }
-      ],
-      "co_owners": [],
-      "owner": {
-        "display_name": "METERP",
-        "team_name": "TakeCommand",
-        "user_id": "464245649550864384",
-        "username": null
-      },
-      "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -6508,6 +6415,14 @@
           "team": "IND"
         }
       ],
+      "co_owners": [],
+      "owner": {
+        "display_name": "METERP",
+        "team_name": "TakeCommand",
+        "user_id": "464245649550864384",
+        "username": null
+      },
+      "reserve": [],
       "roster_id": 12,
       "settings": {
         "division": 3,
@@ -6676,6 +6591,18 @@
           "position": "RB",
           "status": "Inactive",
           "team": null
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Jonah Coleman",
+          "player_id": "13345",
+          "position": "RB",
+          "status": "Active",
+          "team": "DEN"
         }
       ]
     }
