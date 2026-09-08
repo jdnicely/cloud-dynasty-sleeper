@@ -355,6 +355,7 @@
     "league_id": "1389332241724764160",
     "metadata": {
       "allow_pn": "on",
+      "allow_sms": "on",
       "mention_pn": "on"
     },
     "settings": null,
