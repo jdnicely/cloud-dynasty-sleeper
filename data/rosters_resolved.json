@@ -5193,18 +5193,6 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Tank Bigsby",
-          "player_id": "9225",
-          "position": "RB",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
           "name": "De'Von Achane",
           "player_id": "9226",
           "position": "RB",
@@ -5308,18 +5296,6 @@
           "position": "WR",
           "status": "Active",
           "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Tank Bigsby",
-          "player_id": "9225",
-          "position": "RB",
-          "status": "Active",
-          "team": "PHI"
         },
         {
           "active": true,
@@ -5578,18 +5554,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
-          "position": "QB",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
@@ -5782,18 +5746,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jordan Addison",
-          "player_id": "9756",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -5822,72 +5774,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Jonathon Brooks",
-          "player_id": "11583",
+          "injury_status": "NA",
+          "name": "Josh Jacobs",
+          "player_id": "5850",
           "position": "RB",
           "status": "Active",
-          "team": "CAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
-          "position": "QB",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "IR",
-          "name": "Jayden Higgins",
-          "player_id": "12484",
-          "position": "WR",
-          "status": "Inactive",
-          "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Isaac TeSlaa",
-          "player_id": "12535",
-          "position": "WR",
-          "status": "Active",
-          "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kaytron Allen",
-          "player_id": "13405",
-          "position": "RB",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Sam Darnold",
-          "player_id": "4943",
-          "position": "QB",
-          "status": "Active",
-          "team": "SEA"
+          "team": "GB"
         },
         {
           "active": true,
@@ -5924,18 +5816,6 @@
           "position": "WR",
           "status": "Active",
           "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jordan Addison",
-          "player_id": "9756",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
         }
       ],
       "co_owners": [
@@ -5952,7 +5832,20 @@
         "user_id": "605268623866560512",
         "username": null
       },
-      "reserve": [],
+      "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "Jayden Higgins",
+          "player_id": "12484",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "HOU"
+        }
+      ],
       "roster_id": 11,
       "settings": {
         "division": 2,
@@ -5997,13 +5890,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "NA",
-          "name": "Josh Jacobs",
-          "player_id": "5850",
+          "injury_status": "Questionable",
+          "name": "Jonathon Brooks",
+          "player_id": "11583",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "GB"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -6058,15 +5951,17 @@
           "team": "NYG"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Sam Darnold",
+          "player_id": "4943",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -6107,6 +6002,30 @@
           "position": "RB",
           "status": "Active",
           "team": "JAX"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Isaac TeSlaa",
+          "player_id": "12535",
+          "position": "WR",
+          "status": "Active",
+          "team": "DET"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kaytron Allen",
+          "player_id": "13405",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         }
       ]
     },
