@@ -68,6 +68,7 @@ def build_current_ownership(rosters: list[dict[str, Any]]) -> dict[str, int]:
         ids = set(str(x) for x in (roster.get("players") or []))
         ids.update(str(x) for x in (roster.get("taxi") or []))
         ids.update(str(x) for x in (roster.get("reserve") or []))
+        ids.update(str(x) for x in (roster.get("starters") or []))
         for player_id in ids:
             ownership[player_id] = rid
     return ownership
@@ -124,10 +125,10 @@ def normalize_transaction(
                 check = {
                     "player_id": player_id,
                     "player_name": player,
-                    "availability": "available",
+                    "availability": "unrostered_api",
                     "current_owner_roster_id": None,
                     "current_owner_name": None,
-                    "label": f"{player} [CONFIRMED AVAILABLE]",
+                    "label": f"{player} [UNROSTERED PER PUBLIC API — VERIFY IN SLEEPER]",
                 }
             elif rid is not None and int(current_owner) == int(rid):
                 owner = _team(current_owner, teams)

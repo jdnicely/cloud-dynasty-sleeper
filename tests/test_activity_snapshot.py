@@ -75,7 +75,7 @@ class ActivitySnapshotTests(unittest.TestCase):
 
     def test_current_ownership_includes_players_taxi_and_reserve(self):
         rosters = [
-            {'roster_id': 1, 'players': ['100'], 'taxi': ['200'], 'reserve': ['300']},
+            {'roster_id': 1, 'players': ['100'], 'taxi': ['200'], 'reserve': ['300'], 'starters': ['500']},
             {'roster_id': 2, 'players': ['400']},
         ]
         ownership = self.mod.build_current_ownership(rosters)
@@ -83,6 +83,7 @@ class ActivitySnapshotTests(unittest.TestCase):
         self.assertEqual(ownership['200'], 1)
         self.assertEqual(ownership['300'], 1)
         self.assertEqual(ownership['400'], 2)
+        self.assertEqual(ownership['500'], 1)
 
     def test_drop_reconciliation_marks_same_roster_other_roster_and_available(self):
         teams = {1: 'Danger Zone', 2: 'goTribe Other'}
@@ -101,8 +102,9 @@ class ActivitySnapshotTests(unittest.TestCase):
         self.assertIn('CURRENTLY ROSTERED BY goTribe Other', other['summary'])
 
         available = self.mod.normalize_transaction(base, teams, players, {})
-        self.assertEqual(available['drop_checks'][0]['availability'], 'available')
-        self.assertIn('CONFIRMED AVAILABLE', available['summary'])
+        self.assertEqual(available['drop_checks'][0]['availability'], 'unrostered_api')
+        self.assertIn('UNROSTERED PER PUBLIC API — VERIFY IN SLEEPER', available['summary'])
+        self.assertNotIn('CONFIRMED AVAILABLE', available['summary'])
 
 
 if __name__ == '__main__':

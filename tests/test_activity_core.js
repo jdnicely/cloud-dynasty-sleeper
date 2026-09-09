@@ -46,12 +46,13 @@ assert.ok(snapshot.includes('Current involved rosters'));
 console.log('activity_core tests passed');
 
 const ownership = core.buildCurrentOwnership([
-  {roster_id: 1, players: ['100'], taxi: ['300'], reserve: ['400']},
+  {roster_id: 1, players: ['100'], taxi: ['300'], reserve: ['400'], starters: ['500']},
   {roster_id: 2, players: ['200']},
 ]);
 assert.equal(ownership['100'], 1);
 assert.equal(ownership['300'], 1, 'taxi players must count as rostered');
 assert.equal(ownership['400'], 1, 'reserve players must count as rostered');
+assert.equal(ownership['500'], 1, 'starter-only players must count as rostered');
 
 const sameOwnerDrop = core.normalizeTransaction({
   transaction_id: 'same-owner-drop', type: 'free_agent', status: 'complete', created: 2000000000000,
@@ -71,12 +72,14 @@ const availableDrop = core.normalizeTransaction({
   transaction_id: 'available-drop', type: 'free_agent', status: 'complete', created: 2000000000000,
   roster_ids: [1], drops: {'100': 1}, adds: null,
 }, teams, players, {});
-assert.equal(availableDrop.drop_checks[0].availability, 'available');
-assert.ok(availableDrop.summary.includes('CONFIRMED AVAILABLE'));
+assert.equal(availableDrop.drop_checks[0].availability, 'unrostered_api');
+assert.ok(availableDrop.summary.includes('UNROSTERED PER PUBLIC API — VERIFY IN SLEEPER'));
+assert.ok(!availableDrop.summary.includes('CONFIRMED AVAILABLE'));
 
 const reconciledSnapshot = core.buildSnapshotText({
   leagueName: 'Cloud Dynasty League', hours: 24, refreshedIso: '2026-09-09T00:00:00Z',
   transactions: [sameOwnerDrop, availableDrop], rosterSummaries: [],
 });
-assert.ok(reconciledSnapshot.includes('Confirmed available from drop events:'));
+assert.ok(reconciledSnapshot.includes('Unrostered per public API — verify in Sleeper:'));
+assert.ok(!reconciledSnapshot.includes('Confirmed available from drop events:'));
 assert.ok(reconciledSnapshot.includes('Ownership mismatches / re-rostered players:'));

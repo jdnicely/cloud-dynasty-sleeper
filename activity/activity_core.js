@@ -48,6 +48,7 @@
         ...(roster?.players || []),
         ...(roster?.taxi || []),
         ...(roster?.reserve || []),
+        ...(roster?.starters || []),
       ].map(String));
       ids.forEach(pid => { ownership[pid] = rid; });
     });
@@ -61,10 +62,10 @@
       return {
         player_id: String(pid),
         player_name: player,
-        availability: 'available',
+        availability: 'unrostered_api',
         current_owner_roster_id: null,
         current_owner_name: null,
-        label: `${player} [CONFIRMED AVAILABLE]`,
+        label: `${player} [UNROSTERED PER PUBLIC API — VERIFY IN SLEEPER]`,
       };
     }
     const currentRid = Number(currentOwner);
@@ -171,12 +172,12 @@
     }
 
     const checks = (transactions || []).flatMap(tx => tx.drop_checks || []);
-    const available = checks.filter(x => x.availability === 'available');
-    const mismatches = checks.filter(x => x.availability !== 'available');
+    const unrosteredApi = checks.filter(x => x.availability === 'unrostered_api');
+    const mismatches = checks.filter(x => x.availability !== 'unrostered_api');
 
-    lines.push('', 'Confirmed available from drop events:');
-    if (!available.length) lines.push('- none');
-    else available.forEach(x => lines.push(`- ${x.player_name}`));
+    lines.push('', 'Unrostered per public API — verify in Sleeper:');
+    if (!unrosteredApi.length) lines.push('- none');
+    else unrosteredApi.forEach(x => lines.push(`- ${x.player_name}`));
 
     lines.push('', 'Ownership mismatches / re-rostered players:');
     if (!mismatches.length) lines.push('- none');
