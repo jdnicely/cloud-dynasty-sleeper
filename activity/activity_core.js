@@ -40,7 +40,57 @@
       .sort((a, b) => transactionTimeMs(b) - transactionTimeMs(a));
   }
 
-  function normalizeTransaction(tx, teams, players) {
+  function buildCurrentOwnership(rosters) {
+    const ownership = {};
+    (rosters || []).forEach(roster => {
+      const rid = Number(roster?.roster_id);
+      const ids = new Set([
+        ...(roster?.players || []),
+        ...(roster?.taxi || []),
+        ...(roster?.reserve || []),
+      ].map(String));
+      ids.forEach(pid => { ownership[pid] = rid; });
+    });
+    return ownership;
+  }
+
+  function buildDropCheck(pid, sourceRosterId, teams, players, currentOwnership) {
+    const player = playerName(pid, players);
+    const currentOwner = currentOwnership?.[String(pid)];
+    if (currentOwner == null) {
+      return {
+        player_id: String(pid),
+        player_name: player,
+        availability: 'available',
+        current_owner_roster_id: null,
+        current_owner_name: null,
+        label: `${player} [CONFIRMED AVAILABLE]`,
+      };
+    }
+    const currentRid = Number(currentOwner);
+    if (sourceRosterId != null && currentRid === Number(sourceRosterId)) {
+      const owner = teamName(currentRid, teams);
+      return {
+        player_id: String(pid),
+        player_name: player,
+        availability: 'rostered_same',
+        current_owner_roster_id: currentRid,
+        current_owner_name: owner,
+        label: `${player} [CURRENTLY STILL ON ${owner} ⚠️]`,
+      };
+    }
+    const owner = teamName(currentRid, teams);
+    return {
+      player_id: String(pid),
+      player_name: player,
+      availability: 'rostered_other',
+      current_owner_roster_id: currentRid,
+      current_owner_name: owner,
+      label: `${player} [CURRENTLY ROSTERED BY ${owner} ⚠️]`,
+    };
+  }
+
+  function normalizeTransaction(tx, teams, players, currentOwnership = {}) {
     const type = String(tx?.type || 'transaction');
     const rosterIds = (tx?.roster_ids || []).map(Number);
     const adds = tx?.adds || {};
@@ -49,6 +99,7 @@
     const budgets = tx?.waiver_budget || [];
     const settings = tx?.settings || {};
     let summary = '';
+    let dropChecks = [];
 
     if (type === 'trade') {
       const incoming = {};
@@ -75,9 +126,9 @@
       const rid = rosterIds.length ? rosterIds[0] : null;
       const pieces = [rid == null ? 'Unknown team' : teamName(rid, teams)];
       const added = Object.keys(adds).map(pid => playerName(pid, players));
-      const dropped = Object.keys(drops).map(pid => playerName(pid, players));
+      dropChecks = Object.keys(drops).map(pid => buildDropCheck(pid, rid, teams, players, currentOwnership));
       if (added.length) pieces.push(`adds ${added.join(', ')}`);
-      if (dropped.length) pieces.push(`drops ${dropped.join(', ')}`);
+      if (dropChecks.length) pieces.push(`drop event: ${dropChecks.map(x => x.label).join(', ')}`);
       if (settings.waiver_bid != null) pieces.push(`for $${Number(settings.waiver_bid)} FAAB`);
       summary = pieces.join(' — ');
     }
@@ -88,6 +139,7 @@
       created_ms: transactionTimeMs(tx),
       roster_ids: rosterIds,
       summary,
+      drop_checks: dropChecks,
       raw: tx,
     };
   }
@@ -118,6 +170,23 @@
       });
     }
 
+    const checks = (transactions || []).flatMap(tx => tx.drop_checks || []);
+    const available = checks.filter(x => x.availability === 'available');
+    const mismatches = checks.filter(x => x.availability !== 'available');
+
+    lines.push('', 'Confirmed available from drop events:');
+    if (!available.length) lines.push('- none');
+    else available.forEach(x => lines.push(`- ${x.player_name}`));
+
+    lines.push('', 'Ownership mismatches / re-rostered players:');
+    if (!mismatches.length) lines.push('- none');
+    else mismatches.forEach(x => {
+      const wording = x.availability === 'rostered_same'
+        ? `still on ${x.current_owner_name}`
+        : `currently on ${x.current_owner_name}`;
+      lines.push(`- ${x.player_name} — ${wording}`);
+    });
+
     lines.push('', 'Current involved rosters:');
     if (!rosterSummaries?.length) lines.push('- none');
     else rosterSummaries.forEach(line => lines.push(`- ${line}`));
@@ -132,6 +201,7 @@
     teamName,
     transactionTimeMs,
     filterRecent,
+    buildCurrentOwnership,
     normalizeTransaction,
     buildSnapshotText,
   };

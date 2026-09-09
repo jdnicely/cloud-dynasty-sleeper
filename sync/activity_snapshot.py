@@ -61,10 +61,23 @@ def filter_recent(transactions: list[dict[str, Any]], *, now_ms: int, hours: int
     return sorted(result, key=transaction_time_ms, reverse=True)
 
 
+def build_current_ownership(rosters: list[dict[str, Any]]) -> dict[str, int]:
+    ownership: dict[str, int] = {}
+    for roster in rosters:
+        rid = int(roster["roster_id"])
+        ids = set(str(x) for x in (roster.get("players") or []))
+        ids.update(str(x) for x in (roster.get("taxi") or []))
+        ids.update(str(x) for x in (roster.get("reserve") or []))
+        for player_id in ids:
+            ownership[player_id] = rid
+    return ownership
+
+
 def normalize_transaction(
     tx: dict[str, Any],
     teams: dict[int, str],
     players: dict[str, Any],
+    current_ownership: dict[str, int] | None = None,
 ) -> dict[str, Any]:
     tx_type = str(tx.get("type") or "transaction")
     stamp_ms = transaction_time_ms(tx)
@@ -76,6 +89,8 @@ def normalize_transaction(
     budgets = tx.get("waiver_budget") or []
     settings = tx.get("settings") or {}
     roster_ids = [int(x) for x in (tx.get("roster_ids") or [])]
+    current_ownership = current_ownership or {}
+    drop_checks: list[dict[str, Any]] = []
 
     if tx_type == "trade":
         incoming: dict[int, list[str]] = {rid: [] for rid in roster_ids}
@@ -98,12 +113,45 @@ def normalize_transaction(
         rid = roster_ids[0] if roster_ids else None
         team_name = _team(rid, teams) if rid is not None else "Unknown team"
         added = [_player_name(str(pid), players) for pid in adds]
-        dropped = [_player_name(str(pid), players) for pid in drops]
         pieces = [team_name]
         if added:
             pieces.append("adds " + ", ".join(added))
-        if dropped:
-            pieces.append("drops " + ", ".join(dropped))
+        for pid in drops:
+            player_id = str(pid)
+            player = _player_name(player_id, players)
+            current_owner = current_ownership.get(player_id)
+            if current_owner is None:
+                check = {
+                    "player_id": player_id,
+                    "player_name": player,
+                    "availability": "available",
+                    "current_owner_roster_id": None,
+                    "current_owner_name": None,
+                    "label": f"{player} [CONFIRMED AVAILABLE]",
+                }
+            elif rid is not None and int(current_owner) == int(rid):
+                owner = _team(current_owner, teams)
+                check = {
+                    "player_id": player_id,
+                    "player_name": player,
+                    "availability": "rostered_same",
+                    "current_owner_roster_id": int(current_owner),
+                    "current_owner_name": owner,
+                    "label": f"{player} [CURRENTLY STILL ON {owner} ⚠️]",
+                }
+            else:
+                owner = _team(current_owner, teams)
+                check = {
+                    "player_id": player_id,
+                    "player_name": player,
+                    "availability": "rostered_other",
+                    "current_owner_roster_id": int(current_owner),
+                    "current_owner_name": owner,
+                    "label": f"{player} [CURRENTLY ROSTERED BY {owner} ⚠️]",
+                }
+            drop_checks.append(check)
+        if drop_checks:
+            pieces.append("drop event: " + ", ".join(x["label"] for x in drop_checks))
         bid = settings.get("waiver_bid")
         if bid is not None:
             pieces.append(f"for ${int(bid)} FAAB")
@@ -116,6 +164,7 @@ def normalize_transaction(
         "created_et": stamp.isoformat() if stamp else None,
         "roster_ids": roster_ids,
         "summary": summary,
+        "drop_checks": drop_checks,
         "raw": tx,
     }
 
@@ -173,6 +222,7 @@ def main() -> None:
     rosters = fetch_json(f"{API}/league/{league_id}/rosters")
     state = fetch_json(f"{API}/state/nfl")
     teams = build_teams(users, rosters)
+    current_ownership = build_current_ownership(rosters)
     players = load_players()
 
     by_id: dict[str, dict[str, Any]] = {}
@@ -187,7 +237,7 @@ def main() -> None:
 
     now_ms = int(datetime.now(tz=timezone.utc).timestamp() * 1000)
     recent = filter_recent(list(by_id.values()), now_ms=now_ms, hours=24)
-    normalized = [normalize_transaction(tx, teams, players) for tx in recent]
+    normalized = [normalize_transaction(tx, teams, players, current_ownership) for tx in recent]
     involved = sorted({rid for item in normalized for rid in item["roster_ids"]})
 
     output = {

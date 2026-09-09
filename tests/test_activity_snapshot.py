@@ -73,6 +73,37 @@ class ActivitySnapshotTests(unittest.TestCase):
 
         self.assertEqual([x['transaction_id'] for x in filtered], ['fresh', 'status-only'])
 
+    def test_current_ownership_includes_players_taxi_and_reserve(self):
+        rosters = [
+            {'roster_id': 1, 'players': ['100'], 'taxi': ['200'], 'reserve': ['300']},
+            {'roster_id': 2, 'players': ['400']},
+        ]
+        ownership = self.mod.build_current_ownership(rosters)
+        self.assertEqual(ownership['100'], 1)
+        self.assertEqual(ownership['200'], 1)
+        self.assertEqual(ownership['300'], 1)
+        self.assertEqual(ownership['400'], 2)
+
+    def test_drop_reconciliation_marks_same_roster_other_roster_and_available(self):
+        teams = {1: 'Danger Zone', 2: 'goTribe Other'}
+        players = {'100': 'Jordan Addison'}
+        base = {
+            'type': 'free_agent', 'status': 'complete', 'created': 1788912000000,
+            'roster_ids': [1], 'adds': None, 'drops': {'100': 1}, 'draft_picks': [], 'waiver_budget': [],
+        }
+
+        same = self.mod.normalize_transaction(base, teams, players, {'100': 1})
+        self.assertEqual(same['drop_checks'][0]['availability'], 'rostered_same')
+        self.assertIn('CURRENTLY STILL ON Danger Zone', same['summary'])
+
+        other = self.mod.normalize_transaction(base, teams, players, {'100': 2})
+        self.assertEqual(other['drop_checks'][0]['availability'], 'rostered_other')
+        self.assertIn('CURRENTLY ROSTERED BY goTribe Other', other['summary'])
+
+        available = self.mod.normalize_transaction(base, teams, players, {})
+        self.assertEqual(available['drop_checks'][0]['availability'], 'available')
+        self.assertIn('CONFIRMED AVAILABLE', available['summary'])
+
 
 if __name__ == '__main__':
     unittest.main()

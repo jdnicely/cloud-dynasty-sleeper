@@ -49,7 +49,9 @@ function collectPlayerIds(transactions, rosters) {
     Object.keys(tx.adds || {}).forEach(id => ids.add(String(id)));
     Object.keys(tx.drops || {}).forEach(id => ids.add(String(id)));
   });
-  (rosters || []).forEach(r => (r.players || []).forEach(id => ids.add(String(id))));
+  (rosters || []).forEach(r => {
+    [...(r.players || []), ...(r.taxi || []), ...(r.reserve || [])].forEach(id => ids.add(String(id)));
+  });
   return ids;
 }
 
@@ -95,7 +97,8 @@ function playerLabel(pid, players) {
 
 function rosterSummary(roster, teamName, players) {
   const groups = {QB: [], RB: [], WR: [], TE: [], OTHER: []};
-  (roster.players || []).forEach(pid => {
+  const rosterIds = [...new Set([...(roster.players || []), ...(roster.taxi || []), ...(roster.reserve || [])].map(String))];
+  rosterIds.forEach(pid => {
     const p = players[String(pid)] || {};
     const pos = ['QB', 'RB', 'WR', 'TE'].includes(p.position) ? p.position : 'OTHER';
     groups[pos].push(playerLabel(pid, players));
@@ -186,7 +189,8 @@ async function loadActivity() {
     }
 
     const teams = buildTeams(users, rosters);
-    const normalized = recentRaw.map(tx => ActivityCore.normalizeTransaction(tx, teams, players));
+    const currentOwnership = ActivityCore.buildCurrentOwnership(rosters);
+    const normalized = recentRaw.map(tx => ActivityCore.normalizeTransaction(tx, teams, players, currentOwnership));
     const involvedIds = [...new Set(normalized.flatMap(tx => tx.roster_ids))].sort((a, b) => a - b);
     const rosterById = Object.fromEntries(rosters.map(r => [String(r.roster_id), r]));
     const rosterSummaries = involvedIds.map(rid => rosterSummary(
