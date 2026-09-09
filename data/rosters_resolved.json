@@ -4285,18 +4285,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "J.J. McCarthy",
-          "player_id": "11565",
-          "position": "QB",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -4389,30 +4377,6 @@
           "position": "WR",
           "status": "Active",
           "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kareem Hunt",
-          "player_id": "4098",
-          "position": "RB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "IR",
-          "name": "James Conner",
-          "player_id": "4137",
-          "position": "RB",
-          "status": "Inactive",
-          "team": "ARI"
         },
         {
           "active": true,
@@ -4539,18 +4503,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "J.J. McCarthy",
-          "player_id": "11565",
-          "position": "QB",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -4611,18 +4563,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kareem Hunt",
-          "player_id": "4098",
-          "position": "RB",
-          "status": "Active",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -4664,20 +4604,7 @@
         "user_id": "460587479183912960",
         "username": null
       },
-      "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "IR",
-          "name": "James Conner",
-          "player_id": "4137",
-          "position": "RB",
-          "status": "Inactive",
-          "team": "ARI"
-        }
-      ],
+      "reserve": [],
       "roster_id": 9,
       "settings": {
         "division": 3,
@@ -4989,18 +4916,6 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Courtland Sutton",
-          "player_id": "5045",
-          "position": "WR",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
           "name": "CeeDee Lamb",
           "player_id": "6786",
           "position": "WR",
@@ -5128,18 +5043,6 @@
           "position": "QB",
           "status": "Active",
           "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Courtland Sutton",
-          "player_id": "5045",
-          "position": "WR",
-          "status": "Active",
-          "team": "DEN"
         },
         {
           "active": true,
