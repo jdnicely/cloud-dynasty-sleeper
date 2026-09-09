@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cloud Dynasty League Activity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">CLOUD DYNASTY</p>
+        <h1>League Activity</h1>
+        <p class="sub">Live adds, drops, waivers, trades, draft picks and FAAB movement directly from Sleeper.</p>
+      </div>
+      <div class="controls">
+        <label>Window
+          <select id="hours">
+            <option value="24" selected>Last 24 hours</option>
+            <option value="48">Last 48 hours</option>
+            <option value="72">Last 72 hours</option>
+          </select>
+        </label>
+        <button id="refresh" type="button">Refresh Live</button>
+        <button id="copy" class="primary" type="button" disabled>Copy ChatGPT Snapshot</button>
+      </div>
+    </header>
+
+    <section class="status-panel">
+      <div id="status">Loading…</div>
+      <div id="meta"></div>
+    </section>
+
+    <section>
+      <h2>League activity</h2>
+      <div id="activity" class="stack"></div>
+    </section>
+
+    <section>
+      <h2>Current rosters involved</h2>
+      <p class="hint">Current live roster state for only the teams involved in the selected activity window.</p>
+      <div id="rosters" class="stack"></div>
+    </section>
+  </main>
+  <script src="activity_core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
