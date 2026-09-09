@@ -48,18 +48,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jack Bech",
-          "player_id": "12483",
-          "position": "WR",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -104,18 +92,6 @@
           "position": "WR",
           "status": "Active",
           "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Max Klare",
-          "player_id": "13278",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAR"
         },
         {
           "active": true,
@@ -176,18 +152,6 @@
           "position": "WR",
           "status": "Active",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Daniel Jones",
-          "player_id": "5870",
-          "position": "QB",
-          "status": "Active",
-          "team": "IND"
         },
         {
           "active": true,
@@ -326,18 +290,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jack Bech",
-          "player_id": "12483",
-          "position": "WR",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -350,54 +302,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Fernando Mendoza",
-          "player_id": "13269",
-          "position": "QB",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Omar Cooper",
-          "player_id": "13276",
-          "position": "WR",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Max Klare",
-          "player_id": "13278",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Emmett Johnson",
-          "player_id": "13337",
-          "position": "RB",
-          "status": "Active",
-          "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -406,18 +310,6 @@
           "position": "WR",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Daniel Jones",
-          "player_id": "5870",
-          "position": "QB",
-          "status": "Active",
-          "team": "IND"
         },
         {
           "active": true,
@@ -442,6 +334,18 @@
           "position": "QB",
           "status": "Active",
           "team": "CAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Kayshon Boutte",
+          "player_id": "9504",
+          "position": "WR",
+          "status": "Active",
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -624,14 +528,38 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Fernando Mendoza",
+          "player_id": "13269",
+          "position": "QB",
+          "status": "Active",
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
-          "name": "Kayshon Boutte",
-          "player_id": "9504",
+          "name": "Omar Cooper",
+          "player_id": "13276",
           "position": "WR",
           "status": "Active",
-          "team": "HOU"
+          "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Emmett Johnson",
+          "player_id": "13337",
+          "position": "RB",
+          "status": "Active",
+          "team": "KC"
         }
       ]
     },
@@ -696,18 +624,6 @@
           "position": "K",
           "status": "Active",
           "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Marcus Mariota",
-          "player_id": "2307",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
         },
         {
           "active": true,
@@ -784,14 +700,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Darius Slayton",
-          "player_id": "6149",
-          "position": "WR",
+          "name": "Daniel Jones",
+          "player_id": "5870",
+          "position": "QB",
           "status": "Active",
-          "team": "NYG"
+          "team": "IND"
         },
         {
           "active": true,
@@ -804,18 +720,6 @@
           "position": "QB",
           "status": "Active",
           "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "DNR",
-          "name": "Brandon Aiyuk",
-          "player_id": "6803",
-          "position": "WR",
-          "status": "Active",
-          "team": "SF"
         },
         {
           "active": true,
@@ -880,18 +784,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Tyrod Taylor",
-          "player_id": "827",
-          "position": "QB",
-          "status": "Active",
-          "team": "GB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -903,30 +795,6 @@
         }
       ],
       "bench": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Elijah Sarratt",
-          "player_id": "13268",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Marcus Mariota",
-          "player_id": "2307",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -966,14 +834,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Darius Slayton",
-          "player_id": "6149",
-          "position": "WR",
+          "name": "Daniel Jones",
+          "player_id": "5870",
+          "position": "QB",
           "status": "Active",
-          "team": "NYG"
+          "team": "IND"
         },
         {
           "active": true,
@@ -1022,18 +890,6 @@
           "position": "RB",
           "status": "Active",
           "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Tyrod Taylor",
-          "player_id": "827",
-          "position": "QB",
-          "status": "Active",
-          "team": "GB"
         }
       ],
       "co_owners": [],
@@ -1043,20 +899,7 @@
         "user_id": "457546229639802880",
         "username": null
       },
-      "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "DNR",
-          "name": "Brandon Aiyuk",
-          "player_id": "6803",
-          "position": "WR",
-          "status": "Active",
-          "team": "SF"
-        }
-      ],
+      "reserve": [],
       "roster_id": 2,
       "settings": {
         "division": 2,
@@ -1201,7 +1044,20 @@
           "team": "BUF"
         }
       ],
-      "taxi": []
+      "taxi": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Elijah Sarratt",
+          "player_id": "13268",
+          "position": "WR",
+          "status": "Active",
+          "team": "BAL"
+        }
+      ]
     },
     {
       "all_players": [
@@ -1319,7 +1175,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Mike Evans",
           "player_id": "2216",
           "position": "WR",
@@ -1612,7 +1468,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Mike Evans",
           "player_id": "2216",
           "position": "WR",
@@ -1781,7 +1637,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terrance Ferguson",
           "player_id": "12487",
           "position": "TE",
@@ -1949,7 +1805,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
@@ -2133,7 +1989,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
@@ -2213,7 +2069,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terrance Ferguson",
           "player_id": "12487",
           "position": "TE",
@@ -2421,7 +2277,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Christian McCaffrey",
           "player_id": "4034",
           "position": "RB",
@@ -2781,7 +2637,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Christian McCaffrey",
           "player_id": "4034",
           "position": "RB",
@@ -3946,7 +3802,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
@@ -4367,7 +4223,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
@@ -5084,7 +4940,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "De'Zhaun Stribling",
           "player_id": "13417",
           "position": "WR",
@@ -5516,7 +5372,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "De'Zhaun Stribling",
           "player_id": "13417",
           "position": "WR",
