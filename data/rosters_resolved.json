@@ -1855,12 +1855,12 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Tyler Warren",
-          "player_id": "12518",
+          "injury_status": null,
+          "name": "Brock Bowers",
+          "player_id": "11604",
           "position": "TE",
           "status": "Active",
-          "team": "IND"
+          "team": "LV"
         },
         {
           "active": true,
@@ -2002,13 +2002,13 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
-          "name": "Brock Bowers",
-          "player_id": "11604",
+          "injury_status": "Questionable",
+          "name": "Tyler Warren",
+          "player_id": "12518",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "LV"
+          "team": "IND"
         },
         {
           "active": true,
