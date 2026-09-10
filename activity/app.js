@@ -190,7 +190,7 @@ function renderFullFeed(messages) {
     top.className = 'card-top';
     const author = document.createElement('span');
     author.className = 'feed-author';
-    author.textContent = message.author_name || (message.author_is_bot ? 'Sleeper' : 'Unknown');
+    author.textContent = message.manager_name || message.author_name || (message.author_is_bot ? 'Sleeper' : 'Unknown');
     const time = document.createElement('span');
     time.className = 'time';
     time.textContent = `${easternTime(message.created_ms)} ET`;
@@ -200,7 +200,7 @@ function renderFullFeed(messages) {
     kind.textContent = message.kind.replace('_', ' ').toUpperCase();
     const text = document.createElement('div');
     text.className = 'summary';
-    text.textContent = ActivityCore.feedDisplayText(message);
+    text.textContent = message.display_text || ActivityCore.feedDisplayText(message);
     card.append(top, kind, text);
     els.fullFeed.appendChild(card);
   });
@@ -336,6 +336,7 @@ async function loadActivity() {
     }
 
     const teams = buildTeams(users, rosters);
+    const feedIdentityMap = ActivityCore.buildFeedIdentityMap(users, rosters, teams);
     const currentOwnership = ActivityCore.buildCurrentOwnership(rosters);
     const normalized = recentRaw.map(tx => ActivityCore.normalizeTransaction(tx, teams, players, currentOwnership));
     const rosterViews = rosters
@@ -354,7 +355,8 @@ async function loadActivity() {
       try {
         const sinceMs = nowMs - hours * 60 * 60 * 1000;
         const rawMessages = await SleeperFeed.fetchMessages({leagueId: LEAGUE_ID, token, sinceMs});
-        feedMessages = ActivityCore.filterRecentFeed(rawMessages, nowMs, hours);
+        const recentFeedMessages = ActivityCore.filterRecentFeed(rawMessages, nowMs, hours);
+        feedMessages = ActivityCore.enrichFeedMessages(recentFeedMessages, feedIdentityMap, players);
         feedStatus = 'connected';
       } catch (error) {
         feedStatus = error?.code === 'UNAUTHORIZED' ? 'unauthorized'
@@ -363,11 +365,16 @@ async function loadActivity() {
       }
     }
     const marketSignals = ActivityCore.extractMarketSignals(feedMessages);
+    const mergedTransactions = ActivityCore.mergeTransactionsWithFeed(normalized, feedMessages, {
+      teams,
+      players,
+      currentOwnership,
+    });
 
     const refreshedIso = new Date().toISOString();
     state = {
       league,
-      transactions: normalized,
+      transactions: mergedTransactions,
       feedMessages,
       marketSignals,
       rosterViews,
@@ -375,14 +382,14 @@ async function loadActivity() {
       refreshedIso,
     };
 
-    renderActivity(normalized);
+    renderActivity(mergedTransactions);
     renderMarketIntelligence(marketSignals);
     renderFullFeed(feedMessages);
     renderRosters(rosterViews);
     renderFeedStatus();
     renderFeedControls();
 
-    els.meta.textContent = `${league.name || 'Cloud Dynasty League'} • ${normalized.length} transaction${normalized.length === 1 ? '' : 's'} • ${feedMessages.length} feed message${feedMessages.length === 1 ? '' : 's'} • ${hours}h window • Sleeper week ${nflState.week || nflState.leg || '?'}`;
+    els.meta.textContent = `${league.name || 'Cloud Dynasty League'} • ${mergedTransactions.length} transaction${mergedTransactions.length === 1 ? '' : 's'} • ${feedMessages.length} feed message${feedMessages.length === 1 ? '' : 's'} • ${hours}h window • Sleeper week ${nflState.week || nflState.leg || '?'}`;
     els.status.textContent = `Live league data loaded at ${new Date().toLocaleTimeString('en-US', {timeZone: 'America/New_York'})} ET.`;
     els.copy.disabled = false;
   } catch (error) {

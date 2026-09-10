@@ -221,8 +221,11 @@ const systemWithPlayerAttachment = core.normalizeFeedMessage({
   text: 'JROC1379 made a free agent move.',
   attachment: {player_name: 'Zach Charbonnet', position: 'RB', team: 'SEA'},
 });
-assert.ok(core.feedDisplayText(systemWithPlayerAttachment).includes('JROC1379 made a free agent move.'));
-assert.ok(core.feedDisplayText(systemWithPlayerAttachment).includes('Zach Charbonnet'));
+assert.equal(core.feedDisplayText(systemWithPlayerAttachment), 'JROC1379 made a free agent move.');
+const enrichedSystemWithPlayer = core.enrichFeedMessages([systemWithPlayerAttachment], {}, {
+  '9753': {full_name: 'Zach Charbonnet', position: 'RB', team: 'SEA'},
+});
+assert.ok(enrichedSystemWithPlayer[0].display_text.includes('Zach Charbonnet'));
 
 const preDraftTradeSignal = core.normalizeFeedMessage({
   message_id: 'predraft', created: 2_000_000_000_000,
@@ -230,3 +233,98 @@ const preDraftTradeSignal = core.normalizeFeedMessage({
   text: 'lets get some pre draft trades goin',
 });
 assert.equal(preDraftTradeSignal.kind, 'trade_interest');
+
+// Regression: system-feed metadata must not leak into the human-readable feed.
+const noisySystemMessage = core.normalizeFeedMessage({
+  message_id: 'noisy-system',
+  created: 2_000_000_000_400,
+  author_display_name: 'sys',
+  author_is_bot: true,
+  text: 'msmiller2384 made a roster move: Dropped D. Mooney (WR - NYG)',
+  text_map: ['flair'],
+  attachment: {
+    message_id: '1403569419971551232',
+    player: {full_name: 'Darnell Mooney', player_id: '7090', position: 'WR', team: 'NYG'},
+    status: 'complete',
+    transaction_id: '6dcbee5f295974c3ea459f3aa1e3ba02',
+    creator: 'msmiller2384',
+    type: 'free_agent',
+    parent_type: 'transactions',
+  },
+});
+assert.equal(
+  core.feedDisplayText(noisySystemMessage),
+  'msmiller2384 made a roster move: Dropped D. Mooney (WR - NYG)',
+);
+assert.ok(!core.feedDisplayText(noisySystemMessage).includes('flair'));
+assert.ok(!core.feedDisplayText(noisySystemMessage).includes('6dcbee5f295974c3ea459f3aa1e3ba02'));
+
+// Regression: Sleeper usernames / handles should resolve to the league team name.
+const feedIdentityMap = core.buildFeedIdentityMap([
+  {user_id: 'u-miller', username: 'msmiller2384', display_name: 'msmiller2384', metadata: {team_name: 'Millertime'}},
+  {user_id: 'u-eddy', username: 'eddy-login', display_name: 'PhastEddy', metadata: {team_name: 'PhastEddy'}},
+], [
+  {roster_id: 2, owner_id: 'u-miller'},
+  {roster_id: 9, owner_id: 'u-eddy'},
+], {'2': 'Millertime', '9': 'PhastEddy'});
+assert.equal(core.resolveFeedManager(noisySystemMessage, feedIdentityMap), 'Millertime');
+
+// Regression: if the public transaction endpoint misses a waiver event, recover it
+// from the authenticated system feed; exact transaction IDs prevent duplicates.
+const waiverFeedMessage = core.normalizeFeedMessage({
+  message_id: 'waiver-system',
+  created: 2_000_000_001_000,
+  author_display_name: 'sys',
+  author_is_bot: true,
+  text: 'A player was claimed off waivers.',
+  text_map: ['flair'],
+  attachment: {
+    transaction_id: '7572250c2fb084c434fed0e82229e183',
+    creator: 'PhastEddy',
+    type: 'waiver',
+    settings: {waiver_bid: 0},
+    players: [
+      {full_name: 'Evan McPherson', player_id: '7839', position: 'K', team: 'CIN'},
+      {full_name: 'Harrison Butker', player_id: '4227', position: 'K', team: 'KC'},
+    ],
+  },
+});
+const feedPlayers = {
+  '7839': {full_name: 'Evan McPherson', position: 'K', team: 'CIN'},
+  '4227': {full_name: 'Harrison Butker', position: 'K', team: 'KC'},
+};
+const enrichedWaiver = core.enrichFeedMessages([waiverFeedMessage], feedIdentityMap, feedPlayers);
+assert.equal(enrichedWaiver[0].manager_name, 'PhastEddy');
+assert.ok(enrichedWaiver[0].display_text.includes('Evan McPherson'));
+assert.ok(enrichedWaiver[0].display_text.includes('Harrison Butker'));
+assert.ok(!enrichedWaiver[0].display_text.includes('7572250c2fb084c434fed0e82229e183'));
+
+const mergedMissingWaiver = core.mergeTransactionsWithFeed([], enrichedWaiver, {
+  teams: {'9': 'PhastEddy'},
+  players: feedPlayers,
+  currentOwnership: {'7839': 9},
+});
+assert.equal(mergedMissingWaiver.length, 1);
+assert.equal(mergedMissingWaiver[0].type, 'waiver');
+assert.equal(mergedMissingWaiver[0].source, 'sleeper_feed');
+assert.ok(mergedMissingWaiver[0].summary.includes('PhastEddy'));
+assert.ok(mergedMissingWaiver[0].summary.includes('Evan McPherson'));
+assert.ok(mergedMissingWaiver[0].summary.includes('Harrison Butker'));
+assert.ok(mergedMissingWaiver[0].summary.includes('$0 FAAB'));
+
+const samePublicWaiver = {
+  transaction_id: '7572250c2fb084c434fed0e82229e183',
+  type: 'waiver',
+  created_ms: 2_000_000_001_000,
+  roster_ids: [9],
+  summary: 'PhastEddy — adds Evan McPherson — drop event: Harrison Butker — for $0 FAAB',
+  drop_checks: [],
+  raw: {},
+};
+const mergedDeduped = core.mergeTransactionsWithFeed([samePublicWaiver], enrichedWaiver, {
+  teams: {'9': 'PhastEddy'},
+  players: feedPlayers,
+  currentOwnership: {'7839': 9},
+});
+assert.equal(mergedDeduped.length, 1);
+assert.equal(mergedDeduped[0].source, undefined);
