@@ -801,11 +801,11 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Kenny Gainwell",
-          "player_id": "7567",
+          "name": "Rachaad White",
+          "player_id": "8136",
           "position": "RB",
           "status": "Active",
-          "team": "TB"
+          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -913,12 +913,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Rachaad White",
-          "player_id": "8136",
+          "name": "Kenny Gainwell",
+          "player_id": "7567",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "WAS"
+          "team": "TB"
         },
         {
           "active": true,
@@ -4250,14 +4250,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Khalil Shakir",
-          "player_id": "8134",
-          "position": "WR",
+          "name": "Tyler Allgeier",
+          "player_id": "8132",
+          "position": "RB",
           "status": "Active",
-          "team": "BUF"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -4386,15 +4386,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Tyler Allgeier",
-          "player_id": "8132",
-          "position": "RB",
+          "name": "Khalil Shakir",
+          "player_id": "8134",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "ARI"
+          "team": "BUF"
         },
         {
           "active": true,
