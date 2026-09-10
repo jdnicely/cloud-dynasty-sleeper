@@ -107,5 +107,14 @@ class ActivitySnapshotTests(unittest.TestCase):
         self.assertNotIn('CONFIRMED AVAILABLE', available['summary'])
 
 
+    def test_archival_script_remains_public_api_only(self):
+        source = MODULE_PATH.read_text(encoding='utf-8')
+        self.assertNotIn('SLEEPER_TOKEN', source)
+        self.assertNotIn('sleeper.app/graphql', source)
+        self.assertNotIn('sleeper.com/graphql', source)
+        self.assertNotIn('authorization', source.lower())
+
+
+
 if __name__ == '__main__':
     unittest.main()

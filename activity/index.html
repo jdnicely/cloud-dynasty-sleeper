@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cloud Dynasty League Activity</title>
+  <title>Cloud Dynasty League Intelligence</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +11,8 @@
     <header>
       <div>
         <p class="eyebrow">CLOUD DYNASTY</p>
-        <h1>League Activity</h1>
-        <p class="sub">Live adds, drops, waivers, trades, draft picks and FAAB movement directly from Sleeper.</p>
+        <h1>League Intelligence</h1>
+        <p class="sub">Live transactions, full league feed, trade chatter and current roster state from Sleeper.</p>
       </div>
       <div class="controls">
         <label>Window
@@ -32,18 +32,37 @@
       <div id="meta"></div>
     </section>
 
+    <section class="feed-panel" aria-labelledby="feed-heading">
+      <div class="feed-panel-top">
+        <div>
+          <h2 id="feed-heading">Sleeper league feed</h2>
+          <p id="feed-status" class="hint">Not connected. Public transactions and rosters still work.</p>
+        </div>
+        <div class="feed-controls" id="feed-controls"></div>
+      </div>
+
+      <h3 class="section-label">Market Intelligence</h3>
+      <div id="market-intelligence" class="stack"></div>
+
+      <details class="feed-details">
+        <summary>Full Sleeper feed</summary>
+        <div id="full-feed" class="stack feed-stack"></div>
+      </details>
+    </section>
+
     <section>
-      <h2>League activity</h2>
+      <h2>Completed transactions</h2>
       <div id="activity" class="stack"></div>
     </section>
 
     <section>
-      <h2>Current rosters involved</h2>
-      <p class="hint">Current live roster state for only the teams involved in the selected activity window.</p>
-      <div id="rosters" class="stack"></div>
+      <h2>Current rosters</h2>
+      <p class="hint">All teams, split into active roster, taxi squad, and reserve / IR.</p>
+      <div id="rosters" class="stack roster-stack"></div>
     </section>
   </main>
   <script src="activity_core.js"></script>
+  <script src="sleeper_feed.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
