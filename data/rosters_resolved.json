@@ -2788,11 +2788,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
+          "name": "Denzel Boston",
+          "player_id": "13346",
           "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -2800,11 +2800,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
+          "name": "Chris Godwin",
+          "player_id": "4037",
           "position": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "TB"
         },
         {
           "active": true,
@@ -2935,8 +2935,8 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Chris Godwin",
-          "player_id": "4037",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
