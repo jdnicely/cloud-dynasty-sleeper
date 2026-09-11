@@ -1553,7 +1553,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Brock Bowers",
           "player_id": "11604",
           "position": "TE",
@@ -1783,7 +1783,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Brock Bowers",
           "player_id": "11604",
           "position": "TE",
@@ -2193,7 +2193,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Patrick Mahomes",
           "player_id": "4046",
           "position": "QB",
@@ -2361,7 +2361,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Patrick Mahomes",
           "player_id": "4046",
           "position": "QB",
@@ -3102,7 +3102,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3260,7 +3260,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -4566,7 +4566,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "De'Zhaun Stribling",
           "player_id": "13417",
           "position": "WR",
@@ -4974,7 +4974,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "De'Zhaun Stribling",
           "player_id": "13417",
           "position": "WR",
@@ -5146,7 +5146,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tua Tagovailoa",
           "player_id": "6768",
           "position": "QB",
@@ -5256,7 +5256,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tua Tagovailoa",
           "player_id": "6768",
           "position": "QB",
@@ -5686,7 +5686,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
@@ -5846,7 +5846,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
