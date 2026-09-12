@@ -145,6 +145,53 @@
     };
   }
 
+
+  function waiverWatchAgeLabel(createdMs, nowMs) {
+    const ageMs = Math.max(0, Number(nowMs) - Number(createdMs || 0));
+    const hours = Math.floor(ageMs / (60 * 60 * 1000));
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
+  }
+
+  function buildWaiverWatch(transactions, players, currentOwnership = {}, teams = {}, nowMs = Date.now(), days = 7) {
+    const cutoff = Number(nowMs) - Number(days) * 24 * 60 * 60 * 1000;
+    const latestDrops = new Map();
+
+    (transactions || []).forEach(tx => {
+      if (tx?.status !== 'complete') return;
+      const createdMs = transactionTimeMs(tx);
+      if (createdMs < cutoff || createdMs > Number(nowMs)) return;
+      const sourceRosterId = Array.isArray(tx?.roster_ids) && tx.roster_ids.length ? Number(tx.roster_ids[0]) : null;
+      Object.keys(tx?.drops || {}).forEach(pid => {
+        const player = players?.[String(pid)] || {};
+        const position = String(player?.position || '').toUpperCase();
+        if (!['QB', 'RB', 'WR', 'TE'].includes(position)) return;
+        const current = latestDrops.get(String(pid));
+        if (!current || createdMs > current.created_ms) {
+          latestDrops.set(String(pid), {
+            player_id: String(pid),
+            player_name: playerName(pid, players),
+            position,
+            nfl_team: player?.team || '',
+            source_roster_id: sourceRosterId,
+            source_team_name: sourceRosterId == null ? null : teamName(sourceRosterId, teams),
+            created_ms: createdMs,
+          });
+        }
+      });
+    });
+
+    return [...latestDrops.values()]
+      .filter(item => currentOwnership?.[String(item.player_id)] == null)
+      .sort((a, b) => Number(b.created_ms) - Number(a.created_ms))
+      .map(item => ({
+        ...item,
+        age_label: waiverWatchAgeLabel(item.created_ms, nowMs),
+        label: `${item.player_name} (${item.position}${item.nfl_team ? `, ${item.nfl_team}` : ''}) — dropped ${waiverWatchAgeLabel(item.created_ms, nowMs)}${item.source_team_name ? ` by ${item.source_team_name}` : ''} — CURRENT OWNER UNRESOLVED — WATCH`,
+      }));
+  }
+
   function formatEasternStamp(createdMs) {
     const d = new Date(createdMs);
     if (!Number.isFinite(d.getTime())) return 'unknown time';
@@ -171,6 +218,7 @@
     hours,
     refreshedIso,
     transactions = [],
+    waiverWatch = [],
     feedMessages = [],
     marketSignals = [],
     rosterViews = [],
@@ -185,8 +233,16 @@
       `Transactions: ${transactions.length}`,
       `Feed messages: ${feedMessages.length}`,
       '',
-      'MARKET INTELLIGENCE',
+      'OPEN WAIVER WATCH — LAST 7 DAYS',
     ];
+
+    if (!waiverWatch.length) {
+      lines.push('- none');
+    } else {
+      waiverWatch.forEach(item => lines.push(`- ${item.label}`));
+    }
+
+    lines.push('', 'MARKET INTELLIGENCE');
 
     if (!marketSignals.length) {
       lines.push(feedStatus === 'connected' ? '- none' : '- Sleeper feed not connected');
@@ -674,6 +730,7 @@
     transactionTimeMs,
     filterRecent,
     buildCurrentOwnership,
+    buildWaiverWatch,
     normalizeTransaction,
     buildSnapshotText,
     feedDisplayText,

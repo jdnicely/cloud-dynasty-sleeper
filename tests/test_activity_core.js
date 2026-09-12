@@ -328,3 +328,46 @@ const mergedDeduped = core.mergeTransactionsWithFeed([samePublicWaiver], enriche
 });
 assert.equal(mergedDeduped.length, 1);
 assert.equal(mergedDeduped[0].source, undefined);
+
+// Waiver-watch regression: a dropped skill-position player stays visible for 7 days
+// while current ownership is unresolved, even when the main activity window is shorter.
+const watchNow = 2_100_000_000_000;
+const watchPlayers = {
+  '900': {full_name: 'Jordan Addison', position: 'WR', team: 'MIN'},
+  '901': {full_name: 'Josh Downs', position: 'WR', team: 'IND'},
+  '902': {full_name: 'Example Kicker', position: 'K', team: 'TEST'},
+  '903': {full_name: 'Old Receiver', position: 'WR', team: 'TEST'},
+};
+const watchTransactions = [
+  {transaction_id: 'addison-drop', type: 'free_agent', status: 'complete', created: watchNow - 2 * 24 * 60 * 60 * 1000, roster_ids: [2], drops: {'900': 2}},
+  {transaction_id: 'downs-drop', type: 'free_agent', status: 'complete', created: watchNow - 3 * 60 * 60 * 1000, roster_ids: [1], drops: {'901': 1}},
+  {transaction_id: 'kicker-drop', type: 'free_agent', status: 'complete', created: watchNow - 2 * 60 * 60 * 1000, roster_ids: [1], drops: {'902': 1}},
+  {transaction_id: 'old-drop', type: 'free_agent', status: 'complete', created: watchNow - 8 * 24 * 60 * 60 * 1000, roster_ids: [1], drops: {'903': 1}},
+];
+const openWatch = core.buildWaiverWatch(watchTransactions, watchPlayers, {}, teams, watchNow, 7);
+assert.deepStrictEqual(openWatch.map(x => x.player_name), ['Josh Downs', 'Jordan Addison']);
+assert.equal(openWatch[0].position, 'WR');
+assert.ok(openWatch[0].label.includes('CURRENT OWNER UNRESOLVED — WATCH'));
+assert.ok(openWatch[1].label.includes('dropped 2d ago'));
+assert.ok(!openWatch.some(x => x.player_name === 'Example Kicker'), 'K/DST should not enter waiver watch');
+assert.ok(!openWatch.some(x => x.player_name === 'Old Receiver'), 'drops older than 7 days should age out');
+
+// Addison failure mode: once currently rostered, the player leaves OPEN WAIVER WATCH.
+const claimedWatch = core.buildWaiverWatch(watchTransactions, watchPlayers, {'900': 1}, teams, watchNow, 7);
+assert.ok(!claimedWatch.some(x => x.player_name === 'Jordan Addison'));
+assert.ok(claimedWatch.some(x => x.player_name === 'Josh Downs'));
+
+const waiverWatchSnapshot = core.buildSnapshotText({
+  leagueName: 'Cloud Dynasty League',
+  hours: 24,
+  refreshedIso: '2026-09-10T21:00:00-04:00',
+  transactions: [],
+  waiverWatch: openWatch,
+  feedMessages: [],
+  marketSignals: [],
+  rosterViews: [],
+  feedStatus: 'disconnected',
+});
+assert.ok(waiverWatchSnapshot.includes('OPEN WAIVER WATCH — LAST 7 DAYS'));
+assert.ok(waiverWatchSnapshot.includes('Jordan Addison'));
+assert.ok(waiverWatchSnapshot.includes('Josh Downs'));

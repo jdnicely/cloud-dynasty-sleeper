@@ -15,6 +15,7 @@ const els = {
   feedStatus: document.querySelector('#feed-status'),
   feedControls: document.querySelector('#feed-controls'),
   marketIntelligence: document.querySelector('#market-intelligence'),
+  waiverWatch: document.querySelector('#waiver-watch'),
   fullFeed: document.querySelector('#full-feed'),
 };
 
@@ -23,6 +24,7 @@ let state = {
   transactions: [],
   feedMessages: [],
   marketSignals: [],
+  waiverWatch: [],
   rosterViews: [],
   feedStatus: 'disconnected',
   refreshedIso: null,
@@ -129,6 +131,32 @@ function renderActivity(transactions) {
     card.querySelector('.time').textContent = `${easternTime(tx.created_ms)} ET`;
     card.querySelector('.summary').textContent = tx.summary;
     els.activity.appendChild(card);
+  });
+}
+
+function renderWaiverWatch(items) {
+  els.waiverWatch.innerHTML = '';
+  if (!items.length) {
+    els.waiverWatch.innerHTML = '<div class="empty">No unresolved QB/RB/WR/TE drops from the last 7 days.</div>';
+    return;
+  }
+  items.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'signal-card';
+    const top = document.createElement('div');
+    top.className = 'card-top';
+    const badge = document.createElement('span');
+    badge.className = 'badge';
+    badge.textContent = 'WAIVER WATCH';
+    const time = document.createElement('span');
+    time.className = 'time';
+    time.textContent = `${easternTime(item.created_ms)} ET`;
+    top.append(badge, time);
+    const text = document.createElement('div');
+    text.className = 'summary';
+    text.textContent = item.label;
+    card.append(top, text);
+    els.waiverWatch.appendChild(card);
   });
 }
 
@@ -240,7 +268,7 @@ function renderRosters(rosterViews) {
 
 function currentToken() {
   try {
-    return sessionStorage.getItem(SLEEPER_TOKEN_KEY) || '';
+    return localStorage.getItem(SLEEPER_TOKEN_KEY) || '';
   } catch (_) {
     return '';
   }
@@ -253,13 +281,13 @@ function renderFeedControls() {
   connect.textContent = currentToken() ? 'Replace Sleeper Token' : 'Connect Sleeper Feed';
   connect.addEventListener('click', async () => {
     const token = window.prompt(
-      'Paste your Sleeper authorization token here. Do not paste it into ChatGPT. It will be stored only for this browser session.'
+      'Paste your Sleeper authorization token here. Do not paste it into ChatGPT. It will be remembered on this device until you choose Forget Sleeper Token.'
     );
     if (!token || !token.trim()) return;
     try {
-      sessionStorage.setItem(SLEEPER_TOKEN_KEY, token.trim());
+      localStorage.setItem(SLEEPER_TOKEN_KEY, token.trim());
     } catch (_) {
-      els.feedStatus.textContent = 'This browser blocked session storage, so the Sleeper token could not be saved.';
+      els.feedStatus.textContent = 'This browser blocked local storage, so the Sleeper token could not be saved.';
       return;
     }
     renderFeedControls();
@@ -272,7 +300,7 @@ function renderFeedControls() {
     forget.type = 'button';
     forget.textContent = 'Forget Sleeper Token';
     forget.addEventListener('click', async () => {
-      try { sessionStorage.removeItem(SLEEPER_TOKEN_KEY); } catch (_) { /* no-op */ }
+      try { localStorage.removeItem(SLEEPER_TOKEN_KEY); } catch (_) { /* no-op */ }
       renderFeedControls();
       await loadActivity();
     });
@@ -283,7 +311,7 @@ function renderFeedControls() {
 function renderFeedStatus() {
   const count = state.feedMessages.length;
   if (state.feedStatus === 'connected') {
-    els.feedStatus.textContent = `Connected for this browser session. ${count} message${count === 1 ? '' : 's'} in the selected window.`;
+    els.feedStatus.textContent = `Connected and remembered on this device. ${count} message${count === 1 ? '' : 's'} in the selected window.`;
   } else if (state.feedStatus === 'unauthorized') {
     els.feedStatus.textContent = 'Sleeper rejected the token. Replace it to reconnect; public transactions and rosters still work.';
   } else if (state.feedStatus === 'blocked') {
@@ -326,9 +354,11 @@ async function loadActivity() {
 
     const hours = Number(els.hours.value || 24);
     const nowMs = Date.now();
-    const recentRaw = ActivityCore.filterRecent([...byId.values()], nowMs, hours);
+    const allRawTransactions = [...byId.values()];
+    const recentRaw = ActivityCore.filterRecent(allRawTransactions, nowMs, hours);
+    const waiverWatchRaw = ActivityCore.filterRecent(allRawTransactions, nowMs, 24 * 7);
     let players = compactPlayers || {};
-    const neededIds = collectPlayerIds(recentRaw, rosters);
+    const neededIds = collectPlayerIds([...recentRaw, ...waiverWatchRaw], rosters);
     const missing = [...neededIds].filter(id => !players[id]);
     if (missing.length) {
       const fullPlayers = await loadFullPlayers();
@@ -339,6 +369,7 @@ async function loadActivity() {
     const feedIdentityMap = ActivityCore.buildFeedIdentityMap(users, rosters, teams);
     const currentOwnership = ActivityCore.buildCurrentOwnership(rosters);
     const normalized = recentRaw.map(tx => ActivityCore.normalizeTransaction(tx, teams, players, currentOwnership));
+    const waiverWatch = ActivityCore.buildWaiverWatch(waiverWatchRaw, players, currentOwnership, teams, nowMs, 7);
     const rosterViews = rosters
       .slice()
       .sort((a, b) => Number(a.roster_id) - Number(b.roster_id))
@@ -377,12 +408,14 @@ async function loadActivity() {
       transactions: mergedTransactions,
       feedMessages,
       marketSignals,
+      waiverWatch,
       rosterViews,
       feedStatus,
       refreshedIso,
     };
 
     renderActivity(mergedTransactions);
+    renderWaiverWatch(waiverWatch);
     renderMarketIntelligence(marketSignals);
     renderFullFeed(feedMessages);
     renderRosters(rosterViews);
@@ -409,6 +442,7 @@ async function copySnapshot() {
     transactions: state.transactions,
     feedMessages: state.feedMessages,
     marketSignals: state.marketSignals,
+    waiverWatch: state.waiverWatch,
     rosterViews: state.rosterViews,
     feedStatus: state.feedStatus,
   });
