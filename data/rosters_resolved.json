@@ -146,11 +146,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NE"
         },
         {
@@ -389,12 +389,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NE"
         },
         {
@@ -1625,7 +1625,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zachariah Branch",
           "player_id": "13320",
           "position": "WR",
@@ -2045,7 +2045,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zachariah Branch",
           "player_id": "13320",
           "position": "WR",
@@ -3705,7 +3705,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Malik Davis",
           "player_id": "8800",
           "position": "RB",
@@ -3779,7 +3779,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Malik Davis",
           "player_id": "8800",
           "position": "RB",
@@ -5002,7 +5002,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jonathon Brooks",
           "player_id": "11583",
           "position": "RB",
@@ -5146,7 +5146,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tua Tagovailoa",
           "player_id": "6768",
           "position": "QB",
@@ -5256,7 +5256,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tua Tagovailoa",
           "player_id": "6768",
           "position": "QB",
@@ -5348,7 +5348,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jonathon Brooks",
           "player_id": "11583",
           "position": "RB",
@@ -5554,7 +5554,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Jalen McMillan",
           "player_id": "11618",
           "position": "WR",
@@ -5578,7 +5578,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
@@ -5674,7 +5674,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5760,7 +5760,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5820,7 +5820,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
@@ -5938,7 +5938,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Jalen McMillan",
           "player_id": "11618",
           "position": "WR",
