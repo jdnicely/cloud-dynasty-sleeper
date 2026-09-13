@@ -1246,11 +1246,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
+          "name": "Geno Smith",
+          "player_id": "1373",
           "position": "QB",
           "status": "Active",
-          "team": "LV"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -1432,12 +1432,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
+          "name": "Kirk Cousins",
+          "player_id": "1166",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "LV"
         },
         {
           "active": true,
