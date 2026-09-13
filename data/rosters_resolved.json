@@ -96,6 +96,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Carnell Tate",
+          "player_id": "13279",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -152,18 +164,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "David Montgomery",
-          "player_id": "5892",
-          "position": "RB",
-          "status": "Active",
-          "team": "HOU"
         },
         {
           "active": true,
@@ -255,11 +255,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Tampa Bay Buccaneers",
-          "player_id": "TB",
+          "name": "Tennessee Titans",
+          "player_id": "TEN",
           "position": "DEF",
           "status": null,
-          "team": "TB"
+          "team": "TEN"
         }
       ],
       "bench": [
@@ -293,6 +293,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Carnell Tate",
+          "player_id": "13279",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "DK Metcalf",
           "player_id": "5846",
           "position": "WR",
@@ -310,18 +322,6 @@
           "position": "WR",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Bryce Young",
-          "player_id": "9228",
-          "position": "QB",
-          "status": "Active",
-          "team": "CAR"
         }
       ],
       "co_owners": [],
@@ -439,15 +439,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
           "injury_status": null,
-          "name": "David Montgomery",
-          "player_id": "5892",
-          "position": "RB",
+          "name": "Bryce Young",
+          "player_id": "9228",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "HOU"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -468,12 +468,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Tampa Bay Buccaneers",
-          "player_id": "TB",
+          "name": "Tennessee Titans",
+          "player_id": "TEN",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "TB"
+          "team": "TEN"
         }
       ],
       "taxi": [
@@ -2169,11 +2169,11 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Eli Stowers",
           "player_id": "13349",
           "position": "TE",
-          "status": "Active",
+          "status": "Inactive",
           "team": "PHI"
         },
         {
@@ -2517,11 +2517,11 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Eli Stowers",
           "player_id": "13349",
           "position": "TE",
-          "status": "Active",
+          "status": "Inactive",
           "team": "PHI"
         }
       ]
@@ -2785,6 +2785,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2793,18 +2805,6 @@
           "position": "WR",
           "status": "Active",
           "team": "CLE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Chris Godwin",
-          "player_id": "4037",
-          "position": "WR",
-          "status": "Active",
-          "team": "TB"
         },
         {
           "active": true,
@@ -2958,15 +2958,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Chris Godwin",
+          "player_id": "4037",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "ARI"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3705,12 +3705,24 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Malik Davis",
           "player_id": "8800",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
+          "status": "Active",
+          "team": "IND"
         },
         {
           "active": true,
@@ -3777,14 +3789,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Out",
-          "name": "Malik Davis",
-          "player_id": "8800",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
           "status": "Active",
-          "team": "DAL"
+          "team": "IND"
         }
       ],
       "co_owners": [],
@@ -3806,6 +3818,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "IR",
+          "name": "Malik Davis",
+          "player_id": "8800",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "DAL"
         }
       ],
       "roster_id": 8,
@@ -5588,18 +5612,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Carnell Tate",
-          "player_id": "13279",
-          "position": "WR",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -5632,6 +5644,18 @@
           "position": "WR",
           "status": "Active",
           "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "David Montgomery",
+          "player_id": "5892",
+          "position": "RB",
+          "status": "Active",
+          "team": "HOU"
         },
         {
           "active": true,
@@ -5737,23 +5761,23 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Carnell Tate",
-          "player_id": "13279",
-          "position": "WR",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
           "status": "Active",
           "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "David Montgomery",
+          "player_id": "5892",
+          "position": "RB",
+          "status": "Active",
+          "team": "HOU"
         },
         {
           "active": true,
