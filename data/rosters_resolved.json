@@ -568,18 +568,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Oronde Gadsden",
-          "player_id": "12493",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -732,6 +720,16 @@
           "position": "RB",
           "status": "Active",
           "team": "WAS"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "9482",
+          "player_id": "9482",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -895,17 +893,15 @@
           "team": "SEA"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Oronde Gadsden",
-          "player_id": "12493",
-          "position": "TE",
+          "name": "9482",
+          "player_id": "9482",
+          "position": null,
           "starter_slot": "TE",
-          "status": "Active",
-          "team": "LAC"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -2785,18 +2781,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
-          "status": "Active",
-          "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2805,6 +2789,18 @@
           "position": "WR",
           "status": "Active",
           "team": "CLE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Chris Godwin",
+          "player_id": "4037",
+          "position": "WR",
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": true,
@@ -2958,15 +2954,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Chris Godwin",
-          "player_id": "4037",
-          "position": "WR",
+          "injury_status": "Questionable",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "TB"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -5758,6 +5754,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Jacory Croskey-Merritt",
+          "player_id": "12533",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5766,18 +5774,6 @@
           "position": "WR",
           "status": "Active",
           "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "David Montgomery",
-          "player_id": "5892",
-          "position": "RB",
-          "status": "Active",
-          "team": "HOU"
         },
         {
           "active": true,
@@ -5845,12 +5841,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jacory Croskey-Merritt",
-          "player_id": "12533",
+          "name": "David Montgomery",
+          "player_id": "5892",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "WAS"
+          "team": "HOU"
         },
         {
           "active": true,
