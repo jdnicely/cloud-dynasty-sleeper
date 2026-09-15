@@ -335,14 +335,18 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 0,
-        "fpts_decimal": 0,
+        "fpts": 145,
+        "fpts_against": 103,
+        "fpts_against_decimal": 68,
+        "fpts_decimal": 10,
         "losses": 0,
+        "ppts": 148,
+        "ppts_decimal": 30,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 8,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -819,9 +823,13 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 98,
+        "fpts_against": 131,
+        "fpts_against_decimal": 0,
+        "fpts_decimal": 86,
+        "losses": 1,
+        "ppts": 112,
+        "ppts_decimal": 96,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -1018,7 +1026,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jalen Coker",
           "player_id": "11646",
           "position": "WR",
@@ -1329,9 +1337,13 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 119,
+        "fpts_against": 175,
+        "fpts_against_decimal": 26,
+        "fpts_decimal": 20,
+        "losses": 1,
+        "ppts": 136,
+        "ppts_decimal": 50,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -1476,7 +1488,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jalen Coker",
           "player_id": "11646",
           "position": "WR",
@@ -1709,7 +1721,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jordan Mason",
           "player_id": "8408",
           "position": "RB",
@@ -1819,7 +1831,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jordan Mason",
           "player_id": "8408",
           "position": "RB",
@@ -1850,9 +1862,13 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 103,
+        "fpts_against": 145,
+        "fpts_against_decimal": 10,
+        "fpts_decimal": 68,
+        "losses": 1,
+        "ppts": 115,
+        "ppts_decimal": 18,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -2346,14 +2362,18 @@
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 0,
-        "fpts_decimal": 0,
+        "fpts": 116,
+        "fpts_against": 107,
+        "fpts_against_decimal": 68,
+        "fpts_decimal": 26,
         "losses": 0,
+        "ppts": 152,
+        "ppts_decimal": 6,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 2,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -2867,9 +2887,13 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 114,
+        "fpts_against": 144,
+        "fpts_against_decimal": 16,
+        "fpts_decimal": 60,
+        "losses": 1,
+        "ppts": 154,
+        "ppts_decimal": 36,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3327,9 +3351,13 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 128,
+        "fpts_against": 144,
+        "fpts_against_decimal": 38,
+        "fpts_decimal": 60,
+        "losses": 1,
+        "ppts": 141,
+        "ppts_decimal": 50,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3835,14 +3863,18 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 0,
+        "fpts": 131,
+        "fpts_against": 98,
+        "fpts_against_decimal": 86,
         "fpts_decimal": 0,
         "losses": 0,
+        "ppts": 134,
+        "ppts_decimal": 20,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 3,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -4319,14 +4351,18 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 0,
-        "fpts_decimal": 0,
+        "fpts": 175,
+        "fpts_against": 119,
+        "fpts_against_decimal": 20,
+        "fpts_decimal": 26,
         "losses": 0,
+        "ppts": 178,
+        "ppts_decimal": 76,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 6,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -4803,14 +4839,18 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 0,
-        "fpts_decimal": 0,
+        "fpts": 144,
+        "fpts_against": 128,
+        "fpts_against_decimal": 60,
+        "fpts_decimal": 38,
         "losses": 0,
+        "ppts": 160,
+        "ppts_decimal": 48,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 1,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -5331,9 +5371,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 0,
-        "fpts_decimal": 0,
-        "losses": 0,
+        "fpts": 107,
+        "fpts_against": 116,
+        "fpts_against_decimal": 26,
+        "fpts_decimal": 68,
+        "losses": 1,
+        "ppts": 124,
+        "ppts_decimal": 76,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -5803,14 +5847,18 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 0,
-        "fpts_decimal": 0,
+        "fpts": 144,
+        "fpts_against": 114,
+        "fpts_against_decimal": 60,
+        "fpts_decimal": 16,
         "losses": 0,
+        "ppts": 167,
+        "ppts_decimal": 26,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 9,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
