@@ -5285,11 +5285,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "MarShawn Lloyd",
-          "player_id": "11581",
+          "name": "Jonathon Brooks",
+          "player_id": "11583",
           "position": "RB",
           "status": "Active",
-          "team": "GB"
+          "team": "CAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Out",
+          "name": "Sam Darnold",
+          "player_id": "4943",
+          "position": "QB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5314,18 +5326,6 @@
           "position": "WR",
           "status": "Active",
           "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Out",
-          "name": "Tua Tagovailoa",
-          "player_id": "6768",
-          "position": "QB",
-          "status": "Active",
-          "team": "ATL"
         },
         {
           "active": true,
@@ -5417,12 +5417,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jonathon Brooks",
-          "player_id": "11583",
+          "name": "Cam Skattebo",
+          "player_id": "12481",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CAR"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -5469,12 +5469,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Cam Skattebo",
-          "player_id": "12481",
+          "name": "MarShawn Lloyd",
+          "player_id": "11581",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYG"
+          "team": "GB"
         },
         {
           "active": true,
@@ -5482,12 +5482,12 @@
             "QB"
           ],
           "injury_status": "Out",
-          "name": "Sam Darnold",
-          "player_id": "4943",
+          "name": "Tua Tagovailoa",
+          "player_id": "6768",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "SEA"
+          "team": "ATL"
         },
         {
           "active": true,
