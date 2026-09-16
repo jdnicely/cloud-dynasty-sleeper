@@ -4090,11 +4090,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Dylan Sampson",
           "player_id": "12469",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "CLE"
         },
         {
@@ -4284,11 +4284,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Dylan Sampson",
           "player_id": "12469",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "CLE"
         },
         {
