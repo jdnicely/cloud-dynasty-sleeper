@@ -5817,11 +5817,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "name": "Davante Adams",
+          "player_id": "2133",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -5945,12 +5945,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Davante Adams",
-          "player_id": "2133",
+          "name": "DJ Moore",
+          "player_id": "4983",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAR"
+          "team": "BUF"
         },
         {
           "active": true,
