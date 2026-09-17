@@ -106,6 +106,16 @@
           "team": "TEN"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13296",
+          "player_id": "13296",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "RB"
@@ -164,18 +174,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Michael Pittman",
-          "player_id": "6819",
-          "position": "WR",
-          "status": "Active",
-          "team": "PIT"
         },
         {
           "active": true,
@@ -250,16 +248,14 @@
           "team": "CAR"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Tennessee Titans",
-          "player_id": "TEN",
+          "name": "SF D/ST",
+          "player_id": "SF",
           "position": "DEF",
           "status": null,
-          "team": "TEN"
+          "team": "SF"
         }
       ],
       "bench": [
@@ -300,6 +296,16 @@
           "team": "TEN"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13296",
+          "player_id": "13296",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -307,18 +313,6 @@
           "injury_status": null,
           "name": "DK Metcalf",
           "player_id": "5846",
-          "position": "WR",
-          "status": "Active",
-          "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Michael Pittman",
-          "player_id": "6819",
           "position": "WR",
           "status": "Active",
           "team": "PIT"
@@ -344,8 +338,8 @@
         "ppts_decimal": 30,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
-        "waiver_position": 8,
+        "waiver_budget_used": 5,
+        "waiver_position": 10,
         "wins": 1
       },
       "starters": [
@@ -467,17 +461,15 @@
           "team": "PIT"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Tennessee Titans",
-          "player_id": "TEN",
+          "name": "SF D/ST",
+          "player_id": "SF",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "TEN"
+          "team": "SF"
         }
       ],
       "taxi": [
@@ -556,6 +548,18 @@
           "position": "WR",
           "status": "Active",
           "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Devaughn Vele",
+          "player_id": "11834",
+          "position": "WR",
+          "status": "Active",
+          "team": "NO"
         },
         {
           "active": true,
@@ -640,18 +644,6 @@
           "position": "WR",
           "status": "Active",
           "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Deshaun Watson",
-          "player_id": "4017",
-          "position": "QB",
-          "status": "Active",
-          "team": "CLE"
         },
         {
           "active": true,
@@ -768,24 +760,24 @@
           "fantasy_positions": [
             "WR"
           ],
+          "injury_status": null,
+          "name": "Devaughn Vele",
+          "player_id": "11834",
+          "position": "WR",
+          "status": "Active",
+          "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": "",
           "name": "Tyreek Hill",
           "player_id": "3321",
           "position": "WR",
           "status": "Active",
           "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Deshaun Watson",
-          "player_id": "4017",
-          "position": "QB",
-          "status": "Active",
-          "team": "CLE"
         },
         {
           "active": true,
@@ -832,8 +824,8 @@
         "ppts_decimal": 96,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
-        "waiver_position": 7,
+        "waiver_budget_used": 10,
+        "waiver_position": 9,
         "wins": 0
       },
       "starters": [
@@ -1347,7 +1339,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 12,
+        "waiver_position": 7,
         "wins": 0
       },
       "starters": [
@@ -1872,7 +1864,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 4,
+        "waiver_position": 3,
         "wins": 0
       },
       "starters": [
@@ -2308,11 +2300,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Matthew Golden",
-          "player_id": "12501",
+          "name": "Rome Odunze",
+          "player_id": "11620",
           "position": "WR",
           "status": "Active",
-          "team": "GB"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -2434,12 +2426,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Rome Odunze",
-          "player_id": "11620",
+          "name": "Matthew Golden",
+          "player_id": "12501",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "GB"
         },
         {
           "active": true,
@@ -2669,6 +2661,16 @@
           "team": "TB"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "5854",
+          "player_id": "5854",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -2815,6 +2817,16 @@
           "team": "TB"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "5854",
+          "player_id": "5854",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "TE"
@@ -2897,7 +2909,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 10,
+        "waiver_position": 12,
         "wins": 0
       },
       "starters": [
@@ -3361,7 +3373,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 11,
+        "waiver_position": 6,
         "wins": 0
       },
       "starters": [
@@ -3561,6 +3573,16 @@
           "team": "LAC"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12492",
+          "player_id": "12492",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -3655,18 +3677,6 @@
           "position": "K",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Najee Harris",
-          "player_id": "7528",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYG"
         },
         {
           "active": true,
@@ -3779,6 +3789,16 @@
           "team": "LAR"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12492",
+          "player_id": "12492",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -3789,18 +3809,6 @@
           "position": "QB",
           "status": "Active",
           "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Najee Harris",
-          "player_id": "7528",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYG"
         },
         {
           "active": true,
@@ -3873,7 +3881,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 3,
+        "waiver_position": 11,
         "wins": 1
       },
       "starters": [
@@ -4361,7 +4369,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 6,
+        "waiver_position": 5,
         "wins": 1
       },
       "starters": [
@@ -5381,7 +5389,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 5,
+        "waiver_position": 4,
         "wins": 0
       },
       "starters": [
@@ -5608,18 +5616,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "AJ Barner",
-          "player_id": "11603",
-          "position": "TE",
-          "status": "Active",
-          "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5650,6 +5646,18 @@
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
+          "status": "Active",
+          "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Antonio Williams",
+          "player_id": "13301",
+          "position": "WR",
           "status": "Active",
           "team": "WAS"
         },
@@ -5778,18 +5786,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "AJ Barner",
-          "player_id": "11603",
-          "position": "TE",
-          "status": "Active",
-          "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5856,8 +5852,8 @@
         "ppts_decimal": 26,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
-        "waiver_position": 9,
+        "waiver_budget_used": 25,
+        "waiver_position": 8,
         "wins": 1
       },
       "starters": [
@@ -6016,6 +6012,18 @@
           "position": "WR",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Antonio Williams",
+          "player_id": "13301",
+          "position": "WR",
+          "status": "Active",
+          "team": "WAS"
         },
         {
           "active": true,
