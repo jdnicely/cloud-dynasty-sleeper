@@ -140,6 +140,16 @@
           "team": "PIT"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "3161",
+          "player_id": "3161",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -301,6 +311,16 @@
           "injury_status": null,
           "name": "13296",
           "player_id": "13296",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "3161",
+          "player_id": "3161",
           "position": null,
           "status": null,
           "team": null
@@ -4795,11 +4815,11 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Dalton Kincaid",
-          "player_id": "10236",
+          "name": "Colston Loveland",
+          "player_id": "12517",
           "position": "TE",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -4934,12 +4954,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
+          "name": "Dalton Kincaid",
+          "player_id": "10236",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "CHI"
+          "team": "BUF"
         },
         {
           "active": true,
