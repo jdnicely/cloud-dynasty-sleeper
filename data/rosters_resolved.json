@@ -304,18 +304,6 @@
           "position": null,
           "status": null,
           "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "DK Metcalf",
-          "player_id": "5846",
-          "position": "WR",
-          "status": "Active",
-          "team": "PIT"
         }
       ],
       "co_owners": [],
@@ -325,7 +313,20 @@
         "user_id": "327235334960058368",
         "username": null
       },
-      "reserve": [],
+      "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "A.J. Brown",
+          "player_id": "5859",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "NE"
+        }
+      ],
       "roster_id": 1,
       "settings": {
         "division": 1,
@@ -387,13 +388,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
-          "name": "A.J. Brown",
-          "player_id": "5859",
+          "injury_status": null,
+          "name": "DK Metcalf",
+          "player_id": "5846",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Inactive",
-          "team": "NE"
+          "status": "Active",
+          "team": "PIT"
         },
         {
           "active": true,
@@ -1821,18 +1822,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "IR",
-          "name": "Jordan Mason",
-          "player_id": "8408",
-          "position": "RB",
-          "status": "Inactive",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -1850,7 +1839,20 @@
         "user_id": "459065050393473024",
         "username": null
       },
-      "reserve": [],
+      "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "IR",
+          "name": "Jordan Mason",
+          "player_id": "8408",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "MIN"
+        }
+      ],
       "roster_id": 4,
       "settings": {
         "division": 1,

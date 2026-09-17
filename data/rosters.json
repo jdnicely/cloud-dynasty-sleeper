@@ -31,7 +31,9 @@
       "9228",
       "SF"
     ],
-    "reserve": null,
+    "reserve": [
+      "5859"
+    ],
     "roster_id": 1,
     "settings": {
       "division": 1,
@@ -52,7 +54,7 @@
       "4881",
       "8150",
       "8151",
-      "5859",
+      "5846",
       "7569",
       "7553",
       "7543",
@@ -242,7 +244,9 @@
       "HOU",
       "LAR"
     ],
-    "reserve": null,
+    "reserve": [
+      "8408"
+    ],
     "roster_id": 4,
     "settings": {
       "division": 1,
