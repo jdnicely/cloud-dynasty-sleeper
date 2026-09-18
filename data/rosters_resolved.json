@@ -106,14 +106,16 @@
           "team": "TEN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13296",
+          "name": "Caleb Douglas",
           "player_id": "13296",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -140,14 +142,16 @@
           "team": "PIT"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "3161",
+          "name": "Carson Wentz",
           "player_id": "3161",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "MIN"
         },
         {
           "active": true,
@@ -258,10 +262,12 @@
           "team": "CAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "SF D/ST",
+          "name": "San Francisco 49ers",
           "player_id": "SF",
           "position": "DEF",
           "status": null,
@@ -306,24 +312,28 @@
           "team": "TEN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13296",
+          "name": "Caleb Douglas",
           "player_id": "13296",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "MIA"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "3161",
+          "name": "Carson Wentz",
           "player_id": "3161",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "MIN"
         }
       ],
       "co_owners": [],
@@ -482,10 +492,12 @@
           "team": "PIT"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "SF D/ST",
+          "name": "San Francisco 49ers",
           "player_id": "SF",
           "position": "DEF",
           "starter_slot": "DEF",
@@ -671,7 +683,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Cooper Kupp",
           "player_id": "4039",
           "position": "WR",
@@ -907,7 +919,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Cooper Kupp",
           "player_id": "4039",
           "position": "WR",
@@ -2655,7 +2667,7 @@
           "name": "Ja'Kobi Lane",
           "player_id": "13293",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "BAL"
         },
         {
@@ -2683,14 +2695,16 @@
           "team": "TB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "5854",
+          "name": "Drew Lock",
           "player_id": "5854",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -2839,14 +2853,16 @@
           "team": "TB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "5854",
+          "name": "Drew Lock",
           "player_id": "5854",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -2902,7 +2918,7 @@
           "name": "Ja'Kobi Lane",
           "player_id": "13293",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "BAL"
         },
         {
@@ -3280,7 +3296,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chris Olave",
           "player_id": "8144",
           "position": "WR",
@@ -3443,7 +3459,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chris Olave",
           "player_id": "8144",
           "position": "WR",
@@ -3595,14 +3611,16 @@
           "team": "LAC"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12492",
+          "name": "Pat Bryant",
           "player_id": "12492",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "DEN"
         },
         {
           "active": true,
@@ -3669,7 +3687,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Kaelon Black",
           "player_id": "13414",
           "position": "RB",
@@ -3811,14 +3829,16 @@
           "team": "LAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12492",
+          "name": "Pat Bryant",
           "player_id": "12492",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "DEN"
         },
         {
           "active": true,
@@ -4092,7 +4112,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Kaelon Black",
           "player_id": "13414",
           "position": "RB",
@@ -5712,7 +5732,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
@@ -5772,7 +5792,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5846,7 +5866,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -5962,7 +5982,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
