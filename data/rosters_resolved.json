@@ -5368,14 +5368,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
-          "injury_status": null,
-          "name": "Deebo Samuel",
-          "player_id": "5872",
-          "position": "WR",
+          "injury_status": "Questionable",
+          "name": "Tua Tagovailoa",
+          "player_id": "6768",
+          "position": "QB",
           "status": "Active",
-          "team": "SF"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -5529,15 +5529,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Tua Tagovailoa",
-          "player_id": "6768",
-          "position": "QB",
+          "injury_status": null,
+          "name": "Deebo Samuel",
+          "player_id": "5872",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "ATL"
+          "team": "SF"
         },
         {
           "active": true,
