@@ -370,7 +370,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 5,
-        "waiver_position": 10,
+        "waiver_position": 9,
         "wins": 1
       },
       "starters": [
@@ -858,7 +858,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 10,
-        "waiver_position": 9,
+        "waiver_position": 8,
         "wins": 0
       },
       "starters": [
@@ -2947,7 +2947,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 12,
+        "waiver_position": 11,
         "wins": 0
       },
       "starters": [
@@ -3923,7 +3923,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 11,
+        "waiver_position": 10,
         "wins": 1
       },
       "starters": [
@@ -5658,6 +5658,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "AJ Barner",
+          "player_id": "11603",
+          "position": "TE",
+          "status": "Active",
+          "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -5828,6 +5840,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "AJ Barner",
+          "player_id": "11603",
+          "position": "TE",
+          "status": "Active",
+          "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5894,8 +5918,8 @@
         "ppts_decimal": 26,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 25,
-        "waiver_position": 8,
+        "waiver_budget_used": 50,
+        "waiver_position": 12,
         "wins": 1
       },
       "starters": [
