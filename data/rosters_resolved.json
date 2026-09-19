@@ -3184,6 +3184,58 @@
           "team": "LAR"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13329",
+          "player_id": "13329",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13418",
+          "player_id": "13418",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13421",
+          "player_id": "13421",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13425",
+          "player_id": "13425",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Deshaun Watson",
+          "player_id": "4017",
+          "position": "QB",
+          "status": "Active",
+          "team": "CLE"
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "RB"
@@ -3321,11 +3373,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
+          "name": "Tampa Bay Buccaneers",
+          "player_id": "TB",
           "position": "DEF",
           "status": null,
-          "team": "DEN"
+          "team": "TB"
         }
       ],
       "bench": [
@@ -3335,11 +3387,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Ty Simpson",
-          "player_id": "13275",
+          "name": "Deshaun Watson",
+          "player_id": "4017",
           "position": "QB",
           "status": "Active",
-          "team": "LAR"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -3538,15 +3590,68 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
+          "name": "Tampa Bay Buccaneers",
+          "player_id": "TB",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "DEN"
+          "team": "TB"
         }
       ],
-      "taxi": []
+      "taxi": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Ty Simpson",
+          "player_id": "13275",
+          "position": "QB",
+          "status": "Active",
+          "team": "LAR"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13329",
+          "player_id": "13329",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13418",
+          "player_id": "13418",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13421",
+          "player_id": "13421",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13425",
+          "player_id": "13425",
+          "position": null,
+          "status": null,
+          "team": null
+        }
+      ]
     },
     {
       "all_players": [
@@ -5879,23 +5984,23 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Davante Adams",
-          "player_id": "2133",
+          "name": "Alec Pierce",
+          "player_id": "8142",
           "position": "WR",
           "status": "Active",
-          "team": "LAR"
+          "team": "IND"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Alec Pierce",
-          "player_id": "8142",
+          "injury_status": "Doubtful",
+          "name": "Zay Flowers",
+          "player_id": "9997",
           "position": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "BAL"
         }
       ],
       "co_owners": [],
@@ -5980,13 +6085,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Doubtful",
-          "name": "Zay Flowers",
-          "player_id": "9997",
+          "injury_status": null,
+          "name": "Davante Adams",
+          "player_id": "2133",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "BAL"
+          "team": "LAR"
         },
         {
           "active": true,
