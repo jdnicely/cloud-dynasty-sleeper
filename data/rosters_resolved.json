@@ -314,18 +314,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Caleb Douglas",
-          "player_id": "13296",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -334,6 +322,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Nico Collins",
+          "player_id": "7569",
+          "position": "WR",
+          "status": "Active",
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -431,13 +431,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Nico Collins",
-          "player_id": "7569",
+          "injury_status": null,
+          "name": "Caleb Douglas",
+          "player_id": "13296",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "HOU"
+          "team": "MIA"
         },
         {
           "active": true,
