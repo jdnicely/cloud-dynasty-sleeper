@@ -86,11 +86,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Omar Cooper",
           "player_id": "13276",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYJ"
         },
         {
@@ -547,11 +547,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Omar Cooper",
           "player_id": "13276",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYJ"
         },
         {
@@ -3184,44 +3184,52 @@
           "team": "LAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13329",
+          "name": "Malik Benson",
           "player_id": "13329",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "LV"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "13418",
+          "name": "Robert Henry",
           "player_id": "13418",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": null,
-          "name": "13421",
+          "name": "Eli Raridon",
           "player_id": "13421",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "TE",
+          "status": "Active",
+          "team": "NE"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "13425",
+          "name": "Jalon Daniels",
           "player_id": "13425",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": true,
@@ -3612,44 +3620,52 @@
           "team": "LAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13329",
+          "name": "Malik Benson",
           "player_id": "13329",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "LV"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "13418",
+          "name": "Robert Henry",
           "player_id": "13418",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": null,
-          "name": "13421",
+          "name": "Eli Raridon",
           "player_id": "13421",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "TE",
+          "status": "Active",
+          "team": "NE"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "13425",
+          "name": "Jalon Daniels",
           "player_id": "13425",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "TB"
         }
       ]
     },
@@ -4781,7 +4797,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "De'Zhaun Stribling",
           "player_id": "13417",
           "position": "WR",
@@ -4890,6 +4906,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Dontayvion Wicks",
+          "player_id": "9486",
+          "position": "WR",
+          "status": "Active",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Jaxon Smith-Njigba",
           "player_id": "9488",
           "position": "WR",
@@ -4937,18 +4965,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
-          "position": "TE",
-          "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4976,6 +4992,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Dontayvion Wicks",
+          "player_id": "9486",
+          "position": "WR",
+          "status": "Active",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Jordan Addison",
           "player_id": "9756",
           "position": "WR",
@@ -4990,7 +5018,20 @@
         "user_id": "870443226304335872",
         "username": null
       },
-      "reserve": [],
+      "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "De'Zhaun Stribling",
+          "player_id": "13417",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "SF"
+        }
+      ],
       "roster_id": 10,
       "settings": {
         "division": 1,
@@ -5179,6 +5220,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Colston Loveland",
+          "player_id": "12517",
+          "position": "TE",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -5187,18 +5240,6 @@
           "position": "WR",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "De'Zhaun Stribling",
-          "player_id": "13417",
-          "position": "WR",
-          "status": "Inactive",
-          "team": "SF"
         }
       ]
     },
@@ -5921,7 +5962,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
@@ -5995,7 +6036,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
