@@ -1830,18 +1830,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Travis Kelce",
-          "player_id": "1466",
-          "position": "TE",
-          "status": "Active",
-          "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -1850,6 +1838,18 @@
           "position": "RB",
           "status": "Active",
           "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Puka Nacua",
+          "player_id": "9493",
+          "position": "WR",
+          "status": "Active",
+          "team": "LAR"
         },
         {
           "active": true,
@@ -1983,15 +1983,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Puka Nacua",
-          "player_id": "9493",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Travis Kelce",
+          "player_id": "1466",
+          "position": "TE",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAR"
+          "team": "KC"
         },
         {
           "active": true,
