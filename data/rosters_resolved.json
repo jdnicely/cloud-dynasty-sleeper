@@ -393,12 +393,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Kyren Williams",
-          "player_id": "8150",
+          "name": "Travis Etienne",
+          "player_id": "7543",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "LAR"
+          "team": "NO"
         },
         {
           "active": true,
@@ -458,12 +458,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Travis Etienne",
-          "player_id": "7543",
+          "name": "Kyren Williams",
+          "player_id": "8150",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NO"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -1959,13 +1959,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Puka Nacua",
-          "player_id": "9493",
+          "injury_status": null,
+          "name": "Rashee Rice",
+          "player_id": "10229",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "LAR"
+          "team": "KC"
         },
         {
           "active": true,
@@ -1985,13 +1985,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Rashee Rice",
-          "player_id": "10229",
+          "injury_status": "Questionable",
+          "name": "Puka Nacua",
+          "player_id": "9493",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3940,14 +3940,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Blake Corum",
-          "player_id": "11586",
-          "position": "RB",
+          "injury_status": "Questionable",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
+          "position": "WR",
           "status": "Active",
-          "team": "LAR"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4129,15 +4129,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Ladd McConkey",
-          "player_id": "11635",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Blake Corum",
+          "player_id": "11586",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAC"
+          "team": "LAR"
         },
         {
           "active": true,
