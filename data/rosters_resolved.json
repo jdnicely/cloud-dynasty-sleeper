@@ -2843,6 +2843,30 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kyle Monangai",
+          "player_id": "12534",
+          "position": "RB",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Denzel Boston",
+          "player_id": "13346",
+          "position": "WR",
+          "status": "Active",
+          "team": "CLE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2952,17 +2976,15 @@
       },
       "starters": [
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
-          "position": "QB",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "QB",
-          "status": "Active",
-          "team": "DEN"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -3030,17 +3052,15 @@
           "team": "GB"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "FLEX",
-          "status": "Active",
-          "team": "ARI"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -3086,6 +3106,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Bo Nix",
+          "player_id": "11563",
+          "position": "QB",
+          "status": "Active",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -3110,18 +3142,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kyle Monangai",
-          "player_id": "12534",
-          "position": "RB",
-          "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Out",
@@ -3134,14 +3154,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
-          "position": "WR",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
           "status": "Active",
-          "team": "CLE"
+          "team": "ARI"
         }
       ]
     },
