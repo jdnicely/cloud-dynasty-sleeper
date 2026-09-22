@@ -1857,11 +1857,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Houston Texans",
-          "player_id": "HOU",
+          "name": "Los Angeles Rams",
+          "player_id": "LAR",
           "position": "DEF",
           "status": null,
-          "team": "HOU"
+          "team": "LAR"
         }
       ],
       "co_owners": [],
@@ -2025,12 +2025,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Los Angeles Rams",
-          "player_id": "LAR",
+          "name": "Houston Texans",
+          "player_id": "HOU",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "LAR"
+          "team": "HOU"
         }
       ],
       "taxi": [
@@ -3972,14 +3972,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
-          "injury_status": null,
-          "name": "Pat Bryant",
-          "player_id": "12492",
-          "position": "WR",
+          "injury_status": "Out",
+          "name": "Jaxson Dart",
+          "player_id": "12508",
+          "position": "QB",
           "status": "Active",
-          "team": "DEN"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -3996,6 +3996,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Rhamondre Stevenson",
+          "player_id": "7611",
+          "position": "RB",
+          "status": "Active",
+          "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -4004,18 +4016,6 @@
           "position": "TE",
           "status": "Active",
           "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Josh Downs",
-          "player_id": "9500",
-          "position": "WR",
-          "status": "Active",
-          "team": "IND"
         }
       ],
       "co_owners": [],
@@ -4074,12 +4074,12 @@
             "QB"
           ],
           "injury_status": "Out",
-          "name": "Jaxson Dart",
-          "player_id": "12508",
+          "name": "Michael Penix",
+          "player_id": "11559",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "NYG"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -4100,8 +4100,8 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Rhamondre Stevenson",
-          "player_id": "7611",
+          "name": "TreVeyon Henderson",
+          "player_id": "12529",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
@@ -4149,15 +4149,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Blake Corum",
-          "player_id": "11586",
-          "position": "RB",
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAR"
+          "team": "IND"
         },
         {
           "active": true,
@@ -4203,26 +4203,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": "Out",
-          "name": "Michael Penix",
-          "player_id": "11559",
-          "position": "QB",
+          "injury_status": null,
+          "name": "Blake Corum",
+          "player_id": "11586",
+          "position": "RB",
           "status": "Active",
-          "team": "ATL"
+          "team": "LAR"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "TreVeyon Henderson",
-          "player_id": "12529",
-          "position": "RB",
+          "name": "Pat Bryant",
+          "player_id": "12492",
+          "position": "WR",
           "status": "Active",
-          "team": "NE"
+          "team": "DEN"
         },
         {
           "active": true,
