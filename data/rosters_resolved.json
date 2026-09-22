@@ -781,18 +781,6 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Tre Tucker",
-          "player_id": "10213",
-          "position": "WR",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
           "injury_status": "",
           "name": "Tyreek Hill",
           "player_id": "3321",
@@ -815,14 +803,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Daniel Jones",
-          "player_id": "5870",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "J.K. Dobbins",
+          "player_id": "6806",
+          "position": "RB",
           "status": "Active",
-          "team": "IND"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -835,6 +823,18 @@
           "position": "RB",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Rachaad White",
+          "player_id": "8136",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -943,28 +943,28 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Rachaad White",
-          "player_id": "8136",
-          "position": "RB",
+          "name": "Tre Tucker",
+          "player_id": "10213",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "WAS"
+          "team": "LV"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
-          "injury_status": "Questionable",
-          "name": "J.K. Dobbins",
-          "player_id": "6806",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Daniel Jones",
+          "player_id": "5870",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "DEN"
+          "team": "IND"
         },
         {
           "active": true,
@@ -6030,18 +6030,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jacory Croskey-Merritt",
-          "player_id": "12533",
-          "position": "RB",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Out",
@@ -6244,6 +6232,18 @@
           "position": "WR",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Jacory Croskey-Merritt",
+          "player_id": "12533",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         },
         {
           "active": true,
