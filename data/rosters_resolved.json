@@ -360,13 +360,13 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 145,
-        "fpts_against": 103,
-        "fpts_against_decimal": 68,
-        "fpts_decimal": 10,
-        "losses": 0,
-        "ppts": 148,
-        "ppts_decimal": 30,
+        "fpts": 249,
+        "fpts_against": 227,
+        "fpts_against_decimal": 30,
+        "fpts_decimal": 18,
+        "losses": 1,
+        "ppts": 264,
+        "ppts_decimal": 70,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 5,
@@ -848,18 +848,18 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 98,
-        "fpts_against": 131,
-        "fpts_against_decimal": 0,
-        "fpts_decimal": 86,
+        "fpts": 199,
+        "fpts_against": 207,
+        "fpts_against_decimal": 28,
+        "fpts_decimal": 54,
         "losses": 1,
-        "ppts": 112,
-        "ppts_decimal": 96,
+        "ppts": 239,
+        "ppts_decimal": 34,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 10,
         "waiver_position": 8,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -1362,18 +1362,18 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 119,
-        "fpts_against": 175,
-        "fpts_against_decimal": 26,
-        "fpts_decimal": 20,
+        "fpts": 279,
+        "fpts_against": 265,
+        "fpts_against_decimal": 80,
+        "fpts_decimal": 78,
         "losses": 1,
-        "ppts": 136,
-        "ppts_decimal": 50,
+        "ppts": 315,
+        "ppts_decimal": 28,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 7,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -1770,7 +1770,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
@@ -1844,7 +1844,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
@@ -1888,13 +1888,13 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 103,
-        "fpts_against": 145,
-        "fpts_against_decimal": 10,
-        "fpts_decimal": 68,
-        "losses": 1,
-        "ppts": 115,
-        "ppts_decimal": 18,
+        "fpts": 247,
+        "fpts_against": 346,
+        "fpts_against_decimal": 38,
+        "fpts_decimal": 74,
+        "losses": 2,
+        "ppts": 270,
+        "ppts_decimal": 66,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -2388,18 +2388,18 @@
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 116,
-        "fpts_against": 107,
-        "fpts_against_decimal": 68,
-        "fpts_decimal": 26,
+        "fpts": 225,
+        "fpts_against": 176,
+        "fpts_against_decimal": 46,
+        "fpts_decimal": 62,
         "losses": 0,
-        "ppts": 152,
-        "ppts_decimal": 6,
+        "ppts": 272,
+        "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 2,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -2961,13 +2961,13 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 114,
-        "fpts_against": 144,
-        "fpts_against_decimal": 16,
-        "fpts_decimal": 60,
-        "losses": 1,
-        "ppts": 154,
-        "ppts_decimal": 36,
+        "fpts": 205,
+        "fpts_against": 304,
+        "fpts_against_decimal": 74,
+        "fpts_decimal": 14,
+        "losses": 2,
+        "ppts": 277,
+        "ppts_decimal": 98,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3196,7 +3196,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3481,18 +3481,18 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 128,
-        "fpts_against": 144,
-        "fpts_against_decimal": 38,
-        "fpts_decimal": 60,
+        "fpts": 252,
+        "fpts_against": 248,
+        "fpts_against_decimal": 46,
+        "fpts_decimal": 22,
         "losses": 1,
-        "ppts": 141,
-        "ppts_decimal": 50,
+        "ppts": 275,
+        "ppts_decimal": 82,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 6,
-        "wins": 0
+        "wins": 1
       },
       "starters": [
         {
@@ -3632,7 +3632,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3732,7 +3732,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -3768,7 +3768,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Jaxson Dart",
           "player_id": "12508",
           "position": "QB",
@@ -4054,13 +4054,13 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 131,
-        "fpts_against": 98,
-        "fpts_against_decimal": 86,
-        "fpts_decimal": 0,
-        "losses": 0,
-        "ppts": 134,
-        "ppts_decimal": 20,
+        "fpts": 199,
+        "fpts_against": 208,
+        "fpts_against_decimal": 22,
+        "fpts_decimal": 78,
+        "losses": 1,
+        "ppts": 242,
+        "ppts_decimal": 8,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -4073,7 +4073,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Jaxson Dart",
           "player_id": "12508",
           "position": "QB",
@@ -4125,7 +4125,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -4542,13 +4542,13 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 175,
-        "fpts_against": 119,
-        "fpts_against_decimal": 20,
+        "fpts": 267,
+        "fpts_against": 215,
+        "fpts_against_decimal": 60,
         "fpts_decimal": 26,
-        "losses": 0,
-        "ppts": 178,
-        "ppts_decimal": 76,
+        "losses": 1,
+        "ppts": 273,
+        "ppts_decimal": 66,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -5055,18 +5055,18 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 144,
-        "fpts_against": 128,
-        "fpts_against_decimal": 60,
-        "fpts_decimal": 38,
+        "fpts": 345,
+        "fpts_against": 272,
+        "fpts_against_decimal": 66,
+        "fpts_decimal": 66,
         "losses": 0,
-        "ppts": 160,
-        "ppts_decimal": 48,
+        "ppts": 365,
+        "ppts_decimal": 26,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 1,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -5587,13 +5587,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 107,
-        "fpts_against": 116,
-        "fpts_against_decimal": 26,
-        "fpts_decimal": 68,
-        "losses": 1,
-        "ppts": 124,
-        "ppts_decimal": 76,
+        "fpts": 183,
+        "fpts_against": 216,
+        "fpts_against_decimal": 94,
+        "fpts_decimal": 96,
+        "losses": 2,
+        "ppts": 209,
+        "ppts_decimal": 24,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -6075,18 +6075,18 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 144,
-        "fpts_against": 114,
+        "fpts": 240,
+        "fpts_against": 206,
         "fpts_against_decimal": 60,
-        "fpts_decimal": 16,
+        "fpts_decimal": 56,
         "losses": 0,
-        "ppts": 167,
-        "ppts_decimal": 26,
+        "ppts": 281,
+        "ppts_decimal": 6,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 50,
         "waiver_position": 12,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
