@@ -2843,26 +2843,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Kyle Monangai",
-          "player_id": "12534",
-          "position": "RB",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
+          "position": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "TB"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
-          "position": "WR",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
           "status": "Active",
-          "team": "CLE"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -2879,18 +2879,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Drew Lock",
-          "player_id": "5854",
-          "position": "QB",
-          "status": "Active",
-          "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -2899,18 +2887,6 @@
           "position": "TE",
           "status": "Active",
           "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Chuba Hubbard",
-          "player_id": "7594",
-          "position": "RB",
-          "status": "Active",
-          "team": "CAR"
         },
         {
           "active": true,
@@ -2976,15 +2952,17 @@
       },
       "starters": [
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "C.J. Stroud",
+          "player_id": "9758",
+          "position": "QB",
           "starter_slot": "QB",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "HOU"
         },
         {
           "active": true,
@@ -3031,12 +3009,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
+          "name": "Denzel Boston",
+          "player_id": "13346",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -3052,15 +3030,17 @@
           "team": "GB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Chuba Hubbard",
+          "player_id": "7594",
+          "position": "RB",
           "starter_slot": "FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "CAR"
         },
         {
           "active": true,
@@ -3068,12 +3048,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "C.J. Stroud",
-          "player_id": "9758",
+          "name": "Drew Lock",
+          "player_id": "5854",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "HOU"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -3142,24 +3122,24 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kyle Monangai",
+          "player_id": "12534",
+          "position": "RB",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Out",
           "name": "Carson Beck",
           "player_id": "13272",
           "position": "QB",
-          "status": "Active",
-          "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
           "status": "Active",
           "team": "ARI"
         }
