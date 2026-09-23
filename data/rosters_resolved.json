@@ -1710,7 +1710,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "Questionable",
           "name": "Rico Dowdle",
           "player_id": "7021",
           "position": "RB",
@@ -1832,7 +1832,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "Questionable",
           "name": "Rico Dowdle",
           "player_id": "7021",
           "position": "RB",
@@ -6006,6 +6006,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Out",
+          "name": "Jayden Daniels",
+          "player_id": "11566",
+          "position": "QB",
+          "status": "Active",
+          "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -6038,18 +6050,6 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "Zay Flowers",
-          "player_id": "9997",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
         }
       ],
       "co_owners": [],
@@ -6082,13 +6082,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Jayden Daniels",
-          "player_id": "11566",
+          "injury_status": null,
+          "name": "Trevor Lawrence",
+          "player_id": "7523",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "WAS"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -6171,15 +6171,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Trevor Lawrence",
-          "player_id": "7523",
-          "position": "QB",
+          "injury_status": "Out",
+          "name": "Zay Flowers",
+          "player_id": "9997",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "JAX"
+          "team": "BAL"
         },
         {
           "active": true,
