@@ -2887,18 +2887,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
-          "position": "K",
-          "status": "Active",
-          "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -2919,16 +2907,6 @@
           "position": "WR",
           "status": "Active",
           "team": "NE"
-        },
-        {
-          "active": null,
-          "fantasy_positions": null,
-          "injury_status": null,
-          "name": "CIN D/ST",
-          "player_id": "CIN",
-          "position": "DEF",
-          "status": null,
-          "team": "CIN"
         }
       ],
       "co_owners": [],
@@ -3086,26 +3064,28 @@
           "team": "SEA"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Chase McLaughlin",
+          "player_id": "6650",
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": null,
           "fantasy_positions": null,
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "CIN D/ST",
+          "player_id": "CIN",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "CIN"
         }
       ],
       "taxi": [
@@ -3950,31 +3930,17 @@
           "team": "IND"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Los Angeles Chargers",
-          "player_id": "LAC",
+          "name": "CAR D/ST",
+          "player_id": "CAR",
           "position": "DEF",
           "status": null,
-          "team": "LAC"
+          "team": "CAR"
         }
       ],
       "bench": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ladd McConkey",
-          "player_id": "11635",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -4022,6 +3988,18 @@
           "position": "TE",
           "status": "Active",
           "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
+          "status": "Active",
+          "team": "IND"
         }
       ],
       "co_owners": [],
@@ -4158,12 +4136,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Josh Downs",
-          "player_id": "9500",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "IND"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4192,17 +4170,15 @@
           "team": "HOU"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Los Angeles Chargers",
-          "player_id": "LAC",
+          "name": "CAR D/ST",
+          "player_id": "CAR",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "LAC"
+          "team": "CAR"
         }
       ],
       "taxi": [
