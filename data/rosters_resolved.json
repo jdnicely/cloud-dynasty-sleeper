@@ -5527,18 +5527,6 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Jameis Winston",
-          "player_id": "2306",
-          "position": "QB",
-          "status": "Active",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
           "name": "Sam Darnold",
           "player_id": "4943",
           "position": "QB",
@@ -5556,6 +5544,18 @@
           "position": "RB",
           "status": "Active",
           "team": "GB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Deebo Samuel",
+          "player_id": "5872",
+          "position": "WR",
+          "status": "Active",
+          "team": "SF"
         },
         {
           "active": true,
@@ -5709,15 +5709,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Deebo Samuel",
-          "player_id": "5872",
-          "position": "WR",
+          "name": "Jameis Winston",
+          "player_id": "2306",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "SF"
+          "team": "NYG"
         },
         {
           "active": true,
