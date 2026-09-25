@@ -48,6 +48,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Oronde Gadsden",
+          "player_id": "12493",
+          "position": "TE",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -278,24 +290,24 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Oronde Gadsden",
+          "player_id": "12493",
+          "position": "TE",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
           "name": "Cam Ward",
           "player_id": "12522",
           "position": "QB",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Carnell Tate",
-          "player_id": "13279",
-          "position": "WR",
           "status": "Active",
           "team": "TEN"
         },
@@ -553,6 +565,18 @@
           "position": "QB",
           "status": "Active",
           "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Carnell Tate",
+          "player_id": "13279",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
