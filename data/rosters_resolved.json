@@ -731,7 +731,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "J.K. Dobbins",
           "player_id": "6806",
           "position": "RB",
@@ -817,7 +817,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "J.K. Dobbins",
           "player_id": "6806",
           "position": "RB",
@@ -1612,7 +1612,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terrance Ferguson",
           "player_id": "12487",
           "position": "TE",
@@ -2049,7 +2049,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terrance Ferguson",
           "player_id": "12487",
           "position": "TE",
@@ -2837,10 +2837,12 @@
           "team": "HOU"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "CIN D/ST",
+          "name": "Cincinnati Bengals",
           "player_id": "CIN",
           "position": "DEF",
           "status": null,
@@ -3077,10 +3079,12 @@
           "team": "TB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "CIN D/ST",
+          "name": "Cincinnati Bengals",
           "player_id": "CIN",
           "position": "DEF",
           "starter_slot": "DEF",
@@ -3718,7 +3722,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -3754,11 +3758,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jaxson Dart",
           "player_id": "12508",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYG"
         },
         {
@@ -3930,10 +3934,12 @@
           "team": "IND"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "CAR D/ST",
+          "name": "Carolina Panthers",
           "player_id": "CAR",
           "position": "DEF",
           "status": null,
@@ -3946,11 +3952,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jaxson Dart",
           "player_id": "12508",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYG"
         },
         {
@@ -4109,7 +4115,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -4170,10 +4176,12 @@
           "team": "HOU"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "CAR D/ST",
+          "name": "Carolina Panthers",
           "player_id": "CAR",
           "position": "DEF",
           "starter_slot": "DEF",
@@ -4275,7 +4283,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "RJ Harvey",
           "player_id": "12489",
           "position": "RB",
@@ -4455,6 +4463,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Doubtful",
+          "name": "Caleb Williams",
+          "player_id": "11560",
+          "position": "QB",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "IR",
@@ -4499,18 +4519,6 @@
           "position": "TE",
           "status": "Active",
           "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Rashid Shaheed",
-          "player_id": "8676",
-          "position": "WR",
-          "status": "Active",
-          "team": "SEA"
         }
       ],
       "co_owners": [],
@@ -4543,13 +4551,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Doubtful",
-          "name": "Caleb Williams",
-          "player_id": "11560",
+          "injury_status": null,
+          "name": "Brock Purdy",
+          "player_id": "8183",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "CHI"
+          "team": "SF"
         },
         {
           "active": true,
@@ -4569,7 +4577,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "RJ Harvey",
           "player_id": "12489",
           "position": "RB",
@@ -4632,15 +4640,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Brock Purdy",
-          "player_id": "8183",
-          "position": "QB",
+          "name": "Rashid Shaheed",
+          "player_id": "8676",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "SF"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -4871,7 +4879,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -4883,7 +4891,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tank Bigsby",
           "player_id": "9225",
           "position": "RB",
@@ -4981,7 +4989,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tank Bigsby",
           "player_id": "9225",
           "position": "RB",
@@ -5134,7 +5142,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -5348,7 +5356,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kaytron Allen",
           "player_id": "13405",
           "position": "RB",
@@ -5356,21 +5364,23 @@
           "team": "WAS"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "2306",
+          "name": "Jameis Winston",
           "player_id": "2306",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "NYG"
         },
         {
           "active": true,
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Sam Darnold",
           "player_id": "4943",
           "position": "QB",
@@ -5488,21 +5498,23 @@
           "team": "CAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "2306",
+          "name": "Jameis Winston",
           "player_id": "2306",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "NYG"
         },
         {
           "active": true,
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Sam Darnold",
           "player_id": "4943",
           "position": "QB",
@@ -5740,7 +5752,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kaytron Allen",
           "player_id": "13405",
           "position": "RB",
@@ -5980,10 +5992,12 @@
           "team": "BAL"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "KC D/ST",
+          "name": "Kansas City Chiefs",
           "player_id": "KC",
           "position": "DEF",
           "status": null,
@@ -6195,10 +6209,12 @@
           "team": "DET"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "KC D/ST",
+          "name": "Kansas City Chiefs",
           "player_id": "KC",
           "position": "DEF",
           "starter_slot": "DEF",
