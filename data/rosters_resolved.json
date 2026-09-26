@@ -3974,6 +3974,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Malik Nabers",
+          "player_id": "11632",
+          "position": "WR",
+          "status": "Active",
+          "team": "NYG"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "IR",
@@ -3994,18 +4006,6 @@
           "position": "QB",
           "status": "Active",
           "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Rhamondre Stevenson",
-          "player_id": "7611",
-          "position": "RB",
-          "status": "Active",
-          "team": "NE"
         },
         {
           "active": true,
@@ -4140,12 +4140,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Malik Nabers",
-          "player_id": "11632",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "NYG"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4163,15 +4163,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Ladd McConkey",
-          "player_id": "11635",
-          "position": "WR",
+          "name": "Rhamondre Stevenson",
+          "player_id": "7611",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAC"
+          "team": "NE"
         },
         {
           "active": true,
