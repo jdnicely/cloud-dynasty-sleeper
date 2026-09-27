@@ -2369,6 +2369,18 @@
           "fantasy_positions": [
             "TE"
           ],
+          "injury_status": "IR",
+          "name": "Eli Stowers",
+          "player_id": "13349",
+          "position": "TE",
+          "status": "Inactive",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": "Out",
           "name": "Dallas Goedert",
           "player_id": "5022",
@@ -2581,18 +2593,6 @@
           "position": "TE",
           "status": "Active",
           "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": "IR",
-          "name": "Eli Stowers",
-          "player_id": "13349",
-          "position": "TE",
-          "status": "Inactive",
-          "team": "PHI"
         }
       ]
     },
