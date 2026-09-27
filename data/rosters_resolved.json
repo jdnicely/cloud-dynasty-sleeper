@@ -2293,7 +2293,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -2519,7 +2519,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -4283,7 +4283,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Caleb Williams",
           "player_id": "11560",
           "position": "QB",
@@ -4489,7 +4489,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Caleb Williams",
           "player_id": "11560",
           "position": "QB",
@@ -4903,7 +4903,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -4915,7 +4915,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tank Bigsby",
           "player_id": "9225",
           "position": "RB",
@@ -5013,7 +5013,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tank Bigsby",
           "player_id": "9225",
           "position": "RB",
@@ -5166,7 +5166,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -5900,11 +5900,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jonah Coleman",
           "player_id": "13345",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "DEN"
         },
         {
@@ -5996,7 +5996,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -6082,7 +6082,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -6300,11 +6300,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jonah Coleman",
           "player_id": "13345",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "DEN"
         }
       ]
