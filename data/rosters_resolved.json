@@ -5514,6 +5514,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Bhayshul Tuten",
+          "player_id": "12490",
+          "position": "RB",
+          "status": "Active",
+          "team": "JAX"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5737,18 +5749,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Bhayshul Tuten",
-          "player_id": "12490",
-          "position": "RB",
-          "status": "Active",
-          "team": "JAX"
-        },
         {
           "active": true,
           "fantasy_positions": [
