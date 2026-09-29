@@ -5054,6 +5054,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "SF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "IR",
+          "name": "De'Von Achane",
+          "player_id": "9226",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "MIA"
         }
       ],
       "roster_id": 10,
@@ -5087,17 +5099,15 @@
           "team": "BUF"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "IR",
-          "name": "De'Von Achane",
-          "player_id": "9226",
-          "position": "RB",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "RB",
-          "status": "Inactive",
-          "team": "MIA"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
