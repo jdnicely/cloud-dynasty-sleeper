@@ -842,23 +842,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Kenny Gainwell",
-          "player_id": "7567",
+          "name": "J.K. Dobbins",
+          "player_id": "6806",
           "position": "RB",
           "status": "Active",
-          "team": "TB"
+          "team": "DEN"
         },
         {
           "active": true,
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Rachaad White",
-          "player_id": "8136",
+          "injury_status": null,
+          "name": "Kenny Gainwell",
+          "player_id": "7567",
           "position": "RB",
           "status": "Active",
-          "team": "WAS"
+          "team": "TB"
         }
       ],
       "co_owners": [],
@@ -969,13 +969,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "J.K. Dobbins",
-          "player_id": "6806",
+          "injury_status": "Questionable",
+          "name": "Rachaad White",
+          "player_id": "8136",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "DEN"
+          "team": "WAS"
         },
         {
           "active": true,
