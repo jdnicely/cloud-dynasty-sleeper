@@ -72,6 +72,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Tre' Harris",
+          "player_id": "12509",
+          "position": "WR",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -228,18 +240,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Rashod Bateman",
-          "player_id": "7571",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -305,6 +305,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Tre' Harris",
+          "player_id": "12509",
+          "position": "WR",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Carnell Tate",
           "player_id": "13279",
           "position": "WR",
@@ -334,18 +346,6 @@
           "position": "WR",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Rashod Bateman",
-          "player_id": "7571",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
         }
       ],
       "co_owners": [],
@@ -393,8 +393,8 @@
         "ppts_decimal": 28,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 10,
-        "waiver_position": 10,
+        "waiver_budget_used": 15,
+        "waiver_position": 11,
         "wins": 1
       },
       "starters": [
@@ -882,7 +882,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 22,
-        "waiver_position": 11,
+        "waiver_position": 8,
         "wins": 1
       },
       "starters": [
@@ -2707,6 +2707,16 @@
           "team": "CLE"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "3634",
+          "player_id": "3634",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -2717,18 +2727,6 @@
           "position": "WR",
           "status": "Active",
           "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Drew Lock",
-          "player_id": "5854",
-          "position": "QB",
-          "status": "Active",
-          "team": "SEA"
         },
         {
           "active": true,
@@ -2856,14 +2854,24 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cincinnati Bengals",
-          "player_id": "CIN",
+          "name": "Las Vegas Raiders",
+          "player_id": "LV",
           "position": "DEF",
           "status": null,
-          "team": "CIN"
+          "team": "LV"
         }
       ],
       "bench": [
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "3634",
+          "player_id": "3634",
+          "position": null,
+          "status": null,
+          "team": null
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -2875,18 +2883,6 @@
           "position": "WR",
           "status": "Active",
           "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Drew Lock",
-          "player_id": "5854",
-          "position": "QB",
-          "status": "Active",
-          "team": "SEA"
         },
         {
           "active": true,
@@ -3098,12 +3094,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cincinnati Bengals",
-          "player_id": "CIN",
+          "name": "Las Vegas Raiders",
+          "player_id": "LV",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CIN"
+          "team": "LV"
         }
       ],
       "taxi": [
@@ -3941,11 +3937,21 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Carolina Panthers",
-          "player_id": "CAR",
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
           "position": "DEF",
           "status": null,
-          "team": "CAR"
+          "team": "BAL"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "MIN D/ST",
+          "player_id": "MIN",
+          "position": "DEF",
+          "status": null,
+          "team": "MIN"
         }
       ],
       "bench": [
@@ -3996,6 +4002,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
+          "position": "DEF",
+          "status": null,
+          "team": "BAL"
         }
       ],
       "co_owners": [],
@@ -4043,8 +4061,8 @@
         "ppts_decimal": 12,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
-        "waiver_position": 6,
+        "waiver_budget_used": 70,
+        "waiver_position": 10,
         "wins": 1
       },
       "starters": [
@@ -4166,17 +4184,15 @@
           "team": "HOU"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Carolina Panthers",
-          "player_id": "CAR",
+          "name": "MIN D/ST",
+          "player_id": "MIN",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CAR"
+          "team": "MIN"
         }
       ],
       "taxi": [
@@ -4735,6 +4751,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Ollie Gordon",
+          "player_id": "12495",
+          "position": "RB",
+          "status": "Active",
+          "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -5056,8 +5084,8 @@
         "ppts_decimal": 98,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 30,
-        "waiver_position": 7,
+        "waiver_budget_used": 130,
+        "waiver_position": 9,
         "wins": 3
       },
       "starters": [
@@ -5075,15 +5103,17 @@
           "team": "BUF"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Ollie Gordon",
+          "player_id": "12495",
+          "position": "RB",
           "starter_slot": "RB",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -5599,7 +5629,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 17,
-        "waiver_position": 8,
+        "waiver_position": 6,
         "wins": 1
       },
       "starters": [
@@ -6087,7 +6117,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 80,
-        "waiver_position": 9,
+        "waiver_position": 7,
         "wins": 3
       },
       "starters": [
