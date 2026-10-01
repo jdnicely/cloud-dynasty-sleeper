@@ -338,14 +338,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Nico Collins",
-          "player_id": "7569",
-          "position": "WR",
+          "injury_status": "Out",
+          "name": "Travis Etienne",
+          "player_id": "7543",
+          "position": "RB",
           "status": "Active",
-          "team": "HOU"
+          "team": "NO"
         }
       ],
       "co_owners": [],
@@ -479,15 +479,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Out",
-          "name": "Travis Etienne",
-          "player_id": "7543",
-          "position": "RB",
+          "injury_status": "Questionable",
+          "name": "Nico Collins",
+          "player_id": "7569",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NO"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -1881,11 +1881,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Los Angeles Rams",
-          "player_id": "LAR",
+          "name": "Houston Texans",
+          "player_id": "HOU",
           "position": "DEF",
           "status": null,
-          "team": "LAR"
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -2049,12 +2049,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Houston Texans",
-          "player_id": "HOU",
+          "name": "Los Angeles Rams",
+          "player_id": "LAR",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "HOU"
+          "team": "LAR"
         }
       ],
       "taxi": [
