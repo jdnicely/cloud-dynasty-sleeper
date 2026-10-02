@@ -38,7 +38,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Wright",
           "player_id": "11643",
           "position": "RB",
@@ -170,7 +170,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Lamar Jackson",
           "player_id": "4881",
           "position": "QB",
@@ -206,11 +206,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Travis Etienne",
           "player_id": "7543",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NO"
         },
         {
@@ -340,11 +340,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Travis Etienne",
           "player_id": "7543",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NO"
         }
       ],
@@ -403,7 +403,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Lamar Jackson",
           "player_id": "4881",
           "position": "QB",
@@ -535,7 +535,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Wright",
           "player_id": "11643",
           "position": "RB",
@@ -1220,7 +1220,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tony Pollard",
           "player_id": "5967",
           "position": "RB",
@@ -1431,7 +1431,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tony Pollard",
           "player_id": "5967",
           "position": "RB",
@@ -1650,7 +1650,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drew Allar",
           "player_id": "13289",
           "position": "QB",
@@ -2075,7 +2075,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drew Allar",
           "player_id": "13289",
           "position": "QB",
@@ -2707,21 +2707,23 @@
           "team": "CLE"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "3634",
+          "name": "Kalif Raymond",
           "player_id": "3634",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "CHI"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Godwin",
           "player_id": "4037",
           "position": "WR",
@@ -2863,21 +2865,23 @@
       ],
       "bench": [
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "3634",
+          "name": "Kalif Raymond",
           "player_id": "3634",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "CHI"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Godwin",
           "player_id": "4037",
           "position": "WR",
@@ -3328,7 +3332,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "D'Andre Swift",
           "player_id": "6790",
           "position": "RB",
@@ -3526,7 +3530,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "D'Andre Swift",
           "player_id": "6790",
           "position": "RB",
@@ -3944,10 +3948,12 @@
           "team": "BAL"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "MIN D/ST",
+          "name": "Minnesota Vikings",
           "player_id": "MIN",
           "position": "DEF",
           "status": null,
@@ -4184,10 +4190,12 @@
           "team": "HOU"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "MIN D/ST",
+          "name": "Minnesota Vikings",
           "player_id": "MIN",
           "position": "DEF",
           "starter_slot": "DEF",
@@ -4995,12 +5003,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Tee Higgins",
-          "player_id": "6801",
+          "injury_status": "Questionable",
+          "name": "DeVonta Smith",
+          "player_id": "7525",
           "position": "WR",
           "status": "Active",
-          "team": "CIN"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5172,13 +5180,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "DeVonta Smith",
-          "player_id": "7525",
+          "injury_status": null,
+          "name": "Tee Higgins",
+          "player_id": "6801",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "PHI"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -6014,7 +6022,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
@@ -6204,7 +6212,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
