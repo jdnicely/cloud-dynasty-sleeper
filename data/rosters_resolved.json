@@ -2870,23 +2870,23 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Kalif Raymond",
-          "player_id": "3634",
+          "name": "Chris Godwin",
+          "player_id": "4037",
           "position": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "TB"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Chris Godwin",
-          "player_id": "4037",
+          "injury_status": "Questionable",
+          "name": "Justin Jefferson",
+          "player_id": "6794",
           "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -3019,13 +3019,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Justin Jefferson",
-          "player_id": "6794",
+          "injury_status": null,
+          "name": "Kalif Raymond",
+          "player_id": "3634",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "MIN"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -5510,16 +5510,14 @@
           "team": "ATL"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Detroit Lions",
-          "player_id": "DET",
+          "name": "CHI D/ST",
+          "player_id": "CHI",
           "position": "DEF",
           "status": null,
-          "team": "DET"
+          "team": "CHI"
         }
       ],
       "bench": [
@@ -5759,17 +5757,15 @@
           "team": "JAX"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Detroit Lions",
-          "player_id": "DET",
+          "name": "CHI D/ST",
+          "player_id": "CHI",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "DET"
+          "team": "CHI"
         }
       ],
       "taxi": [
