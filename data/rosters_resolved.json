@@ -1307,11 +1307,23 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
+          "name": "Kirk Cousins",
+          "player_id": "1166",
           "position": "QB",
           "status": "Active",
-          "team": "NYJ"
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Hunter Henry",
+          "player_id": "3214",
+          "position": "TE",
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
@@ -1324,18 +1336,6 @@
           "position": "RB",
           "status": "Active",
           "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Dalton Schultz",
-          "player_id": "5001",
-          "position": "TE",
-          "status": "Active",
-          "team": "HOU"
         },
         {
           "active": true,
@@ -1457,13 +1457,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Mike Evans",
-          "player_id": "2216",
+          "injury_status": null,
+          "name": "Parker Washington",
+          "player_id": "9487",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "SF"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -1471,25 +1471,25 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Hunter Henry",
-          "player_id": "3214",
+          "name": "Dalton Schultz",
+          "player_id": "5001",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "NE"
+          "team": "HOU"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Parker Washington",
-          "player_id": "9487",
+          "injury_status": "Questionable",
+          "name": "Mike Evans",
+          "player_id": "2216",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "JAX"
+          "team": "SF"
         },
         {
           "active": true,
@@ -1497,12 +1497,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
+          "name": "Geno Smith",
+          "player_id": "1373",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "LV"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -2343,18 +2343,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Rome Odunze",
-          "player_id": "11620",
-          "position": "WR",
-          "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -2369,12 +2357,12 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "IR",
-          "name": "Eli Stowers",
-          "player_id": "13349",
+          "injury_status": "Questionable",
+          "name": "Kenyon Sadiq",
+          "player_id": "13330",
           "position": "TE",
-          "status": "Inactive",
-          "team": "PHI"
+          "status": "Active",
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -2387,18 +2375,6 @@
           "position": "TE",
           "status": "Active",
           "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jauan Jennings",
-          "player_id": "7049",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
         },
         {
           "active": true,
@@ -2420,7 +2396,32 @@
         "user_id": "459168566978015232",
         "username": null
       },
-      "reserve": [],
+      "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "Jayden Reed",
+          "player_id": "10222",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "GB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": "IR",
+          "name": "Eli Stowers",
+          "player_id": "13349",
+          "position": "TE",
+          "status": "Inactive",
+          "team": "PHI"
+        }
+      ],
       "roster_id": 5,
       "settings": {
         "division": 2,
@@ -2482,13 +2483,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
-          "name": "Jayden Reed",
-          "player_id": "10222",
+          "injury_status": null,
+          "name": "Jauan Jennings",
+          "player_id": "7049",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Inactive",
-          "team": "GB"
+          "status": "Active",
+          "team": "MIN"
         },
         {
           "active": true,
@@ -2576,23 +2577,23 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Rome Odunze",
+          "player_id": "11620",
+          "position": "WR",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Chris Bell",
           "player_id": "13311",
           "position": "WR",
           "status": "Active",
           "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": "Questionable",
-          "name": "Kenyon Sadiq",
-          "player_id": "13330",
-          "position": "TE",
-          "status": "Active",
-          "team": "NYJ"
         }
       ]
     },
@@ -6084,12 +6085,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "injury_status": "Questionable",
+          "name": "Terry McLaurin",
+          "player_id": "5927",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6173,13 +6174,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Terry McLaurin",
-          "player_id": "5927",
+          "injury_status": null,
+          "name": "DJ Moore",
+          "player_id": "4983",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "WAS"
+          "team": "BUF"
         },
         {
           "active": true,
