@@ -671,11 +671,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jadarian Price",
           "player_id": "13286",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "SEA"
         },
         {
@@ -917,12 +917,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jadarian Price",
           "player_id": "13286",
           "position": "RB",
           "starter_slot": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "SEA"
         },
         {
@@ -3882,18 +3882,6 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Jake Ferguson",
-          "player_id": "8110",
-          "position": "TE",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
           "name": "Trey McBride",
           "player_id": "8130",
           "position": "TE",
@@ -3935,6 +3923,18 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "PUP",
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -3989,18 +3989,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Jake Ferguson",
-          "player_id": "8110",
-          "position": "TE",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4009,6 +3997,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "PUP",
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5975,7 +5975,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Terry McLaurin",
           "player_id": "5927",
           "position": "WR",
@@ -6085,7 +6085,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Terry McLaurin",
           "player_id": "5927",
           "position": "WR",
