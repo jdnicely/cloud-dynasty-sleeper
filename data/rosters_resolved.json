@@ -274,19 +274,29 @@
           "team": "CAR"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "San Francisco 49ers",
-          "player_id": "SF",
+          "name": "ARI D/ST",
+          "player_id": "ARI",
           "position": "DEF",
           "status": null,
-          "team": "SF"
+          "team": "ARI"
         }
       ],
       "bench": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Xavier Worthy",
+          "player_id": "11624",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -296,18 +306,6 @@
           "name": "Oronde Gadsden",
           "player_id": "12493",
           "position": "TE",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Tre' Harris",
-          "player_id": "12509",
-          "position": "WR",
           "status": "Active",
           "team": "LAC"
         },
@@ -482,12 +480,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Xavier Worthy",
-          "player_id": "11624",
+          "name": "Tre' Harris",
+          "player_id": "12509",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -516,17 +514,15 @@
           "team": "PIT"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "San Francisco 49ers",
-          "player_id": "SF",
+          "name": "ARI D/ST",
+          "player_id": "ARI",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "SF"
+          "team": "ARI"
         }
       ],
       "taxi": [
