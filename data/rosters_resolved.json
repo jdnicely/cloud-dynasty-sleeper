@@ -1838,6 +1838,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Rashee Rice",
+          "player_id": "10229",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -1858,18 +1870,6 @@
           "position": "RB",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Puka Nacua",
-          "player_id": "9493",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAR"
         },
         {
           "active": true,
@@ -1980,12 +1980,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Rashee Rice",
-          "player_id": "10229",
+          "name": "Puka Nacua",
+          "player_id": "9493",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "KC"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3416,6 +3416,18 @@
             "QB"
           ],
           "injury_status": null,
+          "name": "Drake Maye",
+          "player_id": "11564",
+          "position": "QB",
+          "status": "Active",
+          "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
           "name": "Deshaun Watson",
           "player_id": "4017",
           "position": "QB",
@@ -3431,18 +3443,6 @@
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Kyler Murray",
-          "player_id": "5849",
-          "position": "QB",
           "status": "Active",
           "team": "MIN"
         },
@@ -3502,12 +3502,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Drake Maye",
-          "player_id": "11564",
+          "name": "Kyler Murray",
+          "player_id": "5849",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "NE"
+          "team": "MIN"
         },
         {
           "active": true,
