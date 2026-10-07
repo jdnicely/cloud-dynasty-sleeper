@@ -6058,18 +6058,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Out",
-          "name": "Jayden Daniels",
-          "player_id": "11566",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -6082,14 +6070,26 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Out",
+          "name": "Marcus Mariota",
+          "player_id": "2307",
+          "position": "QB",
+          "status": "Active",
+          "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Luther Burden",
-          "player_id": "12519",
+          "injury_status": "Questionable",
+          "name": "DJ Moore",
+          "player_id": "4983",
           "position": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -6146,13 +6146,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
-          "name": "Trevor Lawrence",
-          "player_id": "7523",
+          "injury_status": "Out",
+          "name": "Jayden Daniels",
+          "player_id": "11566",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "JAX"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6185,13 +6185,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "injury_status": null,
+          "name": "Luther Burden",
+          "player_id": "12519",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -6237,13 +6237,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Marcus Mariota",
-          "player_id": "2307",
+          "injury_status": null,
+          "name": "Trevor Lawrence",
+          "player_id": "7523",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "WAS"
+          "team": "JAX"
         },
         {
           "active": true,
