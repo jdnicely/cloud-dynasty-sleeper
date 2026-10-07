@@ -2879,6 +2879,30 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Kalif Raymond",
+          "player_id": "3634",
+          "position": "WR",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2891,38 +2915,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "Justin Jefferson",
-          "player_id": "6794",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Romeo Doubs",
-          "player_id": "8121",
-          "position": "WR",
-          "status": "Active",
-          "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
-          "name": "Chase Brown",
-          "player_id": "9224",
+          "name": "Chuba Hubbard",
+          "player_id": "7594",
           "position": "RB",
           "status": "Active",
-          "team": "CIN"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -3018,13 +3018,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
+          "injury_status": null,
+          "name": "Chase Brown",
+          "player_id": "9224",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "ARI"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -3032,12 +3032,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Kalif Raymond",
-          "player_id": "3634",
+          "name": "Romeo Doubs",
+          "player_id": "8121",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "NE"
         },
         {
           "active": true,
@@ -3068,15 +3068,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Chuba Hubbard",
-          "player_id": "7594",
-          "position": "RB",
+          "injury_status": "Out",
+          "name": "Justin Jefferson",
+          "player_id": "6794",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "CAR"
+          "team": "MIN"
         },
         {
           "active": true,
