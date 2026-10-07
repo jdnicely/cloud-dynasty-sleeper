@@ -2747,7 +2747,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chase McLaughlin",
           "player_id": "6650",
           "position": "K",
@@ -3096,7 +3096,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chase McLaughlin",
           "player_id": "6650",
           "position": "K",
@@ -4929,7 +4929,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Tank Bigsby",
           "player_id": "9225",
           "position": "RB",
@@ -5001,6 +5001,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Gunnar Helm",
+          "player_id": "12502",
+          "position": "TE",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Out",
@@ -5020,18 +5032,6 @@
           "player_id": "7525",
           "position": "WR",
           "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Out",
-          "name": "Tank Bigsby",
-          "player_id": "9225",
-          "position": "RB",
-          "status": "Inactive",
           "team": "PHI"
         },
         {
@@ -5070,14 +5070,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": "IR",
-          "name": "De'Zhaun Stribling",
-          "player_id": "13417",
-          "position": "WR",
+          "name": "Tank Bigsby",
+          "player_id": "9225",
+          "position": "RB",
           "status": "Inactive",
-          "team": "SF"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5271,18 +5271,6 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Gunnar Helm",
-          "player_id": "12502",
-          "position": "TE",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
           "name": "Colston Loveland",
           "player_id": "12517",
           "position": "TE",
@@ -5300,6 +5288,18 @@
           "position": "WR",
           "status": "Active",
           "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "De'Zhaun Stribling",
+          "player_id": "13417",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "SF"
         }
       ]
     },
