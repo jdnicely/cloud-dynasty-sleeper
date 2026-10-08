@@ -48,18 +48,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Oronde Gadsden",
-          "player_id": "12493",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -240,6 +228,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Jake Ferguson",
+          "player_id": "8110",
+          "position": "TE",
+          "status": "Active",
+          "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -302,18 +302,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Oronde Gadsden",
-          "player_id": "12493",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -346,6 +334,18 @@
           "position": "RB",
           "status": "Inactive",
           "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Jake Ferguson",
+          "player_id": "8110",
+          "position": "TE",
+          "status": "Active",
+          "team": "DAL"
         }
       ],
       "co_owners": [],
@@ -393,7 +393,7 @@
         "ppts_decimal": 32,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 15,
+        "waiver_budget_used": 20,
         "waiver_position": 11,
         "wins": 2
       },
@@ -789,6 +789,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Michael Mayer",
+          "player_id": "9482",
+          "position": "TE",
+          "status": "Active",
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -859,6 +871,18 @@
           "position": "RB",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Michael Mayer",
+          "player_id": "9482",
+          "position": "TE",
+          "status": "Active",
+          "team": "LV"
         }
       ],
       "co_owners": [],
@@ -894,8 +918,8 @@
         "ppts_decimal": 34,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 22,
-        "waiver_position": 8,
+        "waiver_budget_used": 27,
+        "waiver_position": 10,
         "wins": 1
       },
       "starters": [
@@ -2640,6 +2664,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Keon Coleman",
+          "player_id": "11637",
+          "position": "WR",
+          "status": "Active",
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Emeka Egbuka",
           "player_id": "12514",
           "position": "WR",
@@ -2717,18 +2753,6 @@
           "position": "WR",
           "status": "Active",
           "team": "CLE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Kalif Raymond",
-          "player_id": "3634",
-          "position": "WR",
-          "status": "Active",
-          "team": "CHI"
         },
         {
           "active": true,
@@ -2879,6 +2903,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Keon Coleman",
+          "player_id": "11637",
+          "position": "WR",
+          "status": "Active",
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -2887,18 +2923,6 @@
           "position": "RB",
           "status": "Active",
           "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Kalif Raymond",
-          "player_id": "3634",
-          "position": "WR",
-          "status": "Active",
-          "team": "CHI"
         },
         {
           "active": true,
@@ -4080,7 +4104,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
-        "waiver_position": 10,
+        "waiver_position": 7,
         "wins": 1
       },
       "starters": [
@@ -4745,6 +4769,16 @@
           "team": "BUF"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "11577",
+          "player_id": "11577",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -4779,18 +4813,6 @@
           "position": "RB",
           "status": "Active",
           "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Gunnar Helm",
-          "player_id": "12502",
-          "position": "TE",
-          "status": "Active",
-          "team": "TEN"
         },
         {
           "active": true,
@@ -4999,16 +5021,14 @@
       ],
       "bench": [
         {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Gunnar Helm",
-          "player_id": "12502",
-          "position": "TE",
-          "status": "Active",
-          "team": "TEN"
+          "name": "11577",
+          "player_id": "11577",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5104,8 +5124,8 @@
         "ppts_decimal": 2,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 130,
-        "waiver_position": 9,
+        "waiver_budget_used": 155,
+        "waiver_position": 8,
         "wins": 4
       },
       "starters": [
@@ -5886,6 +5906,16 @@
           "team": "TB"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "11792",
+          "player_id": "11792",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -6047,11 +6077,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Kansas City Chiefs",
-          "player_id": "KC",
+          "name": "Cincinnati Bengals",
+          "player_id": "CIN",
           "position": "DEF",
           "status": null,
-          "team": "KC"
+          "team": "CIN"
         }
       ],
       "bench": [
@@ -6066,6 +6096,16 @@
           "position": "TE",
           "status": "Active",
           "team": "SEA"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "11792",
+          "player_id": "11792",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -6118,6 +6158,18 @@
             "WR"
           ],
           "injury_status": "IR",
+          "name": "Jalen McMillan",
+          "player_id": "11618",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
           "name": "Alec Pierce",
           "player_id": "8142",
           "position": "WR",
@@ -6137,8 +6189,8 @@
         "ppts_decimal": 38,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 80,
-        "waiver_position": 7,
+        "waiver_budget_used": 110,
+        "waiver_position": 9,
         "wins": 4
       },
       "starters": [
@@ -6265,12 +6317,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Kansas City Chiefs",
-          "player_id": "KC",
+          "name": "Cincinnati Bengals",
+          "player_id": "CIN",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "KC"
+          "team": "CIN"
         }
       ],
       "taxi": [
@@ -6285,18 +6337,6 @@
           "position": "TE",
           "status": "Active",
           "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "IR",
-          "name": "Jalen McMillan",
-          "player_id": "11618",
-          "position": "WR",
-          "status": "Inactive",
-          "team": "TB"
         },
         {
           "active": true,
