@@ -814,7 +814,9 @@
       "9997",
       "KC"
     ],
-    "reserve": null,
+    "reserve": [
+      "8142"
+    ],
     "roster_id": 12,
     "settings": {
       "division": 3,
