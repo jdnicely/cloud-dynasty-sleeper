@@ -799,16 +799,14 @@
           "team": "LV"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Buffalo Bills",
-          "player_id": "BUF",
+          "name": "DAL D/ST",
+          "player_id": "DAL",
           "position": "DEF",
           "status": null,
-          "team": "BUF"
+          "team": "DAL"
         }
       ],
       "bench": [
@@ -854,18 +852,6 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "J.K. Dobbins",
-          "player_id": "6806",
-          "position": "RB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
           "name": "Kenny Gainwell",
           "player_id": "7567",
           "position": "RB",
@@ -875,14 +861,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Michael Mayer",
-          "player_id": "9482",
-          "position": "TE",
+          "injury_status": "Questionable",
+          "name": "Rachaad White",
+          "player_id": "8136",
+          "position": "RB",
           "status": "Active",
-          "team": "LV"
+          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -989,28 +975,30 @@
           "team": "NO"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Michael Mayer",
+          "player_id": "9482",
+          "position": "TE",
           "starter_slot": "TE",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "LV"
         },
         {
           "active": true,
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Rachaad White",
-          "player_id": "8136",
+          "injury_status": null,
+          "name": "J.K. Dobbins",
+          "player_id": "6806",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "WAS"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -1039,17 +1027,15 @@
           "team": "IND"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Buffalo Bills",
-          "player_id": "BUF",
+          "name": "DAL D/ST",
+          "player_id": "DAL",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "BUF"
+          "team": "DAL"
         }
       ],
       "taxi": [
@@ -1342,11 +1328,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
+          "name": "Geno Smith",
+          "player_id": "1373",
           "position": "QB",
           "status": "Active",
-          "team": "LV"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -1366,11 +1352,11 @@
             "RB"
           ],
           "injury_status": "Questionable",
-          "name": "Alvin Kamara",
-          "player_id": "4035",
+          "name": "Tony Pollard",
+          "player_id": "5967",
           "position": "RB",
           "status": "Active",
-          "team": "NO"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -1467,12 +1453,12 @@
             "RB"
           ],
           "injury_status": "Questionable",
-          "name": "Tony Pollard",
-          "player_id": "5967",
+          "name": "Alvin Kamara",
+          "player_id": "4035",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "TEN"
+          "team": "NO"
         },
         {
           "active": true,
@@ -1532,12 +1518,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
+          "name": "Kirk Cousins",
+          "player_id": "1166",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "LV"
         },
         {
           "active": true,
@@ -1892,11 +1878,11 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Tyler Warren",
-          "player_id": "12518",
+          "name": "Travis Kelce",
+          "player_id": "1466",
           "position": "TE",
           "status": "Active",
-          "team": "IND"
+          "team": "KC"
         },
         {
           "active": true,
@@ -2045,12 +2031,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Travis Kelce",
-          "player_id": "1466",
+          "name": "Tyler Warren",
+          "player_id": "12518",
           "position": "TE",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "IND"
         },
         {
           "active": true,
@@ -4851,16 +4837,14 @@
           "team": "SF"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Harrison Butker",
-          "player_id": "4227",
-          "position": "K",
-          "status": "Active",
-          "team": "KC"
+          "name": "2020",
+          "player_id": "2020",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5021,14 +5005,16 @@
       ],
       "bench": [
         {
-          "active": null,
-          "fantasy_positions": null,
-          "injury_status": null,
-          "name": "11577",
-          "player_id": "11577",
-          "position": null,
-          "status": null,
-          "team": null
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
+          "position": "RB",
+          "status": "Active",
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5156,17 +5142,15 @@
           "team": "MIA"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Saquon Barkley",
-          "player_id": "4866",
-          "position": "RB",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "11577",
+          "player_id": "11577",
+          "position": null,
           "starter_slot": "RB",
-          "status": "Active",
-          "team": "PHI"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5234,17 +5218,15 @@
           "team": "PHI"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Harrison Butker",
-          "player_id": "4227",
-          "position": "K",
+          "name": "2020",
+          "player_id": "2020",
+          "position": null,
           "starter_slot": "K",
-          "status": "Active",
-          "team": "KC"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
