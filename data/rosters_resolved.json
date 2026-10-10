@@ -817,12 +817,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Tre Tucker",
-          "player_id": "10213",
+          "injury_status": "Out",
+          "name": "Stefon Diggs",
+          "player_id": "2449",
           "position": "WR",
           "status": "Active",
-          "team": "LV"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -955,13 +955,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Stefon Diggs",
-          "player_id": "2449",
+          "injury_status": null,
+          "name": "Tre Tucker",
+          "player_id": "10213",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "WAS"
+          "team": "LV"
         },
         {
           "active": true,
@@ -2905,18 +2905,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
-          "status": "Active",
-          "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2925,6 +2913,18 @@
           "position": "WR",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Justin Jefferson",
+          "player_id": "6794",
+          "position": "WR",
+          "status": "Active",
+          "team": "MIN"
         },
         {
           "active": true,
@@ -3082,15 +3082,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Justin Jefferson",
-          "player_id": "6794",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "MIN"
+          "team": "ARI"
         },
         {
           "active": true,
