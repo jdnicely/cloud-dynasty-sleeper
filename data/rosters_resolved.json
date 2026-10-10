@@ -4002,18 +4002,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Rhamondre Stevenson",
-          "player_id": "7611",
-          "position": "RB",
-          "status": "Active",
-          "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4022,6 +4010,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
+          "status": "Active",
+          "team": "IND"
         },
         {
           "active": true,
@@ -4156,12 +4156,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Josh Downs",
-          "player_id": "9500",
+          "name": "Malik Nabers",
+          "player_id": "11632",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -4179,15 +4179,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Malik Nabers",
-          "player_id": "11632",
-          "position": "WR",
+          "injury_status": "Questionable",
+          "name": "Rhamondre Stevenson",
+          "player_id": "7611",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYG"
+          "team": "NE"
         },
         {
           "active": true,
