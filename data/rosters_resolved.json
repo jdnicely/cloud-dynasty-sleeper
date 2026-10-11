@@ -619,6 +619,16 @@
           "team": "SEA"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "11610",
+          "player_id": "11610",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -693,18 +703,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Darren Waller",
-          "player_id": "2505",
-          "position": "TE",
-          "status": "Active",
-          "team": "CAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -713,6 +711,16 @@
           "position": "RB",
           "status": "Active",
           "team": "BAL"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "3271",
+          "player_id": "3271",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -789,18 +797,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Michael Mayer",
-          "player_id": "9482",
-          "position": "TE",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -817,24 +813,24 @@
           "fantasy_positions": [
             "WR"
           ],
+          "injury_status": null,
+          "name": "Tre Tucker",
+          "player_id": "10213",
+          "position": "WR",
+          "status": "Active",
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": "Out",
           "name": "Stefon Diggs",
           "player_id": "2449",
           "position": "WR",
           "status": "Active",
           "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Darren Waller",
-          "player_id": "2505",
-          "position": "TE",
-          "status": "Active",
-          "team": "CAR"
         },
         {
           "active": true,
@@ -951,17 +947,15 @@
           "team": "SEA"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Tre Tucker",
-          "player_id": "10213",
-          "position": "WR",
+          "name": "11610",
+          "player_id": "11610",
+          "position": null,
           "starter_slot": "WR",
-          "status": "Active",
-          "team": "LV"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -977,17 +971,15 @@
           "team": "NO"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Michael Mayer",
-          "player_id": "9482",
-          "position": "TE",
+          "name": "3271",
+          "player_id": "3271",
+          "position": null,
           "starter_slot": "TE",
-          "status": "Active",
-          "team": "LV"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -2908,23 +2900,23 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Chris Godwin",
-          "player_id": "4037",
+          "name": "Denzel Boston",
+          "player_id": "13346",
           "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "CLE"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Justin Jefferson",
-          "player_id": "6794",
+          "injury_status": null,
+          "name": "Chris Godwin",
+          "player_id": "4037",
           "position": "WR",
           "status": "Active",
-          "team": "MIN"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3058,13 +3050,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
+          "injury_status": "Questionable",
+          "name": "Justin Jefferson",
+          "player_id": "6794",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -3445,18 +3437,6 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Drake Maye",
-          "player_id": "11564",
-          "position": "QB",
-          "status": "Active",
-          "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
           "name": "Deshaun Watson",
           "player_id": "4017",
           "position": "QB",
@@ -3472,6 +3452,18 @@
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
+          "status": "Active",
+          "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Kyler Murray",
+          "player_id": "5849",
+          "position": "QB",
           "status": "Active",
           "team": "MIN"
         },
@@ -3531,12 +3523,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Kyler Murray",
-          "player_id": "5849",
+          "name": "Drake Maye",
+          "player_id": "11564",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "MIN"
+          "team": "NE"
         },
         {
           "active": true,
@@ -3950,6 +3942,16 @@
           "team": "IND"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "9511",
+          "player_id": "9511",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "RB"
@@ -3960,18 +3962,6 @@
           "position": "RB",
           "status": "Inactive",
           "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Baltimore Ravens",
-          "player_id": "BAL",
-          "position": "DEF",
-          "status": null,
-          "team": "BAL"
         },
         {
           "active": true,
@@ -4024,6 +4014,16 @@
           "team": "IND"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "9511",
+          "player_id": "9511",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "RB"
@@ -4034,18 +4034,6 @@
           "position": "RB",
           "status": "Inactive",
           "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Baltimore Ravens",
-          "player_id": "BAL",
-          "position": "DEF",
-          "status": null,
-          "team": "BAL"
         }
       ],
       "co_owners": [],
