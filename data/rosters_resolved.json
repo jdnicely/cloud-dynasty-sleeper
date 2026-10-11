@@ -1906,11 +1906,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Houston Texans",
-          "player_id": "HOU",
+          "name": "Los Angeles Rams",
+          "player_id": "LAR",
           "position": "DEF",
           "status": null,
-          "team": "HOU"
+          "team": "LAR"
         }
       ],
       "co_owners": [],
@@ -2074,12 +2074,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Los Angeles Rams",
-          "player_id": "LAR",
+          "name": "Houston Texans",
+          "player_id": "HOU",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "LAR"
+          "team": "HOU"
         }
       ],
       "taxi": [
@@ -2641,7 +2641,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Marvin Harrison",
           "player_id": "11628",
           "position": "WR",
@@ -3138,7 +3138,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Marvin Harrison",
           "player_id": "11628",
           "position": "WR",
