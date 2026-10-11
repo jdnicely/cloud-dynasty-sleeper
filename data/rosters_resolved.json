@@ -279,25 +279,25 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Arizona Cardinals",
-          "player_id": "ARI",
+          "name": "Cleveland Browns",
+          "player_id": "CLE",
           "position": "DEF",
           "status": null,
-          "team": "ARI"
+          "team": "CLE"
         }
       ],
       "bench": [
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
-          "injury_status": "Questionable",
-          "name": "Carnell Tate",
-          "player_id": "13279",
-          "position": "WR",
+          "injury_status": "Out",
+          "name": "Lamar Jackson",
+          "player_id": "4881",
+          "position": "QB",
           "status": "Active",
-          "team": "TEN"
+          "team": "BAL"
         },
         {
           "active": true,
@@ -403,13 +403,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Lamar Jackson",
-          "player_id": "4881",
+          "injury_status": null,
+          "name": "Cam Ward",
+          "player_id": "12522",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "BAL"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -492,12 +492,12 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Cam Ward",
-          "player_id": "12522",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Carnell Tate",
+          "player_id": "13279",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
           "team": "TEN"
@@ -521,12 +521,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Arizona Cardinals",
-          "player_id": "ARI",
+          "name": "Cleveland Browns",
+          "player_id": "CLE",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "ARI"
+          "team": "CLE"
         }
       ],
       "taxi": [
