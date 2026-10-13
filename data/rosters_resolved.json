@@ -2392,6 +2392,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Patrick Mahomes",
+          "player_id": "4046",
+          "position": "QB",
+          "status": "Active",
+          "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -2465,17 +2477,15 @@
       },
       "starters": [
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Patrick Mahomes",
-          "player_id": "4046",
-          "position": "QB",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "QB",
-          "status": "Active",
-          "team": "KC"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
