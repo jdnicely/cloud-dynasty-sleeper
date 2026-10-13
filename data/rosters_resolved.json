@@ -384,13 +384,13 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 531,
-        "fpts_against": 441,
-        "fpts_against_decimal": 80,
-        "fpts_decimal": 40,
-        "losses": 2,
-        "ppts": 560,
-        "ppts_decimal": 32,
+        "fpts": 600,
+        "fpts_against": 570,
+        "fpts_against_decimal": 8,
+        "fpts_decimal": 60,
+        "losses": 3,
+        "ppts": 641,
+        "ppts_decimal": 12,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 20,
@@ -897,18 +897,18 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 387,
-        "fpts_against": 492,
-        "fpts_against_decimal": 76,
-        "fpts_decimal": 26,
+        "fpts": 515,
+        "fpts_against": 561,
+        "fpts_against_decimal": 96,
+        "fpts_decimal": 54,
         "losses": 3,
-        "ppts": 488,
-        "ppts_decimal": 34,
+        "ppts": 617,
+        "ppts_decimal": 52,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
         "waiver_position": 10,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -1411,18 +1411,18 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 488,
-        "fpts_against": 529,
-        "fpts_against_decimal": 96,
-        "fpts_decimal": 10,
+        "fpts": 601,
+        "fpts_against": 619,
+        "fpts_against_decimal": 76,
+        "fpts_decimal": 36,
         "losses": 3,
-        "ppts": 578,
-        "ppts_decimal": 94,
+        "ppts": 705,
+        "ppts_decimal": 80,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 5,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -1937,18 +1937,18 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 568,
-        "fpts_against": 549,
-        "fpts_against_decimal": 56,
-        "fpts_decimal": 62,
+        "fpts": 808,
+        "fpts_against": 744,
+        "fpts_against_decimal": 54,
+        "fpts_decimal": 36,
         "losses": 2,
-        "ppts": 600,
-        "ppts_decimal": 34,
+        "ppts": 840,
+        "ppts_decimal": 8,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 2,
-        "wins": 2
+        "wins": 3
       },
       "starters": [
         {
@@ -2462,13 +2462,13 @@
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 495,
-        "fpts_against": 382,
-        "fpts_against_decimal": 86,
-        "fpts_decimal": 84,
-        "losses": 0,
-        "ppts": 583,
-        "ppts_decimal": 86,
+        "fpts": 585,
+        "fpts_against": 496,
+        "fpts_against_decimal": 12,
+        "fpts_decimal": 64,
+        "losses": 1,
+        "ppts": 686,
+        "ppts_decimal": 46,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -2997,13 +2997,13 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 419,
-        "fpts_against": 541,
-        "fpts_against_decimal": 36,
-        "fpts_decimal": 90,
-        "losses": 4,
-        "ppts": 567,
-        "ppts_decimal": 78,
+        "fpts": 500,
+        "fpts_against": 670,
+        "fpts_against_decimal": 30,
+        "fpts_decimal": 26,
+        "losses": 5,
+        "ppts": 676,
+        "ppts_decimal": 92,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3236,7 +3236,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3521,18 +3521,18 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 473,
-        "fpts_against": 559,
-        "fpts_against_decimal": 72,
-        "fpts_decimal": 2,
+        "fpts": 601,
+        "fpts_against": 640,
+        "fpts_against_decimal": 8,
+        "fpts_decimal": 96,
         "losses": 3,
-        "ppts": 538,
-        "ppts_decimal": 80,
+        "ppts": 671,
+        "ppts_decimal": 54,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 4,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -3672,7 +3672,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3796,7 +3796,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Ladd McConkey",
           "player_id": "11635",
           "position": "WR",
@@ -4002,7 +4002,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Ladd McConkey",
           "player_id": "11635",
           "position": "WR",
@@ -4094,13 +4094,13 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 400,
-        "fpts_against": 511,
-        "fpts_against_decimal": 96,
-        "fpts_decimal": 58,
-        "losses": 3,
-        "ppts": 468,
-        "ppts_decimal": 38,
+        "fpts": 595,
+        "fpts_against": 751,
+        "fpts_against_decimal": 70,
+        "fpts_decimal": 56,
+        "losses": 4,
+        "ppts": 668,
+        "ppts_decimal": 84,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
@@ -4582,18 +4582,18 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 488,
-        "fpts_against": 438,
-        "fpts_against_decimal": 10,
-        "fpts_decimal": 76,
+        "fpts": 616,
+        "fpts_against": 558,
+        "fpts_against_decimal": 54,
+        "fpts_decimal": 52,
         "losses": 2,
-        "ppts": 504,
-        "ppts_decimal": 96,
+        "ppts": 637,
+        "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 3,
-        "wins": 2
+        "wins": 3
       },
       "starters": [
         {
@@ -4989,7 +4989,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jaxon Smith-Njigba",
           "player_id": "9488",
           "position": "WR",
@@ -5119,13 +5119,13 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 584,
-        "fpts_against": 491,
-        "fpts_against_decimal": 18,
-        "fpts_decimal": 64,
-        "losses": 0,
-        "ppts": 642,
-        "ppts_decimal": 2,
+        "fpts": 680,
+        "fpts_against": 632,
+        "fpts_against_decimal": 88,
+        "fpts_decimal": 34,
+        "losses": 1,
+        "ppts": 755,
+        "ppts_decimal": 52,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 155,
@@ -5177,7 +5177,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jaxon Smith-Njigba",
           "player_id": "9488",
           "position": "WR",
@@ -5663,13 +5663,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 459,
-        "fpts_against": 417,
-        "fpts_against_decimal": 44,
-        "fpts_decimal": 14,
-        "losses": 2,
-        "ppts": 536,
-        "ppts_decimal": 16,
+        "fpts": 579,
+        "fpts_against": 545,
+        "fpts_against_decimal": 20,
+        "fpts_decimal": 58,
+        "losses": 3,
+        "ppts": 667,
+        "ppts_decimal": 70,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 17,
@@ -5998,7 +5998,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
@@ -6132,7 +6132,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
@@ -6188,18 +6188,18 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 482,
-        "fpts_against": 423,
-        "fpts_against_decimal": 52,
-        "fpts_decimal": 96,
+        "fpts": 624,
+        "fpts_against": 519,
+        "fpts_against_decimal": 22,
+        "fpts_decimal": 66,
         "losses": 0,
-        "ppts": 552,
-        "ppts_decimal": 38,
+        "ppts": 716,
+        "ppts_decimal": 48,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 110,
         "waiver_position": 9,
-        "wins": 4
+        "wins": 5
       },
       "starters": [
         {
