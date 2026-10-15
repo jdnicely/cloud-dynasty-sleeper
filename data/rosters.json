@@ -184,7 +184,7 @@
     "settings": {
       "division": 3,
       "fpts": 601,
-      "fpts_against": 619,
+      "fpts_against": 620,
       "fpts_against_decimal": 76,
       "fpts_decimal": 36,
       "losses": 3,
@@ -326,12 +326,12 @@
     "roster_id": 5,
     "settings": {
       "division": 2,
-      "fpts": 585,
+      "fpts": 586,
       "fpts_against": 496,
       "fpts_against_decimal": 12,
       "fpts_decimal": 64,
       "losses": 1,
-      "ppts": 686,
+      "ppts": 687,
       "ppts_decimal": 46,
       "ties": 0,
       "total_moves": 0,
@@ -628,7 +628,7 @@
       "8167",
       "8131",
       "8134",
-      "8676",
+      "11560",
       "12711",
       "SEA"
     ],
