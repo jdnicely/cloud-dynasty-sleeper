@@ -5031,12 +5031,12 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
-          "injury_status": "Questionable",
-          "name": "Dontayvion Wicks",
-          "player_id": "9486",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Jalen Hurts",
+          "player_id": "6904",
+          "position": "QB",
           "status": "Active",
           "team": "PHI"
         },
@@ -5197,12 +5197,12 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Jalen Hurts",
-          "player_id": "6904",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Dontayvion Wicks",
+          "player_id": "9486",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
           "team": "PHI"
