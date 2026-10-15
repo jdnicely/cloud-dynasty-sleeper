@@ -290,6 +290,30 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kaleb Johnson",
+          "player_id": "12504",
+          "position": "RB",
+          "status": "Active",
+          "team": "GB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Cam Ward",
+          "player_id": "12522",
+          "position": "QB",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Questionable",
@@ -317,35 +341,11 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Kyle Pitts",
-          "player_id": "7553",
+          "name": "Jake Ferguson",
+          "player_id": "8110",
           "position": "TE",
           "status": "Active",
-          "team": "ATL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kenneth Walker",
-          "player_id": "8151",
-          "position": "RB",
-          "status": "Active",
-          "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Bryce Young",
-          "player_id": "9228",
-          "position": "QB",
-          "status": "Active",
-          "team": "CAR"
+          "team": "DAL"
         }
       ],
       "co_owners": [],
@@ -404,12 +404,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Cam Ward",
-          "player_id": "12522",
+          "name": "Bryce Young",
+          "player_id": "9228",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "TEN"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -430,12 +430,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Kaleb Johnson",
-          "player_id": "12504",
+          "name": "Kenneth Walker",
+          "player_id": "8151",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "GB"
+          "team": "KC"
         },
         {
           "active": true,
@@ -469,12 +469,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Jake Ferguson",
-          "player_id": "8110",
+          "name": "Kyle Pitts",
+          "player_id": "7553",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "DAL"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -2899,16 +2899,6 @@
       ],
       "bench": [
         {
-          "active": null,
-          "fantasy_positions": null,
-          "injury_status": null,
-          "name": "13833",
-          "player_id": "13833",
-          "position": null,
-          "status": null,
-          "team": null
-        },
-        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -2967,18 +2957,6 @@
           "position": "RB",
           "status": "Active",
           "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "New England Patriots",
-          "player_id": "NE",
-          "position": "DEF",
-          "status": null,
-          "team": "NE"
         }
       ],
       "co_owners": [],
@@ -3139,23 +3117,25 @@
           "active": null,
           "fantasy_positions": null,
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
+          "name": "13833",
+          "player_id": "13833",
           "position": null,
           "starter_slot": "K",
           "status": null,
           "team": null
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "New England Patriots",
+          "player_id": "NE",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "NE"
         }
       ],
       "taxi": [
@@ -4809,6 +4789,16 @@
           "team": "CHI"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13150",
+          "player_id": "13150",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -5268,6 +5258,16 @@
           "position": "TE",
           "status": "Active",
           "team": "CHI"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13150",
+          "player_id": "13150",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
