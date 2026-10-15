@@ -394,7 +394,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 20,
-        "waiver_position": 11,
+        "waiver_position": 10,
         "wins": 2
       },
       "starters": [
@@ -907,7 +907,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
-        "waiver_position": 10,
+        "waiver_position": 9,
         "wins": 2
       },
       "starters": [
@@ -2755,6 +2755,16 @@
           "team": "CLE"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13833",
+          "player_id": "13833",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -2763,18 +2773,6 @@
           "name": "Chris Godwin",
           "player_id": "4037",
           "position": "WR",
-          "status": "Active",
-          "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
-          "position": "K",
           "status": "Active",
           "team": "TB"
         },
@@ -2892,14 +2890,24 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Las Vegas Raiders",
-          "player_id": "LV",
+          "name": "New England Patriots",
+          "player_id": "NE",
           "position": "DEF",
           "status": null,
-          "team": "LV"
+          "team": "NE"
         }
       ],
       "bench": [
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "13833",
+          "player_id": "13833",
+          "position": null,
+          "status": null,
+          "team": null
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -2959,6 +2967,18 @@
           "position": "RB",
           "status": "Active",
           "team": "CIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "New England Patriots",
+          "player_id": "NE",
+          "position": "DEF",
+          "status": null,
+          "team": "NE"
         }
       ],
       "co_owners": [],
@@ -3116,30 +3136,26 @@
           "team": "DEN"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
-          "position": "K",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "K",
-          "status": "Active",
-          "team": "TB"
+          "status": null,
+          "team": null
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Las Vegas Raiders",
-          "player_id": "LV",
-          "position": "DEF",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "DEF",
           "status": null,
-          "team": "LV"
+          "team": null
         }
       ],
       "taxi": [
@@ -3952,24 +3968,24 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Keaton Mitchell",
-          "player_id": "9511",
-          "position": "RB",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
           "injury_status": "PUP",
           "name": "Zach Charbonnet",
           "player_id": "9753",
           "position": "RB",
           "status": "Inactive",
           "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Kansas City Chiefs",
+          "player_id": "KC",
+          "position": "DEF",
+          "status": null,
+          "team": "KC"
         },
         {
           "active": true,
@@ -4036,18 +4052,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Keaton Mitchell",
-          "player_id": "9511",
-          "position": "RB",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -4104,7 +4108,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
-        "waiver_position": 7,
+        "waiver_position": 11,
         "wins": 1
       },
       "starters": [
@@ -4226,15 +4230,17 @@
           "team": "HOU"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Kansas City Chiefs",
+          "player_id": "KC",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "KC"
         }
       ],
       "taxi": [
@@ -4829,18 +4835,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Cairo Santos",
-          "player_id": "2020",
-          "position": "K",
-          "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -4909,6 +4903,18 @@
           "position": "QB",
           "status": "Active",
           "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
+          "name": "Tyler Bass",
+          "player_id": "7042",
+          "position": "K",
+          "status": "Active",
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5103,7 +5109,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 155,
-        "waiver_position": 8,
+        "waiver_position": 7,
         "wins": 4
       },
       "starters": [
@@ -5217,12 +5223,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Cairo Santos",
-          "player_id": "2020",
+          "name": "Tyler Bass",
+          "player_id": "7042",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "CHI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5814,18 +5820,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Jake Bates",
-          "player_id": "11539",
-          "position": "K",
-          "status": "Active",
-          "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5946,18 +5940,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Doubtful",
-          "name": "Marcus Mariota",
-          "player_id": "2307",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Questionable",
@@ -5990,6 +5972,16 @@
           "position": "WR",
           "status": "Active",
           "team": "WAS"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "650",
+          "player_id": "650",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -6045,6 +6037,18 @@
             "DEF"
           ],
           "injury_status": null,
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
+          "position": "DEF",
+          "status": null,
+          "team": "BAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
           "name": "Cincinnati Bengals",
           "player_id": "CIN",
           "position": "DEF",
@@ -6059,47 +6063,35 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "AJ Barner",
-          "player_id": "11603",
+          "name": "Sam LaPorta",
+          "player_id": "10859",
           "position": "TE",
           "status": "Active",
-          "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Will Reichard",
-          "player_id": "11792",
-          "position": "K",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Doubtful",
-          "name": "Marcus Mariota",
-          "player_id": "2307",
-          "position": "QB",
-          "status": "Active",
-          "team": "WAS"
+          "team": "DET"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "injury_status": null,
+          "name": "Luther Burden",
+          "player_id": "12519",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Doubtful",
+          "name": "David Montgomery",
+          "player_id": "5892",
+          "position": "RB",
+          "status": "Active",
+          "team": "HOU"
         },
         {
           "active": true,
@@ -6112,6 +6104,18 @@
           "position": "WR",
           "status": "Active",
           "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Cincinnati Bengals",
+          "player_id": "CIN",
+          "position": "DEF",
+          "status": null,
+          "team": "CIN"
         }
       ],
       "co_owners": [],
@@ -6160,7 +6164,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 110,
-        "waiver_position": 9,
+        "waiver_position": 8,
         "wins": 5
       },
       "starters": [
@@ -6195,26 +6199,26 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Doubtful",
-          "name": "David Montgomery",
-          "player_id": "5892",
+          "injury_status": null,
+          "name": "Jacory Croskey-Merritt",
+          "player_id": "12533",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "HOU"
+          "team": "WAS"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Luther Burden",
-          "player_id": "12519",
+          "injury_status": "Questionable",
+          "name": "DJ Moore",
+          "player_id": "4983",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -6235,12 +6239,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Sam LaPorta",
-          "player_id": "10859",
+          "name": "AJ Barner",
+          "player_id": "11603",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "DET"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -6269,17 +6273,15 @@
           "team": "JAX"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Jake Bates",
-          "player_id": "11539",
-          "position": "K",
+          "name": "650",
+          "player_id": "650",
+          "position": null,
           "starter_slot": "K",
-          "status": "Active",
-          "team": "DET"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -6287,12 +6289,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cincinnati Bengals",
-          "player_id": "CIN",
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CIN"
+          "team": "BAL"
         }
       ],
       "taxi": [
@@ -6311,14 +6313,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "K"
           ],
           "injury_status": null,
-          "name": "Jacory Croskey-Merritt",
-          "player_id": "12533",
-          "position": "RB",
+          "name": "Will Reichard",
+          "player_id": "11792",
+          "position": "K",
           "status": "Active",
-          "team": "WAS"
+          "team": "MIN"
         },
         {
           "active": true,
