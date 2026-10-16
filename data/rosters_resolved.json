@@ -4738,6 +4738,18 @@
             "RB"
           ],
           "injury_status": null,
+          "name": "Kimani Vidal",
+          "player_id": "11647",
+          "position": "RB",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
           "name": "Woody Marks",
           "player_id": "12474",
           "position": "RB",
@@ -4929,18 +4941,6 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Dontayvion Wicks",
-          "player_id": "9486",
-          "position": "WR",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
           "injury_status": null,
           "name": "Jaxon Smith-Njigba",
           "player_id": "9488",
@@ -4980,11 +4980,11 @@
             "RB"
           ],
           "injury_status": "Questionable",
-          "name": "Ollie Gordon",
-          "player_id": "12495",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
           "position": "RB",
           "status": "Active",
-          "team": "MIA"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5103,13 +5103,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Saquon Barkley",
-          "player_id": "4866",
+          "injury_status": null,
+          "name": "Kimani Vidal",
+          "player_id": "11647",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "PHI"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -5179,15 +5179,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Dontayvion Wicks",
-          "player_id": "9486",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Colston Loveland",
+          "player_id": "12517",
+          "position": "TE",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "PHI"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -5232,14 +5232,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
-          "position": "TE",
+          "injury_status": "Questionable",
+          "name": "Ollie Gordon",
+          "player_id": "12495",
+          "position": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "MIA"
         },
         {
           "active": true,
