@@ -1303,18 +1303,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Quentin Johnston",
-          "player_id": "9754",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -1385,18 +1373,6 @@
           "position": "WR",
           "status": "Active",
           "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Quentin Johnston",
-          "player_id": "9754",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
         }
       ],
       "co_owners": [],
@@ -1477,15 +1453,17 @@
           "team": "NO"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Jalen Coker",
+          "player_id": "11646",
+          "position": "WR",
           "starter_slot": "WR",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "CAR"
         },
         {
           "active": true,
@@ -1567,18 +1545,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jalen Coker",
-          "player_id": "11646",
-          "position": "WR",
-          "status": "Active",
-          "team": "CAR"
-        },
         {
           "active": true,
           "fantasy_positions": [
