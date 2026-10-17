@@ -2879,6 +2879,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Out",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2899,18 +2911,6 @@
           "position": "WR",
           "status": "Active",
           "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Juwan Johnson",
-          "player_id": "7002",
-          "position": "TE",
-          "status": "Active",
-          "team": "NO"
         },
         {
           "active": true,
@@ -3068,15 +3068,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "TE"
           ],
-          "injury_status": "Out",
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Juwan Johnson",
+          "player_id": "7002",
+          "position": "TE",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "ARI"
+          "team": "NO"
         },
         {
           "active": true,
@@ -5013,13 +5013,13 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": "Out",
-          "name": "Jalen Hurts",
-          "player_id": "6904",
-          "position": "QB",
-          "status": "Active",
+          "injury_status": "IR",
+          "name": "Tank Bigsby",
+          "player_id": "9225",
+          "position": "RB",
+          "status": "Inactive",
           "team": "PHI"
         },
         {
@@ -5046,13 +5046,13 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
-          "injury_status": "IR",
-          "name": "Tank Bigsby",
-          "player_id": "9225",
-          "position": "RB",
-          "status": "Inactive",
+          "injury_status": "Out",
+          "name": "Jalen Hurts",
+          "player_id": "6904",
+          "position": "QB",
+          "status": "Active",
           "team": "PHI"
         },
         {
