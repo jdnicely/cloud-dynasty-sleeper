@@ -278,6 +278,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Xavier Worthy",
+          "player_id": "11624",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -322,18 +334,6 @@
           "position": "QB",
           "status": "Inactive",
           "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "A.J. Brown",
-          "player_id": "5859",
-          "position": "WR",
-          "status": "Active",
-          "team": "NE"
         }
       ],
       "co_owners": [],
@@ -457,13 +457,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Xavier Worthy",
-          "player_id": "11624",
+          "injury_status": "Questionable",
+          "name": "A.J. Brown",
+          "player_id": "5859",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "NE"
         },
         {
           "active": true,
@@ -1843,6 +1843,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Rashee Rice",
+          "player_id": "10229",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -1979,17 +1991,15 @@
           "team": "PIT"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "Rashee Rice",
-          "player_id": "10229",
-          "position": "WR",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "WR",
-          "status": "Active",
-          "team": "KC"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -6082,6 +6092,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "DJ Moore",
+          "player_id": "4983",
+          "position": "WR",
+          "status": "Active",
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Out",
@@ -6090,18 +6112,6 @@
           "position": "RB",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Terry McLaurin",
-          "player_id": "5927",
-          "position": "WR",
-          "status": "Active",
-          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -6198,13 +6208,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "DJ Moore",
-          "player_id": "4983",
+          "injury_status": null,
+          "name": "Terry McLaurin",
+          "player_id": "5927",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "WAS"
         },
         {
           "active": true,
