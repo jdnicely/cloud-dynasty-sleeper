@@ -267,11 +267,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cleveland Browns",
-          "player_id": "CLE",
+          "name": "Carolina Panthers",
+          "player_id": "CAR",
           "position": "DEF",
           "status": null,
-          "team": "CLE"
+          "team": "CAR"
         }
       ],
       "bench": [
@@ -497,12 +497,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cleveland Browns",
-          "player_id": "CLE",
+          "name": "Carolina Panthers",
+          "player_id": "CAR",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CLE"
+          "team": "CAR"
         }
       ],
       "taxi": [
@@ -1062,6 +1062,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Joe Milton",
+          "player_id": "11557",
+          "position": "QB",
+          "status": "Active",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "IR",
@@ -1143,18 +1155,6 @@
           "position": "WR",
           "status": "Active",
           "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
-          "position": "QB",
-          "status": "Active",
-          "team": "NYJ"
         },
         {
           "active": true,
@@ -1267,6 +1267,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Rachaad White",
+          "player_id": "8136",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -1290,18 +1302,6 @@
         }
       ],
       "bench": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
-          "position": "QB",
-          "status": "Active",
-          "team": "NYJ"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -1349,6 +1349,18 @@
           "position": "WR",
           "status": "Active",
           "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Rachaad White",
+          "player_id": "8136",
+          "position": "RB",
+          "status": "Active",
+          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -1521,6 +1533,18 @@
         }
       ],
       "taxi": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Joe Milton",
+          "player_id": "11557",
+          "position": "QB",
+          "status": "Active",
+          "team": "PHI"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -1996,15 +2020,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Tyler Warren",
-          "player_id": "12518",
-          "position": "TE",
+          "injury_status": null,
+          "name": "KC Concepcion",
+          "player_id": "13298",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "IND"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -2062,6 +2086,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": "Questionable",
+          "name": "Tyler Warren",
+          "player_id": "12518",
+          "position": "TE",
+          "status": "Active",
+          "team": "IND"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -2070,18 +2106,6 @@
           "position": "QB",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "KC Concepcion",
-          "player_id": "13298",
-          "position": "WR",
-          "status": "Active",
-          "team": "CLE"
         },
         {
           "active": true,
