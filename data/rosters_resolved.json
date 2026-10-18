@@ -228,18 +228,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Jake Ferguson",
-          "player_id": "8110",
-          "position": "TE",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -314,6 +302,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Omar Cooper",
+          "player_id": "13276",
+          "position": "WR",
+          "status": "Active",
+          "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Out",
@@ -326,26 +326,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "IR",
-          "name": "Travis Etienne",
-          "player_id": "7543",
-          "position": "RB",
-          "status": "Inactive",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Jake Ferguson",
-          "player_id": "8110",
-          "position": "TE",
+          "injury_status": "Questionable",
+          "name": "A.J. Brown",
+          "player_id": "5859",
+          "position": "WR",
           "status": "Active",
-          "team": "DAL"
+          "team": "NE"
         }
       ],
       "co_owners": [],
@@ -359,26 +347,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Omar Cooper",
-          "player_id": "13276",
-          "position": "WR",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "A.J. Brown",
-          "player_id": "5859",
-          "position": "WR",
-          "status": "Active",
-          "team": "NE"
+          "injury_status": "IR",
+          "name": "Travis Etienne",
+          "player_id": "7543",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "NO"
         }
       ],
       "roster_id": 1,
