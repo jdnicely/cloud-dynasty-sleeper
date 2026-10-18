@@ -98,11 +98,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Omar Cooper",
           "player_id": "13276",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NYJ"
         },
         {
@@ -170,7 +170,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DK Metcalf",
           "player_id": "5846",
           "position": "WR",
@@ -182,11 +182,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NE"
         },
         {
@@ -361,11 +361,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Omar Cooper",
           "player_id": "13276",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NYJ"
         },
         {
@@ -373,11 +373,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NE"
         }
       ],
@@ -442,7 +442,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DK Metcalf",
           "player_id": "5846",
           "position": "WR",
@@ -2711,11 +2711,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Ja'Kobi Lane",
           "player_id": "13293",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "BAL"
         },
         {
@@ -2950,11 +2950,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Ja'Kobi Lane",
           "player_id": "13293",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "BAL"
         },
         {
@@ -4881,11 +4881,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jalen Hurts",
           "player_id": "6904",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "PHI"
         },
         {
@@ -5048,11 +5048,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jalen Hurts",
           "player_id": "6904",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "PHI"
         },
         {
@@ -5878,7 +5878,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
@@ -5950,7 +5950,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terry McLaurin",
           "player_id": "5927",
           "position": "WR",
@@ -6072,7 +6072,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
@@ -6096,7 +6096,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Terry McLaurin",
           "player_id": "5927",
           "position": "WR",
