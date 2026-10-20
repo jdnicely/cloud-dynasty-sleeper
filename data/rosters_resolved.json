@@ -1305,6 +1305,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Mike Evans",
+          "player_id": "2216",
+          "position": "WR",
+          "status": "Active",
+          "team": "SF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -1319,36 +1331,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Tony Pollard",
-          "player_id": "5967",
+          "injury_status": "Questionable",
+          "name": "Alvin Kamara",
+          "player_id": "4035",
           "position": "RB",
           "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Amon-Ra St. Brown",
-          "player_id": "7547",
-          "position": "WR",
-          "status": "Active",
-          "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Wan'Dale Robinson",
-          "player_id": "8126",
-          "position": "WR",
-          "status": "Active",
-          "team": "TEN"
+          "team": "NO"
         },
         {
           "active": true,
@@ -1361,6 +1349,18 @@
           "position": "RB",
           "status": "Active",
           "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Parker Washington",
+          "player_id": "9487",
+          "position": "WR",
+          "status": "Active",
+          "team": "JAX"
         }
       ],
       "co_owners": [],
@@ -1432,13 +1432,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Alvin Kamara",
-          "player_id": "4035",
+          "injury_status": null,
+          "name": "Tony Pollard",
+          "player_id": "5967",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "NO"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -1459,12 +1459,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Parker Washington",
-          "player_id": "9487",
+          "name": "Amon-Ra St. Brown",
+          "player_id": "7547",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "JAX"
+          "team": "DET"
         },
         {
           "active": true,
@@ -1484,13 +1484,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Mike Evans",
-          "player_id": "2216",
+          "injury_status": null,
+          "name": "Wan'Dale Robinson",
+          "player_id": "8126",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "SF"
+          "team": "TEN"
         },
         {
           "active": true,
