@@ -806,11 +806,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Malik Washington",
-          "player_id": "11610",
+          "name": "Stefon Diggs",
+          "player_id": "2449",
           "position": "WR",
           "status": "Active",
-          "team": "MIA"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -830,11 +830,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Joe Burrow",
-          "player_id": "6770",
+          "name": "Daniel Jones",
+          "player_id": "5870",
           "position": "QB",
           "status": "Active",
-          "team": "CIN"
+          "team": "IND"
         },
         {
           "active": true,
@@ -893,12 +893,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Daniel Jones",
-          "player_id": "5870",
+          "name": "Joe Burrow",
+          "player_id": "6770",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "IND"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -932,12 +932,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Stefon Diggs",
-          "player_id": "2449",
+          "name": "Malik Washington",
+          "player_id": "11610",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "WAS"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -3986,18 +3986,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "IR",
-          "name": "Jordyn Tyson",
-          "player_id": "13281",
-          "position": "WR",
-          "status": "Inactive",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4025,11 +4013,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Minnesota Vikings",
-          "player_id": "MIN",
+          "name": "Kansas City Chiefs",
+          "player_id": "KC",
           "position": "DEF",
           "status": null,
-          "team": "MIN"
+          "team": "KC"
         }
       ],
       "co_owners": [],
@@ -4205,12 +4193,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Kansas City Chiefs",
-          "player_id": "KC",
+          "name": "Minnesota Vikings",
+          "player_id": "MIN",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "KC"
+          "team": "MIN"
         }
       ],
       "taxi": [
@@ -4237,6 +4225,18 @@
           "position": "RB",
           "status": "Active",
           "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "Jordyn Tyson",
+          "player_id": "13281",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "NO"
         },
         {
           "active": true,
@@ -4987,14 +4987,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "TE"
           ],
-          "injury_status": null,
-          "name": "Kimani Vidal",
-          "player_id": "11647",
-          "position": "RB",
+          "injury_status": "Questionable",
+          "name": "Dalton Kincaid",
+          "player_id": "10236",
+          "position": "TE",
           "status": "Active",
-          "team": "LAC"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5013,12 +5013,12 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Baker Mayfield",
-          "player_id": "4892",
+          "injury_status": null,
+          "name": "Josh Allen",
+          "player_id": "4984",
           "position": "QB",
           "status": "Active",
-          "team": "TB"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5100,13 +5100,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
-          "name": "Josh Allen",
-          "player_id": "4984",
+          "injury_status": "Out",
+          "name": "Baker Mayfield",
+          "player_id": "4892",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "BUF"
+          "team": "TB"
         },
         {
           "active": true,
@@ -5165,13 +5165,13 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Dalton Kincaid",
-          "player_id": "10236",
+          "injury_status": null,
+          "name": "Colston Loveland",
+          "player_id": "12517",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -5242,14 +5242,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
-          "position": "TE",
+          "name": "Kimani Vidal",
+          "player_id": "11647",
+          "position": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -5538,12 +5538,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "NA",
-          "name": "Josh Jacobs",
-          "player_id": "5850",
+          "injury_status": null,
+          "name": "Bhayshul Tuten",
+          "player_id": "12490",
           "position": "RB",
           "status": "Active",
-          "team": "GB"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -5645,12 +5645,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Jameis Winston",
-          "player_id": "2306",
+          "name": "Sam Darnold",
+          "player_id": "4943",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "NYG"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5670,13 +5670,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Cam Skattebo",
-          "player_id": "12481",
+          "injury_status": "NA",
+          "name": "Josh Jacobs",
+          "player_id": "5850",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "NYG"
+          "team": "GB"
         },
         {
           "active": true,
@@ -5723,12 +5723,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Bhayshul Tuten",
-          "player_id": "12490",
+          "name": "Cam Skattebo",
+          "player_id": "12481",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "JAX"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -5736,12 +5736,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Sam Darnold",
-          "player_id": "4943",
+          "name": "Jameis Winston",
+          "player_id": "2306",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "SEA"
+          "team": "NYG"
         },
         {
           "active": true,
