@@ -1855,14 +1855,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "TE"
           ],
-          "injury_status": null,
-          "name": "Jared Goff",
-          "player_id": "3163",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Travis Kelce",
+          "player_id": "1466",
+          "position": "TE",
           "status": "Active",
-          "team": "DET"
+          "team": "KC"
         },
         {
           "active": true,
@@ -1875,18 +1875,6 @@
           "position": "RB",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ja'Marr Chase",
-          "player_id": "7564",
-          "position": "WR",
-          "status": "Active",
-          "team": "CIN"
         },
         {
           "active": true,
@@ -1957,12 +1945,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Aaron Rodgers",
-          "player_id": "96",
+          "name": "Jared Goff",
+          "player_id": "3163",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "PIT"
+          "team": "DET"
         },
         {
           "active": true,
@@ -1991,15 +1979,17 @@
           "team": "PIT"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Ja'Marr Chase",
+          "player_id": "7564",
+          "position": "WR",
           "starter_slot": "WR",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "CIN"
         },
         {
           "active": true,
@@ -2028,30 +2018,28 @@
           "team": "LV"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "KC Concepcion Jr.",
-          "player_id": "13298",
-          "position": "WR",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "FLEX",
-          "status": "Active",
-          "team": "CLE"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "QB"
           ],
-          "injury_status": "Questionable",
-          "name": "Travis Kelce",
-          "player_id": "1466",
-          "position": "TE",
+          "injury_status": null,
+          "name": "Aaron Rodgers",
+          "player_id": "96",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -2116,6 +2104,18 @@
           "position": "QB",
           "status": "Active",
           "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "KC Concepcion Jr.",
+          "player_id": "13298",
+          "position": "WR",
+          "status": "Active",
+          "team": "CLE"
         },
         {
           "active": true,
@@ -2925,18 +2925,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
-          "position": "K",
-          "status": "Active",
-          "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -2957,18 +2945,6 @@
           "position": "RB",
           "status": "Active",
           "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
-          "position": "DEF",
-          "status": null,
-          "team": "DEN"
         }
       ],
       "co_owners": [],
@@ -3126,26 +3102,30 @@
           "team": "DEN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Chase McLaughlin",
+          "player_id": "6650",
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "TB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Denver Broncos",
+          "player_id": "DEN",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "DEN"
         }
       ],
       "taxi": [
