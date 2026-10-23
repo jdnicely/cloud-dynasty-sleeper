@@ -5548,18 +5548,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Trey Smack",
-          "player_id": "13545",
-          "position": "K",
-          "status": "Active",
-          "team": "GB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Out",
@@ -5587,35 +5575,11 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Pat Freiermuth",
-          "player_id": "7600",
+          "name": "Brenton Strange",
+          "player_id": "9480",
           "position": "TE",
           "status": "Active",
-          "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jameson Williams",
-          "player_id": "8148",
-          "position": "WR",
-          "status": "Active",
-          "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Cleveland Browns",
-          "player_id": "CLE",
-          "position": "DEF",
-          "status": null,
-          "team": "CLE"
+          "team": "JAX"
         }
       ],
       "co_owners": [
@@ -5746,12 +5710,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Brenton Strange",
-          "player_id": "9480",
+          "name": "Pat Freiermuth",
+          "player_id": "7600",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "JAX"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -5767,37 +5731,43 @@
           "team": "NYG"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Jameson Williams",
+          "player_id": "8148",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "DET"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Trey Smack",
+          "player_id": "13545",
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "GB"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Cleveland Browns",
+          "player_id": "CLE",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "CLE"
         }
       ],
       "taxi": [
