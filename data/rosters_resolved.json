@@ -4999,18 +4999,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Saquon Barkley",
-          "player_id": "4866",
-          "position": "RB",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5019,6 +5007,18 @@
           "position": "QB",
           "status": "Active",
           "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "DeVonta Smith",
+          "player_id": "7525",
+          "position": "WR",
+          "status": "Active",
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5176,12 +5176,12 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": "Questionable",
-          "name": "DeVonta Smith",
-          "player_id": "7525",
-          "position": "WR",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
           "team": "PHI"
