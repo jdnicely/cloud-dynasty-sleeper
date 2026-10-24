@@ -267,11 +267,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Carolina Panthers",
-          "player_id": "CAR",
+          "name": "New York Jets",
+          "player_id": "NYJ",
           "position": "DEF",
           "status": null,
-          "team": "CAR"
+          "team": "NYJ"
         }
       ],
       "bench": [
@@ -497,12 +497,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Carolina Panthers",
-          "player_id": "CAR",
+          "name": "New York Jets",
+          "player_id": "NYJ",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CAR"
+          "team": "NYJ"
         }
       ],
       "taxi": [
@@ -635,7 +635,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Quinshon Judkins",
           "player_id": "12512",
           "position": "RB",
@@ -1024,7 +1024,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Quinshon Judkins",
           "player_id": "12512",
           "position": "RB",
@@ -1161,7 +1161,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Mike Evans",
           "player_id": "2216",
           "position": "WR",
@@ -1197,7 +1197,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alvin Kamara",
           "player_id": "4035",
           "position": "RB",
@@ -1209,7 +1209,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Dalton Schultz",
           "player_id": "5001",
           "position": "TE",
@@ -1307,7 +1307,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Mike Evans",
           "player_id": "2216",
           "position": "WR",
@@ -1331,7 +1331,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alvin Kamara",
           "player_id": "4035",
           "position": "RB",
@@ -1471,7 +1471,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Dalton Schultz",
           "player_id": "5001",
           "position": "TE",
@@ -1603,7 +1603,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Rashee Rice",
           "player_id": "10229",
           "position": "WR",
@@ -1639,7 +1639,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tyler Warren",
           "player_id": "12518",
           "position": "TE",
@@ -1663,7 +1663,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "KC Concepcion Jr.",
           "player_id": "13298",
           "position": "WR",
@@ -1699,7 +1699,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -1845,7 +1845,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Rashee Rice",
           "player_id": "10229",
           "position": "WR",
@@ -1869,7 +1869,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -2086,7 +2086,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Tyler Warren",
           "player_id": "12518",
           "position": "TE",
@@ -2110,7 +2110,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "KC Concepcion Jr.",
           "player_id": "13298",
           "position": "WR",
@@ -2174,7 +2174,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Matthew Golden",
           "player_id": "12501",
           "position": "WR",
@@ -2330,7 +2330,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
@@ -2392,7 +2392,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
@@ -2519,7 +2519,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Matthew Golden",
           "player_id": "12501",
           "position": "WR",
@@ -2661,7 +2661,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Emeka Egbuka",
           "player_id": "12514",
           "position": "WR",
@@ -2709,7 +2709,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jeremiyah Love",
           "player_id": "13287",
           "position": "RB",
@@ -2733,7 +2733,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Denzel Boston",
           "player_id": "13346",
           "position": "WR",
@@ -2857,7 +2857,7 @@
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "HOU"
         },
         {
@@ -2891,7 +2891,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Emeka Egbuka",
           "player_id": "12514",
           "position": "WR",
@@ -2915,7 +2915,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Denzel Boston",
           "player_id": "13346",
           "position": "WR",
@@ -2976,7 +2976,7 @@
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "HOU"
         }
       ],
@@ -3182,7 +3182,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jeremiyah Love",
           "player_id": "13287",
           "position": "RB",
@@ -3330,7 +3330,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
@@ -3378,7 +3378,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Waddle",
           "player_id": "7526",
           "position": "WR",
@@ -3578,7 +3578,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Waddle",
           "player_id": "7526",
           "position": "WR",
@@ -3604,7 +3604,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
@@ -3746,7 +3746,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bucky Irving",
           "player_id": "11584",
           "position": "RB",
@@ -3902,7 +3902,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "George Pickens",
           "player_id": "8137",
           "position": "WR",
@@ -3938,7 +3938,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Zach Charbonnet",
           "player_id": "9753",
           "position": "RB",
@@ -4088,7 +4088,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bucky Irving",
           "player_id": "11584",
           "position": "RB",
@@ -4114,7 +4114,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "George Pickens",
           "player_id": "8137",
           "position": "WR",
@@ -4153,7 +4153,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Zach Charbonnet",
           "player_id": "9753",
           "position": "RB",
@@ -4415,7 +4415,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Christian Watson",
           "player_id": "8167",
           "position": "WR",
@@ -4615,7 +4615,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Christian Watson",
           "player_id": "8167",
           "position": "WR",
@@ -5840,7 +5840,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Theo Johnson",
           "player_id": "11597",
           "position": "TE",
@@ -5972,7 +5972,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "David Montgomery",
           "player_id": "5892",
           "position": "RB",
@@ -6094,7 +6094,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "David Montgomery",
           "player_id": "5892",
           "position": "RB",
@@ -6325,7 +6325,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Theo Johnson",
           "player_id": "11597",
           "position": "TE",

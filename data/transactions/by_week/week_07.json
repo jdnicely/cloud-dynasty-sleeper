@@ -1,6 +1,31 @@
 [
   {
     "adds": {
+      "NYJ": 1
+    },
+    "consenter_ids": [
+      1
+    ],
+    "created": 1792798636456,
+    "creator": "327235334960058368",
+    "draft_picks": [],
+    "drops": {
+      "CAR": 1
+    },
+    "leg": 7,
+    "metadata": null,
+    "roster_ids": [
+      1
+    ],
+    "settings": null,
+    "status": "complete",
+    "status_updated": 1792798636456,
+    "transaction_id": "1419504001870811136",
+    "type": "free_agent",
+    "waiver_budget": []
+  },
+  {
+    "adds": {
       "12536": 6
     },
     "consenter_ids": [
