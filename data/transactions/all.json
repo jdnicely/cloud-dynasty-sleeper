@@ -1,6 +1,31 @@
 [
   {
     "adds": {
+      "TEN": 12
+    },
+    "consenter_ids": [
+      12
+    ],
+    "created": 1792897806297,
+    "creator": "464245649550864384",
+    "draft_picks": [],
+    "drops": {
+      "BAL": 12
+    },
+    "leg": 7,
+    "metadata": null,
+    "roster_ids": [
+      12
+    ],
+    "settings": null,
+    "status": "complete",
+    "status_updated": 1792897806297,
+    "transaction_id": "1419919950331555840",
+    "type": "free_agent",
+    "waiver_budget": []
+  },
+  {
+    "adds": {
       "NYJ": 1
     },
     "consenter_ids": [
