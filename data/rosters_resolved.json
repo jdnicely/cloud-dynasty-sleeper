@@ -2293,6 +2293,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Courtland Sutton",
+          "player_id": "5045",
+          "position": "WR",
+          "status": "Active",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
@@ -2325,6 +2337,18 @@
           "position": "RB",
           "status": "Active",
           "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "San Francisco 49ers",
+          "player_id": "SF",
+          "position": "DEF",
+          "status": null,
+          "team": "SF"
         },
         {
           "active": true,
@@ -2367,14 +2391,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Kenyon Sadiq",
-          "player_id": "13330",
-          "position": "TE",
+          "name": "Jauan Jennings",
+          "player_id": "7049",
+          "position": "WR",
           "status": "Active",
-          "team": "NYJ"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -2496,12 +2520,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Jauan Jennings",
-          "player_id": "7049",
+          "name": "Courtland Sutton",
+          "player_id": "5045",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "MIN"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -2569,15 +2593,17 @@
           "team": "LV"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "San Francisco 49ers",
+          "player_id": "SF",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "SF"
         }
       ],
       "taxi": [
@@ -2604,6 +2630,18 @@
           "position": "WR",
           "status": "Active",
           "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Kenyon Sadiq",
+          "player_id": "13330",
+          "position": "TE",
+          "status": "Active",
+          "team": "NYJ"
         }
       ]
     },
@@ -3975,18 +4013,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Seth McGowan",
-          "player_id": "13424",
-          "position": "RB",
-          "status": "Active",
-          "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4007,6 +4033,18 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Out",
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
+          "position": "RB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -4142,13 +4180,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
-          "name": "Zach Charbonnet",
-          "player_id": "9753",
+          "injury_status": null,
+          "name": "Braelon Allen",
+          "player_id": "11576",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "SEA"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -4197,18 +4235,6 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
           "name": "Blake Corum",
           "player_id": "11586",
           "position": "RB",
@@ -4250,6 +4276,18 @@
           "position": "RB",
           "status": "Active",
           "team": "SF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Seth McGowan",
+          "player_id": "13424",
+          "position": "RB",
+          "status": "Active",
+          "team": "IND"
         }
       ]
     },
