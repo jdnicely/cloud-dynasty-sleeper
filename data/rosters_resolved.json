@@ -2722,18 +2722,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Jaylin Noel",
-          "player_id": "12536",
-          "position": "WR",
-          "status": "Active",
-          "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Out",
@@ -2918,36 +2906,24 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
-          "position": "WR",
-          "status": "Active",
-          "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ja'Kobi Lane",
-          "player_id": "13293",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
           "injury_status": null,
           "name": "Denzel Boston",
           "player_id": "13346",
           "position": "WR",
           "status": "Active",
           "team": "CLE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Chris Godwin Jr.",
+          "player_id": "4037",
+          "position": "WR",
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": true,
@@ -2964,14 +2940,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "James Cook III",
-          "player_id": "8138",
-          "position": "RB",
+          "name": "Tank Dell",
+          "player_id": "9502",
+          "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "HOU"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "C.J. Stroud",
+          "player_id": "9758",
+          "position": "QB",
+          "status": "Active",
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -2993,18 +2981,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Tank Dell",
-          "player_id": "9502",
-          "position": "WR",
-          "status": "Active",
-          "team": "HOU"
         }
       ],
       "roster_id": 6,
@@ -3030,12 +3006,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "C.J. Stroud",
-          "player_id": "9758",
+          "name": "Bo Nix",
+          "player_id": "11563",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "HOU"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -3082,12 +3058,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Chris Godwin Jr.",
-          "player_id": "4037",
+          "name": "Keon Coleman",
+          "player_id": "11637",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -3105,28 +3081,28 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Jaylin Noel",
-          "player_id": "12536",
-          "position": "WR",
+          "injury_status": null,
+          "name": "James Cook III",
+          "player_id": "8138",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "HOU"
+          "team": "BUF"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
-          "position": "QB",
+          "name": "Ja'Kobi Lane",
+          "player_id": "13293",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "DEN"
+          "team": "BAL"
         },
         {
           "active": true,
@@ -3173,12 +3149,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Keon Coleman",
-          "player_id": "11637",
+          "injury_status": "Out",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "TB"
         },
         {
           "active": true,
@@ -5565,12 +5541,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Bhayshul Tuten",
-          "player_id": "12490",
+          "injury_status": "Questionable",
+          "name": "Cam Skattebo",
+          "player_id": "12481",
           "position": "RB",
           "status": "Active",
-          "team": "JAX"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -5749,13 +5725,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Cam Skattebo",
-          "player_id": "12481",
+          "injury_status": null,
+          "name": "Bhayshul Tuten",
+          "player_id": "12490",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYG"
+          "team": "JAX"
         },
         {
           "active": true,
