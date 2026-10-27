@@ -360,13 +360,13 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 733,
-        "fpts_against": 675,
-        "fpts_against_decimal": 82,
-        "fpts_decimal": 22,
-        "losses": 3,
-        "ppts": 799,
-        "ppts_decimal": 46,
+        "fpts": 807,
+        "fpts_against": 774,
+        "fpts_against_decimal": 2,
+        "fpts_decimal": 38,
+        "losses": 4,
+        "ppts": 893,
+        "ppts_decimal": 92,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 64,
@@ -873,18 +873,18 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 599,
-        "fpts_against": 667,
-        "fpts_against_decimal": 80,
-        "fpts_decimal": 0,
+        "fpts": 701,
+        "fpts_against": 767,
+        "fpts_against_decimal": 84,
+        "fpts_decimal": 42,
         "losses": 4,
-        "ppts": 721,
-        "ppts_decimal": 68,
+        "ppts": 855,
+        "ppts_decimal": 90,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
         "waiver_position": 8,
-        "wins": 2
+        "wins": 3
       },
       "starters": [
         {
@@ -1088,7 +1088,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jalen Coker",
           "player_id": "11646",
           "position": "WR",
@@ -1245,7 +1245,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Amon-Ra St. Brown",
           "player_id": "7547",
           "position": "WR",
@@ -1387,13 +1387,13 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 707,
-        "fpts_against": 704,
-        "fpts_against_decimal": 22,
-        "fpts_decimal": 20,
-        "losses": 3,
-        "ppts": 829,
-        "ppts_decimal": 24,
+        "fpts": 844,
+        "fpts_against": 880,
+        "fpts_against_decimal": 96,
+        "fpts_decimal": 68,
+        "losses": 4,
+        "ppts": 984,
+        "ppts_decimal": 92,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -1445,7 +1445,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Jalen Coker",
           "player_id": "11646",
           "position": "WR",
@@ -1458,7 +1458,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Amon-Ra St. Brown",
           "player_id": "7547",
           "position": "WR",
@@ -1912,13 +1912,13 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 881,
-        "fpts_against": 850,
-        "fpts_against_decimal": 90,
-        "fpts_decimal": 88,
-        "losses": 3,
-        "ppts": 922,
-        "ppts_decimal": 99,
+        "fpts": 1000,
+        "fpts_against": 991,
+        "fpts_against_decimal": 66,
+        "fpts_decimal": 18,
+        "losses": 4,
+        "ppts": 1054,
+        "ppts_decimal": 10,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -2163,7 +2163,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Matthew Golden",
           "player_id": "12501",
           "position": "WR",
@@ -2235,11 +2235,11 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "IR",
+          "injury_status": null,
           "name": "Eli Stowers",
           "player_id": "13349",
           "position": "TE",
-          "status": "Inactive",
+          "status": "Active",
           "team": "PHI"
         },
         {
@@ -2450,24 +2450,24 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "IR",
+          "injury_status": null,
           "name": "Eli Stowers",
           "player_id": "13349",
           "position": "TE",
-          "status": "Inactive",
+          "status": "Active",
           "team": "PHI"
         }
       ],
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 684,
-        "fpts_against": 608,
-        "fpts_against_decimal": 56,
-        "fpts_decimal": 52,
-        "losses": 2,
-        "ppts": 825,
-        "ppts_decimal": 40,
+        "fpts": 782,
+        "fpts_against": 761,
+        "fpts_against_decimal": 62,
+        "fpts_decimal": 42,
+        "losses": 3,
+        "ppts": 937,
+        "ppts_decimal": 22,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -2532,7 +2532,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Matthew Golden",
           "player_id": "12501",
           "position": "WR",
@@ -3010,18 +3010,18 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 606,
-        "fpts_against": 743,
-        "fpts_against_decimal": 82,
-        "fpts_decimal": 62,
+        "fpts": 704,
+        "fpts_against": 817,
+        "fpts_against_decimal": 98,
+        "fpts_decimal": 82,
         "losses": 5,
-        "ppts": 807,
-        "ppts_decimal": 40,
+        "ppts": 912,
+        "ppts_decimal": 30,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 11,
-        "wins": 1
+        "wins": 2
       },
       "starters": [
         {
@@ -3534,18 +3534,18 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 714,
-        "fpts_against": 737,
-        "fpts_against_decimal": 96,
-        "fpts_decimal": 40,
+        "fpts": 846,
+        "fpts_against": 849,
+        "fpts_against_decimal": 4,
+        "fpts_decimal": 60,
         "losses": 3,
-        "ppts": 791,
-        "ppts_decimal": 48,
+        "ppts": 928,
+        "ppts_decimal": 24,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 4,
-        "wins": 3
+        "wins": 4
       },
       "starters": [
         {
@@ -4083,18 +4083,18 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 714,
-        "fpts_against": 860,
-        "fpts_against_decimal": 36,
-        "fpts_decimal": 8,
+        "fpts": 890,
+        "fpts_against": 997,
+        "fpts_against_decimal": 84,
+        "fpts_decimal": 82,
         "losses": 4,
-        "ppts": 797,
-        "ppts_decimal": 56,
+        "ppts": 974,
+        "ppts_decimal": 50,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
         "waiver_position": 9,
-        "wins": 2
+        "wins": 3
       },
       "starters": [
         {
@@ -4571,13 +4571,13 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 725,
-        "fpts_against": 677,
-        "fpts_against_decimal": 6,
-        "fpts_decimal": 18,
-        "losses": 3,
-        "ppts": 748,
-        "ppts_decimal": 58,
+        "fpts": 825,
+        "fpts_against": 779,
+        "fpts_against_decimal": 48,
+        "fpts_decimal": 22,
+        "losses": 4,
+        "ppts": 890,
+        "ppts_decimal": 22,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -5108,18 +5108,18 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 810,
-        "fpts_against": 719,
-        "fpts_against_decimal": 28,
-        "fpts_decimal": 94,
+        "fpts": 964,
+        "fpts_against": 817,
+        "fpts_against_decimal": 18,
+        "fpts_decimal": 0,
         "losses": 1,
-        "ppts": 899,
-        "ppts_decimal": 2,
+        "ppts": 1052,
+        "ppts_decimal": 8,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 155,
         "waiver_position": 6,
-        "wins": 5
+        "wins": 6
       },
       "starters": [
         {
@@ -5652,13 +5652,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 665,
-        "fpts_against": 675,
-        "fpts_against_decimal": 80,
-        "fpts_decimal": 98,
-        "losses": 4,
-        "ppts": 756,
-        "ppts_decimal": 38,
+        "fpts": 777,
+        "fpts_against": 808,
+        "fpts_against_decimal": 0,
+        "fpts_decimal": 6,
+        "losses": 5,
+        "ppts": 868,
+        "ppts_decimal": 36,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
@@ -6189,18 +6189,18 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 730,
-        "fpts_against": 651,
-        "fpts_against_decimal": 84,
-        "fpts_decimal": 40,
+        "fpts": 871,
+        "fpts_against": 770,
+        "fpts_against_decimal": 14,
+        "fpts_decimal": 16,
         "losses": 1,
-        "ppts": 833,
-        "ppts_decimal": 62,
+        "ppts": 979,
+        "ppts_decimal": 98,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 110,
         "waiver_position": 7,
-        "wins": 5
+        "wins": 6
       },
       "starters": [
         {
