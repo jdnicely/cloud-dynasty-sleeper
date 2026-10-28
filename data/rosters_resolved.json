@@ -38,11 +38,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyrone Tracy Jr.",
           "player_id": "11655",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYG"
         },
         {
@@ -280,11 +280,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyrone Tracy Jr.",
           "player_id": "11655",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NYG"
         },
         {
@@ -361,8 +361,8 @@
       "settings": {
         "division": 1,
         "fpts": 807,
-        "fpts_against": 774,
-        "fpts_against_decimal": 2,
+        "fpts_against": 773,
+        "fpts_against_decimal": 92,
         "fpts_decimal": 38,
         "losses": 4,
         "ppts": 893,
@@ -2989,10 +2989,10 @@
         "fpts": 704,
         "fpts_against": 817,
         "fpts_against_decimal": 98,
-        "fpts_decimal": 82,
+        "fpts_decimal": 72,
         "losses": 5,
         "ppts": 912,
-        "ppts_decimal": 30,
+        "ppts_decimal": 20,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -6023,7 +6023,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dameon Pierce",
           "player_id": "8129",
           "position": "RB",
@@ -6210,7 +6210,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dameon Pierce",
           "player_id": "8129",
           "position": "RB",
