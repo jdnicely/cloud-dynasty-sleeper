@@ -3977,14 +3977,26 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Braelon Allen",
+          "player_id": "11576",
+          "position": "RB",
+          "status": "Active",
+          "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Ladd McConkey",
-          "player_id": "11635",
+          "injury_status": null,
+          "name": "Malik Nabers",
+          "player_id": "11632",
           "position": "WR",
           "status": "Active",
-          "team": "LAC"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -4009,18 +4021,6 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Out",
-          "name": "Zach Charbonnet",
-          "player_id": "9753",
-          "position": "RB",
-          "status": "Active",
-          "team": "SEA"
         },
         {
           "active": true,
@@ -4130,13 +4130,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Malik Nabers",
-          "player_id": "11632",
+          "injury_status": "Out",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "NYG"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4156,13 +4156,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
+          "injury_status": "Out",
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5843,18 +5843,6 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Out",
-          "name": "Theo Johnson",
-          "player_id": "11597",
-          "position": "TE",
-          "status": "Active",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
           "injury_status": null,
           "name": "AJ Barner",
           "player_id": "11603",
@@ -6071,6 +6059,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Geno Smith",
+          "player_id": "1373",
+          "position": "QB",
+          "status": "Active",
+          "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "IR",
@@ -6079,18 +6079,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "DJ Moore",
-          "player_id": "4983",
-          "position": "WR",
-          "status": "Active",
-          "team": "BUF"
         },
         {
           "active": true,
@@ -6119,14 +6107,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Trevor Lawrence",
-          "player_id": "7523",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Dameon Pierce",
+          "player_id": "8129",
+          "position": "RB",
           "status": "Active",
-          "team": "JAX"
+          "team": "PHI"
         }
       ],
       "co_owners": [],
@@ -6185,12 +6173,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "J.J. McCarthy",
-          "player_id": "11565",
+          "name": "Trevor Lawrence",
+          "player_id": "7523",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "NYG"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -6210,13 +6198,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Dameon Pierce",
-          "player_id": "8129",
+          "injury_status": null,
+          "name": "Jonah Coleman",
+          "player_id": "13345",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "PHI"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -6236,26 +6224,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Luther Burden III",
-          "player_id": "12519",
+          "injury_status": "Out",
+          "name": "DJ Moore",
+          "player_id": "4983",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "AJ Barner",
-          "player_id": "11603",
-          "position": "TE",
-          "starter_slot": "TE",
-          "status": "Active",
-          "team": "SEA"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -6266,9 +6241,22 @@
           "name": "Sam LaPorta",
           "player_id": "10859",
           "position": "TE",
-          "starter_slot": "FLEX",
+          "starter_slot": "TE",
           "status": "Active",
           "team": "DET"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Antonio Williams",
+          "player_id": "13301",
+          "position": "WR",
+          "starter_slot": "FLEX",
+          "status": "Active",
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6276,12 +6264,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
+          "name": "Jayden Daniels",
+          "player_id": "11566",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6317,23 +6305,35 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Jayden Daniels",
-          "player_id": "11566",
+          "name": "J.J. McCarthy",
+          "player_id": "11565",
           "position": "QB",
           "status": "Active",
-          "team": "WAS"
+          "team": "NYG"
         },
         {
           "active": true,
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Out",
-          "name": "Theo Johnson",
-          "player_id": "11597",
+          "injury_status": null,
+          "name": "AJ Barner",
+          "player_id": "11603",
           "position": "TE",
           "status": "Active",
-          "team": "NYG"
+          "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Luther Burden III",
+          "player_id": "12519",
+          "position": "WR",
+          "status": "Active",
+          "team": "CHI"
         },
         {
           "active": true,
@@ -6346,30 +6346,6 @@
           "position": "RB",
           "status": "Inactive",
           "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Antonio Williams",
-          "player_id": "13301",
-          "position": "WR",
-          "status": "Active",
-          "team": "WAS"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jonah Coleman",
-          "player_id": "13345",
-          "position": "RB",
-          "status": "Active",
-          "team": "DEN"
         }
       ]
     }
