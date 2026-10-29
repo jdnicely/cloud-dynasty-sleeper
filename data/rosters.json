@@ -324,7 +324,7 @@
     "roster_id": 5,
     "settings": {
       "division": 2,
-      "fpts": 782,
+      "fpts": 783,
       "fpts_against": 761,
       "fpts_against_decimal": 62,
       "fpts_decimal": 42,
@@ -458,7 +458,6 @@
       "7526",
       "7839",
       "8144",
-      "8180",
       "TB"
     ],
     "reserve": null,
@@ -466,7 +465,7 @@
     "settings": {
       "division": 1,
       "fpts": 846,
-      "fpts_against": 849,
+      "fpts_against": 848,
       "fpts_against_decimal": 4,
       "fpts_decimal": 60,
       "losses": 3,
@@ -482,10 +481,10 @@
       "11564",
       "4199",
       "6790",
-      "8144",
+      "1479",
       "7526",
-      "4217",
       "5844",
+      "12507",
       "6804",
       "7839",
       "TB"
@@ -676,7 +675,7 @@
     "settings": {
       "division": 1,
       "fpts": 964,
-      "fpts_against": 817,
+      "fpts_against": 818,
       "fpts_against_decimal": 18,
       "fpts_decimal": 0,
       "losses": 1,
@@ -748,12 +747,12 @@
     "roster_id": 11,
     "settings": {
       "division": 2,
-      "fpts": 777,
+      "fpts": 776,
       "fpts_against": 808,
       "fpts_against_decimal": 0,
       "fpts_decimal": 6,
       "losses": 5,
-      "ppts": 868,
+      "ppts": 867,
       "ppts_decimal": 36,
       "ties": 0,
       "total_moves": 0,
