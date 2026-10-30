@@ -4001,26 +4001,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Cam Little",
-          "player_id": "11786",
-          "position": "K",
-          "status": "Active",
-          "team": "JAX"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
-          "name": "Jacoby Brissett",
-          "player_id": "3257",
+          "name": "Malik Willis",
+          "player_id": "8161",
           "position": "QB",
           "status": "Active",
-          "team": "ARI"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -4040,11 +4028,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Kansas City Chiefs",
-          "player_id": "KC",
+          "name": "Minnesota Vikings",
+          "player_id": "MIN",
           "position": "DEF",
           "status": null,
-          "team": "KC"
+          "team": "MIN"
         }
       ],
       "co_owners": [],
@@ -4182,23 +4170,25 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Malik Willis",
-          "player_id": "8161",
+          "name": "Jacoby Brissett",
+          "player_id": "3257",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "MIA"
+          "team": "ARI"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Cam Little",
+          "player_id": "11786",
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "JAX"
         },
         {
           "active": true,
@@ -4206,12 +4196,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Minnesota Vikings",
-          "player_id": "MIN",
+          "name": "Kansas City Chiefs",
+          "player_id": "KC",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "MIN"
+          "team": "KC"
         }
       ],
       "taxi": [
@@ -5012,14 +5002,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Josh Allen",
-          "player_id": "4984",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Woody Marks",
+          "player_id": "12474",
+          "position": "RB",
           "status": "Active",
-          "team": "BUF"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -5140,12 +5130,12 @@
             "RB"
           ],
           "injury_status": "Questionable",
-          "name": "Woody Marks",
-          "player_id": "12474",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "HOU"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5189,28 +5179,28 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Saquon Barkley",
-          "player_id": "4866",
-          "position": "RB",
-          "starter_slot": "FLEX",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
           "name": "Tee Higgins",
           "player_id": "6801",
           "position": "WR",
-          "starter_slot": "SUPER_FLEX",
+          "starter_slot": "FLEX",
           "status": "Active",
           "team": "CIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Josh Allen",
+          "player_id": "4984",
+          "position": "QB",
+          "starter_slot": "SUPER_FLEX",
+          "status": "Active",
+          "team": "BUF"
         },
         {
           "active": true,
