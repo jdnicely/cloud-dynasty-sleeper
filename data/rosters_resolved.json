@@ -3977,18 +3977,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -4021,6 +4009,18 @@
           "position": "WR",
           "status": "Active",
           "team": "IND"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
+          "position": "RB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -4157,12 +4157,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Zach Charbonnet",
-          "player_id": "9753",
+          "name": "Braelon Allen",
+          "player_id": "11576",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "SEA"
+          "team": "NYJ"
         },
         {
           "active": true,
