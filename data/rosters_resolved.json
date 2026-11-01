@@ -180,6 +180,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Jakobi Meyers",
+          "player_id": "5947",
+          "position": "WR",
+          "status": "Active",
+          "team": "JAX"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "IR",
@@ -252,18 +264,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Quentin Johnston",
-          "player_id": "9754",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
@@ -275,6 +275,18 @@
         }
       ],
       "bench": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Xavier Worthy",
+          "player_id": "11624",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -290,26 +302,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
-          "injury_status": "Out",
-          "name": "Carnell Tate",
-          "player_id": "13279",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Cam Ward",
+          "player_id": "12522",
+          "position": "QB",
           "status": "Active",
           "team": "TEN"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Lamar Jackson",
-          "player_id": "4881",
-          "position": "QB",
+          "injury_status": "Out",
+          "name": "A.J. Brown",
+          "player_id": "5859",
+          "position": "WR",
           "status": "Active",
-          "team": "BAL"
+          "team": "NE"
         },
         {
           "active": true,
@@ -322,18 +334,6 @@
           "position": "WR",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Quentin Johnston",
-          "player_id": "9754",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
         }
       ],
       "co_owners": [],
@@ -457,13 +457,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "A.J. Brown",
-          "player_id": "5859",
+          "injury_status": "Questionable",
+          "name": "Jakobi Meyers",
+          "player_id": "5947",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NE"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -471,12 +471,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Cam Ward",
-          "player_id": "12522",
+          "name": "Lamar Jackson",
+          "player_id": "4881",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "TEN"
+          "team": "BAL"
         },
         {
           "active": true,
@@ -506,18 +506,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Xavier Worthy",
-          "player_id": "11624",
-          "position": "WR",
-          "status": "Active",
-          "team": "KC"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -553,6 +541,18 @@
           "position": "QB",
           "status": "Active",
           "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Carnell Tate",
+          "player_id": "13279",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -2267,6 +2267,16 @@
           "team": "KC"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "4147",
+          "player_id": "4147",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -2344,18 +2354,6 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "San Francisco 49ers",
-          "player_id": "SF",
-          "position": "DEF",
-          "status": null,
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
           "name": "Washington Commanders",
           "player_id": "WAS",
           "position": "DEF",
@@ -2379,14 +2377,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Tyler Shough",
-          "player_id": "12545",
-          "position": "QB",
+          "name": "Eli Stowers",
+          "player_id": "13349",
+          "position": "TE",
           "status": "Active",
-          "team": "NO"
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Christian McCaffrey",
+          "player_id": "4034",
+          "position": "RB",
+          "status": "Active",
+          "team": "SF"
         },
         {
           "active": true,
@@ -2411,18 +2421,6 @@
           "position": "RB",
           "status": "Active",
           "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Washington Commanders",
-          "player_id": "WAS",
-          "position": "DEF",
-          "status": null,
-          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -2444,18 +2442,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "GB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Eli Stowers",
-          "player_id": "13349",
-          "position": "TE",
-          "status": "Active",
-          "team": "PHI"
         }
       ],
       "roster_id": 5,
@@ -2489,17 +2475,15 @@
           "team": "KC"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Christian McCaffrey",
-          "player_id": "4034",
-          "position": "RB",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "4147",
+          "player_id": "4147",
+          "position": null,
           "starter_slot": "RB",
-          "status": "Active",
-          "team": "SF"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -2598,12 +2582,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "San Francisco 49ers",
-          "player_id": "SF",
+          "name": "Washington Commanders",
+          "player_id": "WAS",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "SF"
+          "team": "WAS"
         }
       ],
       "taxi": [
@@ -2618,6 +2602,18 @@
           "position": "WR",
           "status": "Active",
           "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Tyler Shough",
+          "player_id": "12545",
+          "position": "QB",
+          "status": "Active",
+          "team": "NO"
         },
         {
           "active": true,
@@ -2907,11 +2903,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
+          "name": "Ja'Kobi Lane",
+          "player_id": "13293",
           "position": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "BAL"
         },
         {
           "active": true,
@@ -3094,15 +3090,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Ja'Kobi Lane",
-          "player_id": "13293",
-          "position": "WR",
+          "name": "Jeremiyah Love",
+          "player_id": "13287",
+          "position": "RB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "BAL"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -3183,14 +3179,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Jeremiyah Love",
-          "player_id": "13287",
-          "position": "RB",
+          "name": "Denzel Boston",
+          "player_id": "13346",
+          "position": "WR",
           "status": "Active",
-          "team": "ARI"
+          "team": "CLE"
         }
       ]
     },
@@ -4478,18 +4474,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Dylan Sampson",
-          "player_id": "12469",
-          "position": "RB",
-          "status": "Active",
-          "team": "CLE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -4510,6 +4494,18 @@
           "position": "TE",
           "status": "Active",
           "team": "NYG"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Breece Hall",
+          "player_id": "8155",
+          "position": "RB",
+          "status": "Active",
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -4644,13 +4640,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Breece Hall",
-          "player_id": "8155",
+          "injury_status": null,
+          "name": "Dylan Sampson",
+          "player_id": "12469",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "CLE"
         },
         {
           "active": true,
