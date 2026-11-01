@@ -170,7 +170,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
@@ -457,7 +457,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
@@ -2712,7 +2712,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kyle Monangai",
           "player_id": "12534",
           "position": "RB",
@@ -3173,7 +3173,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kyle Monangai",
           "player_id": "12534",
           "position": "RB",
@@ -3821,7 +3821,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
@@ -3941,7 +3941,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zach Charbonnet",
           "player_id": "9753",
           "position": "RB",
@@ -4156,7 +4156,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zach Charbonnet",
           "player_id": "9753",
           "position": "RB",
@@ -4222,7 +4222,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
@@ -4298,11 +4298,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "RJ Harvey",
           "player_id": "12489",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "DEN"
         },
         {
@@ -4454,7 +4454,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Rashid Shaheed",
           "player_id": "8676",
           "position": "WR",
@@ -4528,7 +4528,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Rashid Shaheed",
           "player_id": "8676",
           "position": "WR",
@@ -4592,12 +4592,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "RJ Harvey",
           "player_id": "12489",
           "position": "RB",
           "starter_slot": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "DEN"
         },
         {
@@ -4798,7 +4798,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Colston Loveland",
           "player_id": "12517",
           "position": "TE",
@@ -5168,7 +5168,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Colston Loveland",
           "player_id": "12517",
           "position": "TE",
