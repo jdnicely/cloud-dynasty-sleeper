@@ -3980,11 +3980,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Malik Nabers",
-          "player_id": "11632",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "status": "Active",
-          "team": "NYG"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -3992,11 +3992,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Malik Willis",
-          "player_id": "8161",
+          "name": "Jacoby Brissett",
+          "player_id": "3257",
           "position": "QB",
           "status": "Active",
-          "team": "MIA"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -4131,12 +4131,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Ladd McConkey",
-          "player_id": "11635",
+          "name": "Malik Nabers",
+          "player_id": "11632",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "LAC"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -4170,12 +4170,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Jacoby Brissett",
-          "player_id": "3257",
+          "name": "Malik Willis",
+          "player_id": "8161",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "ARI"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -5563,26 +5563,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Justin Herbert",
-          "player_id": "6797",
-          "position": "QB",
+          "name": "Pat Freiermuth",
+          "player_id": "7600",
+          "position": "TE",
           "status": "Active",
-          "team": "LAC"
+          "team": "PIT"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Brenton Strange",
-          "player_id": "9480",
-          "position": "TE",
+          "name": "Jameson Williams",
+          "player_id": "8148",
+          "position": "WR",
           "status": "Active",
-          "team": "JAX"
+          "team": "DET"
         }
       ],
       "co_owners": [
@@ -5713,12 +5713,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Pat Freiermuth",
-          "player_id": "7600",
+          "name": "Brenton Strange",
+          "player_id": "9480",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "PIT"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -5736,15 +5736,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Jameson Williams",
-          "player_id": "8148",
-          "position": "WR",
+          "name": "Justin Herbert",
+          "player_id": "6797",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "DET"
+          "team": "LAC"
         },
         {
           "active": true,
