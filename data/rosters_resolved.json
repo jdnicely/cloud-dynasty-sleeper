@@ -1341,6 +1341,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Tony Pollard",
+          "player_id": "5967",
+          "position": "RB",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -1349,18 +1361,6 @@
           "position": "WR",
           "status": "Active",
           "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Rachaad White",
-          "player_id": "8136",
-          "position": "RB",
-          "status": "Active",
-          "team": "WAS"
         }
       ],
       "co_owners": [],
@@ -1433,12 +1433,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Tony Pollard",
-          "player_id": "5967",
+          "name": "Rachaad White",
+          "player_id": "8136",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "TEN"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -1843,18 +1843,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Rashee Rice",
-          "player_id": "10229",
-          "position": "WR",
-          "status": "Active",
-          "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -1882,11 +1870,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jordan Mason",
-          "player_id": "8408",
+          "name": "Jaylen Warren",
+          "player_id": "8228",
           "position": "RB",
           "status": "Active",
-          "team": "MIN"
+          "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Aaron Rodgers",
+          "player_id": "96",
+          "position": "QB",
+          "status": "Active",
+          "team": "PIT"
         },
         {
           "active": true,
@@ -1894,11 +1894,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Houston Texans",
-          "player_id": "HOU",
+          "name": "Los Angeles Rams",
+          "player_id": "LAR",
           "position": "DEF",
           "status": null,
-          "team": "HOU"
+          "team": "LAR"
         }
       ],
       "co_owners": [],
@@ -1958,12 +1958,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jaylen Warren",
-          "player_id": "8228",
+          "name": "Jordan Mason",
+          "player_id": "8408",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "PIT"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -2020,15 +2020,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Aaron Rodgers",
-          "player_id": "96",
-          "position": "QB",
+          "name": "Rashee Rice",
+          "player_id": "10229",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "PIT"
+          "team": "KC"
         },
         {
           "active": true,
@@ -2049,12 +2049,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Los Angeles Rams",
-          "player_id": "LAR",
+          "name": "Houston Texans",
+          "player_id": "HOU",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "LAR"
+          "team": "HOU"
         }
       ],
       "taxi": [
