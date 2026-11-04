@@ -5002,14 +5002,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Woody Marks",
-          "player_id": "12474",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Darius Cooper",
+          "player_id": "13150",
+          "position": "WR",
           "status": "Active",
-          "team": "HOU"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -5257,14 +5257,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Darius Cooper",
-          "player_id": "13150",
-          "position": "WR",
+          "injury_status": "Questionable",
+          "name": "Woody Marks",
+          "player_id": "12474",
+          "position": "RB",
           "status": "Active",
-          "team": "PHI"
+          "team": "HOU"
         },
         {
           "active": true,
