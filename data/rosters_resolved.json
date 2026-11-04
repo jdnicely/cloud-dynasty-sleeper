@@ -2724,11 +2724,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jeremiyah Love",
           "player_id": "13287",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -3096,12 +3096,12 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Jeremiyah Love",
           "player_id": "13287",
           "position": "RB",
           "starter_slot": "SUPER_FLEX",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -3266,7 +3266,7 @@
           "player_id": "13418",
           "position": "RB",
           "status": "Active",
-          "team": "SEA"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -3690,7 +3690,7 @@
           "player_id": "13418",
           "position": "RB",
           "status": "Active",
-          "team": "SEA"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -4322,11 +4322,11 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyler Loop",
           "player_id": "12711",
           "position": "K",
-          "status": "Active",
+          "status": "Inactive",
           "team": "BAL"
         },
         {
@@ -4670,12 +4670,12 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyler Loop",
           "player_id": "12711",
           "position": "K",
           "starter_slot": "K",
-          "status": "Active",
+          "status": "Inactive",
           "team": "BAL"
         },
         {
