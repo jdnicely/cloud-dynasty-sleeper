@@ -370,7 +370,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 64,
-        "waiver_position": 7,
+        "waiver_position": 5,
         "wins": 3
       },
       "starters": [
@@ -883,7 +883,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
-        "waiver_position": 6,
+        "waiver_position": 4,
         "wins": 3
       },
       "starters": [
@@ -1397,7 +1397,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 4,
+        "waiver_position": 3,
         "wins": 3
       },
       "starters": [
@@ -1922,7 +1922,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 2,
+        "waiver_position": 1,
         "wins": 4
       },
       "starters": [
@@ -2164,6 +2164,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Adonai Mitchell",
+          "player_id": "11625",
+          "position": "WR",
+          "status": "Active",
+          "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Matthew Golden",
           "player_id": "12501",
           "position": "WR",
@@ -2329,18 +2341,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jauan Jennings",
-          "player_id": "7049",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Out",
@@ -2364,6 +2364,18 @@
         }
       ],
       "bench": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Adonai Mitchell",
+          "player_id": "11625",
+          "position": "WR",
+          "status": "Active",
+          "team": "NYJ"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -2399,18 +2411,6 @@
           "position": "RB",
           "status": "Active",
           "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jauan Jennings",
-          "player_id": "7049",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
         },
         {
           "active": true,
@@ -2459,7 +2459,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 1,
+        "waiver_position": 11,
         "wins": 5
       },
       "starters": [
@@ -2722,6 +2722,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Beck",
+          "player_id": "13272",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "IR",
@@ -2770,6 +2782,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Mike Gesicki",
+          "player_id": "4993",
+          "position": "TE",
+          "status": "Active",
+          "team": "CIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
@@ -2790,18 +2814,6 @@
           "position": "WR",
           "status": "Active",
           "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Juwan Johnson",
-          "player_id": "7002",
-          "position": "TE",
-          "status": "Active",
-          "team": "NO"
         },
         {
           "active": true,
@@ -2904,6 +2916,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Beck",
+          "player_id": "13272",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2931,11 +2955,11 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Juwan Johnson",
-          "player_id": "7002",
+          "name": "Mike Gesicki",
+          "player_id": "4993",
           "position": "TE",
           "status": "Active",
-          "team": "NO"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -2996,7 +3020,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 8,
+        "waiver_position": 12,
         "wins": 2
       },
       "starters": [
@@ -3520,7 +3544,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 25,
-        "waiver_position": 10,
+        "waiver_position": 7,
         "wins": 5
       },
       "starters": [
@@ -4069,7 +4093,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
-        "waiver_position": 12,
+        "waiver_position": 9,
         "wins": 3
       },
       "starters": [
@@ -4557,7 +4581,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 3,
+        "waiver_position": 2,
         "wins": 4
       },
       "starters": [
@@ -4811,18 +4835,6 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Darius Cooper",
-          "player_id": "13150",
-          "position": "WR",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
           "name": "Germie Bernard",
           "player_id": "13274",
           "position": "WR",
@@ -4979,6 +4991,18 @@
             "DEF"
           ],
           "injury_status": null,
+          "name": "Jacksonville Jaguars",
+          "player_id": "JAX",
+          "position": "DEF",
+          "status": null,
+          "team": "JAX"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
           "name": "Pittsburgh Steelers",
           "player_id": "PIT",
           "position": "DEF",
@@ -4998,18 +5022,6 @@
           "position": "TE",
           "status": "Active",
           "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Darius Cooper",
-          "player_id": "13150",
-          "position": "WR",
-          "status": "Active",
-          "team": "PHI"
         },
         {
           "active": true,
@@ -5046,6 +5058,18 @@
           "position": "WR",
           "status": "Active",
           "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Jacksonville Jaguars",
+          "player_id": "JAX",
+          "position": "DEF",
+          "status": null,
+          "team": "JAX"
         }
       ],
       "co_owners": [],
@@ -5093,8 +5117,8 @@
         "ppts_decimal": 74,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 155,
-        "waiver_position": 5,
+        "waiver_budget_used": 160,
+        "waiver_position": 10,
         "wins": 7
       },
       "starters": [
@@ -5638,7 +5662,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
-        "waiver_position": 9,
+        "waiver_position": 6,
         "wins": 3
       },
       "starters": [
@@ -6163,7 +6187,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 135,
-        "waiver_position": 11,
+        "waiver_position": 8,
         "wins": 6
       },
       "starters": [
