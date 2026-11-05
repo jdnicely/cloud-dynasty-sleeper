@@ -1446,12 +1446,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Jalen Coker",
-          "player_id": "11646",
+          "name": "Parker Washington",
+          "player_id": "9487",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CAR"
+          "team": "JAX"
         },
         {
           "active": true,
@@ -1485,12 +1485,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Parker Washington",
-          "player_id": "9487",
+          "name": "Jalen Coker",
+          "player_id": "11646",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "JAX"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -2916,14 +2916,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Carson Beck",
-          "player_id": "13272",
-          "position": "QB",
+          "name": "Keon Coleman",
+          "player_id": "11637",
+          "position": "WR",
           "status": "Active",
-          "team": "ARI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -3081,13 +3081,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Keon Coleman",
-          "player_id": "11637",
+          "injury_status": "Questionable",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3171,18 +3171,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
-          "position": "WR",
-          "status": "Active",
-          "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -3203,6 +3191,18 @@
           "position": "RB",
           "status": "Active",
           "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Beck",
+          "player_id": "13272",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -5065,11 +5065,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Jacksonville Jaguars",
-          "player_id": "JAX",
+          "name": "Pittsburgh Steelers",
+          "player_id": "PIT",
           "position": "DEF",
           "status": null,
-          "team": "JAX"
+          "team": "PIT"
         }
       ],
       "co_owners": [],
@@ -5128,12 +5128,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Baker Mayfield",
-          "player_id": "4892",
+          "name": "Josh Allen",
+          "player_id": "4984",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "TB"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5219,12 +5219,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Josh Allen",
-          "player_id": "4984",
+          "name": "Baker Mayfield",
+          "player_id": "4892",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "BUF"
+          "team": "TB"
         },
         {
           "active": true,
@@ -5245,12 +5245,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Pittsburgh Steelers",
-          "player_id": "PIT",
+          "name": "Jacksonville Jaguars",
+          "player_id": "JAX",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "PIT"
+          "team": "JAX"
         }
       ],
       "taxi": [
@@ -5318,18 +5318,6 @@
     },
     {
       "all_players": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "MarShawn Lloyd",
-          "player_id": "11581",
-          "position": "RB",
-          "status": "Active",
-          "team": "GB"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -5463,6 +5451,16 @@
           "team": "SF"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "6011",
+          "player_id": "6011",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -5473,18 +5471,6 @@
           "position": "QB",
           "status": "Active",
           "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Pat Freiermuth",
-          "player_id": "7600",
-          "position": "TE",
-          "status": "Active",
-          "team": "PIT"
         },
         {
           "active": true,
@@ -5537,40 +5523,40 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kendre Miller",
+          "player_id": "9757",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cleveland Browns",
-          "player_id": "CLE",
+          "name": "Chicago Bears",
+          "player_id": "CHI",
           "position": "DEF",
           "status": null,
-          "team": "CLE"
+          "team": "CHI"
         }
       ],
       "bench": [
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
-          "injury_status": null,
-          "name": "MarShawn Lloyd",
-          "player_id": "11581",
-          "position": "RB",
+          "injury_status": "Out",
+          "name": "Sam Darnold",
+          "player_id": "4943",
+          "position": "QB",
           "status": "Active",
-          "team": "GB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Cam Skattebo",
-          "player_id": "12481",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYG"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5585,16 +5571,14 @@
           "team": "SF"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Pat Freiermuth",
-          "player_id": "7600",
-          "position": "TE",
-          "status": "Active",
-          "team": "PIT"
+          "name": "6011",
+          "player_id": "6011",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5607,6 +5591,18 @@
           "position": "WR",
           "status": "Active",
           "team": "DET"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Kendre Miller",
+          "player_id": "9757",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO"
         }
       ],
       "co_owners": [
@@ -5671,13 +5667,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Sam Darnold",
-          "player_id": "4943",
+          "injury_status": null,
+          "name": "Justin Herbert",
+          "player_id": "6797",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "SEA"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -5760,15 +5756,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
-          "injury_status": null,
-          "name": "Justin Herbert",
-          "player_id": "6797",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Cam Skattebo",
+          "player_id": "12481",
+          "position": "RB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "LAC"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -5789,12 +5785,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cleveland Browns",
-          "player_id": "CLE",
+          "name": "Chicago Bears",
+          "player_id": "CHI",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CLE"
+          "team": "CHI"
         }
       ],
       "taxi": [
