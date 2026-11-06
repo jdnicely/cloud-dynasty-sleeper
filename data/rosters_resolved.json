@@ -146,7 +146,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Lamar Jackson",
           "player_id": "4881",
           "position": "QB",
@@ -470,7 +470,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Lamar Jackson",
           "player_id": "4881",
           "position": "QB",
@@ -647,7 +647,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Elijah Sarratt",
           "player_id": "13268",
           "position": "WR",
@@ -755,7 +755,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kenny Gainwell",
           "player_id": "7567",
           "position": "RB",
@@ -767,7 +767,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tanner McKee",
           "player_id": "9230",
           "position": "QB",
@@ -829,7 +829,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Kenny Gainwell",
           "player_id": "7567",
           "position": "RB",
@@ -841,7 +841,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tanner McKee",
           "player_id": "9230",
           "position": "QB",
@@ -1036,7 +1036,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Elijah Sarratt",
           "player_id": "13268",
           "position": "WR",
@@ -1603,7 +1603,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rashee Rice",
           "player_id": "10229",
           "position": "WR",
@@ -1699,7 +1699,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -2009,7 +2009,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -2022,7 +2022,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rashee Rice",
           "player_id": "10229",
           "position": "WR",
@@ -2187,7 +2187,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Harold Fannin Jr.",
           "player_id": "12506",
           "position": "TE",
@@ -2381,7 +2381,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Harold Fannin Jr.",
           "player_id": "12506",
           "position": "TE",
@@ -2676,7 +2676,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Keon Coleman",
           "player_id": "11637",
           "position": "WR",
@@ -2688,7 +2688,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Emeka Egbuka",
           "player_id": "12514",
           "position": "WR",
@@ -2918,7 +2918,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Keon Coleman",
           "player_id": "11637",
           "position": "WR",
@@ -3081,7 +3081,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Emeka Egbuka",
           "player_id": "12514",
           "position": "WR",
@@ -3797,7 +3797,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -4154,7 +4154,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Malik Nabers",
           "player_id": "11632",
           "position": "WR",
@@ -4334,7 +4334,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Mason Taylor",
           "player_id": "12498",
           "position": "TE",
@@ -4430,7 +4430,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Breece Hall",
           "player_id": "8155",
           "position": "RB",
@@ -4528,7 +4528,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Breece Hall",
           "player_id": "8155",
           "position": "RB",
@@ -4722,7 +4722,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Mason Taylor",
           "player_id": "12498",
           "position": "TE",
@@ -4750,7 +4750,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -5016,7 +5016,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -5359,7 +5359,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5451,14 +5451,16 @@
           "team": "SF"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "6011",
+          "name": "Gardner Minshew II",
           "player_id": "6011",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -5571,14 +5573,16 @@
           "team": "SF"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "6011",
+          "name": "Gardner Minshew II",
           "player_id": "6011",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -5745,7 +5749,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
