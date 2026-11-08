@@ -132,14 +132,26 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Wentz",
+          "player_id": "3161",
+          "position": "QB",
+          "status": "Active",
+          "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
-          "name": "Chris Boswell",
-          "player_id": "1945",
+          "name": "Ka'imi Fairbairn",
+          "player_id": "3451",
           "position": "K",
           "status": "Active",
-          "team": "PIT"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -267,11 +279,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "New York Jets",
-          "player_id": "NYJ",
+          "name": "New Orleans Saints",
+          "player_id": "NO",
           "position": "DEF",
           "status": null,
-          "team": "NYJ"
+          "team": "NO"
         }
       ],
       "bench": [
@@ -290,18 +302,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "IR",
-          "name": "Tyrone Tracy Jr.",
-          "player_id": "11655",
-          "position": "RB",
-          "status": "Inactive",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -314,6 +314,30 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Wentz",
+          "player_id": "3161",
+          "position": "QB",
+          "status": "Active",
+          "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "DK Metcalf",
+          "player_id": "5846",
+          "position": "WR",
+          "status": "Active",
+          "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Out",
@@ -322,18 +346,6 @@
           "position": "WR",
           "status": "Active",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Nico Collins",
-          "player_id": "7569",
-          "position": "WR",
-          "status": "Active",
-          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -344,6 +356,18 @@
         "username": null
       },
       "reserve": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "IR",
+          "name": "Tyrone Tracy Jr.",
+          "player_id": "11655",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "NYG"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -419,12 +443,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "DK Metcalf",
-          "player_id": "5846",
+          "name": "Nico Collins",
+          "player_id": "7569",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "PIT"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -484,12 +508,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Chris Boswell",
-          "player_id": "1945",
+          "name": "Ka'imi Fairbairn",
+          "player_id": "3451",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "PIT"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -497,12 +521,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "New York Jets",
-          "player_id": "NYJ",
+          "name": "New Orleans Saints",
+          "player_id": "NO",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "NYJ"
+          "team": "NO"
         }
       ],
       "taxi": [
@@ -2676,7 +2700,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Keon Coleman",
           "player_id": "11637",
           "position": "WR",
@@ -2918,7 +2942,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Keon Coleman",
           "player_id": "11637",
           "position": "WR",
@@ -3381,7 +3405,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kyler Murray",
           "player_id": "5849",
           "position": "QB",
@@ -3515,7 +3539,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kyler Murray",
           "player_id": "5849",
           "position": "QB",
@@ -3857,11 +3881,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Jordyn Tyson",
           "player_id": "13281",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NO"
         },
         {
@@ -4258,11 +4282,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Jordyn Tyson",
           "player_id": "13281",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NO"
         },
         {
@@ -5975,7 +5999,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
@@ -6040,7 +6064,7 @@
           "player_id": "8129",
           "position": "RB",
           "status": "Inactive",
-          "team": "PHI"
+          "team": null
         },
         {
           "active": true,
@@ -6138,7 +6162,7 @@
           "player_id": "8129",
           "position": "RB",
           "status": "Inactive",
-          "team": "PHI"
+          "team": null
         }
       ],
       "co_owners": [],
@@ -6248,7 +6272,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DJ Moore",
           "player_id": "4983",
           "position": "WR",
