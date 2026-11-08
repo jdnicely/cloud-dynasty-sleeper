@@ -2391,38 +2391,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Adonai Mitchell",
-          "player_id": "11625",
-          "position": "WR",
+          "name": "Tyler Shough",
+          "player_id": "12545",
+          "position": "QB",
           "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Harold Fannin Jr.",
-          "player_id": "12506",
-          "position": "TE",
-          "status": "Active",
-          "team": "CLE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Eli Stowers",
-          "player_id": "13349",
-          "position": "TE",
-          "status": "Active",
-          "team": "PHI"
+          "team": "NO"
         },
         {
           "active": true,
@@ -2430,11 +2406,35 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Christian McCaffrey",
-          "player_id": "4034",
+          "name": "Samaje Perine",
+          "player_id": "4147",
           "position": "RB",
           "status": "Active",
-          "team": "SF"
+          "team": "CIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Dallas Goedert",
+          "player_id": "5022",
+          "position": "TE",
+          "status": "Active",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Courtland Sutton",
+          "player_id": "5045",
+          "position": "WR",
+          "status": "Active",
+          "team": "DEN"
         },
         {
           "active": true,
@@ -2506,12 +2506,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Samaje Perine",
-          "player_id": "4147",
+          "name": "Christian McCaffrey",
+          "player_id": "4034",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CIN"
+          "team": "SF"
         },
         {
           "active": true,
@@ -2532,12 +2532,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Courtland Sutton",
-          "player_id": "5045",
+          "name": "Michael Wilson",
+          "player_id": "10232",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "DEN"
+          "team": "ARI"
         },
         {
           "active": true,
@@ -2558,12 +2558,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Dallas Goedert",
-          "player_id": "5022",
+          "name": "Harold Fannin Jr.",
+          "player_id": "12506",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "PHI"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -2571,12 +2571,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Michael Wilson",
-          "player_id": "10232",
+          "name": "Adonai Mitchell",
+          "player_id": "11625",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "ARI"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -2634,18 +2634,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Tyler Shough",
-          "player_id": "12545",
-          "position": "QB",
-          "status": "Active",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2666,6 +2654,18 @@
           "position": "TE",
           "status": "Active",
           "team": "NYJ"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": null,
+          "name": "Eli Stowers",
+          "player_id": "13349",
+          "position": "TE",
+          "status": "Active",
+          "team": "PHI"
         }
       ]
     },
@@ -4025,18 +4025,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ladd McConkey",
-          "player_id": "11635",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -4045,6 +4033,18 @@
           "position": "QB",
           "status": "Active",
           "team": "BAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "George Pickens",
+          "player_id": "8137",
+          "position": "WR",
+          "status": "Active",
+          "team": "DAL"
         },
         {
           "active": true,
@@ -4165,13 +4165,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "George Pickens",
-          "player_id": "8137",
+          "injury_status": null,
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "DAL"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4526,6 +4526,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "IR",
+          "name": "RJ Harvey",
+          "player_id": "12489",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -4538,38 +4550,26 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Khalil Shakir",
+          "player_id": "8134",
+          "position": "WR",
+          "status": "Active",
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
-          "name": "Isaiah Likely",
-          "player_id": "8131",
+          "name": "Chig Okonkwo",
+          "player_id": "8210",
           "position": "TE",
           "status": "Active",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Breece Hall",
-          "player_id": "8155",
-          "position": "RB",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Brock Purdy",
-          "player_id": "8183",
-          "position": "QB",
-          "status": "Active",
-          "team": "SF"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -4640,13 +4640,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
-          "name": "RJ Harvey",
-          "player_id": "12489",
+          "injury_status": null,
+          "name": "Breece Hall",
+          "player_id": "8155",
           "position": "RB",
           "starter_slot": "RB",
-          "status": "Inactive",
-          "team": "DEN"
+          "status": "Active",
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -4680,12 +4680,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Chig Okonkwo",
-          "player_id": "8210",
+          "name": "Isaiah Likely",
+          "player_id": "8131",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "WAS"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -4703,15 +4703,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Khalil Shakir",
-          "player_id": "8134",
-          "position": "WR",
+          "name": "Brock Purdy",
+          "player_id": "8183",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "BUF"
+          "team": "SF"
         },
         {
           "active": true,
