@@ -2940,6 +2940,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Bo Nix",
+          "player_id": "11563",
+          "position": "QB",
+          "status": "Active",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2984,18 +2996,6 @@
           "position": "TE",
           "status": "Active",
           "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Tank Dell",
-          "player_id": "9502",
-          "position": "WR",
-          "status": "Active",
-          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -3054,12 +3054,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
+          "name": "C.J. Stroud",
+          "player_id": "9758",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "DEN"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -3106,12 +3106,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
+          "name": "Tank Dell",
+          "player_id": "9502",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -3145,12 +3145,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "C.J. Stroud",
-          "player_id": "9758",
+          "name": "Shedeur Sanders",
+          "player_id": "12524",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "HOU"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -3195,14 +3195,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Shedeur Sanders",
-          "player_id": "12524",
-          "position": "QB",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
+          "position": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "TB"
         },
         {
           "active": true,
