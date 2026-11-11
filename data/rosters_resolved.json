@@ -132,18 +132,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Carson Wentz",
-          "player_id": "3161",
-          "position": "QB",
-          "status": "Active",
-          "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
@@ -290,18 +278,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "Xavier Worthy",
-          "player_id": "11624",
-          "position": "WR",
-          "status": "Active",
-          "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -317,11 +293,23 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Carson Wentz",
-          "player_id": "3161",
+          "name": "Fernando Mendoza",
+          "player_id": "13269",
           "position": "QB",
           "status": "Active",
-          "team": "MIN"
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "IR",
+          "name": "Lamar Jackson",
+          "player_id": "4881",
+          "position": "QB",
+          "status": "Inactive",
+          "team": "BAL"
         },
         {
           "active": true,
@@ -490,17 +478,15 @@
           "team": "JAX"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Lamar Jackson",
-          "player_id": "4881",
-          "position": "QB",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "SUPER_FLEX",
-          "status": "Inactive",
-          "team": "BAL"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -533,6 +519,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Xavier Worthy",
+          "player_id": "11624",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -553,18 +551,6 @@
           "position": "WR",
           "status": "Active",
           "team": "LAC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Fernando Mendoza",
-          "player_id": "13269",
-          "position": "QB",
-          "status": "Active",
-          "team": "LV"
         },
         {
           "active": true,
@@ -1129,7 +1115,7 @@
           "player_id": "1166",
           "position": "QB",
           "status": "Active",
-          "team": "LV"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -1527,7 +1513,7 @@
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "LV"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -1894,23 +1880,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jaylen Warren",
-          "player_id": "8228",
+          "name": "Jordan Mason",
+          "player_id": "8408",
           "position": "RB",
           "status": "Active",
-          "team": "PIT"
+          "team": "MIN"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Aaron Rodgers",
-          "player_id": "96",
-          "position": "QB",
-          "status": "Active",
-          "team": "PIT"
+          "injury_status": "Questionable",
+          "name": "Puka Nacua",
+          "player_id": "9493",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "LAR"
         },
         {
           "active": true,
@@ -1982,12 +1968,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Jordan Mason",
-          "player_id": "8408",
+          "name": "Jaylen Warren",
+          "player_id": "8228",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "MIN"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -2007,13 +1993,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Puka Nacua",
-          "player_id": "9493",
+          "injury_status": null,
+          "name": "Rashee Rice",
+          "player_id": "10229",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Inactive",
-          "team": "LAR"
+          "status": "Active",
+          "team": "KC"
         },
         {
           "active": true,
@@ -2044,15 +2030,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Rashee Rice",
-          "player_id": "10229",
-          "position": "WR",
+          "name": "Aaron Rodgers",
+          "player_id": "96",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "KC"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -2163,11 +2149,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Michael Wilson",
           "player_id": "10232",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -2531,12 +2517,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Michael Wilson",
           "player_id": "10232",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -3350,7 +3336,7 @@
           "player_id": "1479",
           "position": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "SF"
         },
         {
           "active": true,
@@ -3508,7 +3494,7 @@
           "player_id": "1479",
           "position": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "SF"
         },
         {
           "active": true,
@@ -3965,11 +3951,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Malik Willis",
           "player_id": "8161",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "MIA"
         },
         {
@@ -3982,7 +3968,7 @@
           "player_id": "9500",
           "position": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "KC"
         },
         {
           "active": true,
@@ -4056,7 +4042,7 @@
           "player_id": "9500",
           "position": "WR",
           "status": "Active",
-          "team": "IND"
+          "team": "KC"
         },
         {
           "active": true,
@@ -4217,12 +4203,12 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Malik Willis",
           "player_id": "8161",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": "Active",
+          "status": "Inactive",
           "team": "MIA"
         },
         {
@@ -5479,11 +5465,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Gardner Minshew II",
           "player_id": "6011",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -5556,7 +5542,7 @@
           "player_id": "9757",
           "position": "RB",
           "status": "Active",
-          "team": null
+          "team": "DAL"
         },
         {
           "active": true,
@@ -5601,11 +5587,11 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Gardner Minshew II",
           "player_id": "6011",
           "position": "QB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "ARI"
         },
         {
@@ -5630,7 +5616,7 @@
           "player_id": "9757",
           "position": "RB",
           "status": "Active",
-          "team": null
+          "team": "DAL"
         }
       ],
       "co_owners": [
