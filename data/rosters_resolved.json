@@ -5024,14 +5024,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Dalton Kincaid",
-          "player_id": "10236",
-          "position": "TE",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
+          "position": "RB",
           "status": "Active",
-          "team": "BUF"
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Baker Mayfield",
+          "player_id": "4892",
+          "position": "QB",
+          "status": "Active",
+          "team": "TB"
         },
         {
           "active": true,
@@ -5056,18 +5068,6 @@
           "position": "RB",
           "status": "Inactive",
           "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jordan Addison",
-          "player_id": "9756",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIN"
         },
         {
           "active": true,
@@ -5164,12 +5164,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Saquon Barkley",
-          "player_id": "4866",
+          "name": "Woody Marks",
+          "player_id": "12474",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "PHI"
+          "team": "HOU"
         },
         {
           "active": true,
@@ -5203,12 +5203,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
+          "name": "Dalton Kincaid",
+          "player_id": "10236",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "CHI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5226,15 +5226,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Baker Mayfield",
-          "player_id": "4892",
-          "position": "QB",
+          "name": "Jordan Addison",
+          "player_id": "9756",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "TB"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -5291,14 +5291,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Woody Marks",
-          "player_id": "12474",
-          "position": "RB",
+          "name": "Colston Loveland",
+          "player_id": "12517",
+          "position": "TE",
           "status": "Active",
-          "team": "HOU"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -6095,12 +6095,24 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Antonio Williams",
-          "player_id": "13301",
+          "injury_status": "Questionable",
+          "name": "Luther Burden III",
+          "player_id": "12519",
           "position": "WR",
           "status": "Active",
-          "team": "WAS"
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Jonah Coleman",
+          "player_id": "13345",
+          "position": "RB",
+          "status": "Active",
+          "team": "DEN"
         },
         {
           "active": true,
@@ -6125,18 +6137,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Out",
-          "name": "David Montgomery",
-          "player_id": "5892",
-          "position": "RB",
-          "status": "Active",
-          "team": "HOU"
         },
         {
           "active": true,
@@ -6232,26 +6232,26 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Jonah Coleman",
-          "player_id": "13345",
+          "injury_status": "Out",
+          "name": "David Montgomery",
+          "player_id": "5892",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "DEN"
+          "team": "HOU"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Luther Burden III",
-          "player_id": "12519",
+          "injury_status": null,
+          "name": "Antonio Williams",
+          "player_id": "13301",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "CHI"
+          "team": "WAS"
         },
         {
           "active": true,
