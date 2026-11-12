@@ -46,6 +46,16 @@
           "team": "NYG"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12494",
+          "player_id": "12494",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "RB"
@@ -276,6 +286,16 @@
       ],
       "bench": [
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12494",
+          "player_id": "12494",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -381,8 +401,8 @@
         "ppts_decimal": 18,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 64,
-        "waiver_position": 5,
+        "waiver_budget_used": 88,
+        "waiver_position": 9,
         "wins": 4
       },
       "starters": [
@@ -893,7 +913,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
-        "waiver_position": 4,
+        "waiver_position": 3,
         "wins": 3
       },
       "starters": [
@@ -1419,7 +1439,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 3,
+        "waiver_position": 2,
         "wins": 3
       },
       "starters": [
@@ -2479,7 +2499,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 11,
+        "waiver_position": 8,
         "wins": 5
       },
       "starters": [
@@ -2790,14 +2810,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "K"
           ],
           "injury_status": null,
-          "name": "Chris Godwin Jr.",
-          "player_id": "4037",
-          "position": "WR",
+          "name": "Dominic Zvada",
+          "player_id": "13833",
+          "position": "K",
           "status": "Active",
-          "team": "TB"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -2925,11 +2945,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
+          "name": "Green Bay Packers",
+          "player_id": "GB",
           "position": "DEF",
           "status": null,
-          "team": "DEN"
+          "team": "GB"
         }
       ],
       "bench": [
@@ -2962,24 +2982,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Ja'Kobi Lane",
-          "player_id": "13293",
+          "injury_status": "Questionable",
+          "name": "Denzel Boston",
+          "player_id": "13346",
           "position": "WR",
           "status": "Active",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Chris Godwin Jr.",
-          "player_id": "4037",
-          "position": "WR",
-          "status": "Active",
-          "team": "TB"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -2992,6 +3000,18 @@
           "position": "TE",
           "status": "Active",
           "team": "CIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
+          "name": "Chase McLaughlin",
+          "player_id": "6650",
+          "position": "K",
+          "status": "Active",
+          "team": "TB"
         }
       ],
       "co_owners": [],
@@ -3063,12 +3083,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Chase Brown",
-          "player_id": "9224",
+          "name": "Chuba Hubbard",
+          "player_id": "7594",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CIN"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -3076,12 +3096,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Chuba Hubbard",
-          "player_id": "7594",
+          "name": "James Cook III",
+          "player_id": "8138",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CAR"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -3128,12 +3148,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "James Cook III",
-          "player_id": "8138",
+          "name": "Chase Brown",
+          "player_id": "9224",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "BUF"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -3154,12 +3174,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
+          "name": "Dominic Zvada",
+          "player_id": "13833",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "TB"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -3167,12 +3187,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
+          "name": "Green Bay Packers",
+          "player_id": "GB",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "DEN"
+          "team": "GB"
         }
       ],
       "taxi": [
@@ -3229,12 +3249,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Denzel Boston",
-          "player_id": "13346",
+          "injury_status": null,
+          "name": "Ja'Kobi Lane",
+          "player_id": "13293",
           "position": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "BAL"
         }
       ]
     },
@@ -3265,6 +3285,16 @@
           "team": "LAC"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12718",
+          "player_id": "12718",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "QB"
@@ -3287,18 +3317,6 @@
           "position": "WR",
           "status": "Active",
           "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Malik Benson",
-          "player_id": "13329",
-          "position": "WR",
-          "status": "Active",
-          "team": "LV"
         },
         {
           "active": true,
@@ -3488,18 +3506,6 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Caleb Douglas",
-          "player_id": "13296",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
           "name": "Keenan Allen",
           "player_id": "1479",
           "position": "WR",
@@ -3541,6 +3547,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "Jaylen Waddle",
+          "player_id": "7526",
+          "position": "WR",
+          "status": "Active",
+          "team": "DEN"
         }
       ],
       "co_owners": [],
@@ -3564,7 +3582,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 25,
-        "waiver_position": 7,
+        "waiver_position": 5,
         "wins": 6
       },
       "starters": [
@@ -3600,12 +3618,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "D'Andre Swift",
-          "player_id": "6790",
+          "name": "Omarion Hampton",
+          "player_id": "12507",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -3621,17 +3639,15 @@
           "team": "NO"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "Jaylen Waddle",
-          "player_id": "7526",
-          "position": "WR",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12718",
+          "player_id": "12718",
+          "position": null,
           "starter_slot": "WR",
-          "status": "Active",
-          "team": "DEN"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -3652,12 +3668,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Omarion Hampton",
-          "player_id": "12507",
+          "name": "D'Andre Swift",
+          "player_id": "6790",
           "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "LAC"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -3718,11 +3734,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Malik Benson",
-          "player_id": "13329",
+          "name": "Caleb Douglas",
+          "player_id": "13296",
           "position": "WR",
           "status": "Active",
-          "team": "LV"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -4125,7 +4141,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
-        "waiver_position": 9,
+        "waiver_position": 6,
         "wins": 3
       },
       "starters": [
@@ -4364,18 +4380,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": "IR",
-          "name": "Tyler Loop",
-          "player_id": "12711",
-          "position": "K",
-          "status": "Inactive",
-          "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -4396,6 +4400,18 @@
           "position": "WR",
           "status": "Active",
           "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
+          "name": "Tyler Bass",
+          "player_id": "7042",
+          "position": "K",
+          "status": "Active",
+          "team": "BUF"
         },
         {
           "active": true,
@@ -4558,6 +4574,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
+          "name": "Tyler Bass",
+          "player_id": "7042",
+          "position": "K",
+          "status": "Active",
+          "team": "BUF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -4601,7 +4629,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 2,
+        "waiver_position": 11,
         "wins": 4
       },
       "starters": [
@@ -4710,17 +4738,15 @@
           "team": "BUF"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": "IR",
-          "name": "Tyler Loop",
-          "player_id": "12711",
-          "position": "K",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "K",
-          "status": "Inactive",
-          "team": "BAL"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5046,18 +5072,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Dak Prescott",
-          "player_id": "3294",
-          "position": "QB",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -5078,6 +5092,18 @@
           "position": "QB",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Jordan Addison",
+          "player_id": "9756",
+          "position": "WR",
+          "status": "Active",
+          "team": "MIN"
         },
         {
           "active": true,
@@ -5138,7 +5164,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 160,
-        "waiver_position": 10,
+        "waiver_position": 7,
         "wins": 8
       },
       "starters": [
@@ -5236,15 +5262,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Jordan Addison",
-          "player_id": "9756",
-          "position": "WR",
+          "name": "Dak Prescott",
+          "player_id": "3294",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "MIN"
+          "team": "DAL"
         },
         {
           "active": true,
@@ -5682,7 +5708,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
-        "waiver_position": 6,
+        "waiver_position": 4,
         "wins": 3
       },
       "starters": [
@@ -5919,6 +5945,16 @@
           "team": "MIN"
         },
         {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12491",
+          "player_id": "12491",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
           "active": true,
           "fantasy_positions": [
             "WR"
@@ -6135,6 +6171,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "David Montgomery",
+          "player_id": "5892",
+          "position": "RB",
+          "status": "Active",
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -6182,8 +6230,8 @@
         "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 135,
-        "waiver_position": 8,
+        "waiver_budget_used": 155,
+        "waiver_position": 10,
         "wins": 7
       },
       "starters": [
@@ -6214,17 +6262,15 @@
           "team": "DAL"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "David Montgomery",
-          "player_id": "5892",
-          "position": "RB",
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12491",
+          "player_id": "12491",
+          "position": null,
           "starter_slot": "RB",
-          "status": "Active",
-          "team": "HOU"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
