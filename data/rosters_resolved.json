@@ -1193,18 +1193,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Dak Prescott",
-          "player_id": "3294",
-          "position": "QB",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -1213,18 +1201,6 @@
           "position": "RB",
           "status": "Active",
           "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Tony Pollard",
-          "player_id": "5967",
-          "position": "RB",
-          "status": "Active",
-          "team": "TEN"
         },
         {
           "active": true,
@@ -1241,6 +1217,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "IR",
+          "name": "Jalen Hurts",
+          "player_id": "6904",
+          "position": "QB",
+          "status": "Inactive",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -1249,6 +1237,18 @@
           "position": "TE",
           "status": "Active",
           "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Out",
+          "name": "DeVonta Smith",
+          "player_id": "7525",
+          "position": "WR",
+          "status": "Active",
+          "team": "PHI"
         },
         {
           "active": true,
@@ -1351,14 +1351,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Tony Pollard",
-          "player_id": "5967",
-          "position": "RB",
+          "injury_status": "Out",
+          "name": "DeVonta Smith",
+          "player_id": "7525",
+          "position": "WR",
           "status": "Active",
-          "team": "TEN"
+          "team": "PHI"
         },
         {
           "active": true,
@@ -1392,6 +1392,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "SF"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "IR",
+          "name": "Jalen Hurts",
+          "player_id": "6904",
+          "position": "QB",
+          "status": "Inactive",
+          "team": "PHI"
         }
       ],
       "roster_id": 3,
@@ -1417,12 +1429,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Dak Prescott",
-          "player_id": "3294",
+          "name": "Kirk Cousins",
+          "player_id": "1166",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "DAL"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -1503,17 +1515,15 @@
           "team": "CAR"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Kirk Cousins",
-          "player_id": "1166",
-          "position": "QB",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "SUPER_FLEX",
-          "status": "Active",
-          "team": "MIN"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -4011,26 +4021,38 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Jacoby Brissett",
-          "player_id": "3257",
-          "position": "QB",
+          "name": "Braelon Allen",
+          "player_id": "11576",
+          "position": "RB",
           "status": "Active",
-          "team": "BAL"
+          "team": "NYJ"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Bucky Irving",
+          "player_id": "11584",
+          "position": "RB",
+          "status": "Active",
+          "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
           ],
           "injury_status": "Out",
-          "name": "George Pickens",
-          "player_id": "8137",
-          "position": "WR",
+          "name": "Rhamondre Stevenson",
+          "player_id": "7611",
+          "position": "RB",
           "status": "Active",
-          "team": "DAL"
+          "team": "NE"
         },
         {
           "active": true,
@@ -4043,18 +4065,6 @@
           "position": "WR",
           "status": "Active",
           "team": "KC"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Zach Charbonnet",
-          "player_id": "9753",
-          "position": "RB",
-          "status": "Active",
-          "team": "SEA"
         },
         {
           "active": true,
@@ -4088,6 +4098,18 @@
           "position": "QB",
           "status": "Inactive",
           "team": "NYG"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "IR",
+          "name": "Malik Willis",
+          "player_id": "8161",
+          "position": "QB",
+          "status": "Inactive",
+          "team": "MIA"
         }
       ],
       "roster_id": 8,
@@ -4126,25 +4148,25 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Bucky Irving",
-          "player_id": "11584",
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "TB"
+          "team": "SEA"
         },
         {
           "active": true,
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
-          "name": "Rhamondre Stevenson",
-          "player_id": "7611",
+          "injury_status": null,
+          "name": "Blake Corum",
+          "player_id": "11586",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "NE"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -4188,28 +4210,28 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
-          "position": "RB",
+          "injury_status": "Out",
+          "name": "George Pickens",
+          "player_id": "8137",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "NYJ"
+          "team": "DAL"
         },
         {
           "active": true,
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "IR",
-          "name": "Malik Willis",
-          "player_id": "8161",
+          "injury_status": null,
+          "name": "Jacoby Brissett",
+          "player_id": "3257",
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": "Inactive",
-          "team": "MIA"
+          "status": "Active",
+          "team": "BAL"
         },
         {
           "active": true,
@@ -4239,18 +4261,6 @@
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Blake Corum",
-          "player_id": "11586",
-          "position": "RB",
-          "status": "Active",
-          "team": "LAR"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -4512,6 +4522,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Caleb Williams",
+          "player_id": "11560",
+          "position": "QB",
+          "status": "Active",
+          "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "IR",
@@ -4532,18 +4554,6 @@
           "position": "WR",
           "status": "Active",
           "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Khalil Shakir",
-          "player_id": "8134",
-          "position": "WR",
-          "status": "Active",
-          "team": "BUF"
         },
         {
           "active": true,
@@ -4601,12 +4611,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Caleb Williams",
-          "player_id": "11560",
+          "name": "Brock Purdy",
+          "player_id": "8183",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "CHI"
+          "team": "SF"
         },
         {
           "active": true,
@@ -4689,15 +4699,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Brock Purdy",
-          "player_id": "8183",
-          "position": "QB",
+          "name": "Khalil Shakir",
+          "player_id": "8134",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "SF"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -4866,6 +4876,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Dak Prescott",
+          "player_id": "3294",
+          "position": "QB",
+          "status": "Active",
+          "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -4902,6 +4924,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Tony Pollard",
+          "player_id": "5967",
+          "position": "RB",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -4922,30 +4956,6 @@
           "position": "WR",
           "status": "Active",
           "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Jalen Hurts",
-          "player_id": "6904",
-          "position": "QB",
-          "status": "Inactive",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Out",
-          "name": "DeVonta Smith",
-          "player_id": "7525",
-          "position": "WR",
-          "status": "Active",
-          "team": "PHI"
         },
         {
           "active": true,
@@ -5024,6 +5034,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Dak Prescott",
+          "player_id": "3294",
+          "position": "QB",
+          "status": "Active",
+          "team": "DAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -5048,14 +5070,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Out",
-          "name": "DeVonta Smith",
-          "player_id": "7525",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Tony Pollard",
+          "player_id": "5967",
+          "position": "RB",
           "status": "Active",
-          "team": "PHI"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -5090,18 +5112,6 @@
         "username": null
       },
       "reserve": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Jalen Hurts",
-          "player_id": "6904",
-          "position": "QB",
-          "status": "Inactive",
-          "team": "PHI"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -6043,18 +6053,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Dameon Pierce",
-          "player_id": "8129",
-          "position": "RB",
-          "status": "Inactive",
-          "team": null
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "IR",
@@ -6137,18 +6135,6 @@
           "position": "WR",
           "status": "Inactive",
           "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Dameon Pierce",
-          "player_id": "8129",
-          "position": "RB",
-          "status": "Inactive",
-          "team": null
         }
       ],
       "co_owners": [],
