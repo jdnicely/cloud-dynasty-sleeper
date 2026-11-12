@@ -3506,6 +3506,18 @@
             "WR"
           ],
           "injury_status": null,
+          "name": "Caleb Douglas",
+          "player_id": "13296",
+          "position": "WR",
+          "status": "Active",
+          "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Keenan Allen",
           "player_id": "1479",
           "position": "WR",
@@ -3727,18 +3739,6 @@
           "position": "QB",
           "status": "Active",
           "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Caleb Douglas",
-          "player_id": "13296",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIA"
         },
         {
           "active": true,
