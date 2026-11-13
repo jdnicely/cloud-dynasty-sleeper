@@ -46,14 +46,16 @@
           "team": "NYG"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "12494",
+          "name": "Kyle McCord",
           "player_id": "12494",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -72,7 +74,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tre' Harris",
           "player_id": "12509",
           "position": "WR",
@@ -286,14 +288,16 @@
       ],
       "bench": [
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "12494",
+          "name": "Kyle McCord",
           "player_id": "12494",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -565,7 +569,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tre' Harris",
           "player_id": "12509",
           "position": "WR",
@@ -725,7 +729,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyler Higbee",
           "player_id": "3271",
           "position": "TE",
@@ -987,7 +991,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tyler Higbee",
           "player_id": "3271",
           "position": "TE",
@@ -1215,12 +1219,24 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alvin Kamara",
           "player_id": "4035",
           "position": "RB",
           "status": "Active",
           "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Drew Lock",
+          "player_id": "5854",
+          "position": "QB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -1324,11 +1340,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Philadelphia Eagles",
-          "player_id": "PHI",
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
           "position": "DEF",
           "status": null,
-          "team": "PHI"
+          "team": "BAL"
         }
       ],
       "bench": [
@@ -1361,7 +1377,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Alvin Kamara",
           "player_id": "4035",
           "position": "RB",
@@ -1535,15 +1551,17 @@
           "team": "CAR"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
-          "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Drew Lock",
+          "player_id": "5854",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -1564,12 +1582,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Philadelphia Eagles",
-          "player_id": "PHI",
+          "name": "Baltimore Ravens",
+          "player_id": "BAL",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "PHI"
+          "team": "BAL"
         }
       ],
       "taxi": [
@@ -1763,7 +1781,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jared Goff",
           "player_id": "3163",
           "position": "QB",
@@ -1835,11 +1853,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "LAR"
         },
         {
@@ -1921,11 +1939,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "LAR"
         },
         {
@@ -1971,7 +1989,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jared Goff",
           "player_id": "3163",
           "position": "QB",
@@ -2321,18 +2339,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Samaje Perine",
-          "player_id": "4147",
-          "position": "RB",
-          "status": "Active",
-          "team": "CIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -2381,6 +2387,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "DeMario Douglas",
+          "player_id": "9501",
+          "position": "WR",
+          "status": "Active",
+          "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -2419,14 +2437,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Samaje Perine",
-          "player_id": "4147",
-          "position": "RB",
+          "injury_status": "Questionable",
+          "name": "Chris Bell",
+          "player_id": "13311",
+          "position": "WR",
           "status": "Active",
-          "team": "CIN"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -2484,6 +2502,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "GB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "IR",
+          "name": "Michael Wilson",
+          "player_id": "10232",
+          "position": "WR",
+          "status": "Inactive",
+          "team": "ARI"
         }
       ],
       "roster_id": 5,
@@ -2547,13 +2577,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "IR",
-          "name": "Michael Wilson",
-          "player_id": "10232",
+          "injury_status": null,
+          "name": "DeMario Douglas",
+          "player_id": "9501",
           "position": "WR",
           "starter_slot": "WR",
-          "status": "Inactive",
-          "team": "ARI"
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
@@ -2646,18 +2676,6 @@
           "position": "WR",
           "status": "Active",
           "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Chris Bell",
-          "player_id": "13311",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIA"
         },
         {
           "active": true,
@@ -2920,7 +2938,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
@@ -3121,7 +3139,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tank Dell",
           "player_id": "9502",
           "position": "WR",
@@ -3285,14 +3303,16 @@
           "team": "LAC"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12718",
+          "name": "Konata Mumpfield",
           "player_id": "12718",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3503,30 +3523,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Caleb Douglas",
-          "player_id": "13296",
-          "position": "WR",
-          "status": "Active",
-          "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Keenan Allen",
-          "player_id": "1479",
-          "position": "WR",
-          "status": "Active",
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -3559,6 +3555,18 @@
           "position": "QB",
           "status": "Active",
           "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "D'Andre Swift",
+          "player_id": "6790",
+          "position": "RB",
+          "status": "Active",
+          "team": "CHI"
         },
         {
           "active": true,
@@ -3651,15 +3659,17 @@
           "team": "NO"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12718",
+          "name": "Konata Mumpfield",
           "player_id": "12718",
-          "position": null,
+          "position": "WR",
           "starter_slot": "WR",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3677,15 +3687,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "D'Andre Swift",
-          "player_id": "6790",
-          "position": "RB",
+          "name": "Keenan Allen",
+          "player_id": "1479",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "CHI"
+          "team": "SF"
         },
         {
           "active": true,
@@ -3739,6 +3749,18 @@
           "position": "QB",
           "status": "Active",
           "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Caleb Douglas",
+          "player_id": "13296",
+          "position": "WR",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -3941,7 +3963,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Questionable",
           "name": "Rhamondre Stevenson",
           "player_id": "7611",
           "position": "RB",
@@ -4063,7 +4085,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Questionable",
           "name": "Rhamondre Stevenson",
           "player_id": "7611",
           "position": "RB",
@@ -4502,7 +4524,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chig Okonkwo",
           "player_id": "8210",
           "position": "TE",
@@ -4588,7 +4610,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Chig Okonkwo",
           "player_id": "8210",
           "position": "TE",
@@ -4952,7 +4974,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tony Pollard",
           "player_id": "5967",
           "position": "RB",
@@ -5199,7 +5221,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Tony Pollard",
           "player_id": "5967",
           "position": "RB",
@@ -5369,6 +5391,18 @@
           "fantasy_positions": [
             "RB"
           ],
+          "injury_status": null,
+          "name": "Audric Estime",
+          "player_id": "11579",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": "IR",
           "name": "Jonathon Brooks",
           "player_id": "11583",
@@ -5453,7 +5487,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Trey Smack",
           "player_id": "13545",
           "position": "K",
@@ -5513,7 +5547,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Justin Herbert",
           "player_id": "6797",
           "position": "QB",
@@ -5571,26 +5605,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kendre Miller",
-          "player_id": "9757",
-          "position": "RB",
-          "status": "Active",
-          "team": "DAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
-          "name": "Chicago Bears",
-          "player_id": "CHI",
+          "name": "Indianapolis Colts",
+          "player_id": "IND",
           "position": "DEF",
           "status": null,
-          "team": "CHI"
+          "team": "IND"
         }
       ],
       "bench": [
@@ -5605,6 +5627,18 @@
           "position": "QB",
           "status": "Active",
           "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Out",
+          "name": "Josh Jacobs",
+          "player_id": "5850",
+          "position": "RB",
+          "status": "Active",
+          "team": "GB"
         },
         {
           "active": true,
@@ -5641,18 +5675,6 @@
           "position": "WR",
           "status": "Active",
           "team": "DET"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Kendre Miller",
-          "player_id": "9757",
-          "position": "RB",
-          "status": "Active",
-          "team": "DAL"
         }
       ],
       "co_owners": [
@@ -5717,7 +5739,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Justin Herbert",
           "player_id": "6797",
           "position": "QB",
@@ -5743,13 +5765,13 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
-          "name": "Josh Jacobs",
-          "player_id": "5850",
+          "injury_status": null,
+          "name": "Audric Estime",
+          "player_id": "11579",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "GB"
+          "team": "NO"
         },
         {
           "active": true,
@@ -5821,7 +5843,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Trey Smack",
           "player_id": "13545",
           "position": "K",
@@ -5835,12 +5857,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Chicago Bears",
-          "player_id": "CHI",
+          "name": "Indianapolis Colts",
+          "player_id": "IND",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "CHI"
+          "team": "IND"
         }
       ],
       "taxi": [
@@ -5945,14 +5967,16 @@
           "team": "MIN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "12491",
+          "name": "Corey Kiner",
           "player_id": "12491",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "RB",
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
@@ -6262,15 +6286,17 @@
           "team": "DAL"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "12491",
+          "name": "Corey Kiner",
           "player_id": "12491",
-          "position": null,
+          "position": "RB",
           "starter_slot": "RB",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
