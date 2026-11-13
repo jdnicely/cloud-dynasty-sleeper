@@ -3512,11 +3512,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Tampa Bay Buccaneers",
-          "player_id": "TB",
+          "name": "Buffalo Bills",
+          "player_id": "BUF",
           "position": "DEF",
           "status": null,
-          "team": "TB"
+          "team": "BUF"
         }
       ],
       "bench": [
@@ -3729,12 +3729,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Tampa Bay Buccaneers",
-          "player_id": "TB",
+          "name": "Buffalo Bills",
+          "player_id": "BUF",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "TB"
+          "team": "BUF"
         }
       ],
       "taxi": [
@@ -4596,18 +4596,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Tyler Bass",
-          "player_id": "7042",
-          "position": "K",
-          "status": "Active",
-          "team": "BUF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": "Questionable",
@@ -4760,15 +4748,17 @@
           "team": "BUF"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Tyler Bass",
+          "player_id": "7042",
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "BUF"
         },
         {
           "active": true,
