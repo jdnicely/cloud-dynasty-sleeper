@@ -293,47 +293,11 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Kyle McCord",
-          "player_id": "12494",
-          "position": "QB",
-          "status": "Active",
-          "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Cam Ward",
-          "player_id": "12522",
-          "position": "QB",
-          "status": "Active",
-          "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
           "name": "Fernando Mendoza",
           "player_id": "13269",
           "position": "QB",
           "status": "Active",
           "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Lamar Jackson",
-          "player_id": "4881",
-          "position": "QB",
-          "status": "Inactive",
-          "team": "BAL"
         },
         {
           "active": true,
@@ -358,6 +322,30 @@
           "position": "WR",
           "status": "Active",
           "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Travis Etienne Jr.",
+          "player_id": "7543",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Out",
+          "name": "Kenneth Walker III",
+          "player_id": "8151",
+          "position": "RB",
+          "status": "Active",
+          "team": "KC"
         }
       ],
       "co_owners": [],
@@ -383,14 +371,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
-          "injury_status": "Questionable",
-          "name": "Travis Etienne Jr.",
-          "player_id": "7543",
-          "position": "RB",
-          "status": "Active",
-          "team": "NO"
+          "injury_status": "IR",
+          "name": "Lamar Jackson",
+          "player_id": "4881",
+          "position": "QB",
+          "status": "Inactive",
+          "team": "BAL"
         }
       ],
       "roster_id": 1,
@@ -441,9 +429,9 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
-          "name": "Kenneth Walker III",
-          "player_id": "8151",
+          "injury_status": null,
+          "name": "Emmett Johnson",
+          "player_id": "13337",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
@@ -502,15 +490,17 @@
           "team": "JAX"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Cam Ward",
+          "player_id": "12522",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -555,6 +545,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Kyle McCord",
+          "player_id": "12494",
+          "position": "QB",
+          "status": "Active",
+          "team": "MIA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -587,18 +589,6 @@
           "position": "WR",
           "status": "Active",
           "team": "TEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Emmett Johnson",
-          "player_id": "13337",
-          "position": "RB",
-          "status": "Active",
-          "team": "KC"
         }
       ]
     },
