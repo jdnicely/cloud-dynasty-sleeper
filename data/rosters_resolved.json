@@ -206,11 +206,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Travis Etienne Jr.",
           "player_id": "7543",
           "position": "RB",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NO"
         },
         {
@@ -254,7 +254,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kenneth Walker III",
           "player_id": "8151",
           "position": "RB",
@@ -385,11 +385,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": "Questionable",
           "name": "Travis Etienne Jr.",
           "player_id": "7543",
           "position": "RB",
-          "status": "Inactive",
+          "status": "Active",
           "team": "NO"
         }
       ],
@@ -441,7 +441,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kenneth Walker III",
           "player_id": "8151",
           "position": "RB",
@@ -1927,11 +1927,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Los Angeles Rams",
-          "player_id": "LAR",
+          "name": "Houston Texans",
+          "player_id": "HOU",
           "position": "DEF",
           "status": null,
-          "team": "LAR"
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -2082,12 +2082,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Houston Texans",
-          "player_id": "HOU",
+          "name": "Los Angeles Rams",
+          "player_id": "LAR",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "HOU"
+          "team": "LAR"
         }
       ],
       "taxi": [
@@ -3626,12 +3626,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Chris Olave",
-          "player_id": "8144",
+          "name": "Keenan Allen",
+          "player_id": "1479",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "NO"
+          "team": "SF"
         },
         {
           "active": true,
@@ -3665,12 +3665,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Keenan Allen",
-          "player_id": "1479",
+          "name": "Chris Olave",
+          "player_id": "8144",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "SF"
+          "team": "NO"
         },
         {
           "active": true,
@@ -3878,11 +3878,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NE"
         },
         {
@@ -4279,11 +4279,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Out",
+          "injury_status": "IR",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "NE"
         },
         {
@@ -6032,7 +6032,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "David Montgomery",
           "player_id": "5892",
           "position": "RB",
@@ -6166,7 +6166,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "David Montgomery",
           "player_id": "5892",
           "position": "RB",
