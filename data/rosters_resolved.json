@@ -110,7 +110,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Omar Cooper Jr.",
           "player_id": "13276",
           "position": "WR",
@@ -182,7 +182,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
@@ -206,7 +206,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Etienne Jr.",
           "player_id": "7543",
           "position": "RB",
@@ -316,7 +316,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
@@ -328,7 +328,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Travis Etienne Jr.",
           "player_id": "7543",
           "position": "RB",
@@ -455,7 +455,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Omar Cooper Jr.",
           "player_id": "13276",
           "position": "WR",
@@ -1256,7 +1256,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Amon-Ra St. Brown",
           "player_id": "7547",
           "position": "WR",
@@ -1268,7 +1268,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
@@ -1366,7 +1366,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
@@ -1481,7 +1481,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Amon-Ra St. Brown",
           "player_id": "7547",
           "position": "WR",
@@ -1638,7 +1638,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Brock Bowers",
           "player_id": "11604",
           "position": "TE",
@@ -1674,7 +1674,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drew Allar",
           "player_id": "13289",
           "position": "QB",
@@ -1722,7 +1722,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -2019,7 +2019,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Brock Bowers",
           "player_id": "11604",
           "position": "TE",
@@ -2032,7 +2032,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
@@ -2098,7 +2098,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drew Allar",
           "player_id": "13289",
           "position": "QB",
@@ -2186,7 +2186,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Adonai Mitchell",
           "player_id": "11625",
           "position": "WR",
@@ -2246,7 +2246,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Chris Bell",
           "player_id": "13311",
           "position": "WR",
@@ -2366,7 +2366,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
@@ -2404,7 +2404,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Doubtful",
+          "injury_status": "Out",
           "name": "Chris Bell",
           "player_id": "13311",
           "position": "WR",
@@ -2440,7 +2440,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
@@ -2581,7 +2581,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Adonai Mitchell",
           "player_id": "11625",
           "position": "WR",
@@ -2783,7 +2783,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Denzel Boston",
           "player_id": "13346",
           "position": "WR",
@@ -2939,18 +2939,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
-          "position": "QB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2965,7 +2953,19 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
+          "name": "Ja'Kobi Lane",
+          "player_id": "13293",
+          "position": "WR",
+          "status": "Active",
+          "team": "BAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
           "name": "Denzel Boston",
           "player_id": "13346",
           "position": "WR",
@@ -3182,6 +3182,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Bo Nix",
+          "player_id": "11563",
+          "position": "QB",
+          "status": "Active",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Out",
@@ -3226,18 +3238,6 @@
           "position": "RB",
           "status": "Active",
           "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ja'Kobi Lane",
-          "player_id": "13293",
-          "position": "WR",
-          "status": "Active",
-          "team": "BAL"
         }
       ]
     },
@@ -3248,7 +3248,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drake Maye",
           "player_id": "11564",
           "position": "QB",
@@ -3284,7 +3284,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3576,7 +3576,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Drake Maye",
           "player_id": "11564",
           "position": "QB",
@@ -3708,7 +3708,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Ty Simpson",
           "player_id": "13275",
           "position": "QB",
@@ -3832,7 +3832,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Ladd McConkey",
           "player_id": "11635",
           "position": "WR",
@@ -3928,7 +3928,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rhamondre Stevenson",
           "player_id": "7611",
           "position": "RB",
@@ -4050,7 +4050,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rhamondre Stevenson",
           "player_id": "7611",
           "position": "RB",
@@ -4176,7 +4176,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Ladd McConkey",
           "player_id": "11635",
           "position": "WR",
@@ -4405,7 +4405,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Drake London",
           "player_id": "8112",
           "position": "WR",
@@ -4652,7 +4652,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Drake London",
           "player_id": "8112",
           "position": "WR",
@@ -4821,7 +4821,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Woody Marks",
           "player_id": "12474",
           "position": "RB",
@@ -4905,7 +4905,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Baker Mayfield",
           "player_id": "4892",
           "position": "QB",
@@ -5001,7 +5001,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jordan Addison",
           "player_id": "9756",
           "position": "WR",
@@ -5039,7 +5039,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Woody Marks",
           "player_id": "12474",
           "position": "RB",
@@ -5063,7 +5063,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Baker Mayfield",
           "player_id": "4892",
           "position": "QB",
@@ -5075,7 +5075,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Jordan Addison",
           "player_id": "9756",
           "position": "WR",
@@ -5514,7 +5514,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Garrett Wilson",
           "player_id": "8146",
           "position": "WR",
@@ -5746,7 +5746,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Garrett Wilson",
           "player_id": "8146",
           "position": "WR",
@@ -5986,7 +5986,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Geno Smith",
           "player_id": "1373",
           "position": "QB",
@@ -6132,7 +6132,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Geno Smith",
           "player_id": "1373",
           "position": "QB",
