@@ -384,13 +384,13 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 973,
-        "fpts_against": 964,
-        "fpts_against_decimal": 74,
-        "fpts_decimal": 28,
-        "losses": 5,
-        "ppts": 1125,
-        "ppts_decimal": 18,
+        "fpts": 1076,
+        "fpts_against": 1120,
+        "fpts_against_decimal": 2,
+        "fpts_decimal": 62,
+        "losses": 6,
+        "ppts": 1255,
+        "ppts_decimal": 64,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 88,
@@ -659,7 +659,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Elijah Sarratt",
           "player_id": "13268",
           "position": "WR",
@@ -872,18 +872,18 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 900,
-        "fpts_against": 1028,
-        "fpts_against_decimal": 14,
-        "fpts_decimal": 38,
+        "fpts": 1032,
+        "fpts_against": 1152,
+        "fpts_against_decimal": 60,
+        "fpts_decimal": 62,
         "losses": 6,
-        "ppts": 1079,
-        "ppts_decimal": 66,
+        "ppts": 1221,
+        "ppts_decimal": 40,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
         "waiver_position": 3,
-        "wins": 3
+        "wins": 4
       },
       "starters": [
         {
@@ -1035,7 +1035,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Elijah Sarratt",
           "player_id": "13268",
           "position": "WR",
@@ -1410,13 +1410,13 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 1068,
-        "fpts_against": 1149,
-        "fpts_against_decimal": 32,
-        "fpts_decimal": 50,
-        "losses": 6,
-        "ppts": 1234,
-        "ppts_decimal": 84,
+        "fpts": 1180,
+        "fpts_against": 1309,
+        "fpts_against_decimal": 18,
+        "fpts_decimal": 8,
+        "losses": 7,
+        "ppts": 1371,
+        "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -1935,18 +1935,18 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 1286,
-        "fpts_against": 1238,
-        "fpts_against_decimal": 68,
-        "fpts_decimal": 60,
+        "fpts": 1435,
+        "fpts_against": 1358,
+        "fpts_against_decimal": 74,
+        "fpts_decimal": 4,
         "losses": 4,
-        "ppts": 1363,
-        "ppts_decimal": 24,
+        "ppts": 1519,
+        "ppts_decimal": 38,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 1,
-        "wins": 5
+        "wins": 6
       },
       "starters": [
         {
@@ -2484,18 +2484,18 @@
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 1020,
-        "fpts_against": 974,
-        "fpts_against_decimal": 54,
-        "fpts_decimal": 54,
+        "fpts": 1175,
+        "fpts_against": 1077,
+        "fpts_against_decimal": 88,
+        "fpts_decimal": 82,
         "losses": 4,
-        "ppts": 1213,
-        "ppts_decimal": 42,
+        "ppts": 1371,
+        "ppts_decimal": 10,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 8,
-        "wins": 5
+        "wins": 6
       },
       "starters": [
         {
@@ -2939,6 +2939,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Bo Nix",
+          "player_id": "11563",
+          "position": "QB",
+          "status": "Active",
+          "team": "DEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -2954,11 +2966,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Ja'Kobi Lane",
-          "player_id": "13293",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "status": "Active",
-          "team": "BAL"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3033,13 +3045,13 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 937,
-        "fpts_against": 1058,
-        "fpts_against_decimal": 40,
-        "fpts_decimal": 34,
-        "losses": 6,
-        "ppts": 1175,
-        "ppts_decimal": 92,
+        "fpts": 1061,
+        "fpts_against": 1190,
+        "fpts_against_decimal": 64,
+        "fpts_decimal": 80,
+        "losses": 7,
+        "ppts": 1306,
+        "ppts_decimal": 56,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3139,17 +3151,15 @@
           "team": "CIN"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Carson Beck",
-          "player_id": "13272",
-          "position": "QB",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "SUPER_FLEX",
-          "status": "Active",
-          "team": "ARI"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -3182,18 +3192,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
-          "position": "QB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": "Out",
@@ -3202,18 +3200,6 @@
           "position": "WR",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
-          "position": "WR",
-          "status": "Active",
-          "team": "TB"
         },
         {
           "active": true,
@@ -3238,6 +3224,30 @@
           "position": "RB",
           "status": "Active",
           "team": "CHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Carson Beck",
+          "player_id": "13272",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Ja'Kobi Lane",
+          "player_id": "13293",
+          "position": "WR",
+          "status": "Active",
+          "team": "BAL"
         }
       ]
     },
@@ -3557,13 +3567,13 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 1104,
-        "fpts_against": 1039,
-        "fpts_against_decimal": 92,
-        "fpts_decimal": 52,
-        "losses": 3,
-        "ppts": 1200,
-        "ppts_decimal": 16,
+        "fpts": 1201,
+        "fpts_against": 1156,
+        "fpts_against_decimal": 28,
+        "fpts_decimal": 44,
+        "losses": 4,
+        "ppts": 1319,
+        "ppts_decimal": 54,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 25,
@@ -4118,18 +4128,18 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 1092,
-        "fpts_against": 1263,
-        "fpts_against_decimal": 70,
-        "fpts_decimal": 48,
+        "fpts": 1225,
+        "fpts_against": 1378,
+        "fpts_against_decimal": 4,
+        "fpts_decimal": 52,
         "losses": 6,
-        "ppts": 1228,
-        "ppts_decimal": 22,
+        "ppts": 1396,
+        "ppts_decimal": 76,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
         "waiver_position": 6,
-        "wins": 3
+        "wins": 4
       },
       "starters": [
         {
@@ -4594,18 +4604,18 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 1039,
-        "fpts_against": 963,
-        "fpts_against_decimal": 44,
-        "fpts_decimal": 24,
+        "fpts": 1155,
+        "fpts_against": 1060,
+        "fpts_against_decimal": 36,
+        "fpts_decimal": 60,
         "losses": 5,
-        "ppts": 1118,
-        "ppts_decimal": 64,
+        "ppts": 1241,
+        "ppts_decimal": 30,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
         "waiver_position": 11,
-        "wins": 4
+        "wins": 5
       },
       "starters": [
         {
@@ -5005,7 +5015,7 @@
           "name": "Jordan Addison",
           "player_id": "9756",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "MIN"
         },
         {
@@ -5079,7 +5089,7 @@
           "name": "Jordan Addison",
           "player_id": "9756",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "MIN"
         },
         {
@@ -5131,18 +5141,18 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 1232,
-        "fpts_against": 1026,
-        "fpts_against_decimal": 92,
-        "fpts_decimal": 24,
+        "fpts": 1392,
+        "fpts_against": 1138,
+        "fpts_against_decimal": 50,
+        "fpts_decimal": 10,
         "losses": 1,
-        "ppts": 1342,
-        "ppts_decimal": 62,
+        "ppts": 1502,
+        "ppts_decimal": 48,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 160,
         "waiver_position": 7,
-        "wins": 8
+        "wins": 9
       },
       "starters": [
         {
@@ -5675,13 +5685,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 992,
-        "fpts_against": 1026,
-        "fpts_against_decimal": 82,
-        "fpts_decimal": 30,
-        "losses": 6,
-        "ppts": 1100,
-        "ppts_decimal": 82,
+        "fpts": 1112,
+        "fpts_against": 1175,
+        "fpts_against_decimal": 26,
+        "fpts_decimal": 36,
+        "losses": 7,
+        "ppts": 1247,
+        "ppts_decimal": 58,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
@@ -6200,13 +6210,13 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 1070,
-        "fpts_against": 983,
-        "fpts_against_decimal": 8,
-        "fpts_decimal": 28,
-        "losses": 2,
-        "ppts": 1208,
-        "ppts_decimal": 42,
+        "fpts": 1184,
+        "fpts_against": 1116,
+        "fpts_against_decimal": 12,
+        "fpts_decimal": 62,
+        "losses": 3,
+        "ppts": 1324,
+        "ppts_decimal": 6,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 155,
