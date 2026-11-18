@@ -304,12 +304,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "DK Metcalf",
-          "player_id": "5846",
+          "injury_status": "Out",
+          "name": "Omar Cooper Jr.",
+          "player_id": "13276",
           "position": "WR",
           "status": "Active",
-          "team": "PIT"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -329,11 +329,11 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Travis Etienne Jr.",
-          "player_id": "7543",
+          "name": "Kyren Williams",
+          "player_id": "8150",
           "position": "RB",
           "status": "Active",
-          "team": "NO"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -417,12 +417,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Kyren Williams",
-          "player_id": "8150",
+          "name": "Travis Etienne Jr.",
+          "player_id": "7543",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "LAR"
+          "team": "NO"
         },
         {
           "active": true,
@@ -455,13 +455,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Out",
-          "name": "Omar Cooper Jr.",
-          "player_id": "13276",
+          "injury_status": null,
+          "name": "DK Metcalf",
+          "player_id": "5846",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "NYJ"
+          "team": "PIT"
         },
         {
           "active": true,
