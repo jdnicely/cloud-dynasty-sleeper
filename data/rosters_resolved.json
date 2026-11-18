@@ -6117,26 +6117,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
-          "injury_status": "Questionable",
-          "name": "Luther Burden III",
-          "player_id": "12519",
-          "position": "WR",
+          "injury_status": null,
+          "name": "Corey Kiner",
+          "player_id": "12491",
+          "position": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "NE"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Jonah Coleman",
-          "player_id": "13345",
-          "position": "RB",
+          "name": "Antonio Williams",
+          "player_id": "13301",
+          "position": "WR",
           "status": "Active",
-          "team": "DEN"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -6257,25 +6257,25 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Corey Kiner",
-          "player_id": "12491",
+          "name": "Jonah Coleman",
+          "player_id": "13345",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "NE"
+          "team": "DEN"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Antonio Williams",
-          "player_id": "13301",
+          "injury_status": "Questionable",
+          "name": "Luther Burden III",
+          "player_id": "12519",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "WAS"
+          "team": "CHI"
         },
         {
           "active": true,
