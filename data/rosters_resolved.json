@@ -1268,11 +1268,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "TEN"
         },
         {
@@ -1366,11 +1366,11 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Wan'Dale Robinson",
           "player_id": "8126",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "TEN"
         }
       ],
@@ -4035,26 +4035,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
-          "position": "RB",
+          "name": "Michael Penix Jr.",
+          "player_id": "11559",
+          "position": "QB",
           "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Bucky Irving",
-          "player_id": "11584",
-          "position": "RB",
-          "status": "Active",
-          "team": "TB"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -4079,6 +4067,18 @@
           "position": "WR",
           "status": "Active",
           "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Zach Charbonnet",
+          "player_id": "9753",
+          "position": "RB",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -4149,12 +4149,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Michael Penix Jr.",
-          "player_id": "11559",
+          "name": "Jacoby Brissett",
+          "player_id": "3257",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "ATL"
+          "team": "BAL"
         },
         {
           "active": true,
@@ -4162,12 +4162,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Zach Charbonnet",
-          "player_id": "9753",
+          "name": "Bucky Irving",
+          "player_id": "11584",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "SEA"
+          "team": "TB"
         },
         {
           "active": true,
@@ -4175,12 +4175,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Blake Corum",
-          "player_id": "11586",
+          "name": "Braelon Allen",
+          "player_id": "11576",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "LAR"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -4237,15 +4237,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Jacoby Brissett",
-          "player_id": "3257",
-          "position": "QB",
+          "name": "Jordyn Tyson",
+          "player_id": "13281",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "BAL"
+          "team": "NO"
         },
         {
           "active": true,
@@ -4280,24 +4280,24 @@
           "fantasy_positions": [
             "RB"
           ],
+          "injury_status": null,
+          "name": "Blake Corum",
+          "player_id": "11586",
+          "position": "RB",
+          "status": "Active",
+          "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": "IR",
           "name": "TreVeyon Henderson",
           "player_id": "12529",
           "position": "RB",
           "status": "Inactive",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jordyn Tyson",
-          "player_id": "13281",
-          "position": "WR",
-          "status": "Active",
-          "team": "NO"
         },
         {
           "active": true,
