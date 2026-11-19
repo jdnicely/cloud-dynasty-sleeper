@@ -394,7 +394,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 88,
-        "waiver_position": 9,
+        "waiver_position": 8,
         "wins": 4
       },
       "starters": [
@@ -882,7 +882,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
-        "waiver_position": 3,
+        "waiver_position": 2,
         "wins": 4
       },
       "starters": [
@@ -1408,7 +1408,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 2,
+        "waiver_position": 1,
         "wins": 3
       },
       "starters": [
@@ -1711,6 +1711,18 @@
             "K"
           ],
           "injury_status": null,
+          "name": "Chris Boswell",
+          "player_id": "1945",
+          "position": "K",
+          "status": "Active",
+          "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
           "name": "Jason Myers",
           "player_id": "2747",
           "position": "K",
@@ -1854,6 +1866,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "K"
+          ],
+          "injury_status": null,
+          "name": "Chris Boswell",
+          "player_id": "1945",
+          "position": "K",
+          "status": "Active",
+          "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -1921,8 +1945,8 @@
         "ppts_decimal": 38,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
-        "waiver_position": 1,
+        "waiver_budget_used": 16,
+        "waiver_position": 10,
         "wins": 6
       },
       "starters": [
@@ -2471,7 +2495,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 8,
+        "waiver_position": 7,
         "wins": 6
       },
       "starters": [
@@ -2677,11 +2701,21 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Keon Coleman",
-          "player_id": "11637",
+          "name": "Pat Bryant",
+          "player_id": "12492",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "DEN"
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "12499",
+          "player_id": "12499",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -2770,18 +2804,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Dominic Zvada",
-          "player_id": "13833",
-          "position": "K",
-          "status": "Active",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -2905,37 +2927,25 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Green Bay Packers",
-          "player_id": "GB",
+          "name": "Tampa Bay Buccaneers",
+          "player_id": "TB",
           "position": "DEF",
           "status": null,
-          "team": "GB"
+          "team": "TB"
         }
       ],
       "bench": [
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Bo Nix",
-          "player_id": "11563",
-          "position": "QB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
-          "name": "Keon Coleman",
-          "player_id": "11637",
+          "name": "Pat Bryant",
+          "player_id": "12492",
           "position": "WR",
           "status": "Active",
-          "team": "BUF"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -2967,23 +2977,23 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Mike Gesicki",
-          "player_id": "4993",
+          "name": "Tucker Kraft",
+          "player_id": "9484",
           "position": "TE",
           "status": "Active",
-          "team": "CIN"
+          "team": "GB"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "K"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Chase McLaughlin",
-          "player_id": "6650",
-          "position": "K",
+          "name": "Tank Dell",
+          "player_id": "9502",
+          "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "HOU"
         }
       ],
       "co_owners": [],
@@ -3031,7 +3041,7 @@
         "ppts_decimal": 56,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 0,
+        "waiver_budget_used": 20,
         "waiver_position": 12,
         "wins": 3
       },
@@ -3089,17 +3099,15 @@
           "team": "MIN"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Tank Dell",
-          "player_id": "9502",
-          "position": "WR",
+          "name": "12499",
+          "player_id": "12499",
+          "position": null,
           "starter_slot": "WR",
-          "status": "Active",
-          "team": "HOU"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -3107,12 +3115,12 @@
             "TE"
           ],
           "injury_status": null,
-          "name": "Tucker Kraft",
-          "player_id": "9484",
+          "name": "Mike Gesicki",
+          "player_id": "4993",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "GB"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -3128,15 +3136,17 @@
           "team": "CIN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Bo Nix",
+          "player_id": "11563",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "DEN"
         },
         {
           "active": true,
@@ -3144,12 +3154,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Dominic Zvada",
-          "player_id": "13833",
+          "name": "Chase McLaughlin",
+          "player_id": "6650",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "NYG"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3157,12 +3167,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Green Bay Packers",
-          "player_id": "GB",
+          "name": "Tampa Bay Buccaneers",
+          "player_id": "TB",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "GB"
+          "team": "TB"
         }
       ],
       "taxi": [
@@ -3554,7 +3564,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 25,
-        "waiver_position": 5,
+        "waiver_position": 4,
         "wins": 6
       },
       "starters": [
@@ -4023,6 +4033,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
+          "position": "WR",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -4031,18 +4053,6 @@
           "position": "RB",
           "status": "Active",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Josh Downs",
-          "player_id": "9500",
-          "position": "WR",
-          "status": "Active",
-          "team": "KC"
         },
         {
           "active": true,
@@ -4115,7 +4125,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
-        "waiver_position": 6,
+        "waiver_position": 5,
         "wins": 4
       },
       "starters": [
@@ -4163,13 +4173,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Ladd McConkey",
-          "player_id": "11635",
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "LAC"
+          "team": "KC"
         },
         {
           "active": true,
@@ -4591,7 +4601,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
-        "waiver_position": 11,
+        "waiver_position": 9,
         "wins": 5
       },
       "starters": [
@@ -5128,7 +5138,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 160,
-        "waiver_position": 7,
+        "waiver_position": 6,
         "wins": 9
       },
       "starters": [
@@ -5672,7 +5682,7 @@
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
-        "waiver_position": 4,
+        "waiver_position": 3,
         "wins": 3
       },
       "starters": [
@@ -6082,11 +6092,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Cincinnati Bengals",
-          "player_id": "CIN",
+          "name": "Denver Broncos",
+          "player_id": "DEN",
           "position": "DEF",
           "status": null,
-          "team": "CIN"
+          "team": "DEN"
         }
       ],
       "bench": [
@@ -6149,6 +6159,18 @@
           "position": "RB",
           "status": "Active",
           "team": "HOU"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Denver Broncos",
+          "player_id": "DEN",
+          "position": "DEF",
+          "status": null,
+          "team": "DEN"
         }
       ],
       "co_owners": [],
@@ -6196,8 +6218,8 @@
         "ppts_decimal": 6,
         "ties": 0,
         "total_moves": 0,
-        "waiver_budget_used": 155,
-        "waiver_position": 10,
+        "waiver_budget_used": 165,
+        "waiver_position": 11,
         "wins": 7
       },
       "starters": [
@@ -6319,17 +6341,15 @@
           "team": "MIN"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Cincinnati Bengals",
-          "player_id": "CIN",
-          "position": "DEF",
+          "name": "EMPTY",
+          "player_id": "0",
+          "position": null,
           "starter_slot": "DEF",
           "status": null,
-          "team": "CIN"
+          "team": null
         }
       ],
       "taxi": [
