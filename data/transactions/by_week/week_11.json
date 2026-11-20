@@ -1,6 +1,31 @@
 [
   {
     "adds": {
+      "CAR": 3
+    },
+    "consenter_ids": [
+      3
+    ],
+    "created": 1795135134811,
+    "creator": "76821402560643072",
+    "draft_picks": [],
+    "drops": {
+      "BAL": 3
+    },
+    "leg": 11,
+    "metadata": null,
+    "roster_ids": [
+      3
+    ],
+    "settings": null,
+    "status": "complete",
+    "status_updated": 1795135134811,
+    "transaction_id": "1429303986262937600",
+    "type": "free_agent",
+    "waiver_budget": []
+  },
+  {
+    "adds": {
       "2020": 4
     },
     "consenter_ids": [

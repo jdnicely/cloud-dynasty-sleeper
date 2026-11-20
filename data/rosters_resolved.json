@@ -1232,7 +1232,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -1293,11 +1293,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Baltimore Ravens",
-          "player_id": "BAL",
+          "name": "Carolina Panthers",
+          "player_id": "CAR",
           "position": "DEF",
           "status": null,
-          "team": "BAL"
+          "team": "CAR"
         }
       ],
       "bench": [
@@ -1342,7 +1342,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -1535,12 +1535,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Baltimore Ravens",
-          "player_id": "BAL",
+          "name": "Carolina Panthers",
+          "player_id": "CAR",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "BAL"
+          "team": "CAR"
         }
       ],
       "taxi": [
@@ -1810,7 +1810,7 @@
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "LAR"
         },
         {
@@ -1929,7 +1929,7 @@
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Inactive",
+          "status": "Active",
           "team": "LAR"
         }
       ],
@@ -2708,14 +2708,16 @@
           "team": "DEN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12499",
+          "name": "Elic Ayomanor",
           "player_id": "12499",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -2758,7 +2760,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Carson Beck",
           "player_id": "13272",
           "position": "QB",
@@ -3099,15 +3101,17 @@
           "team": "MIN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "12499",
+          "name": "Elic Ayomanor",
           "player_id": "12499",
-          "position": null,
+          "position": "WR",
           "starter_slot": "WR",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -3217,7 +3221,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Carson Beck",
           "player_id": "13272",
           "position": "QB",
@@ -3901,7 +3905,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Seth McGowan",
           "player_id": "13424",
           "position": "RB",
@@ -4302,7 +4306,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Seth McGowan",
           "player_id": "13424",
           "position": "RB",
