@@ -5347,18 +5347,6 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
-          "name": "Audric Estime",
-          "player_id": "11579",
-          "position": "RB",
-          "status": "Active",
-          "team": "NO"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
           "injury_status": "IR",
           "name": "Jonathon Brooks",
           "player_id": "11583",
@@ -5429,6 +5417,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Chimere Dike",
+          "player_id": "12540",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -5437,18 +5437,6 @@
           "position": "RB",
           "status": "Active",
           "team": "MIA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
-          "injury_status": null,
-          "name": "Trey Smack",
-          "player_id": "13545",
-          "position": "K",
-          "status": "Active",
-          "team": "GB"
         },
         {
           "active": true,
@@ -5487,16 +5475,24 @@
           "team": "SF"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Gardner Minshew II",
-          "player_id": "6011",
-          "position": "QB",
-          "status": "Inactive",
-          "team": "ARI"
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "5995",
+          "player_id": "5995",
+          "position": null,
+          "status": null,
+          "team": null
+        },
+        {
+          "active": null,
+          "fantasy_positions": null,
+          "injury_status": null,
+          "name": "6528",
+          "player_id": "6528",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5575,6 +5571,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Chimere Dike",
+          "player_id": "12540",
+          "position": "WR",
+          "status": "Active",
+          "team": "TEN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": "Out",
@@ -5611,26 +5619,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "IR",
-          "name": "Gardner Minshew II",
-          "player_id": "6011",
-          "position": "QB",
-          "status": "Inactive",
-          "team": "ARI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Jameson Williams",
-          "player_id": "8148",
-          "position": "WR",
+          "name": "Bijan Robinson",
+          "player_id": "9509",
+          "position": "RB",
           "status": "Active",
-          "team": "DET"
+          "team": "ATL"
         }
       ],
       "co_owners": [
@@ -5709,25 +5705,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Bijan Robinson",
-          "player_id": "9509",
+          "name": "Cam Skattebo",
+          "player_id": "12481",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "ATL"
+          "team": "NYG"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Audric Estime",
-          "player_id": "11579",
-          "position": "RB",
+          "name": "5995",
+          "player_id": "5995",
+          "position": null,
           "starter_slot": "RB",
-          "status": "Active",
-          "team": "NO"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -5784,28 +5778,26 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Cam Skattebo",
-          "player_id": "12481",
-          "position": "RB",
+          "name": "Jameson Williams",
+          "player_id": "8148",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "NYG"
+          "team": "DET"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "K"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Trey Smack",
-          "player_id": "13545",
-          "position": "K",
+          "name": "6528",
+          "player_id": "6528",
+          "position": null,
           "starter_slot": "K",
-          "status": "Active",
-          "team": "GB"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -6163,18 +6155,6 @@
           "position": "RB",
           "status": "Active",
           "team": "HOU"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "DEF"
-          ],
-          "injury_status": null,
-          "name": "Denver Broncos",
-          "player_id": "DEN",
-          "position": "DEF",
-          "status": null,
-          "team": "DEN"
         }
       ],
       "co_owners": [],
@@ -6345,15 +6325,17 @@
           "team": "MIN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "EMPTY",
-          "player_id": "0",
-          "position": null,
+          "name": "Denver Broncos",
+          "player_id": "DEN",
+          "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": null
+          "team": "DEN"
         }
       ],
       "taxi": [
