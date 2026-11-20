@@ -3501,6 +3501,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Aaron Jones Sr.",
+          "player_id": "4199",
+          "position": "RB",
+          "status": "Active",
+          "team": "MIN"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "TE"
           ],
           "injury_status": "Questionable",
@@ -3525,26 +3537,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "QB"
           ],
           "injury_status": null,
-          "name": "D'Andre Swift",
-          "player_id": "6790",
-          "position": "RB",
+          "name": "Jordan Love",
+          "player_id": "6804",
+          "position": "QB",
           "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Jaylen Waddle",
-          "player_id": "7526",
-          "position": "WR",
-          "status": "Active",
-          "team": "DEN"
+          "team": "GB"
         }
       ],
       "co_owners": [],
@@ -3577,13 +3577,13 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Out",
-          "name": "Drake Maye",
-          "player_id": "11564",
+          "injury_status": null,
+          "name": "Jalon Daniels",
+          "player_id": "13425",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "NE"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3591,12 +3591,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Aaron Jones Sr.",
-          "player_id": "4199",
+          "name": "D'Andre Swift",
+          "player_id": "6790",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "MIN"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -3629,13 +3629,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Konata Mumpfield",
-          "player_id": "12718",
+          "injury_status": "Questionable",
+          "name": "Caleb Douglas",
+          "player_id": "13296",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "LAR"
+          "team": "MIA"
         },
         {
           "active": true,
@@ -3666,15 +3666,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
-          "injury_status": null,
-          "name": "Jordan Love",
-          "player_id": "6804",
-          "position": "QB",
+          "injury_status": "Questionable",
+          "name": "Jaylen Waddle",
+          "player_id": "7526",
+          "position": "WR",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "GB"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -3710,23 +3710,35 @@
             "QB"
           ],
           "injury_status": "Out",
-          "name": "Ty Simpson",
-          "player_id": "13275",
+          "name": "Drake Maye",
+          "player_id": "11564",
           "position": "QB",
           "status": "Active",
-          "team": "LAR"
+          "team": "NE"
         },
         {
           "active": true,
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Caleb Douglas",
-          "player_id": "13296",
+          "injury_status": null,
+          "name": "Konata Mumpfield",
+          "player_id": "12718",
           "position": "WR",
           "status": "Active",
-          "team": "MIA"
+          "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Out",
+          "name": "Ty Simpson",
+          "player_id": "13275",
+          "position": "QB",
+          "status": "Active",
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3751,18 +3763,6 @@
           "position": "TE",
           "status": "Active",
           "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Jalon Daniels",
-          "player_id": "13425",
-          "position": "QB",
-          "status": "Active",
-          "team": "TB"
         }
       ]
     },
@@ -5040,24 +5040,12 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
-          "name": "Colston Loveland",
-          "player_id": "12517",
+          "injury_status": "Questionable",
+          "name": "Dalton Kincaid",
+          "player_id": "10236",
           "position": "TE",
           "status": "Active",
-          "team": "CHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Saquon Barkley",
-          "player_id": "4866",
-          "position": "RB",
-          "status": "Active",
-          "team": "PHI"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -5070,6 +5058,18 @@
           "position": "QB",
           "status": "Active",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Jaxon Smith-Njigba",
+          "player_id": "9488",
+          "position": "WR",
+          "status": "Active",
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5191,12 +5191,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Jaxon Smith-Njigba",
-          "player_id": "9488",
+          "name": "Tee Higgins",
+          "player_id": "6801",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "SEA"
+          "team": "CIN"
         },
         {
           "active": true,
@@ -5216,26 +5216,26 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Dalton Kincaid",
-          "player_id": "10236",
+          "injury_status": null,
+          "name": "Colston Loveland",
+          "player_id": "12517",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "BUF"
+          "team": "CHI"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Tee Higgins",
-          "player_id": "6801",
-          "position": "WR",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
+          "position": "RB",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "CIN"
+          "team": "PHI"
         },
         {
           "active": true,
