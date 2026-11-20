@@ -279,11 +279,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "New Orleans Saints",
-          "player_id": "NO",
+          "name": "Chicago Bears",
+          "player_id": "CHI",
           "position": "DEF",
           "status": null,
-          "team": "NO"
+          "team": "CHI"
         }
       ],
       "bench": [
@@ -304,24 +304,24 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Omar Cooper Jr.",
-          "player_id": "13276",
-          "position": "WR",
-          "status": "Active",
-          "team": "NYJ"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
           "injury_status": "Out",
           "name": "A.J. Brown",
           "player_id": "5859",
           "position": "WR",
           "status": "Active",
           "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Jakobi Meyers",
+          "player_id": "5947",
+          "position": "WR",
+          "status": "Active",
+          "team": "JAX"
         },
         {
           "active": true,
@@ -482,12 +482,12 @@
             "WR"
           ],
           "injury_status": "Questionable",
-          "name": "Jakobi Meyers",
-          "player_id": "5947",
+          "name": "Carnell Tate",
+          "player_id": "13279",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "JAX"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -521,12 +521,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "New Orleans Saints",
-          "player_id": "NO",
+          "name": "Chicago Bears",
+          "player_id": "CHI",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "NO"
+          "team": "CHI"
         }
       ],
       "taxi": [
@@ -584,11 +584,11 @@
             "WR"
           ],
           "injury_status": "Questionable",
-          "name": "Carnell Tate",
-          "player_id": "13279",
+          "name": "Omar Cooper Jr.",
+          "player_id": "13276",
           "position": "WR",
           "status": "Active",
-          "team": "TEN"
+          "team": "NYJ"
         }
       ]
     },
@@ -1723,11 +1723,11 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Jason Myers",
-          "player_id": "2747",
+          "name": "Cairo Santos",
+          "player_id": "2020",
           "position": "K",
           "status": "Active",
-          "team": "SEA"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -1869,11 +1869,11 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Chris Boswell",
-          "player_id": "1945",
+          "name": "Cairo Santos",
+          "player_id": "2020",
           "position": "K",
           "status": "Active",
-          "team": "PIT"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -2060,12 +2060,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Jason Myers",
-          "player_id": "2747",
+          "name": "Chris Boswell",
+          "player_id": "1945",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "SEA"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -4496,14 +4496,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "DEF"
           ],
           "injury_status": null,
-          "name": "Rashid Shaheed",
-          "player_id": "8676",
-          "position": "WR",
-          "status": "Active",
-          "team": "SEA"
+          "name": "Detroit Lions",
+          "player_id": "DET",
+          "position": "DEF",
+          "status": null,
+          "team": "DET"
         },
         {
           "active": true,
@@ -4522,14 +4522,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Caleb Williams",
-          "player_id": "11560",
-          "position": "QB",
+          "name": "Dylan Sampson",
+          "player_id": "12469",
+          "position": "RB",
           "status": "Active",
-          "team": "CHI"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -4548,24 +4548,12 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
-          "name": "Malachi Fields",
-          "player_id": "13285",
+          "injury_status": "Questionable",
+          "name": "Drake London",
+          "player_id": "8112",
           "position": "WR",
           "status": "Active",
-          "team": "NYG"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Chig Okonkwo",
-          "player_id": "8210",
-          "position": "TE",
-          "status": "Active",
-          "team": "WAS"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -4573,10 +4561,22 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Rashid Shaheed",
-          "player_id": "8676",
+          "name": "Christian Watson",
+          "player_id": "8167",
           "position": "WR",
           "status": "Active",
+          "team": "GB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
+          "injury_status": null,
+          "name": "Seattle Seahawks",
+          "player_id": "SEA",
+          "position": "DEF",
+          "status": null,
           "team": "SEA"
         }
       ],
@@ -4611,12 +4611,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Brock Purdy",
-          "player_id": "8183",
+          "name": "Caleb Williams",
+          "player_id": "11560",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "SF"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -4649,13 +4649,13 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Drake London",
-          "player_id": "8112",
+          "injury_status": null,
+          "name": "Khalil Shakir",
+          "player_id": "8134",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "ATL"
+          "team": "BUF"
         },
         {
           "active": true,
@@ -4663,12 +4663,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Christian Watson",
-          "player_id": "8167",
+          "name": "Malachi Fields",
+          "player_id": "13285",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "GB"
+          "team": "NYG"
         },
         {
           "active": true,
@@ -4686,28 +4686,28 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Dylan Sampson",
-          "player_id": "12469",
-          "position": "RB",
+          "name": "Chig Okonkwo",
+          "player_id": "8210",
+          "position": "TE",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "CLE"
+          "team": "WAS"
         },
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Khalil Shakir",
-          "player_id": "8134",
-          "position": "WR",
+          "name": "Brock Purdy",
+          "player_id": "8183",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "BUF"
+          "team": "SF"
         },
         {
           "active": true,
@@ -4728,12 +4728,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Seattle Seahawks",
-          "player_id": "SEA",
+          "name": "Detroit Lions",
+          "player_id": "DET",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "SEA"
+          "team": "DET"
         }
       ],
       "taxi": [
