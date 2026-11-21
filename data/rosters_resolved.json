@@ -110,7 +110,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Omar Cooper Jr.",
           "player_id": "13276",
           "position": "WR",
@@ -194,7 +194,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jakobi Meyers",
           "player_id": "5947",
           "position": "WR",
@@ -254,7 +254,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kenneth Walker III",
           "player_id": "8151",
           "position": "RB",
@@ -316,7 +316,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jakobi Meyers",
           "player_id": "5947",
           "position": "WR",
@@ -340,7 +340,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Kenneth Walker III",
           "player_id": "8151",
           "position": "RB",
@@ -583,7 +583,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Omar Cooper Jr.",
           "player_id": "13276",
           "position": "WR",
@@ -1268,7 +1268,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Rachaad White",
           "player_id": "8136",
           "position": "RB",
@@ -1443,7 +1443,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Rachaad White",
           "player_id": "8136",
           "position": "RB",
@@ -2247,7 +2247,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Bell",
           "player_id": "13311",
           "position": "WR",
@@ -2405,7 +2405,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Chris Bell",
           "player_id": "13311",
           "position": "WR",
@@ -3297,7 +3297,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Caleb Douglas",
           "player_id": "13296",
           "position": "WR",
@@ -3393,7 +3393,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
@@ -3441,7 +3441,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Waddle",
           "player_id": "7526",
           "position": "WR",
@@ -3515,7 +3515,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "T.J. Hockenson",
           "player_id": "5844",
           "position": "TE",
@@ -3629,7 +3629,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Caleb Douglas",
           "player_id": "13296",
           "position": "WR",
@@ -3668,7 +3668,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jaylen Waddle",
           "player_id": "7526",
           "position": "WR",
@@ -3881,7 +3881,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jordyn Tyson",
           "player_id": "13281",
           "position": "WR",
@@ -4229,7 +4229,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Jordyn Tyson",
           "player_id": "13281",
           "position": "WR",
@@ -4774,7 +4774,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -5040,7 +5040,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Doubtful",
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -5383,7 +5383,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5475,24 +5475,28 @@
           "team": "SF"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "5995",
+          "name": "Justice Hill",
           "player_id": "5995",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "RB",
+          "status": "Active",
+          "team": "BAL"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "6528",
+          "name": "Joey Slye",
           "player_id": "6528",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "K",
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -5713,15 +5717,17 @@
           "team": "NYG"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
           "injury_status": null,
-          "name": "5995",
+          "name": "Justice Hill",
           "player_id": "5995",
-          "position": null,
+          "position": "RB",
           "starter_slot": "RB",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "BAL"
         },
         {
           "active": true,
@@ -5767,7 +5773,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5789,15 +5795,17 @@
           "team": "DET"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "K"
+          ],
           "injury_status": null,
-          "name": "6528",
+          "name": "Joey Slye",
           "player_id": "6528",
-          "position": null,
+          "position": "K",
           "starter_slot": "K",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "TEN"
         },
         {
           "active": true,
@@ -5979,7 +5987,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Geno Smith",
           "player_id": "1373",
           "position": "QB",
@@ -6125,7 +6133,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Geno Smith",
           "player_id": "1373",
           "position": "QB",
