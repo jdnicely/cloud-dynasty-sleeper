@@ -190,16 +190,14 @@
           "team": "NE"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Jakobi Meyers",
-          "player_id": "5947",
-          "position": "WR",
-          "status": "Active",
-          "team": "JAX"
+          "name": "5906",
+          "player_id": "5906",
+          "position": null,
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -314,14 +312,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Jakobi Meyers",
-          "player_id": "5947",
-          "position": "WR",
+          "name": "Kyle Pitts Sr.",
+          "player_id": "7553",
+          "position": "TE",
           "status": "Active",
-          "team": "JAX"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -464,17 +462,15 @@
           "team": "PIT"
         },
         {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
+          "active": null,
+          "fantasy_positions": null,
           "injury_status": null,
-          "name": "Kyle Pitts Sr.",
-          "player_id": "7553",
-          "position": "TE",
+          "name": "5906",
+          "player_id": "5906",
+          "position": null,
           "starter_slot": "TE",
-          "status": "Active",
-          "team": "ATL"
+          "status": null,
+          "team": null
         },
         {
           "active": true,
@@ -1856,6 +1852,18 @@
           "fantasy_positions": [
             "TE"
           ],
+          "injury_status": "Questionable",
+          "name": "Brock Bowers",
+          "player_id": "11604",
+          "position": "TE",
+          "status": "Active",
+          "team": "LV"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "TE"
+          ],
           "injury_status": null,
           "name": "Tyler Warren",
           "player_id": "12518",
@@ -1886,18 +1894,6 @@
           "position": "RB",
           "status": "Active",
           "team": "PIT"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Jordan Mason",
-          "player_id": "8408",
-          "position": "RB",
-          "status": "Active",
-          "team": "MIN"
         },
         {
           "active": true,
@@ -2020,26 +2016,26 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
-          "name": "Brock Bowers",
-          "player_id": "11604",
-          "position": "TE",
-          "starter_slot": "TE",
-          "status": "Active",
-          "team": "LV"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
           "injury_status": null,
           "name": "Travis Kelce",
           "player_id": "1466",
           "position": "TE",
-          "starter_slot": "FLEX",
+          "starter_slot": "TE",
           "status": "Active",
           "team": "KC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Jordan Mason",
+          "player_id": "8408",
+          "position": "RB",
+          "starter_slot": "FLEX",
+          "status": "Active",
+          "team": "MIN"
         },
         {
           "active": true,
@@ -2955,11 +2951,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
+          "name": "Elic Ayomanor",
+          "player_id": "12499",
           "position": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "TEN"
         },
         {
           "active": true,
@@ -3106,12 +3102,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Elic Ayomanor",
-          "player_id": "12499",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "TEN"
+          "team": "TB"
         },
         {
           "active": true,
