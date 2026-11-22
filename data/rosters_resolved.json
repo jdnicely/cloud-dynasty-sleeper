@@ -242,7 +242,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Kyren Williams",
           "player_id": "8150",
           "position": "RB",
@@ -328,7 +328,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Kyren Williams",
           "player_id": "8150",
           "position": "RB",
@@ -693,6 +693,30 @@
         {
           "active": true,
           "fantasy_positions": [
+            "TE"
+          ],
+          "injury_status": "Questionable",
+          "name": "Darren Waller",
+          "player_id": "2505",
+          "position": "TE",
+          "status": "Active",
+          "team": "CAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Josh Johnson",
+          "player_id": "260",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "RB"
           ],
           "injury_status": null,
@@ -701,18 +725,6 @@
           "position": "RB",
           "status": "Active",
           "team": "BAL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Tyler Higbee",
-          "player_id": "3271",
-          "position": "TE",
-          "status": "Active",
-          "team": "LAR"
         },
         {
           "active": true,
@@ -736,7 +748,7 @@
           "player_id": "5870",
           "position": "QB",
           "status": "Active",
-          "team": "IND"
+          "team": null
         },
         {
           "active": true,
@@ -777,29 +789,29 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Tanner McKee",
-          "player_id": "9230",
-          "position": "QB",
-          "status": "Active",
-          "team": "PHI"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "DEF"
           ],
           "injury_status": null,
-          "name": "Miami Dolphins",
-          "player_id": "MIA",
+          "name": "Dallas Cowboys",
+          "player_id": "DAL",
           "position": "DEF",
           "status": null,
-          "team": "MIA"
+          "team": "DAL"
         }
       ],
       "bench": [
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Quinshon Judkins",
+          "player_id": "12512",
+          "position": "RB",
+          "status": "Active",
+          "team": "CLE"
+        },
         {
           "active": true,
           "fantasy_positions": [
@@ -811,6 +823,18 @@
           "position": "RB",
           "status": "Active",
           "team": "SEA"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Josh Johnson",
+          "player_id": "260",
+          "position": "QB",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -830,35 +854,11 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "J.K. Dobbins",
-          "player_id": "6806",
-          "position": "RB",
-          "status": "Active",
-          "team": "DEN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
           "name": "Kenny Gainwell",
           "player_id": "7567",
           "position": "RB",
           "status": "Active",
           "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Tanner McKee",
-          "player_id": "9230",
-          "position": "QB",
-          "status": "Active",
-          "team": "PHI"
         }
       ],
       "co_owners": [],
@@ -918,12 +918,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Quinshon Judkins",
-          "player_id": "12512",
+          "name": "J.K. Dobbins",
+          "player_id": "6806",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "CLE"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -931,12 +931,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Tre Tucker",
-          "player_id": "10213",
+          "name": "Stefon Diggs",
+          "player_id": "2449",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "LV"
+          "team": "WAS"
         },
         {
           "active": true,
@@ -956,13 +956,13 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
-          "name": "Tyler Higbee",
-          "player_id": "3271",
+          "injury_status": "Questionable",
+          "name": "Darren Waller",
+          "player_id": "2505",
           "position": "TE",
           "starter_slot": "TE",
           "status": "Active",
-          "team": "LAR"
+          "team": "CAR"
         },
         {
           "active": true,
@@ -970,12 +970,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Stefon Diggs",
-          "player_id": "2449",
+          "name": "Tre Tucker",
+          "player_id": "10213",
           "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "WAS"
+          "team": "LV"
         },
         {
           "active": true,
@@ -988,7 +988,7 @@
           "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "IND"
+          "team": null
         },
         {
           "active": true,
@@ -1009,12 +1009,12 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Miami Dolphins",
-          "player_id": "MIA",
+          "name": "Dallas Cowboys",
+          "player_id": "DAL",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "MIA"
+          "team": "DAL"
         }
       ],
       "taxi": [
@@ -1810,7 +1810,7 @@
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "LAR"
         },
         {
@@ -1929,7 +1929,7 @@
           "name": "Puka Nacua",
           "player_id": "9493",
           "position": "WR",
-          "status": "Active",
+          "status": "Inactive",
           "team": "LAR"
         }
       ],
@@ -2367,11 +2367,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "TEN"
         },
         {
@@ -2441,11 +2441,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "IR",
           "name": "Tyjae Spears",
           "player_id": "9508",
           "position": "RB",
-          "status": "Active",
+          "status": "Inactive",
           "team": "TEN"
         }
       ],
@@ -2760,7 +2760,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Carson Beck",
           "player_id": "13272",
           "position": "QB",
@@ -3221,7 +3221,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": "Out",
           "name": "Carson Beck",
           "player_id": "13272",
           "position": "QB",
