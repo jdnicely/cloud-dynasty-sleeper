@@ -384,18 +384,18 @@
       "roster_id": 1,
       "settings": {
         "division": 1,
-        "fpts": 1076,
-        "fpts_against": 1120,
-        "fpts_against_decimal": 2,
-        "fpts_decimal": 62,
+        "fpts": 1198,
+        "fpts_against": 1224,
+        "fpts_against_decimal": 6,
+        "fpts_decimal": 60,
         "losses": 6,
-        "ppts": 1255,
+        "ppts": 1394,
         "ppts_decimal": 64,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 88,
         "waiver_position": 8,
-        "wins": 4
+        "wins": 5
       },
       "starters": [
         {
@@ -872,13 +872,13 @@
       "roster_id": 2,
       "settings": {
         "division": 2,
-        "fpts": 1032,
-        "fpts_against": 1152,
-        "fpts_against_decimal": 60,
-        "fpts_decimal": 62,
-        "losses": 6,
-        "ppts": 1221,
-        "ppts_decimal": 40,
+        "fpts": 1109,
+        "fpts_against": 1298,
+        "fpts_against_decimal": 40,
+        "fpts_decimal": 48,
+        "losses": 7,
+        "ppts": 1316,
+        "ppts_decimal": 30,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 27,
@@ -1268,7 +1268,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rachaad White",
           "player_id": "8136",
           "position": "RB",
@@ -1398,13 +1398,13 @@
       "roster_id": 3,
       "settings": {
         "division": 3,
-        "fpts": 1180,
-        "fpts_against": 1309,
-        "fpts_against_decimal": 18,
-        "fpts_decimal": 8,
-        "losses": 7,
-        "ppts": 1371,
-        "ppts_decimal": 42,
+        "fpts": 1248,
+        "fpts_against": 1395,
+        "fpts_against_decimal": 38,
+        "fpts_decimal": 72,
+        "losses": 8,
+        "ppts": 1461,
+        "ppts_decimal": 32,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -1443,7 +1443,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Rachaad White",
           "player_id": "8136",
           "position": "RB",
@@ -1936,18 +1936,18 @@
       "roster_id": 4,
       "settings": {
         "division": 1,
-        "fpts": 1435,
-        "fpts_against": 1358,
-        "fpts_against_decimal": 74,
-        "fpts_decimal": 4,
+        "fpts": 1569,
+        "fpts_against": 1436,
+        "fpts_against_decimal": 30,
+        "fpts_decimal": 58,
         "losses": 4,
-        "ppts": 1519,
-        "ppts_decimal": 38,
+        "ppts": 1655,
+        "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 16,
         "waiver_position": 10,
-        "wins": 6
+        "wins": 7
       },
       "starters": [
         {
@@ -2319,7 +2319,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -2417,7 +2417,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -2485,13 +2485,13 @@
       "roster_id": 5,
       "settings": {
         "division": 2,
-        "fpts": 1175,
-        "fpts_against": 1077,
-        "fpts_against_decimal": 88,
-        "fpts_decimal": 82,
-        "losses": 4,
-        "ppts": 1371,
-        "ppts_decimal": 10,
+        "fpts": 1253,
+        "fpts_against": 1212,
+        "fpts_against_decimal": 42,
+        "fpts_decimal": 38,
+        "losses": 5,
+        "ppts": 1479,
+        "ppts_decimal": 24,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -3034,13 +3034,13 @@
       "roster_id": 6,
       "settings": {
         "division": 3,
-        "fpts": 1061,
-        "fpts_against": 1190,
-        "fpts_against_decimal": 64,
-        "fpts_decimal": 80,
-        "losses": 7,
-        "ppts": 1306,
-        "ppts_decimal": 56,
+        "fpts": 1169,
+        "fpts_against": 1307,
+        "fpts_against_decimal": 78,
+        "fpts_decimal": 26,
+        "losses": 8,
+        "ppts": 1415,
+        "ppts_decimal": 92,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 20,
@@ -3309,7 +3309,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Robert Henry Jr.",
           "player_id": "13418",
           "position": "RB",
@@ -3558,18 +3558,18 @@
       "roster_id": 7,
       "settings": {
         "division": 1,
-        "fpts": 1201,
-        "fpts_against": 1156,
-        "fpts_against_decimal": 28,
-        "fpts_decimal": 44,
+        "fpts": 1287,
+        "fpts_against": 1224,
+        "fpts_against_decimal": 92,
+        "fpts_decimal": 64,
         "losses": 4,
-        "ppts": 1319,
-        "ppts_decimal": 54,
+        "ppts": 1415,
+        "ppts_decimal": 74,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 25,
         "waiver_position": 4,
-        "wins": 6
+        "wins": 7
       },
       "starters": [
         {
@@ -3745,7 +3745,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Robert Henry Jr.",
           "player_id": "13418",
           "position": "RB",
@@ -3845,7 +3845,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Cam Little",
           "player_id": "11786",
           "position": "K",
@@ -4119,18 +4119,18 @@
       "roster_id": 8,
       "settings": {
         "division": 2,
-        "fpts": 1225,
-        "fpts_against": 1378,
-        "fpts_against_decimal": 4,
-        "fpts_decimal": 52,
+        "fpts": 1342,
+        "fpts_against": 1485,
+        "fpts_against_decimal": 50,
+        "fpts_decimal": 66,
         "losses": 6,
-        "ppts": 1396,
-        "ppts_decimal": 76,
+        "ppts": 1529,
+        "ppts_decimal": 60,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 70,
         "waiver_position": 5,
-        "wins": 4
+        "wins": 5
       },
       "starters": [
         {
@@ -4242,7 +4242,7 @@
           "fantasy_positions": [
             "K"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Cam Little",
           "player_id": "11786",
           "position": "K",
@@ -4595,13 +4595,13 @@
       "roster_id": 9,
       "settings": {
         "division": 3,
-        "fpts": 1155,
-        "fpts_against": 1060,
-        "fpts_against_decimal": 36,
-        "fpts_decimal": 60,
-        "losses": 5,
-        "ppts": 1241,
-        "ppts_decimal": 30,
+        "fpts": 1264,
+        "fpts_against": 1202,
+        "fpts_against_decimal": 2,
+        "fpts_decimal": 84,
+        "losses": 6,
+        "ppts": 1350,
+        "ppts_decimal": 54,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 0,
@@ -5132,18 +5132,18 @@
       "roster_id": 10,
       "settings": {
         "division": 1,
-        "fpts": 1392,
-        "fpts_against": 1138,
-        "fpts_against_decimal": 50,
-        "fpts_decimal": 10,
+        "fpts": 1533,
+        "fpts_against": 1247,
+        "fpts_against_decimal": 74,
+        "fpts_decimal": 76,
         "losses": 1,
-        "ppts": 1502,
-        "ppts_decimal": 48,
+        "ppts": 1651,
+        "ppts_decimal": 66,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 160,
         "waiver_position": 6,
-        "wins": 9
+        "wins": 10
       },
       "starters": [
         {
@@ -5383,7 +5383,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5676,13 +5676,13 @@
       "roster_id": 11,
       "settings": {
         "division": 2,
-        "fpts": 1112,
-        "fpts_against": 1175,
-        "fpts_against_decimal": 26,
-        "fpts_decimal": 36,
-        "losses": 7,
-        "ppts": 1247,
-        "ppts_decimal": 58,
+        "fpts": 1216,
+        "fpts_against": 1297,
+        "fpts_against_decimal": 24,
+        "fpts_decimal": 40,
+        "losses": 8,
+        "ppts": 1358,
+        "ppts_decimal": 42,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 19,
@@ -5773,7 +5773,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Bhayshul Tuten",
           "player_id": "12490",
           "position": "RB",
@@ -5855,7 +5855,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Sam LaPorta",
           "player_id": "10859",
           "position": "TE",
@@ -5951,11 +5951,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": null,
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
-          "status": "Inactive",
+          "status": "Active",
           "team": "WAS"
         },
         {
@@ -6201,18 +6201,18 @@
       "roster_id": 12,
       "settings": {
         "division": 3,
-        "fpts": 1184,
-        "fpts_against": 1116,
-        "fpts_against_decimal": 12,
-        "fpts_decimal": 62,
+        "fpts": 1330,
+        "fpts_against": 1192,
+        "fpts_against_decimal": 98,
+        "fpts_decimal": 42,
         "losses": 3,
-        "ppts": 1324,
-        "ppts_decimal": 6,
+        "ppts": 1493,
+        "ppts_decimal": 26,
         "ties": 0,
         "total_moves": 0,
         "waiver_budget_used": 165,
         "waiver_position": 11,
-        "wins": 7
+        "wins": 8
       },
       "starters": [
         {
@@ -6285,7 +6285,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Sam LaPorta",
           "player_id": "10859",
           "position": "TE",
@@ -6388,11 +6388,11 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": "IR",
+          "injury_status": null,
           "name": "Jacory Croskey-Merritt",
           "player_id": "12533",
           "position": "RB",
-          "status": "Inactive",
+          "status": "Active",
           "team": "WAS"
         }
       ]
