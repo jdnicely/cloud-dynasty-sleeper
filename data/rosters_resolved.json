@@ -2967,11 +2967,11 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Denzel Boston",
-          "player_id": "13346",
+          "name": "Emeka Egbuka",
+          "player_id": "12514",
           "position": "WR",
           "status": "Active",
-          "team": "CLE"
+          "team": "TB"
         },
         {
           "active": true,
@@ -3106,12 +3106,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Emeka Egbuka",
-          "player_id": "12514",
+          "name": "Denzel Boston",
+          "player_id": "13346",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "TB"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -3492,6 +3492,18 @@
             "QB"
           ],
           "injury_status": null,
+          "name": "Jalon Daniels",
+          "player_id": "13425",
+          "position": "QB",
+          "status": "Active",
+          "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
           "name": "Deshaun Watson",
           "player_id": "4017",
           "position": "QB",
@@ -3533,18 +3545,6 @@
           "position": "QB",
           "status": "Active",
           "team": "MIN"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": null,
-          "name": "Jordan Love",
-          "player_id": "6804",
-          "position": "QB",
-          "status": "Active",
-          "team": "GB"
         }
       ],
       "co_owners": [],
@@ -3578,12 +3578,12 @@
             "QB"
           ],
           "injury_status": null,
-          "name": "Jalon Daniels",
-          "player_id": "13425",
+          "name": "Jordan Love",
+          "player_id": "6804",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "TB"
+          "team": "GB"
         },
         {
           "active": true,
@@ -5050,6 +5050,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Saquon Barkley",
+          "player_id": "4866",
+          "position": "RB",
+          "status": "Active",
+          "team": "PHI"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -5058,18 +5070,6 @@
           "position": "QB",
           "status": "Active",
           "team": "TB"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Jaxon Smith-Njigba",
-          "player_id": "9488",
-          "position": "WR",
-          "status": "Active",
-          "team": "SEA"
         },
         {
           "active": true,
@@ -5227,15 +5227,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
+            "WR"
           ],
-          "injury_status": "Questionable",
-          "name": "Saquon Barkley",
-          "player_id": "4866",
-          "position": "RB",
+          "injury_status": null,
+          "name": "Jaxon Smith-Njigba",
+          "player_id": "9488",
+          "position": "WR",
           "starter_slot": "FLEX",
           "status": "Active",
-          "team": "PHI"
+          "team": "SEA"
         },
         {
           "active": true,
