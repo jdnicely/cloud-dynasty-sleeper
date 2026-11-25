@@ -1866,26 +1866,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "TE"
-          ],
-          "injury_status": null,
-          "name": "Tyler Warren",
-          "player_id": "12518",
-          "position": "TE",
-          "status": "Active",
-          "team": "IND"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "K"
           ],
           "injury_status": null,
-          "name": "Cairo Santos",
-          "player_id": "2020",
+          "name": "Chris Boswell",
+          "player_id": "1945",
           "position": "K",
           "status": "Active",
-          "team": "CHI"
+          "team": "PIT"
         },
         {
           "active": true,
@@ -1896,6 +1884,18 @@
           "name": "Rico Dowdle",
           "player_id": "7021",
           "position": "RB",
+          "status": "Active",
+          "team": "PIT"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": null,
+          "name": "Aaron Rodgers",
+          "player_id": "96",
+          "position": "QB",
           "status": "Active",
           "team": "PIT"
         },
@@ -2044,15 +2044,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "TE"
           ],
           "injury_status": null,
-          "name": "Aaron Rodgers",
-          "player_id": "96",
-          "position": "QB",
+          "name": "Tyler Warren",
+          "player_id": "12518",
+          "position": "TE",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "PIT"
+          "team": "IND"
         },
         {
           "active": true,
@@ -2060,12 +2060,12 @@
             "K"
           ],
           "injury_status": null,
-          "name": "Chris Boswell",
-          "player_id": "1945",
+          "name": "Cairo Santos",
+          "player_id": "2020",
           "position": "K",
           "starter_slot": "K",
           "status": "Active",
-          "team": "PIT"
+          "team": "CHI"
         },
         {
           "active": true,
@@ -4025,26 +4025,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "RB"
           ],
           "injury_status": null,
-          "name": "Michael Penix Jr.",
-          "player_id": "11559",
-          "position": "QB",
+          "name": "Braelon Allen",
+          "player_id": "11576",
+          "position": "RB",
           "status": "Active",
-          "team": "ATL"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Ladd McConkey",
-          "player_id": "11635",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAC"
+          "team": "NYJ"
         },
         {
           "active": true,
@@ -4052,11 +4040,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Rhamondre Stevenson",
-          "player_id": "7611",
+          "name": "Blake Corum",
+          "player_id": "11586",
           "position": "RB",
           "status": "Active",
-          "team": "NE"
+          "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Josh Downs",
+          "player_id": "9500",
+          "position": "WR",
+          "status": "Active",
+          "team": "KC"
         },
         {
           "active": true,
@@ -4076,11 +4076,11 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Minnesota Vikings",
-          "player_id": "MIN",
+          "name": "Kansas City Chiefs",
+          "player_id": "KC",
           "position": "DEF",
           "status": null,
-          "team": "MIN"
+          "team": "KC"
         }
       ],
       "co_owners": [],
@@ -4165,12 +4165,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Braelon Allen",
-          "player_id": "11576",
+          "name": "Rhamondre Stevenson",
+          "player_id": "7611",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "NYJ"
+          "team": "NE"
         },
         {
           "active": true,
@@ -4178,12 +4178,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Josh Downs",
-          "player_id": "9500",
+          "name": "Ladd McConkey",
+          "player_id": "11635",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "KC"
+          "team": "LAC"
         },
         {
           "active": true,
@@ -4227,15 +4227,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Jordyn Tyson",
-          "player_id": "13281",
-          "position": "WR",
+          "name": "Michael Penix Jr.",
+          "player_id": "11559",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "NO"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -4256,27 +4256,15 @@
             "DEF"
           ],
           "injury_status": null,
-          "name": "Kansas City Chiefs",
-          "player_id": "KC",
+          "name": "Minnesota Vikings",
+          "player_id": "MIN",
           "position": "DEF",
           "starter_slot": "DEF",
           "status": null,
-          "team": "KC"
+          "team": "MIN"
         }
       ],
       "taxi": [
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Blake Corum",
-          "player_id": "11586",
-          "position": "RB",
-          "status": "Active",
-          "team": "LAR"
-        },
         {
           "active": true,
           "fantasy_positions": [
@@ -4288,6 +4276,18 @@
           "position": "RB",
           "status": "Inactive",
           "team": "NE"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Jordyn Tyson",
+          "player_id": "13281",
+          "position": "WR",
+          "status": "Active",
+          "team": "NO"
         },
         {
           "active": true,
