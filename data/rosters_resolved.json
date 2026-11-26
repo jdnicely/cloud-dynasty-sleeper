@@ -3489,6 +3489,18 @@
         {
           "active": true,
           "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Omarion Hampton",
+          "player_id": "12507",
+          "position": "RB",
+          "status": "Active",
+          "team": "LAC"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -3501,26 +3513,14 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
+            "WR"
           ],
           "injury_status": null,
-          "name": "Deshaun Watson",
-          "player_id": "4017",
-          "position": "QB",
+          "name": "Keenan Allen",
+          "player_id": "1479",
+          "position": "WR",
           "status": "Active",
-          "team": "CLE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Aaron Jones Sr.",
-          "player_id": "4199",
-          "position": "RB",
-          "status": "Active",
-          "team": "MIN"
+          "team": "SF"
         },
         {
           "active": true,
@@ -3604,12 +3604,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Omarion Hampton",
-          "player_id": "12507",
+          "name": "Aaron Jones Sr.",
+          "player_id": "4199",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "LAC"
+          "team": "MIN"
         },
         {
           "active": true,
@@ -3617,12 +3617,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Keenan Allen",
-          "player_id": "1479",
+          "name": "Jaylen Waddle",
+          "player_id": "7526",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "SF"
+          "team": "DEN"
         },
         {
           "active": true,
@@ -3630,12 +3630,12 @@
             "WR"
           ],
           "injury_status": null,
-          "name": "Caleb Douglas",
-          "player_id": "13296",
+          "name": "Konata Mumpfield",
+          "player_id": "12718",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "MIA"
+          "team": "LAR"
         },
         {
           "active": true,
@@ -3666,15 +3666,15 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
+            "QB"
           ],
           "injury_status": null,
-          "name": "Jaylen Waddle",
-          "player_id": "7526",
-          "position": "WR",
+          "name": "Deshaun Watson",
+          "player_id": "4017",
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
           "status": "Active",
-          "team": "DEN"
+          "team": "CLE"
         },
         {
           "active": true,
@@ -3719,18 +3719,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": null,
-          "name": "Konata Mumpfield",
-          "player_id": "12718",
-          "position": "WR",
-          "status": "Active",
-          "team": "LAR"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "QB"
           ],
           "injury_status": null,
@@ -3739,6 +3727,18 @@
           "position": "QB",
           "status": "Active",
           "team": "LAR"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": null,
+          "name": "Caleb Douglas",
+          "player_id": "13296",
+          "position": "WR",
+          "status": "Active",
+          "team": "MIA"
         },
         {
           "active": true,
@@ -5587,18 +5587,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "QB"
-          ],
-          "injury_status": "Questionable",
-          "name": "Sam Darnold",
-          "player_id": "4943",
-          "position": "QB",
-          "status": "Active",
-          "team": "SEA"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "RB"
           ],
           "injury_status": "Questionable",
@@ -5626,11 +5614,23 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Bijan Robinson",
-          "player_id": "9509",
+          "name": "Justice Hill",
+          "player_id": "5995",
           "position": "RB",
           "status": "Active",
-          "team": "ATL"
+          "team": "BAL"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
+          "injury_status": "Questionable",
+          "name": "Justin Herbert",
+          "player_id": "6797",
+          "position": "QB",
+          "status": "Active",
+          "team": "LAC"
         }
       ],
       "co_owners": [
@@ -5696,12 +5696,12 @@
             "QB"
           ],
           "injury_status": "Questionable",
-          "name": "Justin Herbert",
-          "player_id": "6797",
+          "name": "Sam Darnold",
+          "player_id": "4943",
           "position": "QB",
           "starter_slot": "QB",
           "status": "Active",
-          "team": "LAC"
+          "team": "SEA"
         },
         {
           "active": true,
@@ -5722,12 +5722,12 @@
             "RB"
           ],
           "injury_status": null,
-          "name": "Justice Hill",
-          "player_id": "5995",
+          "name": "Bijan Robinson",
+          "player_id": "9509",
           "position": "RB",
           "starter_slot": "RB",
           "status": "Active",
-          "team": "BAL"
+          "team": "ATL"
         },
         {
           "active": true,
@@ -6107,18 +6107,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "RB"
-          ],
-          "injury_status": null,
-          "name": "Corey Kiner",
-          "player_id": "12491",
-          "position": "RB",
-          "status": "Active",
-          "team": "NE"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "WR"
           ],
           "injury_status": null,
@@ -6382,6 +6370,18 @@
           "position": "WR",
           "status": "Inactive",
           "team": "TB"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_status": null,
+          "name": "Corey Kiner",
+          "player_id": "12491",
+          "position": "RB",
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
