@@ -1304,18 +1304,6 @@
         {
           "active": true,
           "fantasy_positions": [
-            "WR"
-          ],
-          "injury_status": "Questionable",
-          "name": "Mike Evans",
-          "player_id": "2216",
-          "position": "WR",
-          "status": "Active",
-          "team": "SF"
-        },
-        {
-          "active": true,
-          "fantasy_positions": [
             "TE"
           ],
           "injury_status": null,
@@ -1360,6 +1348,18 @@
           "position": "RB",
           "status": "Active",
           "team": "WAS"
+        },
+        {
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
+          "injury_status": "Questionable",
+          "name": "Parker Washington",
+          "player_id": "9487",
+          "position": "WR",
+          "status": "Active",
+          "team": "JAX"
         }
       ],
       "co_owners": [],
@@ -1457,12 +1457,12 @@
             "WR"
           ],
           "injury_status": "Questionable",
-          "name": "Parker Washington",
-          "player_id": "9487",
+          "name": "Mike Evans",
+          "player_id": "2216",
           "position": "WR",
           "starter_slot": "WR",
           "status": "Active",
-          "team": "JAX"
+          "team": "SF"
         },
         {
           "active": true,
