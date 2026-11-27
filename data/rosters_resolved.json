@@ -142,14 +142,16 @@
           "team": "KC"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13670",
+          "name": "Harrison Wallace III",
           "player_id": "13670",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -298,14 +300,16 @@
           "team": "TEN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "WR"
+          ],
           "injury_status": null,
-          "name": "13670",
+          "name": "Harrison Wallace III",
           "player_id": "13670",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "WR",
+          "status": "Active",
+          "team": "ARI"
         },
         {
           "active": true,
@@ -603,14 +607,16 @@
           "team": "LV"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "11292",
+          "name": "Tommy DeVito",
           "player_id": "11292",
-          "position": null,
-          "status": null,
-          "team": null
+          "position": "QB",
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
@@ -689,7 +695,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Stefon Diggs",
           "player_id": "2449",
           "position": "WR",
@@ -701,7 +707,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Darren Waller",
           "player_id": "2505",
           "position": "TE",
@@ -924,7 +930,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Stefon Diggs",
           "player_id": "2449",
           "position": "WR",
@@ -950,7 +956,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Darren Waller",
           "player_id": "2505",
           "position": "TE",
@@ -972,15 +978,17 @@
           "team": "CIN"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "QB"
+          ],
           "injury_status": null,
-          "name": "11292",
+          "name": "Tommy DeVito",
           "player_id": "11292",
-          "position": null,
+          "position": "QB",
           "starter_slot": "SUPER_FLEX",
-          "status": null,
-          "team": null
+          "status": "Active",
+          "team": "NE"
         },
         {
           "active": true,
@@ -1236,7 +1244,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -1272,7 +1280,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Parker Washington",
           "player_id": "9487",
           "position": "WR",
@@ -1280,10 +1288,12 @@
           "team": "JAX"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "NYG D/ST",
+          "name": "New York Giants",
           "player_id": "NYG",
           "position": "DEF",
           "status": null,
@@ -1332,7 +1342,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "DeVonta Smith",
           "player_id": "7525",
           "position": "WR",
@@ -1446,7 +1456,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Parker Washington",
           "player_id": "9487",
           "position": "WR",
@@ -1520,10 +1530,12 @@
           "team": "DAL"
         },
         {
-          "active": null,
-          "fantasy_positions": null,
+          "active": true,
+          "fantasy_positions": [
+            "DEF"
+          ],
           "injury_status": null,
-          "name": "NYG D/ST",
+          "name": "New York Giants",
           "player_id": "NYG",
           "position": "DEF",
           "starter_slot": "DEF",
@@ -1811,7 +1823,7 @@
           "player_id": "96",
           "position": "QB",
           "status": "Active",
-          "team": "PIT"
+          "team": null
         },
         {
           "active": true,
@@ -1885,7 +1897,7 @@
           "player_id": "96",
           "position": "QB",
           "status": "Active",
-          "team": "PIT"
+          "team": null
         },
         {
           "active": true,
@@ -2199,7 +2211,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Harold Fannin Jr.",
           "player_id": "12506",
           "position": "TE",
@@ -2307,7 +2319,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -2405,7 +2417,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Dallas Goedert",
           "player_id": "5022",
           "position": "TE",
@@ -2557,7 +2569,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Harold Fannin Jr.",
           "player_id": "12506",
           "position": "TE",
@@ -2676,7 +2688,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Marvin Harrison Jr.",
           "player_id": "11628",
           "position": "WR",
@@ -3173,7 +3185,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Marvin Harrison Jr.",
           "player_id": "11628",
           "position": "WR",
@@ -4310,7 +4322,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Caleb Williams",
           "player_id": "11560",
           "position": "QB",
@@ -4602,7 +4614,7 @@
           "fantasy_positions": [
             "QB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Caleb Williams",
           "player_id": "11560",
           "position": "QB",
@@ -4762,7 +4774,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -4834,7 +4846,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Colston Loveland",
           "player_id": "12517",
           "position": "TE",
@@ -4882,7 +4894,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Saquon Barkley",
           "player_id": "4866",
           "position": "RB",
@@ -5028,7 +5040,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Dalton Kincaid",
           "player_id": "10236",
           "position": "TE",
@@ -5040,7 +5052,7 @@
           "fantasy_positions": [
             "RB"
           ],
-          "injury_status": null,
+          "injury_status": "Questionable",
           "name": "Saquon Barkley",
           "player_id": "4866",
           "position": "RB",
@@ -5204,7 +5216,7 @@
           "fantasy_positions": [
             "TE"
           ],
-          "injury_status": null,
+          "injury_status": "Out",
           "name": "Colston Loveland",
           "player_id": "12517",
           "position": "TE",
@@ -6071,7 +6083,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
@@ -6133,7 +6145,7 @@
           "fantasy_positions": [
             "WR"
           ],
-          "injury_status": "Questionable",
+          "injury_status": null,
           "name": "Zay Flowers",
           "player_id": "9997",
           "position": "WR",
